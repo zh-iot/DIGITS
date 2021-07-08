@@ -7,7 +7,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-New {{ extension_title }} Dataset
+{{_('New')}} {{ extension_title }} {{_('Dataset')}}
 {% endblock %}
 
 {% block nav %}
@@ -16,7 +16,7 @@ New {{ extension_title }} Dataset
 
 {% block content %}
 <div class="page-header">
-    <h1>New {{ extension_title }} {{_('Dataset')}}</h1>
+    <h1>{{_('New')}} {{ extension_title }} {{_('Dataset')}}</h1>
 </div>
 
 <form action="{{url_for('digits.dataset.generic.views.create', extension_id=extension_id)}}" enctype="multipart/form-data" method="post">
@@ -70,7 +70,7 @@ New {{ extension_title }} Dataset
                 {{ form.dataset_name.label }}
                 {{ form.dataset_name(class='form-control') }}
             </div>
-            <input type="submit" name="create-dataset" class="btn btn-primary" value="Create">
+            <input type="submit" name="create-dataset" class="btn btn-primary" value="{{_('Create')}}">
         </div>
     </div>
 

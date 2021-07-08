@@ -24,7 +24,7 @@
         <dt>{{_('Image Dimensions')}}</dt>
         <dd>
         {% if task.image_width and task.image_height and task.image_channels %}
-        {{task.image_width}}x{{task.image_height}}x{{task.image_channels}} (Width x Height x Channels)
+        {{task.image_width}}x{{task.image_height}}x{{task.image_channels}} ({{_('Width')}} x {{_('Height')}} x {{_('Channels')}})
         {% else %}
         <i>?</i>
         {% endif %}

@@ -49,7 +49,7 @@
         <li><a href="?job_id={{job.id()}}&page={{(total_entries-1)//size}}&size={{size}}&db={{db}}&label={{label}}">{{(total_entries-1)//size}}</a></li>
         {% endif %}
         {% if page != (total_entries-1)//size %}<li>
-          <a href="?job_id={{job.id()}}&page={{ page + 1 }}&size={{size}}&db={{db}}&label={{label}}" aria-label="Next">
+          <a href="?job_id={{job.id()}}&page={{ page + 1 }}&size={{size}}&db={{db}}&label={{label}}" aria-label="{{_('Next')}}">
             <span aria-hidden="true">&raquo;</span>
           </a>
         </li>{%endif %}

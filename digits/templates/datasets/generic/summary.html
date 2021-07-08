@@ -14,7 +14,7 @@
 {% endif %}
 </p>
 <ul>
-    <li>DB backend: {{dataset.get_backend()}}</li>
+    <li>{{_('DB backend')}}: {{dataset.get_backend()}}</li>
     {% for task in dataset.create_db_tasks() %}
         {% if task.entry_count > 0 %}
             <li>{{task.name()}}</li>
