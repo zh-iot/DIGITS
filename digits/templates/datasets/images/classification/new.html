@@ -7,7 +7,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-New Image Classification Dataset
+{{_('New Image Classification Dataset')}}
 {% endblock %}
 
 {% block nav %}
@@ -17,7 +17,7 @@ New Image Classification Dataset
 {% block content %}
 
 <div class="page-header">
-    <h1>New Image Classification Dataset</h1>
+    <h1>{{_('New Image Classification Dataset')}}</h1>
 </div>
 
 <form action="{{url_for('digits.dataset.images.classification.views.create')}}" enctype="multipart/form-data" method="post">
@@ -36,11 +36,11 @@ New Image Classification Dataset
             </div>
             <div class="row">
                 <div class="form-group{{mark_errors([form.resize_width, form.resize_height])}}">
-                    <label>Image size (Width x Height)</label>
+                    <label>{{_('Image size (Width x Height)')}}</label>
                     <span name="resize_dims_explanation"
                           class="explanation-tooltip glyphicon glyphicon-question-sign"
                           data-container="body"
-                          title="Input images will be resized to fit."
+                          title="{{_('Input images will be resized to fit.')}}"
                           ></span>
                     <div class="input-group">
                         {{ form.resize_width(size=4, placeholder='width', class='form-control') }}
@@ -57,7 +57,7 @@ New Image Classification Dataset
                 </div>
             </div>
             <div class="row">
-                <a class="btn btn-info" href="#" onClick="return showResizeExample();">See example</a>
+                <a class="btn btn-info" href="#" onClick="return showResizeExample();">{{_('See example')}}</a>
                 <br>
                 <br>
                 <div id="resize-example" style="display:none;">
@@ -91,9 +91,9 @@ function showResizeExample()
         <div class="col-sm-8">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" id="db-tabs" role="tablist">
-                <li><a href="#db-folder" role="tab" data-toggle="tab">Use Image Folder</a></li>
-                <li><a href="#db-textfile" role="tab" data-toggle="tab">Use Text Files</a></li>
-                <li><a href="#db-s3" role="tab" data-toggle="tab">Use S3</a></li>
+                <li><a href="#db-folder" role="tab" data-toggle="tab">{{_('Use Image Folder')}}</a></li>
+                <li><a href="#db-textfile" role="tab" data-toggle="tab">{{_('Use Text Files')}}</a></li>
+                <li><a href="#db-s3" role="tab" data-toggle="tab">{{_('Use S3')}}</a></li>
             </ul>
 
             <!-- Tab panes -->
@@ -103,7 +103,7 @@ function showResizeExample()
                     <div class="form-group{{mark_errors([form.folder_train])}}">
                         {{ form.folder_train.label }}
                         {{ form.folder_train.tooltip }}
-                        {{ form.folder_train(class='form-control autocomplete_path', placeholder='folder or URL')}}
+                        {{ form.folder_train(class='form-control autocomplete_path', placeholder=_('folder or URL'))}}
                     </div>
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1">
@@ -220,13 +220,13 @@ hasTestFolderChanged();
                                 <th width="40%">Text file <span name="text_file_explanation"
                           class="explanation-tooltip glyphicon glyphicon-question-sign"
                                     data-container="body"
-                                    title="Each line in the file should be formatted as '<PATH> <LABEL>' where <PATH> specifies image path either on the local filesystem or a URL, and the <LABEL> is a numeric label that matches the uploaded labels file"
+                                    title="{{_('Each line in the file should be formatted as \'<PATH> <LABEL>\' where <PATH> specifies image path either on the local filesystem or a URL, and the <LABEL> is a numeric label that matches the uploaded labels file')}}"
                                 ></span></th>
 
                                 <th width="40%">Image folder <i>(optional)</i> <span name="image_folder_explanation"
                                     class="explanation-tooltip glyphicon glyphicon-question-sign"
                                     data-container="body"
-                                    title="Paths in the text files will be appended with this value before reading"
+                                    title="{{_('Paths in the text files will be appended with this value before reading')}}"
                                 ></span></th>
                             </tr>
                             <tr>
@@ -234,12 +234,12 @@ hasTestFolderChanged();
                                 <td>
                                     <label for="{{form.textfile_use_local_files.name}}">
                                         {{form.textfile_use_local_files}}
-                                        Use local paths on server
+                                        {{_('Use local paths on server')}}
                                     </label>
                                     <span name="text_file_explanation"
                                           class="explanation-tooltip glyphicon glyphicon-question-sign"
                                           data-container="body"
-                                          title="Check to use local paths on server, uncheck to upload files from client machine"
+                                          title="{{_('Check to use local paths on server, uncheck to upload files from client machine')}}"
                                     ></span>
                                 </td>
                                 <td></td>
@@ -260,7 +260,7 @@ hasTestFolderChanged();
                                 <td>
                                     <label for="{{form.textfile_use_val.name}}">
                                         {{form.textfile_use_val}}
-                                        Validation
+                                        {{_('Validation')}}
                                     </label>
                                 </td>
                                 <td class="form-group{{mark_errors([form.textfile_val_images])}} cl-upload-files">
@@ -277,7 +277,7 @@ hasTestFolderChanged();
                                 <td>
                                     <label for="{{form.textfile_use_test.name}}">
                                         {{form.textfile_use_test}}
-                                        Test
+                                        {{_('Test')}}
                                     </label>
                                 </td>
                                 <td class="form-group{{mark_errors([form.textfile_test_images])}} cl-upload-files">
@@ -318,30 +318,30 @@ hasTestFolderChanged();
                     <div class="form-group{{mark_errors([form.s3_endpoint_url])}}">
                         {{ form.s3_endpoint_url.label }}
                         {{ form.s3_endpoint_url.tooltip }}
-                        {{ form.s3_endpoint_url(class='form-control', placeholder='S3 Endpoint URL(e.g. https://s3.yourcompany.com:443/)')}}
+                        {{ form.s3_endpoint_url(class='form-control', placeholder=_('S3 Endpoint URL')+'(e.g. https://s3.yourcompany.com:443/)')}}
                     </div>
                     <div class="form-group{{mark_errors([form.s3_bucket])}}">
                         {{ form.s3_bucket.label }}
                         {{ form.s3_bucket.tooltip }}
-                        {{ form.s3_bucket(class='form-control', placeholder='Bucket Name')}}
+                        {{ form.s3_bucket(class='form-control', placeholder=_('Bucket Name'))}}
                     </div>
                     <div class="form-group{{mark_errors([form.s3_path])}}">
                         {{ form.s3_path.label }}
                         {{ form.s3_path.tooltip }}
-                        {{ form.s3_path(class='form-control', placeholder='A Path To Image Folders')}}
+                        {{ form.s3_path(class='form-control', placeholder=_('A Path To Image Folders'))}}
                     </div>
                     <div class="form-group{{mark_errors([form.s3_accesskey])}}">
                         {{ form.s3_accesskey.label }}
                         {{ form.s3_accesskey.tooltip }}
-                        {{ form.s3_accesskey(class='form-control', placeholder='S3 Access Key')}}
+                        {{ form.s3_accesskey(class='form-control', placeholder=_('S3 Access Key'))}}
                     </div>
                     <div class="form-group{{mark_errors([form.s3_secretkey])}}">
                         {{ form.s3_secretkey.label }}
                         {{ form.s3_secretkey.tooltip }}
-                        {{ form.s3_secretkey(class='form-control', placeholder='S3 Secret Key', type='password')}}
+                        {{ form.s3_secretkey(class='form-control', placeholder=_('S3 Secret Key'), type='password')}}
                     </div>
                     <div class="form-group checkbox-fix {{mark_errors([form.s3_keepcopiesondisk])}}">
-                        {{ form.s3_keepcopiesondisk(class='form-control', placeholder='S3 Secret Key', type='checkbox')}}
+                        {{ form.s3_keepcopiesondisk(class='form-control', placeholder=_('S3 Secret Key'), type='checkbox')}}
                         {{ form.s3_keepcopiesondisk.label }}
                         {{ form.s3_keepcopiesondisk.tooltip }}
                     </div>
@@ -447,15 +447,15 @@ $('#db-tabs a[href="#db-{{ form.method.data }}"]').tab('show');
                 {{ form.backend(class='form-control') }}
             </div>
             <div id="backend-hdf5-warning" class="alert alert-warning" style="display:none;">
-                <b>NOTE:</b> HDF5 is currently only supported for classification.
+                <b>{{_('NOTE')}}:</b> {{_('HDF5 is currently only supported for classification.')}}
                 <ul>
-                    <li>For the Caffe data layers, (change <i>Data</i> layers to <i>HDF5Data</i> layers)</li>
-                    <li>The Caffe <i>HDF5Data</i> layer does not support mean subtraction</li>
-                    <li>Database exploration in the DIGITS UI is not supported.</li>
+                    <li>{{_('For the Caffe data layers')}}, ({{_('change')}} <i>{{_('Data')}}</i> {{_('layers to')}} <i>{{_('HDF5Data')}}</i> {{_('layers')}})</li>
+                    <li>{{_('The Caffe')}} <i>{{_('HDF5Data')}}</i> {{_('layer does not support mean subtraction')}}</li>
+                    <li>{{_('Database exploration in the DIGITS UI is not supported.')}}</li>
                 </ul>
             </div>
             <div id="backend-tfrecords-warning" class="alert alert-warning" style="display:none;">
-                <b>NOTE:</b> TFRecords currently only works with Tensorflow, not with Caffe or Torch.
+                <b>{{_('NOTE')}}:</b> {{_('TFRecords currently only works with Tensorflow, not with Caffe or Torch.')}}
             </div>
             <div class="form-group{{mark_errors([form.compression])}}">
                 <div class="form-group{{mark_errors([form.compression])}}">
@@ -503,7 +503,7 @@ backendChanged();
                 {{ form.dataset_name.label }}
                 {{ form.dataset_name(class='form-control') }}
             </div>
-            <input type="submit" name="create-dataset" class="btn btn-primary" value="Create">
+            <input type="submit" name="create-dataset" class="btn btn-primary" value="{{_('Create')}}">
         </div>
     </div>
 

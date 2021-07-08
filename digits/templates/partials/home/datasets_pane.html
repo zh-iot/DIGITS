@@ -23,7 +23,7 @@
                 </ul>
             </div>
             <div style="position:absolute; bottom:0">
-                <label>Group Jobs:
+                <label>{{_('Group Jobs')}}:
                     <input type="checkbox"
                            ng-model="jc.storage.show_groups">
                 </label>
@@ -52,12 +52,12 @@
                     <a class="btn btn-xs btn-danger"
                        ng-disabled="!enabled"
                        ng-click="!enabled || delete_jobs();">
-                        Delete
+                        {{_('Delete')}}
                     </a>
                     <a class="btn btn-xs btn-primary"
                        ng-disabled="!group_enabled"
                        ng-click="!group_enabled || group_jobs();">
-                        Group
+                        {{_('Group')}}
                     </a>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                                 <span class="glyphicon"
                                       ng-class="c.hideRows[job.group] ? 'glyphicon-triangle-right' : 'glyphicon-triangle-bottom'">
                                 </span>
-                                <strong>{[ job.group ? job.group : 'Ungrouped' ]}</strong>
+                                <strong>{[ job.group ? job.group : _('Ungrouped') ]}</strong>
                             </div>
                         </td>
                     </tr>
@@ -150,7 +150,7 @@
                     <tr>
                         <td colspan="{[fields.length]}">
                             <h5>
-                                No Datasets
+                                {{_('No Datasets')}}
                             </h5>
                         </td>
                     </tr>
