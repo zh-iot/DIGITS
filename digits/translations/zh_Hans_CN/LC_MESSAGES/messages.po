@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 03:55-0700\n"
-"PO-Revision-Date: 2021-07-14 18:57+0800\n"
+"POT-Creation-Date: 2021-07-14 04:02-0700\n"
+"PO-Revision-Date: 2021-07-14 19:03+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -31,11 +31,11 @@ msgstr "首页"
 msgid "Running Jobs"
 msgstr "正在运行作业"
 
-#: templates/home.html:74
+#: templates/home.html:74 templates/partials/home/model_pane.html:65
 msgid "Filter"
 msgstr "过滤"
 
-#: templates/home.html:85
+#: templates/home.html:85 templates/partials/home/model_pane.html:76
 msgid "Delete"
 msgstr "删除"
 
@@ -43,9 +43,13 @@ msgstr "删除"
 msgid "Abort"
 msgstr "跳过"
 
-#: templates/home.html:95
+#: templates/home.html:95 templates/partials/home/model_pane.html:81
 msgid "Group"
 msgstr "组"
+
+#: templates/home.html:133 templates/partials/home/model_pane.html:132
+msgid "Ungrouped"
+msgstr "未分组"
 
 #: templates/home.html:191 templates/home.html:203
 msgid "No Running Jobs"
@@ -82,6 +86,18 @@ msgstr "版本"
 #: templates/layout.html:68
 msgid "About"
 msgstr "关于"
+
+#: templates/partials/home/model_pane.html:7
+msgid "New Model"
+msgstr "新建模型"
+
+#: templates/partials/home/model_pane.html:26
+msgid "Group Jobs"
+msgstr "作业组"
+
+#: templates/partials/home/model_pane.html:194
+msgid "No Models"
+msgstr "暂无模型"
 
 #: utils/forms.py:76
 #, python-format

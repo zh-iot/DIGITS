@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 03:55-0700\n"
+"POT-Creation-Date: 2021-07-14 04:02-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,11 @@ msgstr ""
 msgid "Running Jobs"
 msgstr ""
 
-#: templates/home.html:74
+#: templates/home.html:74 templates/partials/home/model_pane.html:65
 msgid "Filter"
 msgstr ""
 
-#: templates/home.html:85
+#: templates/home.html:85 templates/partials/home/model_pane.html:76
 msgid "Delete"
 msgstr ""
 
@@ -41,8 +41,12 @@ msgstr ""
 msgid "Abort"
 msgstr ""
 
-#: templates/home.html:95
+#: templates/home.html:95 templates/partials/home/model_pane.html:81
 msgid "Group"
+msgstr ""
+
+#: templates/home.html:133 templates/partials/home/model_pane.html:132
+msgid "Ungrouped"
 msgstr ""
 
 #: templates/home.html:191 templates/home.html:203
@@ -79,6 +83,18 @@ msgstr ""
 
 #: templates/layout.html:68
 msgid "About"
+msgstr ""
+
+#: templates/partials/home/model_pane.html:7
+msgid "New Model"
+msgstr ""
+
+#: templates/partials/home/model_pane.html:26
+msgid "Group Jobs"
+msgstr ""
+
+#: templates/partials/home/model_pane.html:194
+msgid "No Models"
 msgstr ""
 
 #: utils/forms.py:76
