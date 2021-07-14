@@ -8,7 +8,7 @@ import traceback
 import os
 
 import flask
-from flaskext.babel import Babel, gettext as _
+from flask_babel import Babel, gettext as _
 from flask_socketio import join_room, leave_room
 import werkzeug.exceptions
 

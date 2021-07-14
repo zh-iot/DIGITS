@@ -4,7 +4,7 @@ from __future__ import absolute_import
 import os
 
 import flask
-from flaskext.babel import Babel, gettext as _
+from flask_babel import Babel, gettext as _
 from flask_socketio import SocketIO
 from gevent import monkey
 monkey.patch_all()
@@ -21,7 +21,7 @@ url_prefix = config_value('url_prefix')
 app = flask.Flask(__name__, static_url_path=url_prefix+'/static')
 
 # Babel
-app.config['BABEL_DEFAULT_LOCALE'] = 'zh_CN'
+app.config['BABEL_DEFAULT_LOCALE'] = 'zh_Hans_CN'
 babel = Babel(app)
 
 
