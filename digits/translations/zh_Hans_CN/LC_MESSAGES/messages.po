@@ -7,17 +7,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 03:42-0700\n"
-"PO-Revision-Date: 2021-07-14 18:43+0800\n"
+"POT-Creation-Date: 2021-07-14 03:55-0700\n"
+"PO-Revision-Date: 2021-07-14 18:57+0800\n"
+"Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-"Last-Translator: \n"
 "X-Generator: Poedit 3.0\n"
+
+#: templates/home.html:27
+msgid "available"
+msgstr "可用"
+
+#: templates/home.html:30
+msgid "Home"
+msgstr "首页"
+
+#: templates/home.html:60
+msgid "Running Jobs"
+msgstr "正在运行作业"
+
+#: templates/home.html:74
+msgid "Filter"
+msgstr "过滤"
+
+#: templates/home.html:85
+msgid "Delete"
+msgstr "删除"
+
+#: templates/home.html:90
+msgid "Abort"
+msgstr "跳过"
+
+#: templates/home.html:95
+msgid "Group"
+msgstr "组"
+
+#: templates/home.html:191 templates/home.html:203
+msgid "No Running Jobs"
+msgstr "没有运行作业"
+
+#: templates/home.html:214
+msgid "Datasets"
+msgstr "数据集"
+
+#: templates/home.html:224
+msgid "Models"
+msgstr "模型"
+
+#: templates/home.html:234
+msgid "Pretrained Models"
+msgstr "预训练模型"
 
 #: templates/layout.html:50
 msgid "Logout"

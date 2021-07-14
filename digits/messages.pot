@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 03:42-0700\n"
+"POT-Creation-Date: 2021-07-14 03:55-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,50 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+
+#: templates/home.html:27
+msgid "available"
+msgstr ""
+
+#: templates/home.html:30
+msgid "Home"
+msgstr ""
+
+#: templates/home.html:60
+msgid "Running Jobs"
+msgstr ""
+
+#: templates/home.html:74
+msgid "Filter"
+msgstr ""
+
+#: templates/home.html:85
+msgid "Delete"
+msgstr ""
+
+#: templates/home.html:90
+msgid "Abort"
+msgstr ""
+
+#: templates/home.html:95
+msgid "Group"
+msgstr ""
+
+#: templates/home.html:191 templates/home.html:203
+msgid "No Running Jobs"
+msgstr ""
+
+#: templates/home.html:214
+msgid "Datasets"
+msgstr ""
+
+#: templates/home.html:224
+msgid "Models"
+msgstr ""
+
+#: templates/home.html:234
+msgid "Pretrained Models"
+msgstr ""
 
 #: templates/layout.html:50
 msgid "Logout"
