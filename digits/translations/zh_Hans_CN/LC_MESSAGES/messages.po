@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 04:13-0700\n"
-"PO-Revision-Date: 2021-07-14 19:15+0800\n"
+"POT-Creation-Date: 2021-07-14 04:22-0700\n"
+"PO-Revision-Date: 2021-07-14 19:24+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -18,6 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 "X-Generator: Poedit 3.0\n"
+
+#: views.py:59 views.py:74
+msgid "Classification"
+msgstr "分类"
+
+#: views.py:64 views.py:79
+msgid "Other"
+msgstr "其他"
+
+#: views.py:89
+msgid "Upload Pretrained Model"
+msgstr "上传预训练模型"
+
+#: views.py:95
+msgid "Retrieve from Model Store"
+msgstr "从模型库检索"
+
+#: extensions/data/imageProcessing/data.py:107
+msgid "Processing"
+msgstr "处理中"
+
+#: extensions/data/imageSegmentation/data.py:149
+msgid "Segmentation"
+msgstr "分割"
+
+#: extensions/data/objectDetection/data.py:171
+msgid "Object Detection"
+msgstr "目标检测"
 
 #: templates/home.html:27
 msgid "available"

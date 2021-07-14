@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 04:13-0700\n"
+"POT-Creation-Date: 2021-07-14 04:22-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,34 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+
+#: views.py:59 views.py:74
+msgid "Classification"
+msgstr ""
+
+#: views.py:64 views.py:79
+msgid "Other"
+msgstr ""
+
+#: views.py:89
+msgid "Upload Pretrained Model"
+msgstr ""
+
+#: views.py:95
+msgid "Retrieve from Model Store"
+msgstr ""
+
+#: extensions/data/imageProcessing/data.py:107
+msgid "Processing"
+msgstr ""
+
+#: extensions/data/imageSegmentation/data.py:149
+msgid "Segmentation"
+msgstr ""
+
+#: extensions/data/objectDetection/data.py:171
+msgid "Object Detection"
+msgstr ""
 
 #: templates/home.html:27
 msgid "available"

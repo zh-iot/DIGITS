@@ -9,6 +9,7 @@ import os
 
 import flask
 from flask_socketio import join_room, leave_room
+from flask_babel import Babel, gettext as _
 import werkzeug.exceptions
 
 from .config import config_value
@@ -55,12 +56,12 @@ def home(tab=2):
         new_dataset_options = {
             'Images': {
                 'image-classification': {
-                    'title': 'Classification',
+                    'title': _('Classification'),
                     'url': flask.url_for(
                         'digits.dataset.images.classification.views.new'),
                 },
                 'image-other': {
-                    'title': 'Other',
+                    'title': _('Other'),
                     'url': flask.url_for(
                         'digits.dataset.images.generic.views.new'),
                 },
@@ -70,12 +71,12 @@ def home(tab=2):
         new_model_options = {
             'Images': {
                 'image-classification': {
-                    'title': 'Classification',
+                    'title': _('Classification'),
                     'url': flask.url_for(
                         'digits.model.images.classification.views.new'),
                 },
                 'image-other': {
-                    'title': 'Other',
+                    'title': _('Other'),
                     'url': flask.url_for(
                         'digits.model.images.generic.views.new'),
                 },
@@ -85,13 +86,13 @@ def home(tab=2):
         load_model_options = {
             'Images': {
                 'pretrained-model': {
-                    'title': 'Upload Pretrained Model',
+                    'title': _('Upload Pretrained Model'),
                     'id': 'uploadPretrainedModel',
                     'url': flask.url_for(
                         'digits.pretrained_model.views.new'),
                 },
                 'access-model-store': {
-                    'title': 'Retrieve from Model Store',
+                    'title': _('Retrieve from Model Store'),
                     'id': 'retrieveModelStore',
                     'url': flask.url_for('digits.store.views.store'),
                 }
