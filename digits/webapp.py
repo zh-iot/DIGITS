@@ -5,6 +5,7 @@ import os
 
 import flask
 from flask_socketio import SocketIO
+from flask_babel import Babel, gettext as _
 from gevent import monkey
 monkey.patch_all()
 
@@ -19,6 +20,11 @@ import digits.scheduler  # noqa
 url_prefix = config_value('url_prefix')
 app = flask.Flask(__name__, static_url_path=url_prefix+'/static')
 app.config['DEBUG'] = True
+
+# Babel
+app.config['BABEL_DEFAULT_LOCALE'] = 'zh_Hans_CN'
+babel = Babel(app)
+
 # Disable CSRF checking in WTForms
 app.config['WTF_CSRF_ENABLED'] = False
 # This is still necessary for SocketIO
