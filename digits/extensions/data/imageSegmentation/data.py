@@ -13,6 +13,7 @@ from digits.utils import image, subclass, override, constants
 from digits.utils.constants import COLOR_PALETTE_ATTRIBUTE
 from ..interface import DataIngestionInterface
 from .forms import DatasetForm
+from flask_babel import Babel, gettext as _
 
 TEMPLATE = "template.html"
 

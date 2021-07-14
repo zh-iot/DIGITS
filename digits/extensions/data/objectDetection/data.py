@@ -15,6 +15,7 @@ from ..interface import DataIngestionInterface
 from .forms import DatasetForm
 from .utils import GroundTruth, GroundTruthObj
 from .utils import bbox_to_array, pad_image, resize_bbox_list
+from flask_babel import Babel, gettext as _
 
 TEMPLATE = "template.html"
 
