@@ -15,6 +15,7 @@ from ..interface import DataIngestionInterface
 from .forms import DatasetForm
 from .utils import GroundTruth, GroundTruthObj
 from .utils import bbox_to_array, pad_image, resize_bbox_list
+from flask_babel import Babel, gettext as _
 
 TEMPLATE = "template.html"
 
@@ -168,7 +169,7 @@ class DataIngestion(DataIngestionInterface):
     @staticmethod
     @override
     def get_title():
-        return "Object Detection"
+        return _("Object Detection")
 
     @override
     def itemize_entries(self, stage):

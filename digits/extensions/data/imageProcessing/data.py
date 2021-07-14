@@ -10,6 +10,7 @@ import numpy as np
 from digits.utils import image, subclass, override, constants
 from ..interface import DataIngestionInterface
 from .forms import DatasetForm
+from flask_babel import Babel, gettext as _
 
 TEMPLATE = "template.html"
 
@@ -103,7 +104,7 @@ class DataIngestion(DataIngestionInterface):
     @staticmethod
     @override
     def get_title():
-        return "Processing"
+        return _("Processing")
 
     @override
     def itemize_entries(self, stage):

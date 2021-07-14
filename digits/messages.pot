@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 02:14-0700\n"
+"POT-Creation-Date: 2021-07-14 02:44-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,18 @@ msgstr ""
 
 #: views.py:95
 msgid "Retrieve from Model Store"
+msgstr ""
+
+#: extensions/data/imageProcessing/data.py:107
+msgid "Processing"
+msgstr ""
+
+#: extensions/data/imageSegmentation/data.py:150
+msgid "Segmentation"
+msgstr ""
+
+#: extensions/data/objectDetection/data.py:172
+msgid "Object Detection"
 msgstr ""
 
 #: templates/home.html:30
