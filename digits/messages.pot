@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-13 23:59-0700\n"
+"POT-Creation-Date: 2021-07-14 01:41-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,6 +133,10 @@ msgstr ""
 
 #: templates/layout.html:52 templates/login.html:9
 msgid "Login"
+msgstr ""
+
+#: templates/layout.html:57
+msgid "Info"
 msgstr ""
 
 #: templates/layout.html:60
@@ -879,8 +883,15 @@ msgid "Loading"
 msgstr ""
 
 #: templates/partials/home/datasets_pane.html:26
+#: templates/partials/home/model_pane.html:26
 #: templates/partials/home/pretrained_model_pane.html:32
 msgid "Group Jobs"
+msgstr ""
+
+#: templates/partials/home/datasets_pane.html:44
+#: templates/partials/home/model_pane.html:65
+#: templates/partials/home/pretrained_model_pane.html:50
+msgid "Filter"
 msgstr ""
 
 #: templates/partials/home/datasets_pane.html:153
