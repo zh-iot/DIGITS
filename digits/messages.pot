@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 04:02-0700\n"
+"POT-Creation-Date: 2021-07-14 04:13-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,15 @@ msgstr ""
 msgid "Running Jobs"
 msgstr ""
 
-#: templates/home.html:74 templates/partials/home/model_pane.html:65
+#: templates/home.html:74 templates/partials/home/datasets_pane.html:44
+#: templates/partials/home/model_pane.html:65
+#: templates/partials/home/pretrained_model_pane.html:50
 msgid "Filter"
 msgstr ""
 
-#: templates/home.html:85 templates/partials/home/model_pane.html:76
+#: templates/home.html:85 templates/partials/home/datasets_pane.html:55
+#: templates/partials/home/model_pane.html:76
+#: templates/partials/home/pretrained_model_pane.html:61
 msgid "Delete"
 msgstr ""
 
@@ -41,11 +45,15 @@ msgstr ""
 msgid "Abort"
 msgstr ""
 
-#: templates/home.html:95 templates/partials/home/model_pane.html:81
+#: templates/home.html:95 templates/partials/home/datasets_pane.html:60
+#: templates/partials/home/model_pane.html:81
+#: templates/partials/home/pretrained_model_pane.html:66
 msgid "Group"
 msgstr ""
 
-#: templates/home.html:133 templates/partials/home/model_pane.html:132
+#: templates/home.html:133 templates/partials/home/datasets_pane.html:97
+#: templates/partials/home/model_pane.html:132
+#: templates/partials/home/pretrained_model_pane.html:102
 msgid "Ungrouped"
 msgstr ""
 
@@ -85,16 +93,34 @@ msgstr ""
 msgid "About"
 msgstr ""
 
+#: templates/partials/home/datasets_pane.html:7
+msgid "New Dataset"
+msgstr ""
+
+#: templates/partials/home/datasets_pane.html:26
+#: templates/partials/home/model_pane.html:26
+#: templates/partials/home/pretrained_model_pane.html:32
+msgid "Group Jobs"
+msgstr ""
+
+#: templates/partials/home/datasets_pane.html:153
+msgid "No Datasets"
+msgstr ""
+
 #: templates/partials/home/model_pane.html:7
 msgid "New Model"
 msgstr ""
 
-#: templates/partials/home/model_pane.html:26
-msgid "Group Jobs"
-msgstr ""
-
 #: templates/partials/home/model_pane.html:194
 msgid "No Models"
+msgstr ""
+
+#: templates/partials/home/pretrained_model_pane.html:13
+msgid "Load Model"
+msgstr ""
+
+#: templates/partials/home/pretrained_model_pane.html:148
+msgid "No Pretrained Models"
 msgstr ""
 
 #: utils/forms.py:76
