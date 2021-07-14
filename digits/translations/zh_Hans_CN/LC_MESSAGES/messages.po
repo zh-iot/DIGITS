@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 01:41-0700\n"
-"PO-Revision-Date: 2021-07-14 16:47+0800\n"
+"POT-Creation-Date: 2021-07-14 02:14-0700\n"
+"PO-Revision-Date: 2021-07-14 17:15+0800\n"
 "Last-Translator: \n"
 "Language: zh\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -166,6 +166,10 @@ msgid ""
 "Must begin with a letter and contain only lowercase letters, numbers, periods, dashes "
 "and underscores"
 msgstr "必须以字母开头，并且只包含小写字母、数字、句点、破折号和下划线"
+
+#: templates/login.html:23
+msgid "Submit"
+msgstr "提交"
 
 #: templates/store.html:53
 msgid "Model Store"

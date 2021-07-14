@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 01:41-0700\n"
+"POT-Creation-Date: 2021-07-14 02:14-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,6 +163,10 @@ msgstr ""
 msgid ""
 "Must begin with a letter and contain only lowercase letters, numbers, "
 "periods, dashes and underscores"
+msgstr ""
+
+#: templates/login.html:23
+msgid "Submit"
 msgstr ""
 
 #: templates/store.html:53
