@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-15 03:17-0700\n"
-"PO-Revision-Date: 2021-07-15 18:21+0800\n"
+"POT-Creation-Date: 2021-07-15 04:23-0700\n"
+"PO-Revision-Date: 2021-07-16 09:25+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -46,6 +46,291 @@ msgstr "分割"
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
 msgstr "目标检测"
+
+#: model/forms.py:72
+msgid "Select Dataset"
+msgstr "选择数据集"
+
+#: model/forms.py:74
+msgid "Choose the dataset to use for this model."
+msgstr "选择要用于此模型的数据集。"
+
+#: model/forms.py:87
+msgid "Choose a Python file on the client containing layer definitions."
+msgstr "在客户端上选择一个包含层定义的Python文件。"
+
+#: model/forms.py:95
+msgid "Choose a Python file on the server containing layer definitions."
+msgstr "在服务器上选择一个包含层定义的Python文件。"
+
+#: model/forms.py:99
+msgid "Training epochs"
+msgstr "培训的时代"
+
+#: model/forms.py:104
+msgid "How many passes through the training data?"
+msgstr "经过多少次训练数据?"
+
+#: model/forms.py:108
+msgid "Snapshot interval (in epochs)"
+msgstr "快照间隔(以epoch为单位)"
+
+#: model/forms.py:113
+msgid "How many epochs of training between taking a snapshot?"
+msgstr "在拍摄快照之间有多少次训练?"
+
+#: model/forms.py:117
+msgid "Validation interval (in epochs)"
+msgstr "验证间隔(以epoch为单位)"
+
+#: model/forms.py:122
+msgid ""
+"How many epochs of training between running through one pass of the "
+"validation data?"
+msgstr "在运行一遍验证数据之间有多少个训练阶段?"
+
+#: model/forms.py:126
+msgid "Tracing Interval (in steps)"
+msgstr "跟踪时间间隔(以步骤为单位)"
+
+#: model/forms.py:131
+msgid "Generation of a timeline trace every few steps"
+msgstr "每隔几步生成一个时间轴跟踪"
+
+#: model/forms.py:135
+msgid "Random seed"
+msgstr "随机种子"
+
+#: model/forms.py:140
+msgid ""
+"If you provide a random seed, then back-to-back runs with the same model "
+"and dataset should give identical results."
+msgstr ""
+"如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同"
+"的结果。"
+
+#: model/forms.py:144
+msgid "Batch size"
+msgstr "批量大小"
+
+#: model/forms.py:149
+msgid ""
+"How many images to process at once. If blank, values are used from the "
+"network definition."
+msgstr "一次要处理多少图像。如果为空，则使用网络定义中的值。"
+
+#: model/forms.py:153
+msgid "Batch Accumulation"
+msgstr "批处理积累"
+
+#: model/forms.py:158
+msgid ""
+"Accumulate gradients over multiple batches (useful when you need a bigger "
+"batch size for training but it doesn't fit in memory)."
+msgstr ""
+"积累多个批次的梯度(当你需要更大的批次大小的训练，但它不适合内存时有用)。"
+
+#: model/forms.py:164
+msgid "Solver type"
+msgstr "解算器类型"
+
+#: model/forms.py:166
+msgid "SGD (Stochastic Gradient Descent)"
+msgstr "随机梯度下降法"
+
+#: model/forms.py:167
+msgid "Momentum"
+msgstr "动力"
+
+#: model/forms.py:168
+msgid "NAG (Nesterov's accelerated gradient)"
+msgstr "涅斯捷洛夫加速梯度"
+
+#: model/forms.py:169
+msgid "AdaGrad (Adaptive Gradient)"
+msgstr "AdaGrad(自适应梯度)"
+
+#: model/forms.py:170
+msgid "AdaGradDA (AdaGrad Dual Averaging)"
+msgstr "AdaGrad双平均法"
+
+#: model/forms.py:171
+msgid "AdaDelta"
+msgstr "AdaDelta"
+
+#: model/forms.py:172
+msgid "Adam (Adaptive Moment Estimation)"
+msgstr "Adam(自适应矩估计)"
+
+#: model/forms.py:173
+msgid "RMSprop"
+msgstr "RMS属性"
+
+#: model/forms.py:174
+msgid "FTRL (Follow-The-Regularized-Leader)"
+msgstr "FTRL (Follow-The-Regularized-Leader)"
+
+#: model/forms.py:177
+msgid "What type of solver will be used?"
+msgstr "将使用什么类型的求解器?"
+
+#: model/forms.py:190
+msgid "RMS decay value"
+msgstr "RMS衰减值"
+
+#: model/forms.py:195
+msgid ""
+"If the gradient updates results in oscillations the gradient is reduced by "
+"times 1-rms_decay. Otherwise it will be increased by rms_decay."
+msgstr ""
+"如果梯度更新导致振荡，则梯度减小乘以1-rms_decay。否则将通过rms_decay增加。"
+
+#: model/forms.py:201
+msgid "Base Learning Rate"
+msgstr "基础学习速率"
+
+#: model/forms.py:206
+msgid ""
+"Affects how quickly the network learns. If you are getting NaN for your "
+"loss, you probably need to lower this value."
+msgstr "影响网络学习的速度。如果您要为您的损失获得NaN，您可能需要降低这个值。"
+
+#: model/forms.py:210
+msgid "Policy"
+msgstr "政策"
+
+#: model/forms.py:212
+msgid "Fixed"
+msgstr "固定"
+
+#: model/forms.py:213
+msgid "Step Down"
+msgstr "退位"
+
+#: model/forms.py:214
+msgid "Step Down (arbitrary steps)"
+msgstr "退位(任意步骤)"
+
+#: model/forms.py:215
+msgid "Exponential Decay"
+msgstr "指数衰减"
+
+#: model/forms.py:216
+msgid "Inverse Decay"
+msgstr "逆衰减"
+
+#: model/forms.py:217
+msgid "Polynomial Decay"
+msgstr "多项式衰减"
+
+#: model/forms.py:218
+msgid "Sigmoid Decay"
+msgstr ""
+
+#: model/forms.py:223
+msgid "Step Size"
+msgstr "步长"
+
+#: model/forms.py:224 model/forms.py:235 model/forms.py:236 model/forms.py:237
+#: model/forms.py:241
+msgid "Gamma"
+msgstr "γ"
+
+#: model/forms.py:225
+msgid "Step Values"
+msgstr "步的值"
+
+#: model/forms.py:238 model/forms.py:239
+msgid "Power"
+msgstr "电源"
+
+#: model/forms.py:240
+msgid "Step"
+msgstr "一步"
+
+#: model/forms.py:250
+msgid "Standard network"
+msgstr "标准的网络"
+
+#: model/forms.py:251
+msgid "Previous network"
+msgstr "以前的网络"
+
+#: model/forms.py:252
+msgid "Pretrained network"
+msgstr "预训练网络"
+
+#: model/forms.py:253
+msgid "Custom network"
+msgstr "自定义网络"
+
+#: model/forms.py:264
+msgid "The framework you choose is not currently supported."
+msgstr "您所选择的框架目前不受支持。"
+
+#: model/forms.py:272 templates/models/images/classification/new.html:525
+msgid "Standard Networks"
+msgstr "标准的网络"
+
+#: model/forms.py:279 templates/models/images/classification/new.html:526
+msgid "Previous Networks"
+msgstr "以前的网络"
+
+#: model/forms.py:288 templates/models/images/classification/new.html:527
+msgid "Pretrained Networks"
+msgstr "预训练网络"
+
+#: model/forms.py:297 templates/models/images/classification/new.html:528
+msgid "Custom Network"
+msgstr "自定义网络"
+
+#: model/forms.py:305
+msgid "Pretrained model(s)"
+msgstr "预训练模型"
+
+#: model/forms.py:320
+msgid "Select which GPU you would like to use"
+msgstr "选择你想要使用的图形处理器"
+
+#: model/forms.py:337
+msgid "Select which GPU[s] you would like to use"
+msgstr "选择您想要使用的图形处理器"
+
+#: model/forms.py:349
+msgid "The job won't start until all of the chosen GPUs are available."
+msgstr "在所有选定的gpu可用之前，作业不会启动。"
+
+#: model/forms.py:354
+msgid "Select which GPU[s] you would like to use (comma separated)"
+msgstr "选择你想要使用的GPU(逗号分隔)"
+
+#: model/forms.py:361
+msgid "Use this many GPUs (next available)"
+msgstr "使用这些gpu(下一个可用的)"
+
+#: model/forms.py:376
+msgid "Model Name"
+msgstr "模型名称"
+
+#: model/forms.py:380
+msgid "An identifier, later used to refer to this model in the Application."
+msgstr "一个标识符，稍后用于在应用程序中引用此模型。"
+
+#: model/forms.py:383
+msgid "Group Name"
+msgstr "组名称"
+
+#: model/forms.py:384
+msgid "An optional group name for organization on the main page."
+msgstr "可选的组名，用于在主页面上的组织。"
+
+#: model/forms.py:389
+msgid "Shuffle Train Data"
+msgstr "洗牌训练数据"
+
+#: model/forms.py:391
+msgid "For every epoch, shuffle the data before training."
+msgstr "对于每一个时代，训练前都要洗牌数据。"
 
 #: templates/home.html:27
 msgid "available"
@@ -171,22 +456,6 @@ msgstr "数据转换"
 msgid "Data Augmentations"
 msgstr "数据扩张"
 
-#: templates/models/images/classification/new.html:525
-msgid "Standard Networks"
-msgstr "标准的网络"
-
-#: templates/models/images/classification/new.html:526
-msgid "Previous Networks"
-msgstr "以前的网络"
-
-#: templates/models/images/classification/new.html:527
-msgid "Pretrained Networks"
-msgstr "预训练网络"
-
-#: templates/models/images/classification/new.html:528
-msgid "Custom Network"
-msgstr "自定义网络"
-
 #: templates/models/images/classification/new.html:703
 msgid "Visualize"
 msgstr "可视化"
@@ -220,20 +489,20 @@ msgstr "暂无预训练模型"
 #: utils/forms.py:76
 #, python-format
 msgid "Invalid field name '%s'."
-msgstr ""
+msgstr "无效的字段名称'%s'."
 
 #: utils/forms.py:78
 #, python-format
 msgid "Field must be greater than %s."
-msgstr ""
+msgstr "字段必须大于%s."
 
 #: utils/forms.py:314
 msgid "Not a valid integer value"
-msgstr ""
+msgstr "不是有效的整数值"
 
 #: utils/forms.py:360
 msgid "Not a valid float value"
-msgstr ""
+msgstr "不是一个有效的浮点值"
 
 #: utils/forms.py:410
 msgid "No data."
