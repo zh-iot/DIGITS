@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 22:58-0700\n"
+"POT-Creation-Date: 2021-07-15 03:17-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,6 +135,60 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
+#: templates/models/images/classification/new.html:10
+#: templates/models/images/classification/new.html:19
+msgid "New Image Classification Model"
+msgstr ""
+
+#: templates/models/images/classification/new.html:14
+#: templates/partials/home/model_pane.html:7
+msgid "New Model"
+msgstr ""
+
+#: templates/models/images/classification/new.html:46
+msgid "Python Layers"
+msgstr ""
+
+#: templates/models/images/classification/new.html:107
+msgid "Solver Options"
+msgstr ""
+
+#: templates/models/images/classification/new.html:180
+msgid "Show advanced learning rate options"
+msgstr ""
+
+#: templates/models/images/classification/new.html:271
+msgid "Visualize LR"
+msgstr ""
+
+#: templates/models/images/classification/new.html:376
+msgid "Data Transformations"
+msgstr ""
+
+#: templates/models/images/classification/new.html:389
+msgid "Data Augmentations"
+msgstr ""
+
+#: templates/models/images/classification/new.html:525
+msgid "Standard Networks"
+msgstr ""
+
+#: templates/models/images/classification/new.html:526
+msgid "Previous Networks"
+msgstr ""
+
+#: templates/models/images/classification/new.html:527
+msgid "Pretrained Networks"
+msgstr ""
+
+#: templates/models/images/classification/new.html:528
+msgid "Custom Network"
+msgstr ""
+
+#: templates/models/images/classification/new.html:703
+msgid "Visualize"
+msgstr ""
+
 #: templates/partials/home/datasets_pane.html:7
 msgid "New Dataset"
 msgstr ""
@@ -147,10 +201,6 @@ msgstr ""
 
 #: templates/partials/home/datasets_pane.html:153
 msgid "No Datasets"
-msgstr ""
-
-#: templates/partials/home/model_pane.html:7
-msgid "New Model"
 msgstr ""
 
 #: templates/partials/home/model_pane.html:194

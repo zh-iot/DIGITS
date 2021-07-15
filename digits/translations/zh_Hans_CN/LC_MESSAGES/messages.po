@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 22:58-0700\n"
-"PO-Revision-Date: 2021-07-15 13:59+0800\n"
+"POT-Creation-Date: 2021-07-15 03:17-0700\n"
+"PO-Revision-Date: 2021-07-15 18:21+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -137,6 +137,60 @@ msgstr "必须以字母开头，只能包含小写字母、数字、点、破折
 msgid "Submit"
 msgstr "提交"
 
+#: templates/models/images/classification/new.html:10
+#: templates/models/images/classification/new.html:19
+msgid "New Image Classification Model"
+msgstr "新的图像分类模型"
+
+#: templates/models/images/classification/new.html:14
+#: templates/partials/home/model_pane.html:7
+msgid "New Model"
+msgstr "新建模型"
+
+#: templates/models/images/classification/new.html:46
+msgid "Python Layers"
+msgstr "Python层"
+
+#: templates/models/images/classification/new.html:107
+msgid "Solver Options"
+msgstr "解算器选项"
+
+#: templates/models/images/classification/new.html:180
+msgid "Show advanced learning rate options"
+msgstr "显示高级学习速率选项"
+
+#: templates/models/images/classification/new.html:271
+msgid "Visualize LR"
+msgstr "可视化LR"
+
+#: templates/models/images/classification/new.html:376
+msgid "Data Transformations"
+msgstr "数据转换"
+
+#: templates/models/images/classification/new.html:389
+msgid "Data Augmentations"
+msgstr "数据扩张"
+
+#: templates/models/images/classification/new.html:525
+msgid "Standard Networks"
+msgstr "标准的网络"
+
+#: templates/models/images/classification/new.html:526
+msgid "Previous Networks"
+msgstr "以前的网络"
+
+#: templates/models/images/classification/new.html:527
+msgid "Pretrained Networks"
+msgstr "预训练网络"
+
+#: templates/models/images/classification/new.html:528
+msgid "Custom Network"
+msgstr "自定义网络"
+
+#: templates/models/images/classification/new.html:703
+msgid "Visualize"
+msgstr "可视化"
+
 #: templates/partials/home/datasets_pane.html:7
 msgid "New Dataset"
 msgstr "新建数据集"
@@ -150,10 +204,6 @@ msgstr "作业组"
 #: templates/partials/home/datasets_pane.html:153
 msgid "No Datasets"
 msgstr "暂无数据集"
-
-#: templates/partials/home/model_pane.html:7
-msgid "New Model"
-msgstr "新建模型"
 
 #: templates/partials/home/model_pane.html:194
 msgid "No Models"
