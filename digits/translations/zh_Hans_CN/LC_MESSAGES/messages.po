@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-14 04:22-0700\n"
-"PO-Revision-Date: 2021-07-14 19:24+0800\n"
+"POT-Creation-Date: 2021-07-14 22:58-0700\n"
+"PO-Revision-Date: 2021-07-15 13:59+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -39,11 +39,11 @@ msgstr "从模型库检索"
 msgid "Processing"
 msgstr "处理中"
 
-#: extensions/data/imageSegmentation/data.py:149
+#: extensions/data/imageSegmentation/data.py:150
 msgid "Segmentation"
 msgstr "分割"
 
-#: extensions/data/objectDetection/data.py:171
+#: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
 msgstr "目标检测"
 
@@ -107,7 +107,7 @@ msgstr "预训练模型"
 msgid "Logout"
 msgstr "退出"
 
-#: templates/layout.html:52
+#: templates/layout.html:52 templates/login.html:9
 msgid "Login"
 msgstr "登录"
 
@@ -122,6 +122,20 @@ msgstr "版本"
 #: templates/layout.html:68
 msgid "About"
 msgstr "关于"
+
+#: templates/login.html:19
+msgid "Username"
+msgstr "用户名"
+
+#: templates/login.html:20
+msgid ""
+"Must begin with a letter and contain only lowercase letters, numbers, "
+"periods, dashes and underscores."
+msgstr "必须以字母开头，只能包含小写字母、数字、点、破折号和下划线。"
+
+#: templates/login.html:23
+msgid "Submit"
+msgstr "提交"
 
 #: templates/partials/home/datasets_pane.html:7
 msgid "New Dataset"
