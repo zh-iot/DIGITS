@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-15 04:23-0700\n"
-"PO-Revision-Date: 2021-07-16 09:25+0800\n"
+"POT-Creation-Date: 2021-07-16 01:48-0700\n"
+"PO-Revision-Date: 2021-07-16 16:52+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -85,8 +85,8 @@ msgstr "验证间隔(以epoch为单位)"
 
 #: model/forms.py:122
 msgid ""
-"How many epochs of training between running through one pass of the "
-"validation data?"
+"How many epochs of training between running through one pass of the validation "
+"data?"
 msgstr "在运行一遍验证数据之间有多少个训练阶段?"
 
 #: model/forms.py:126
@@ -103,11 +103,11 @@ msgstr "随机种子"
 
 #: model/forms.py:140
 msgid ""
-"If you provide a random seed, then back-to-back runs with the same model "
-"and dataset should give identical results."
+"If you provide a random seed, then back-to-back runs with the same model and "
+"dataset should give identical results."
 msgstr ""
-"如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同"
-"的结果。"
+"如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同的"
+"结果。"
 
 #: model/forms.py:144
 msgid "Batch size"
@@ -115,8 +115,8 @@ msgstr "批量大小"
 
 #: model/forms.py:149
 msgid ""
-"How many images to process at once. If blank, values are used from the "
-"network definition."
+"How many images to process at once. If blank, values are used from the network "
+"definition."
 msgstr "一次要处理多少图像。如果为空，则使用网络定义中的值。"
 
 #: model/forms.py:153
@@ -127,8 +127,7 @@ msgstr "批处理积累"
 msgid ""
 "Accumulate gradients over multiple batches (useful when you need a bigger "
 "batch size for training but it doesn't fit in memory)."
-msgstr ""
-"积累多个批次的梯度(当你需要更大的批次大小的训练，但它不适合内存时有用)。"
+msgstr "积累多个批次的梯度(当你需要更大的批次大小的训练，但它不适合内存时有用)。"
 
 #: model/forms.py:164
 msgid "Solver type"
@@ -191,8 +190,8 @@ msgstr "基础学习速率"
 
 #: model/forms.py:206
 msgid ""
-"Affects how quickly the network learns. If you are getting NaN for your "
-"loss, you probably need to lower this value."
+"Affects how quickly the network learns. If you are getting NaN for your loss, "
+"you probably need to lower this value."
 msgstr "影响网络学习的速度。如果您要为您的损失获得NaN，您可能需要降低这个值。"
 
 #: model/forms.py:210
@@ -332,6 +331,162 @@ msgstr "洗牌训练数据"
 msgid "For every epoch, shuffle the data before training."
 msgstr "对于每一个时代，训练前都要洗牌数据。"
 
+#: model/images/forms.py:16
+msgid "Crop Size"
+msgstr "作物的大小"
+
+#: model/images/forms.py:21
+msgid ""
+"If specified, during training a random square crop will be taken from the "
+"input image before using as input for the network."
+msgstr ""
+"如果指定，在训练期间，将从输入图像中随机选取一个方形裁剪，然后作为网络的输入。"
+
+#: model/images/forms.py:25
+msgid "Subtract Mean"
+msgstr "减去的意思"
+
+#: model/images/forms.py:27 model/images/forms.py:38 model/images/forms.py:50
+msgid "None"
+msgstr "没有"
+
+#: model/images/forms.py:28
+msgid "Image"
+msgstr "图像"
+
+#: model/images/forms.py:29
+msgid "Pixel"
+msgstr "像素"
+
+#: model/images/forms.py:32
+msgid "Subtract the mean file or mean pixel for this dataset from each image."
+msgstr "从每个图像中减去这个数据集的平均文件或平均像素。"
+
+#: model/images/forms.py:36
+msgid "Flipping"
+msgstr "翻转"
+
+#: model/images/forms.py:39
+msgid "Horizontal"
+msgstr "水平"
+
+#: model/images/forms.py:40
+msgid "Vertical"
+msgstr "垂直"
+
+#: model/images/forms.py:41
+msgid "Horizontal and/or Vertical"
+msgstr "水平或垂直"
+
+#: model/images/forms.py:44
+msgid "Randomly flips each image during batch preprocessing."
+msgstr "在批处理过程中随机翻转每个图像。"
+
+#: model/images/forms.py:48
+msgid "Quadrilateral Rotation"
+msgstr "四边形转动"
+
+#: model/images/forms.py:51
+msgid "0, 90 or 270 degrees"
+msgstr "0, 90或270度"
+
+#: model/images/forms.py:52
+msgid "0 or 180 degrees"
+msgstr "0°或180°"
+
+#: model/images/forms.py:53
+msgid "0, 90, 180 or 270 degrees."
+msgstr "0, 90, 180或270度。"
+
+#: model/images/forms.py:56
+msgid "Randomly rotates (90 degree steps) each image during batch preprocessing."
+msgstr "在批处理过程中随机旋转(90度步骤)每个图像。"
+
+#: model/images/forms.py:60
+msgid "Rotation (+- deg)"
+msgstr "旋转（+-deg）"
+
+#: model/images/forms.py:65
+msgid ""
+"The uniform-random rotation angle that will be performed during batch "
+"preprocessing."
+msgstr "在批预处理过程中执行的均匀-随机旋转角度。"
+
+#: model/images/forms.py:69
+msgid "Rescale (stddev)"
+msgstr "重新缩放（斯特德夫）"
+
+#: model/images/forms.py:74
+msgid ""
+"Retaining image size, the image is rescaled with a +-stddev of this parameter. "
+"Suggested value is 0.07."
+msgstr "保留图像大小，使用该参数的+-stddev重新缩放图像。建议值为0.07。"
+
+#: model/images/forms.py:78
+msgid "Noise (stddev)"
+msgstr "噪音（斯特德夫）"
+
+#: model/images/forms.py:83
+msgid ""
+"Adds AWGN (Additive White Gaussian Noise) during batch preprocessing, assuming "
+"[0 1] pixel-value range. Suggested value is 0.03."
+msgstr ""
+"批处理时加入AWGN (Additive White Gaussian Noise)，假设像素值范围为[0 1]。建议值"
+"为0.03。"
+
+#: model/images/forms.py:87
+msgid "Contrast (factor)"
+msgstr "对比(因素)"
+
+#: model/images/forms.py:92
+msgid ""
+"Per channel, the mean of the channel is computed and then adjusts each "
+"component x of each pixel to (x - mean) * contrast_factor + mean. The "
+"contrast_factor is picked form a random uniform distribution to yield a value "
+"between [1-contrast_factor, 1+contrast_factor]. Suggested value is 0.8."
+msgstr ""
+"每个通道，通道的平均值被计算，然后调整每个像素的每个分量x为(x -均值)*对比度因子"
+"+均值。对比度因子以随机均匀分布的形式被选取，其值在[1-对比度因子，1+对比度因子]"
+"之间。建议值为0.8。"
+
+#: model/images/forms.py:96
+msgid "Whitening"
+msgstr "美白"
+
+#: model/images/forms.py:99
+msgid ""
+"Per-image whitening by subtracting its own mean, and dividing by its own "
+"standard deviation."
+msgstr "每幅图像白化通过减去它自己的平均值，然后除以它自己的标准差。"
+
+#: model/images/forms.py:103
+msgid "HSV Shifting"
+msgstr "HSV转移"
+
+#: model/images/forms.py:105
+msgid ""
+"Augmentation by normal-distributed random shifts in HSV color space, assuming "
+"[0 1] pixel-value range."
+msgstr "在HSV颜色空间中，假设像素值范围为[0 1]，通过正态分布的随机位移进行增强。"
+
+#: model/images/forms.py:108
+msgid "Hue"
+msgstr "色调"
+
+#: model/images/forms.py:113 model/images/forms.py:121 model/images/forms.py:129
+msgid ""
+"Standard deviation of a shift that will be performed during preprocessing, "
+"assuming [0 1] pixel-value range."
+msgstr "假设像素值范围为[0 1]，在预处理期间将执行的移位的标准偏差。"
+
+#: model/images/forms.py:116
+msgid "Saturation"
+msgstr "饱和"
+
+#: model/images/forms.py:124
+msgid "Value"
+msgstr "价值"
+
 #: templates/home.html:27
 msgid "available"
 msgstr "可用"
@@ -414,8 +569,8 @@ msgstr "用户名"
 
 #: templates/login.html:20
 msgid ""
-"Must begin with a letter and contain only lowercase letters, numbers, "
-"periods, dashes and underscores."
+"Must begin with a letter and contain only lowercase letters, numbers, periods, "
+"dashes and underscores."
 msgstr "必须以字母开头，只能包含小写字母、数字、点、破折号和下划线。"
 
 #: templates/login.html:23
