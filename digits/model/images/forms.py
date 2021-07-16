@@ -5,6 +5,8 @@ from wtforms import validators
 
 from ..forms import ModelForm
 from digits import utils
+from flask_babel import Babel, gettext as _
+
 
 
 class ImageModelForm(ModelForm):
