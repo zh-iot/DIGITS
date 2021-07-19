@@ -13,7 +13,7 @@ from digits import utils
 from digits.utils import sizeof_fmt
 from digits.utils.forms import validate_required_iff
 from digits import frameworks
-from flask_babel import Babel, gettext as _
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 
 class ModelForm(Form):
@@ -69,9 +69,9 @@ class ModelForm(Form):
 
     # The options for this get set in the view (since they are dynamic)
     dataset = utils.forms.SelectField(
-        _('Select Dataset'),
+        lazy_gettext('Select Dataset'),
         choices=[],
-        tooltip=_("Choose the dataset to use for this model.")
+        tooltip=lazy_gettext("Choose the dataset to use for this model.")
     )
 
     python_layer_from_client = utils.forms.BooleanField(
@@ -84,7 +84,7 @@ class ModelForm(Form):
         validators=[
             validate_py_ext
         ],
-        tooltip=_("Choose a Python file on the client containing layer definitions.")
+        tooltip=lazy_gettext("Choose a Python file on the client containing layer definitions.")
     )
     python_layer_server_file = utils.forms.StringField(
         u'Server-side file',
@@ -92,89 +92,89 @@ class ModelForm(Form):
             validate_file_exists,
             validate_py_ext
         ],
-        tooltip=_("Choose a Python file on the server containing layer definitions.")
+        tooltip=lazy_gettext("Choose a Python file on the server containing layer definitions.")
     )
 
     train_epochs = utils.forms.IntegerField(
-        _('Training epochs'),
+        lazy_gettext('Training epochs'),
         validators=[
             validators.NumberRange(min=1)
         ],
         default=30,
-        tooltip=_("How many passes through the training data?")
+        tooltip=lazy_gettext("How many passes through the training data?")
     )
 
     snapshot_interval = utils.forms.FloatField(
-        _('Snapshot interval (in epochs)'),
+        lazy_gettext('Snapshot interval (in epochs)'),
         default=1,
         validators=[
             validators.NumberRange(min=0),
         ],
-        tooltip=_("How many epochs of training between taking a snapshot?")
+        tooltip=lazy_gettext("How many epochs of training between taking a snapshot?")
     )
 
     val_interval = utils.forms.FloatField(
-        _('Validation interval (in epochs)'),
+        lazy_gettext('Validation interval (in epochs)'),
         default=1,
         validators=[
             validators.NumberRange(min=0)
         ],
-        tooltip=_("How many epochs of training between running through one pass of the validation data?")
+        tooltip=lazy_gettext("How many epochs of training between running through one pass of the validation data?")
     )
 
     traces_interval = utils.forms.IntegerField(
-        _('Tracing Interval (in steps)'),
+        lazy_gettext('Tracing Interval (in steps)'),
         validators=[
             validators.NumberRange(min=0)
         ],
         default=0,
-        tooltip=_("Generation of a timeline trace every few steps")
+        tooltip=lazy_gettext("Generation of a timeline trace every few steps")
     )
 
     random_seed = utils.forms.IntegerField(
-        _('Random seed'),
+        lazy_gettext('Random seed'),
         validators=[
             validators.NumberRange(min=0),
             validators.Optional(),
         ],
-        tooltip=(_('If you provide a random seed, then back-to-back runs with the same model and dataset should give identical results.'))
+        tooltip=(lazy_gettext('If you provide a random seed, then back-to-back runs with the same model and dataset should give identical results.'))
     )
 
     batch_size = utils.forms.MultiIntegerField(
-        _('Batch size'),
+        lazy_gettext('Batch size'),
         validators=[
             utils.forms.MultiNumberRange(min=1),
             utils.forms.MultiOptional(),
         ],
-        tooltip=_("How many images to process at once. If blank, values are used from the network definition.")
+        tooltip=lazy_gettext("How many images to process at once. If blank, values are used from the network definition.")
     )
 
     batch_accumulation = utils.forms.IntegerField(
-        _('Batch Accumulation'),
+        lazy_gettext('Batch Accumulation'),
         validators=[
             validators.NumberRange(min=1),
             validators.Optional(),
         ],
-        tooltip=_("Accumulate gradients over multiple batches (useful when you need a bigger batch size for training but it doesn't fit in memory).")
+        tooltip=lazy_gettext("Accumulate gradients over multiple batches (useful when you need a bigger batch size for training but it doesn't fit in memory).")
     )
 
     # Solver types
 
     solver_type = utils.forms.SelectField(
-        _('Solver type'),
+        lazy_gettext('Solver type'),
         choices=[
-            ('SGD', _('SGD (Stochastic Gradient Descent)')),
-            ('MOMENTUM', _('Momentum')),
-            ('NESTEROV', _("NAG (Nesterov's accelerated gradient)")),
-            ('ADAGRAD', _('AdaGrad (Adaptive Gradient)')),
-            ('ADAGRADDA', _('AdaGradDA (AdaGrad Dual Averaging)')),
-            ('ADADELTA', _('AdaDelta')),
-            ('ADAM', _('Adam (Adaptive Moment Estimation)')),
-            ('RMSPROP', _('RMSprop')),
-            ('FTRL', _('FTRL (Follow-The-Regularized-Leader)')),
+            ('SGD', lazy_gettext('SGD (Stochastic Gradient Descent)')),
+            ('MOMENTUM', lazy_gettext('Momentum')),
+            ('NESTEROV', lazy_gettext("NAG (Nesterov's accelerated gradient)")),
+            ('ADAGRAD', lazy_gettext('AdaGrad (Adaptive Gradient)')),
+            ('ADAGRADDA', lazy_gettext('AdaGradDA (AdaGrad Dual Averaging)')),
+            ('ADADELTA', lazy_gettext('AdaDelta')),
+            ('ADAM', lazy_gettext('Adam (Adaptive Moment Estimation)')),
+            ('RMSPROP', lazy_gettext('RMSprop')),
+            ('FTRL', lazy_gettext('FTRL (Follow-The-Regularized-Leader)')),
         ],
         default='SGD',
-        tooltip=_("What type of solver will be used?"),
+        tooltip=lazy_gettext("What type of solver will be used?"),
     )
 
     def validate_solver_type(form, field):
@@ -187,42 +187,42 @@ class ModelForm(Form):
     # Additional settings specific to selected solver
 
     rms_decay = utils.forms.FloatField(
-        _('RMS decay value'),
+        lazy_gettext('RMS decay value'),
         default=0.99,
         validators=[
             validators.NumberRange(min=0),
         ],
-        tooltip=_("If the gradient updates results in oscillations the gradient is reduced by times 1-rms_decay. Otherwise it will be increased by rms_decay.")
+        tooltip=lazy_gettext("If the gradient updates results in oscillations the gradient is reduced by times 1-rms_decay. Otherwise it will be increased by rms_decay.")
     )
 
     # Learning rate
 
     learning_rate = utils.forms.MultiFloatField(
-        _('Base Learning Rate'),
+        lazy_gettext('Base Learning Rate'),
         default=0.01,
         validators=[
             utils.forms.MultiNumberRange(min=0),
         ],
-        tooltip=_("Affects how quickly the network learns. If you are getting NaN for your loss, you probably need to lower this value.")
+        tooltip=lazy_gettext("Affects how quickly the network learns. If you are getting NaN for your loss, you probably need to lower this value.")
     )
 
     lr_policy = wtforms.SelectField(
-        _('Policy'),
+        lazy_gettext('Policy'),
         choices=[
-            ('fixed', _('Fixed')),
-            ('step', _('Step Down')),
-            ('multistep', _('Step Down (arbitrary steps)')),
-            ('exp', _('Exponential Decay')),
-            ('inv', _('Inverse Decay')),
-            ('poly', _('Polynomial Decay')),
-            ('sigmoid', _('Sigmoid Decay')),
+            ('fixed', lazy_gettext('Fixed')),
+            ('step', lazy_gettext('Step Down')),
+            ('multistep', lazy_gettext('Step Down (arbitrary steps)')),
+            ('exp', lazy_gettext('Exponential Decay')),
+            ('inv', lazy_gettext('Inverse Decay')),
+            ('poly', lazy_gettext('Polynomial Decay')),
+            ('sigmoid', lazy_gettext('Sigmoid Decay')),
         ],
         default='step'
     )
 
-    lr_step_size = wtforms.FloatField(_('Step Size'), default=33)
-    lr_step_gamma = wtforms.FloatField(_('Gamma'), default=0.1)
-    lr_multistep_values = wtforms.StringField(_('Step Values'), default="50,85")
+    lr_step_size = wtforms.FloatField(lazy_gettext('Step Size'), default=33)
+    lr_step_gamma = wtforms.FloatField(lazy_gettext('Gamma'), default=0.1)
+    lr_multistep_values = wtforms.StringField(lazy_gettext('Step Values'), default="50,85")
 
     def validate_lr_multistep_values(form, field):
         if form.lr_policy.data == 'multistep':
@@ -232,13 +232,13 @@ class ModelForm(Form):
                 except ValueError:
                     raise validators.ValidationError('invalid value')
 
-    lr_multistep_gamma = wtforms.FloatField(_('Gamma'), default=0.5)
-    lr_exp_gamma = wtforms.FloatField(_('Gamma'), default=0.95)
-    lr_inv_gamma = wtforms.FloatField(_('Gamma'), default=0.1)
-    lr_inv_power = wtforms.FloatField(_('Power'), default=0.5)
-    lr_poly_power = wtforms.FloatField(_('Power'), default=3)
-    lr_sigmoid_step = wtforms.FloatField(_('Step'), default=50)
-    lr_sigmoid_gamma = wtforms.FloatField(_('Gamma'), default=0.1)
+    lr_multistep_gamma = wtforms.FloatField(lazy_gettext('Gamma'), default=0.5)
+    lr_exp_gamma = wtforms.FloatField(lazy_gettext('Gamma'), default=0.95)
+    lr_inv_gamma = wtforms.FloatField(lazy_gettext('Gamma'), default=0.1)
+    lr_inv_power = wtforms.FloatField(lazy_gettext('Power'), default=0.5)
+    lr_poly_power = wtforms.FloatField(lazy_gettext('Power'), default=3)
+    lr_sigmoid_step = wtforms.FloatField(lazy_gettext('Step'), default=50)
+    lr_sigmoid_gamma = wtforms.FloatField(lazy_gettext('Gamma'), default=0.1)
 
     # Network
 
@@ -247,10 +247,10 @@ class ModelForm(Form):
     method = wtforms.SelectField(
         u'Network type',
         choices=[
-            ('standard', _('Standard network')),
-            ('previous', _('Previous network')),
-            ('pretrained', _('Pretrained network')),
-            ('custom', _('Custom network')),
+            ('standard', lazy_gettext('Standard network')),
+            ('previous', lazy_gettext('Previous network')),
+            ('pretrained', lazy_gettext('Pretrained network')),
+            ('custom', lazy_gettext('Custom network')),
         ],
         default='standard',
     )
@@ -261,7 +261,7 @@ class ModelForm(Form):
         validators=[
             validators.AnyOf(
                 [fw.get_id() for fw in frameworks.get_frameworks()],
-                message=_('The framework you choose is not currently supported.')
+                message=lazy_gettext('The framework you choose is not currently supported.')
             )
         ],
         default=frameworks.get_frameworks()[0].get_id()
@@ -269,14 +269,14 @@ class ModelForm(Form):
 
     # The options for this get set in the view (since they are dependent on the data type)
     standard_networks = wtforms.RadioField(
-        _('Standard Networks'),
+        lazy_gettext('Standard Networks'),
         validators=[
             validate_required_iff(method='standard'),
         ],
     )
 
     previous_networks = wtforms.RadioField(
-        _('Previous Networks'),
+        lazy_gettext('Previous Networks'),
         choices=[],
         validators=[
             validate_required_iff(method='previous'),
@@ -285,7 +285,7 @@ class ModelForm(Form):
     )
 
     pretrained_networks = wtforms.RadioField(
-        _('Pretrained Networks'),
+        lazy_gettext('Pretrained Networks'),
         choices=[],
         validators=[
             validate_required_iff(method='pretrained'),
@@ -294,7 +294,7 @@ class ModelForm(Form):
     )
 
     custom_network = utils.forms.TextAreaField(
-        _('Custom Network'),
+        lazy_gettext('Custom Network'),
         validators=[
             validate_required_iff(method='custom'),
             validate_NetParameter,
@@ -302,7 +302,7 @@ class ModelForm(Form):
     )
 
     custom_network_snapshot = utils.forms.TextField(
-        _('Pretrained model(s)'),
+        lazy_gettext('Pretrained model(s)'),
         tooltip=("Paths to pretrained model files, separated by '%s'. "
                  "Only edit this field if you understand how fine-tuning "
                  "works in caffe or torch." % os.path.pathsep)
@@ -317,7 +317,7 @@ class ModelForm(Form):
 
     # Select one of several GPUs
     select_gpu = wtforms.RadioField(
-        _('Select which GPU you would like to use'),
+        lazy_gettext('Select which GPU you would like to use'),
         choices=[('next', 'Next available')] + [(
             index,
             '#%s - %s (%s memory)' % (
@@ -334,7 +334,7 @@ class ModelForm(Form):
 
     # Select N of several GPUs
     select_gpus = utils.forms.SelectMultipleField(
-        _('Select which GPU[s] you would like to use'),
+        lazy_gettext('Select which GPU[s] you would like to use'),
         choices=[(
             index,
             '#%s - %s (%s memory)' % (
@@ -346,19 +346,19 @@ class ModelForm(Form):
                     else get_device(index).totalGlobalMem)
             ),
         ) for index in config_value('gpu_list').split(',') if index],
-        tooltip=_("The job won't start until all of the chosen GPUs are available.")
+        tooltip=lazy_gettext("The job won't start until all of the chosen GPUs are available.")
     )
 
     # XXX For testing
     # The Flask test framework can't handle SelectMultipleFields correctly
-    select_gpus_list = wtforms.StringField(_('Select which GPU[s] you would like to use (comma separated)'))
+    select_gpus_list = wtforms.StringField(lazy_gettext('Select which GPU[s] you would like to use (comma separated)'))
 
     def validate_select_gpus(form, field):
         if form.select_gpus_list.data:
             field.data = form.select_gpus_list.data.split(',')
 
     # Use next available N GPUs
-    select_gpu_count = wtforms.IntegerField(_('Use this many GPUs (next available)'),
+    select_gpu_count = wtforms.IntegerField(lazy_gettext('Use this many GPUs (next available)'),
                                             validators=[
                                                 validators.NumberRange(min=1, max=len(
                                                     config_value('gpu_list').split(',')))
@@ -373,20 +373,20 @@ class ModelForm(Form):
                 field.errors[:] = []
                 raise validators.StopValidation()
 
-    model_name = utils.forms.StringField(_('Model Name'),
+    model_name = utils.forms.StringField(lazy_gettext('Model Name'),
                                          validators=[
                                              validators.DataRequired()
                                          ],
-                                         tooltip=_("An identifier, later used to refer to this model in the Application.")
+                                         tooltip=lazy_gettext("An identifier, later used to refer to this model in the Application.")
                                          )
 
-    group_name = utils.forms.StringField(_('Group Name'),
-                                         tooltip=_("An optional group name for organization on the main page.")
+    group_name = utils.forms.StringField(lazy_gettext('Group Name'),
+                                         tooltip=lazy_gettext("An optional group name for organization on the main page.")
                                          )
 
     # allows shuffling data during training (for frameworks that support this, as indicated by
     # their Framework.can_shuffle_data() method)
-    shuffle = utils.forms.BooleanField(_('Shuffle Train Data'),
+    shuffle = utils.forms.BooleanField(lazy_gettext('Shuffle Train Data'),
                                        default=True,
-                                       tooltip=_('For every epoch, shuffle the data before training.')
+                                       tooltip=lazy_gettext('For every epoch, shuffle the data before training.')
                                        )

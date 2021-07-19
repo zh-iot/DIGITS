@@ -4,6 +4,9 @@ import argparse
 import os.path
 import sys
 
+# 解决lazy_gettext encode bug
+reload(sys)
+sys.setdefaultencoding('utf8') 
 
 # Update PATH to include the local DIGITS directory
 PARENT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
