@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-18 23:29-0700\n"
+"POT-Creation-Date: 2021-07-18 23:47-0700\n"
 "PO-Revision-Date: 2021-07-16 16:52+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
@@ -53,15 +53,15 @@ msgstr "新建数据集"
 
 #: model/forms.py:74
 msgid "Choose the dataset to use for this model."
-msgstr ""
+msgstr "选择要用于此模型的数据集。"
 
 #: model/forms.py:87
 msgid "Choose a Python file on the client containing layer definitions."
-msgstr ""
+msgstr "在客户端上选择一个包含层定义的Python文件。"
 
 #: model/forms.py:95
 msgid "Choose a Python file on the server containing layer definitions."
-msgstr ""
+msgstr "在服务器上选择一个包含层定义的Python文件。"
 
 #: model/forms.py:99
 msgid "Training epochs"
