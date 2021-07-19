@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-18 23:47-0700\n"
-"PO-Revision-Date: 2021-07-16 16:52+0800\n"
+"POT-Creation-Date: 2021-07-18 23:57-0700\n"
+"PO-Revision-Date: 2021-07-19 15:16+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0\n"
 
 #: views.py:59 views.py:74
 msgid "Classification"
@@ -47,9 +48,8 @@ msgid "Object Detection"
 msgstr "目标检测"
 
 #: model/forms.py:72
-#, fuzzy
 msgid "Select Dataset"
-msgstr "新建数据集"
+msgstr "选择数据集"
 
 #: model/forms.py:74
 msgid "Choose the dataset to use for this model."
@@ -65,209 +65,207 @@ msgstr "在服务器上选择一个包含层定义的Python文件。"
 
 #: model/forms.py:99
 msgid "Training epochs"
-msgstr ""
+msgstr "培训的时代"
 
 #: model/forms.py:104
 msgid "How many passes through the training data?"
-msgstr ""
+msgstr "经过多少次训练数据?"
 
 #: model/forms.py:108
 msgid "Snapshot interval (in epochs)"
-msgstr ""
+msgstr "快照间隔(以epoch为单位)"
 
 #: model/forms.py:113
 msgid "How many epochs of training between taking a snapshot?"
-msgstr ""
+msgstr "在拍摄快照之间有多少次训练?"
 
 #: model/forms.py:117
 msgid "Validation interval (in epochs)"
-msgstr ""
+msgstr "验证间隔(以epoch为单位)"
 
 #: model/forms.py:122
 msgid ""
-"How many epochs of training between running through one pass of the "
-"validation data?"
-msgstr ""
+"How many epochs of training between running through one pass of the validation "
+"data?"
+msgstr "在运行一遍验证数据之间有多少个训练阶段?"
 
 #: model/forms.py:126
 msgid "Tracing Interval (in steps)"
-msgstr ""
+msgstr "跟踪时间间隔(以步骤为单位)"
 
 #: model/forms.py:131
 msgid "Generation of a timeline trace every few steps"
-msgstr ""
+msgstr "每隔几步生成一个时间轴跟踪"
 
 #: model/forms.py:135
 msgid "Random seed"
-msgstr ""
+msgstr "随机种子"
 
 #: model/forms.py:140
 msgid ""
-"If you provide a random seed, then back-to-back runs with the same model "
-"and dataset should give identical results."
+"If you provide a random seed, then back-to-back runs with the same model and "
+"dataset should give identical results."
 msgstr ""
+"如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同的"
+"结果。"
 
 #: model/forms.py:144
 msgid "Batch size"
-msgstr ""
+msgstr "批量大小"
 
 #: model/forms.py:149
 msgid ""
-"How many images to process at once. If blank, values are used from the "
-"network definition."
-msgstr ""
+"How many images to process at once. If blank, values are used from the network "
+"definition."
+msgstr "一次要处理多少图像。如果为空，则使用网络定义中的值。"
 
 #: model/forms.py:153
 msgid "Batch Accumulation"
-msgstr ""
+msgstr "批处理积累"
 
 #: model/forms.py:158
 msgid ""
-"Accumulate gradients over multiple batches (useful when you need a bigger"
-" batch size for training but it doesn't fit in memory)."
-msgstr ""
+"Accumulate gradients over multiple batches (useful when you need a bigger "
+"batch size for training but it doesn't fit in memory)."
+msgstr "积累多个批次的梯度(当你需要更大的批次大小的训练，但它不适合内存时有用)。"
 
 #: model/forms.py:164
 msgid "Solver type"
-msgstr ""
+msgstr "解算器类型"
 
 #: model/forms.py:166
 msgid "SGD (Stochastic Gradient Descent)"
-msgstr ""
+msgstr "随机梯度下降法"
 
 #: model/forms.py:167
 msgid "Momentum"
-msgstr ""
+msgstr "动力"
 
 #: model/forms.py:168
 msgid "NAG (Nesterov's accelerated gradient)"
-msgstr ""
+msgstr "涅斯捷洛夫加速梯度"
 
 #: model/forms.py:169
 msgid "AdaGrad (Adaptive Gradient)"
-msgstr ""
+msgstr "AdaGrad(自适应梯度)"
 
 #: model/forms.py:170
 msgid "AdaGradDA (AdaGrad Dual Averaging)"
-msgstr ""
+msgstr "AdaGrad双平均法"
 
 #: model/forms.py:171
 msgid "AdaDelta"
-msgstr ""
+msgstr "AdaDelta"
 
 #: model/forms.py:172
 msgid "Adam (Adaptive Moment Estimation)"
-msgstr ""
+msgstr "Adam(自适应矩估计)"
 
 #: model/forms.py:173
 msgid "RMSprop"
-msgstr ""
+msgstr "RMS属性"
 
 #: model/forms.py:174
 msgid "FTRL (Follow-The-Regularized-Leader)"
-msgstr ""
+msgstr "FTRL (Follow-The-Regularized-Leader)"
 
 #: model/forms.py:177
 msgid "What type of solver will be used?"
-msgstr ""
+msgstr "将使用什么类型的求解器?"
 
 #: model/forms.py:190
 msgid "RMS decay value"
-msgstr ""
+msgstr "RMS衰减值"
 
 #: model/forms.py:195
 msgid ""
-"If the gradient updates results in oscillations the gradient is reduced "
-"by times 1-rms_decay. Otherwise it will be increased by rms_decay."
+"If the gradient updates results in oscillations the gradient is reduced by "
+"times 1-rms_decay. Otherwise it will be increased by rms_decay."
 msgstr ""
+"如果梯度更新导致振荡，则梯度减小乘以1-rms_decay。否则将通过rms_decay增加。"
 
 #: model/forms.py:201
-#, fuzzy
 msgid "Base Learning Rate"
-msgstr "显示高级学习速率选项"
+msgstr "基础学习速率"
 
 #: model/forms.py:206
 msgid ""
-"Affects how quickly the network learns. If you are getting NaN for your "
-"loss, you probably need to lower this value."
-msgstr ""
+"Affects how quickly the network learns. If you are getting NaN for your loss, "
+"you probably need to lower this value."
+msgstr "影响网络学习的速度。如果您要为您的损失获得NaN，您可能需要降低这个值。"
 
 #: model/forms.py:210
 msgid "Policy"
-msgstr ""
+msgstr "政策"
 
 #: model/forms.py:212
 msgid "Fixed"
-msgstr ""
+msgstr "固定"
 
 #: model/forms.py:213
 msgid "Step Down"
-msgstr ""
+msgstr "退位"
 
 #: model/forms.py:214
 msgid "Step Down (arbitrary steps)"
-msgstr ""
+msgstr "退位(任意步骤)"
 
 #: model/forms.py:215
 msgid "Exponential Decay"
-msgstr ""
+msgstr "指数衰减"
 
 #: model/forms.py:216
 msgid "Inverse Decay"
-msgstr ""
+msgstr "逆衰减"
 
 #: model/forms.py:217
 msgid "Polynomial Decay"
-msgstr ""
+msgstr "多项式衰减"
 
 #: model/forms.py:218
 msgid "Sigmoid Decay"
-msgstr ""
+msgstr "S形递减"
 
 #: model/forms.py:223
 msgid "Step Size"
-msgstr ""
+msgstr "步长"
 
 #: model/forms.py:224 model/forms.py:235 model/forms.py:236 model/forms.py:237
 #: model/forms.py:241
 msgid "Gamma"
-msgstr ""
+msgstr "γ"
 
 #: model/forms.py:225
 msgid "Step Values"
-msgstr ""
+msgstr "步的值"
 
 #: model/forms.py:238 model/forms.py:239
 msgid "Power"
-msgstr ""
+msgstr "电源"
 
 #: model/forms.py:240
 msgid "Step"
-msgstr ""
+msgstr "一步"
 
 #: model/forms.py:250
-#, fuzzy
 msgid "Standard network"
 msgstr "标准的网络"
 
 #: model/forms.py:251
-#, fuzzy
 msgid "Previous network"
 msgstr "以前的网络"
 
 #: model/forms.py:252
-#, fuzzy
 msgid "Pretrained network"
 msgstr "预训练网络"
 
 #: model/forms.py:253
-#, fuzzy
 msgid "Custom network"
 msgstr "自定义网络"
 
 #: model/forms.py:264
 msgid "The framework you choose is not currently supported."
-msgstr ""
+msgstr "您所选择的框架目前不受支持。"
 
 #: model/forms.py:272 templates/models/images/classification/new.html:525
 msgid "Standard Networks"
@@ -286,206 +284,208 @@ msgid "Custom Network"
 msgstr "自定义网络"
 
 #: model/forms.py:305
-#, fuzzy
 msgid "Pretrained model(s)"
 msgstr "预训练模型"
 
 #: model/forms.py:320
 msgid "Select which GPU you would like to use"
-msgstr ""
+msgstr "选择你想要使用的图形处理器"
 
 #: model/forms.py:337
 msgid "Select which GPU[s] you would like to use"
-msgstr ""
+msgstr "选择您想要使用的图形处理器"
 
 #: model/forms.py:349
 msgid "The job won't start until all of the chosen GPUs are available."
-msgstr ""
+msgstr "在所有选定的gpu可用之前，作业不会启动。"
 
 #: model/forms.py:354
 msgid "Select which GPU[s] you would like to use (comma separated)"
-msgstr ""
+msgstr "选择你想要使用的GPU(逗号分隔)"
 
 #: model/forms.py:361
 msgid "Use this many GPUs (next available)"
-msgstr ""
+msgstr "使用这些gpu(下一个可用的)"
 
 #: model/forms.py:376
 msgid "Model Name"
-msgstr ""
+msgstr "模型名称"
 
 #: model/forms.py:380
 msgid "An identifier, later used to refer to this model in the Application."
-msgstr ""
+msgstr "一个标识符，稍后用于在应用程序中引用此模型。"
 
 #: model/forms.py:383
-#, fuzzy
 msgid "Group Name"
-msgstr "未分组"
+msgstr "组名称"
 
 #: model/forms.py:384
 msgid "An optional group name for organization on the main page."
-msgstr ""
+msgstr "可选的组名，用于在主页面上的组织。"
 
 #: model/forms.py:389
 msgid "Shuffle Train Data"
-msgstr ""
+msgstr "洗牌训练数据"
 
 #: model/forms.py:391
 msgid "For every epoch, shuffle the data before training."
-msgstr ""
+msgstr "对于每一个时代，训练前都要洗牌数据。"
 
 #: model/images/forms.py:18
 msgid "Crop Size"
-msgstr ""
+msgstr "作物的大小"
 
 #: model/images/forms.py:23
 msgid ""
-"If specified, during training a random square crop will be taken from the"
-" input image before using as input for the network."
+"If specified, during training a random square crop will be taken from the "
+"input image before using as input for the network."
 msgstr ""
+"如果指定，在训练期间，将从输入图像中随机选取一个方形裁剪，然后作为网络的输入。"
 
 #: model/images/forms.py:27
 msgid "Subtract Mean"
-msgstr ""
+msgstr "减去的意思"
 
 #: model/images/forms.py:29 model/images/forms.py:40 model/images/forms.py:52
 msgid "None"
-msgstr ""
+msgstr "没有一个"
 
 #: model/images/forms.py:30
 msgid "Image"
-msgstr ""
+msgstr "图像"
 
 #: model/images/forms.py:31
 msgid "Pixel"
-msgstr ""
+msgstr "像素"
 
 #: model/images/forms.py:34
 msgid "Subtract the mean file or mean pixel for this dataset from each image."
-msgstr ""
+msgstr "从每个图像中减去这个数据集的平均文件或平均像素。"
 
 #: model/images/forms.py:38
 msgid "Flipping"
-msgstr ""
+msgstr "翻转"
 
 #: model/images/forms.py:41
 msgid "Horizontal"
-msgstr ""
+msgstr "水平"
 
 #: model/images/forms.py:42
 msgid "Vertical"
-msgstr ""
+msgstr "垂直"
 
 #: model/images/forms.py:43
 msgid "Horizontal and/or Vertical"
-msgstr ""
+msgstr "水平或垂直"
 
 #: model/images/forms.py:46
 msgid "Randomly flips each image during batch preprocessing."
-msgstr ""
+msgstr "在批处理过程中随机翻转每个图像。"
 
 #: model/images/forms.py:50
 msgid "Quadrilateral Rotation"
-msgstr ""
+msgstr "四边形转动"
 
 #: model/images/forms.py:53
 msgid "0, 90 or 270 degrees"
-msgstr ""
+msgstr "0, 90或270度"
 
 #: model/images/forms.py:54
 msgid "0 or 180 degrees"
-msgstr ""
+msgstr "0°或180°"
 
 #: model/images/forms.py:55
 msgid "0, 90, 180 or 270 degrees."
-msgstr ""
+msgstr "0, 90, 180或270度。"
 
 #: model/images/forms.py:58
 msgid "Randomly rotates (90 degree steps) each image during batch preprocessing."
-msgstr ""
+msgstr "在批处理过程中随机旋转(90度步骤)每个图像。"
 
 #: model/images/forms.py:62
 msgid "Rotation (+- deg)"
-msgstr ""
+msgstr "旋转（+-deg）"
 
 #: model/images/forms.py:67
 msgid ""
 "The uniform-random rotation angle that will be performed during batch "
 "preprocessing."
-msgstr ""
+msgstr "在批预处理过程中执行的均匀-随机旋转角度。"
 
 #: model/images/forms.py:71
 msgid "Rescale (stddev)"
-msgstr ""
+msgstr "重新缩放（斯特德夫）"
 
 #: model/images/forms.py:76
 msgid ""
-"Retaining image size, the image is rescaled with a +-stddev of this "
-"parameter. Suggested value is 0.07."
-msgstr ""
+"Retaining image size, the image is rescaled with a +-stddev of this parameter. "
+"Suggested value is 0.07."
+msgstr "保留图像大小，使用该参数的+-stddev重新缩放图像。建议值为0.07。"
 
 #: model/images/forms.py:80
 msgid "Noise (stddev)"
-msgstr ""
+msgstr "噪音（斯特德夫）"
 
 #: model/images/forms.py:85
 msgid ""
-"Adds AWGN (Additive White Gaussian Noise) during batch preprocessing, "
-"assuming [0 1] pixel-value range. Suggested value is 0.03."
+"Adds AWGN (Additive White Gaussian Noise) during batch preprocessing, assuming "
+"[0 1] pixel-value range. Suggested value is 0.03."
 msgstr ""
+"批处理时加入AWGN (Additive White Gaussian Noise)，假设像素值范围为[0 1]。建议值"
+"为0.03。"
 
 #: model/images/forms.py:89
 msgid "Contrast (factor)"
-msgstr ""
+msgstr "对比(因素)"
 
 #: model/images/forms.py:94
 msgid ""
 "Per channel, the mean of the channel is computed and then adjusts each "
 "component x of each pixel to (x - mean) * contrast_factor + mean. The "
-"contrast_factor is picked form a random uniform distribution to yield a "
-"value between [1-contrast_factor, 1+contrast_factor]. Suggested value is "
-"0.8."
+"contrast_factor is picked form a random uniform distribution to yield a value "
+"between [1-contrast_factor, 1+contrast_factor]. Suggested value is 0.8."
 msgstr ""
+"每个通道，通道的平均值被计算，然后调整每个像素的每个分量x为(x -均值)*对比度因子"
+"+均值。对比度因子以随机均匀分布的形式被选取，其值在[1-对比度因子，1+对比度因子]"
+"之间。建议值为0.8。"
 
 #: model/images/forms.py:98
 msgid "Whitening"
-msgstr ""
+msgstr "美白"
 
 #: model/images/forms.py:101
 msgid ""
 "Per-image whitening by subtracting its own mean, and dividing by its own "
 "standard deviation."
-msgstr ""
+msgstr "每幅图像白化通过减去它自己的平均值，然后除以它自己的标准差。"
 
 #: model/images/forms.py:105
 msgid "HSV Shifting"
-msgstr ""
+msgstr "HSV转移"
 
 #: model/images/forms.py:107
 msgid ""
-"Augmentation by normal-distributed random shifts in HSV color space, "
-"assuming [0 1] pixel-value range."
-msgstr ""
+"Augmentation by normal-distributed random shifts in HSV color space, assuming "
+"[0 1] pixel-value range."
+msgstr "在HSV颜色空间中，假设像素值范围为[0 1]，通过正态分布的随机位移进行增强。"
 
 #: model/images/forms.py:110
 msgid "Hue"
-msgstr ""
+msgstr "色调"
 
-#: model/images/forms.py:115 model/images/forms.py:123
-#: model/images/forms.py:131
+#: model/images/forms.py:115 model/images/forms.py:123 model/images/forms.py:131
 msgid ""
-"Standard deviation of a shift that will be performed during "
-"preprocessing, assuming [0 1] pixel-value range."
-msgstr ""
+"Standard deviation of a shift that will be performed during preprocessing, "
+"assuming [0 1] pixel-value range."
+msgstr "假设像素值范围为[0 1]，在预处理期间将执行的移位的标准偏差。"
 
 #: model/images/forms.py:118
 msgid "Saturation"
-msgstr ""
+msgstr "饱和"
 
 #: model/images/forms.py:126
 msgid "Value"
-msgstr ""
+msgstr "值"
 
 #: templates/home.html:27
 msgid "available"
@@ -569,8 +569,8 @@ msgstr "用户名"
 
 #: templates/login.html:20
 msgid ""
-"Must begin with a letter and contain only lowercase letters, numbers, "
-"periods, dashes and underscores."
+"Must begin with a letter and contain only lowercase letters, numbers, periods, "
+"dashes and underscores."
 msgstr "必须以字母开头，只能包含小写字母、数字、点、破折号和下划线。"
 
 #: templates/login.html:23
@@ -682,349 +682,3 @@ msgstr ""
 #, python-format
 msgid "Number %(data)s must be less than %(max)s."
 msgstr ""
-
-#~ msgid "Select Dataset"
-#~ msgstr "选择数据集"
-
-#~ msgid "Choose the dataset to use for this model."
-#~ msgstr "选择要用于此模型的数据集。"
-
-#~ msgid "Choose a Python file on the client containing layer definitions."
-#~ msgstr "在客户端上选择一个包含层定义的Python文件。"
-
-#~ msgid "Choose a Python file on the server containing layer definitions."
-#~ msgstr "在服务器上选择一个包含层定义的Python文件。"
-
-#~ msgid "Training epochs"
-#~ msgstr "培训的时代"
-
-#~ msgid "How many passes through the training data?"
-#~ msgstr "经过多少次训练数据?"
-
-#~ msgid "Snapshot interval (in epochs)"
-#~ msgstr "快照间隔(以epoch为单位)"
-
-#~ msgid "How many epochs of training between taking a snapshot?"
-#~ msgstr "在拍摄快照之间有多少次训练?"
-
-#~ msgid "Validation interval (in epochs)"
-#~ msgstr "验证间隔(以epoch为单位)"
-
-#~ msgid ""
-#~ "How many epochs of training between "
-#~ "running through one pass of the "
-#~ "validation data?"
-#~ msgstr "在运行一遍验证数据之间有多少个训练阶段?"
-
-#~ msgid "Tracing Interval (in steps)"
-#~ msgstr "跟踪时间间隔(以步骤为单位)"
-
-#~ msgid "Generation of a timeline trace every few steps"
-#~ msgstr "每隔几步生成一个时间轴跟踪"
-
-#~ msgid "Random seed"
-#~ msgstr "随机种子"
-
-#~ msgid ""
-#~ "If you provide a random seed, then"
-#~ " back-to-back runs with the "
-#~ "same model and dataset should give "
-#~ "identical results."
-#~ msgstr "如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同的结果。"
-
-#~ msgid "Batch size"
-#~ msgstr "批量大小"
-
-#~ msgid ""
-#~ "How many images to process at "
-#~ "once. If blank, values are used "
-#~ "from the network definition."
-#~ msgstr "一次要处理多少图像。如果为空，则使用网络定义中的值。"
-
-#~ msgid "Batch Accumulation"
-#~ msgstr "批处理积累"
-
-#~ msgid ""
-#~ "Accumulate gradients over multiple batches "
-#~ "(useful when you need a bigger "
-#~ "batch size for training but it "
-#~ "doesn't fit in memory)."
-#~ msgstr "积累多个批次的梯度(当你需要更大的批次大小的训练，但它不适合内存时有用)。"
-
-#~ msgid "Solver type"
-#~ msgstr "解算器类型"
-
-#~ msgid "SGD (Stochastic Gradient Descent)"
-#~ msgstr "随机梯度下降法"
-
-#~ msgid "Momentum"
-#~ msgstr "动力"
-
-#~ msgid "NAG (Nesterov's accelerated gradient)"
-#~ msgstr "涅斯捷洛夫加速梯度"
-
-#~ msgid "AdaGrad (Adaptive Gradient)"
-#~ msgstr "AdaGrad(自适应梯度)"
-
-#~ msgid "AdaGradDA (AdaGrad Dual Averaging)"
-#~ msgstr "AdaGrad双平均法"
-
-#~ msgid "AdaDelta"
-#~ msgstr "AdaDelta"
-
-#~ msgid "Adam (Adaptive Moment Estimation)"
-#~ msgstr "Adam(自适应矩估计)"
-
-#~ msgid "RMSprop"
-#~ msgstr "RMS属性"
-
-#~ msgid "FTRL (Follow-The-Regularized-Leader)"
-#~ msgstr "FTRL (Follow-The-Regularized-Leader)"
-
-#~ msgid "What type of solver will be used?"
-#~ msgstr "将使用什么类型的求解器?"
-
-#~ msgid "RMS decay value"
-#~ msgstr "RMS衰减值"
-
-#~ msgid ""
-#~ "If the gradient updates results in "
-#~ "oscillations the gradient is reduced by"
-#~ " times 1-rms_decay. Otherwise it will "
-#~ "be increased by rms_decay."
-#~ msgstr "如果梯度更新导致振荡，则梯度减小乘以1-rms_decay。否则将通过rms_decay增加。"
-
-#~ msgid "Base Learning Rate"
-#~ msgstr "基础学习速率"
-
-#~ msgid ""
-#~ "Affects how quickly the network learns."
-#~ " If you are getting NaN for "
-#~ "your loss, you probably need to "
-#~ "lower this value."
-#~ msgstr "影响网络学习的速度。如果您要为您的损失获得NaN，您可能需要降低这个值。"
-
-#~ msgid "Policy"
-#~ msgstr "政策"
-
-#~ msgid "Fixed"
-#~ msgstr "固定"
-
-#~ msgid "Step Down"
-#~ msgstr "退位"
-
-#~ msgid "Step Down (arbitrary steps)"
-#~ msgstr "退位(任意步骤)"
-
-#~ msgid "Exponential Decay"
-#~ msgstr "指数衰减"
-
-#~ msgid "Inverse Decay"
-#~ msgstr "逆衰减"
-
-#~ msgid "Polynomial Decay"
-#~ msgstr "多项式衰减"
-
-#~ msgid "Sigmoid Decay"
-#~ msgstr ""
-
-#~ msgid "Step Size"
-#~ msgstr "步长"
-
-#~ msgid "Gamma"
-#~ msgstr "γ"
-
-#~ msgid "Step Values"
-#~ msgstr "步的值"
-
-#~ msgid "Power"
-#~ msgstr "电源"
-
-#~ msgid "Step"
-#~ msgstr "一步"
-
-#~ msgid "Standard network"
-#~ msgstr "标准的网络"
-
-#~ msgid "Previous network"
-#~ msgstr "以前的网络"
-
-#~ msgid "Pretrained network"
-#~ msgstr "预训练网络"
-
-#~ msgid "Custom network"
-#~ msgstr "自定义网络"
-
-#~ msgid "The framework you choose is not currently supported."
-#~ msgstr "您所选择的框架目前不受支持。"
-
-#~ msgid "Pretrained model(s)"
-#~ msgstr "预训练模型"
-
-#~ msgid "Select which GPU you would like to use"
-#~ msgstr "选择你想要使用的图形处理器"
-
-#~ msgid "Select which GPU[s] you would like to use"
-#~ msgstr "选择您想要使用的图形处理器"
-
-#~ msgid "The job won't start until all of the chosen GPUs are available."
-#~ msgstr "在所有选定的gpu可用之前，作业不会启动。"
-
-#~ msgid "Select which GPU[s] you would like to use (comma separated)"
-#~ msgstr "选择你想要使用的GPU(逗号分隔)"
-
-#~ msgid "Use this many GPUs (next available)"
-#~ msgstr "使用这些gpu(下一个可用的)"
-
-#~ msgid "Model Name"
-#~ msgstr "模型名称"
-
-#~ msgid "An identifier, later used to refer to this model in the Application."
-#~ msgstr "一个标识符，稍后用于在应用程序中引用此模型。"
-
-#~ msgid "Group Name"
-#~ msgstr "组名称"
-
-#~ msgid "An optional group name for organization on the main page."
-#~ msgstr "可选的组名，用于在主页面上的组织。"
-
-#~ msgid "Shuffle Train Data"
-#~ msgstr "洗牌训练数据"
-
-#~ msgid "For every epoch, shuffle the data before training."
-#~ msgstr "对于每一个时代，训练前都要洗牌数据。"
-
-#~ msgid "Crop Size"
-#~ msgstr "作物的大小"
-
-#~ msgid ""
-#~ "If specified, during training a random"
-#~ " square crop will be taken from "
-#~ "the input image before using as "
-#~ "input for the network."
-#~ msgstr "如果指定，在训练期间，将从输入图像中随机选取一个方形裁剪，然后作为网络的输入。"
-
-#~ msgid "Subtract Mean"
-#~ msgstr "减去的意思"
-
-#~ msgid "None"
-#~ msgstr "没有"
-
-#~ msgid "Image"
-#~ msgstr "图像"
-
-#~ msgid "Pixel"
-#~ msgstr "像素"
-
-#~ msgid "Subtract the mean file or mean pixel for this dataset from each image."
-#~ msgstr "从每个图像中减去这个数据集的平均文件或平均像素。"
-
-#~ msgid "Flipping"
-#~ msgstr "翻转"
-
-#~ msgid "Horizontal"
-#~ msgstr "水平"
-
-#~ msgid "Vertical"
-#~ msgstr "垂直"
-
-#~ msgid "Horizontal and/or Vertical"
-#~ msgstr "水平或垂直"
-
-#~ msgid "Randomly flips each image during batch preprocessing."
-#~ msgstr "在批处理过程中随机翻转每个图像。"
-
-#~ msgid "Quadrilateral Rotation"
-#~ msgstr "四边形转动"
-
-#~ msgid "0, 90 or 270 degrees"
-#~ msgstr "0, 90或270度"
-
-#~ msgid "0 or 180 degrees"
-#~ msgstr "0°或180°"
-
-#~ msgid "0, 90, 180 or 270 degrees."
-#~ msgstr "0, 90, 180或270度。"
-
-#~ msgid ""
-#~ "Randomly rotates (90 degree steps) each"
-#~ " image during batch preprocessing."
-#~ msgstr "在批处理过程中随机旋转(90度步骤)每个图像。"
-
-#~ msgid "Rotation (+- deg)"
-#~ msgstr "旋转（+-deg）"
-
-#~ msgid ""
-#~ "The uniform-random rotation angle that"
-#~ " will be performed during batch "
-#~ "preprocessing."
-#~ msgstr "在批预处理过程中执行的均匀-随机旋转角度。"
-
-#~ msgid "Rescale (stddev)"
-#~ msgstr "重新缩放（斯特德夫）"
-
-#~ msgid ""
-#~ "Retaining image size, the image is "
-#~ "rescaled with a +-stddev of this "
-#~ "parameter. Suggested value is 0.07."
-#~ msgstr "保留图像大小，使用该参数的+-stddev重新缩放图像。建议值为0.07。"
-
-#~ msgid "Noise (stddev)"
-#~ msgstr "噪音（斯特德夫）"
-
-#~ msgid ""
-#~ "Adds AWGN (Additive White Gaussian "
-#~ "Noise) during batch preprocessing, assuming"
-#~ " [0 1] pixel-value range. Suggested"
-#~ " value is 0.03."
-#~ msgstr "批处理时加入AWGN (Additive White Gaussian Noise)，假设像素值范围为[0 1]。建议值为0.03。"
-
-#~ msgid "Contrast (factor)"
-#~ msgstr "对比(因素)"
-
-#~ msgid ""
-#~ "Per channel, the mean of the "
-#~ "channel is computed and then adjusts "
-#~ "each component x of each pixel to"
-#~ " (x - mean) * contrast_factor + "
-#~ "mean. The contrast_factor is picked form"
-#~ " a random uniform distribution to "
-#~ "yield a value between [1-contrast_factor, "
-#~ "1+contrast_factor]. Suggested value is 0.8."
-#~ msgstr ""
-#~ "每个通道，通道的平均值被计算，然后调整每个像素的每个分量x为(x "
-#~ "-均值)*对比度因子+均值。对比度因子以随机均匀分布的形式被选取，其值在[1-对比度因子，1+对比度因子]之间。建议值为0.8。"
-
-#~ msgid "Whitening"
-#~ msgstr "美白"
-
-#~ msgid ""
-#~ "Per-image whitening by subtracting its"
-#~ " own mean, and dividing by its "
-#~ "own standard deviation."
-#~ msgstr "每幅图像白化通过减去它自己的平均值，然后除以它自己的标准差。"
-
-#~ msgid "HSV Shifting"
-#~ msgstr "HSV转移"
-
-#~ msgid ""
-#~ "Augmentation by normal-distributed random "
-#~ "shifts in HSV color space, assuming "
-#~ "[0 1] pixel-value range."
-#~ msgstr "在HSV颜色空间中，假设像素值范围为[0 1]，通过正态分布的随机位移进行增强。"
-
-#~ msgid "Hue"
-#~ msgstr "色调"
-
-#~ msgid ""
-#~ "Standard deviation of a shift that "
-#~ "will be performed during preprocessing, "
-#~ "assuming [0 1] pixel-value range."
-#~ msgstr "假设像素值范围为[0 1]，在预处理期间将执行的移位的标准偏差。"
-
-#~ msgid "Saturation"
-#~ msgstr "饱和"
-
-#~ msgid "Value"
-#~ msgstr "价值"
-
