@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:17-0700\n"
-"PO-Revision-Date: 2021-07-20 18:22+0800\n"
+"POT-Creation-Date: 2021-07-20 03:27-0700\n"
+"PO-Revision-Date: 2021-07-20 18:29+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -51,22 +51,22 @@ msgstr "可选的组名，用于在主页面上的组织。"
 msgid "Feature Encoding"
 msgstr "功能编码"
 
-#: dataset/generic/forms.py:20 dataset/generic/forms.py:33 extensions/data/imageProcessing/forms.py:93
+#: dataset/generic/forms.py:20 dataset/generic/forms.py:33 dataset/images/forms.py:23 extensions/data/imageProcessing/forms.py:93
 #: extensions/data/imageSegmentation/forms.py:110 extensions/data/objectDetection/forms.py:109 model/images/forms.py:29 model/images/forms.py:40
 #: model/images/forms.py:52
 msgid "None"
 msgstr "没有"
 
-#: dataset/generic/forms.py:21 dataset/generic/forms.py:34
+#: dataset/generic/forms.py:21 dataset/generic/forms.py:34 dataset/images/forms.py:24
 msgid "PNG (lossless)"
 msgstr "PNG (无损)"
 
-#: dataset/generic/forms.py:22 dataset/generic/forms.py:35
+#: dataset/generic/forms.py:22 dataset/generic/forms.py:35 dataset/images/forms.py:25
 #, python-format
 msgid "JPEG (lossy, 90%% quality)"
 msgstr "JPEG(有损，90%%质量)"
 
-#: dataset/generic/forms.py:24 dataset/generic/forms.py:37
+#: dataset/generic/forms.py:24 dataset/generic/forms.py:37 dataset/images/forms.py:27
 msgid "Using either of these compression formats can save disk space, but can also require marginally more time for training."
 msgstr "使用这两种压缩格式都可以节省磁盘空间，但也可能需要稍微多一点的训练时间。"
 
@@ -113,6 +113,43 @@ msgstr "不是"
 #: dataset/generic/forms.py:78
 msgid "Check that each entry in the database has the same shape.Disabling this will also disable mean image computation."
 msgstr "检查数据库中的每个条目是否具有相同的形状。禁用此功能也将禁用平均图像计算。"
+
+#: dataset/images/forms.py:20
+msgid "Image Encoding"
+msgstr "图像编码"
+
+#: dataset/images/forms.py:34
+msgid "Image Type"
+msgstr "图像类型"
+
+#: dataset/images/forms.py:36 extensions/data/imageProcessing/forms.py:92 extensions/data/imageSegmentation/forms.py:109
+#: extensions/data/objectDetection/forms.py:108
+msgid "Grayscale"
+msgstr "灰度"
+
+#: dataset/images/forms.py:36
+msgid "Color"
+msgstr "颜色"
+
+#: dataset/images/forms.py:37
+msgid "Color is 3-channel RGB. Grayscale is single channel monochrome."
+msgstr "颜色是3通道RGB。灰度是单通道单色。"
+
+#: dataset/images/forms.py:40
+msgid "Resize Width"
+msgstr "调整宽度"
+
+#: dataset/images/forms.py:45
+msgid "Resize Height"
+msgstr "调整高度"
+
+#: dataset/images/forms.py:50
+msgid "Resize Transformation"
+msgstr "调整转型"
+
+#: dataset/images/forms.py:53
+msgid "Options for dealing with aspect ratio changes during resize. See examples below."
+msgstr "在调整大小期间处理长宽比变化的选项。请参见下面的例子。"
 
 #: extensions/data/imageProcessing/data.py:107
 msgid "Processing"
@@ -171,10 +208,6 @@ msgstr "转换频道"
 #: extensions/data/imageProcessing/forms.py:91 extensions/data/imageSegmentation/forms.py:108 extensions/data/objectDetection/forms.py:107
 msgid "RGB"
 msgstr "RGB"
-
-#: extensions/data/imageProcessing/forms.py:92 extensions/data/imageSegmentation/forms.py:109 extensions/data/objectDetection/forms.py:108
-msgid "Grayscale"
-msgstr "灰度"
 
 #: extensions/data/imageProcessing/forms.py:96 extensions/data/objectDetection/forms.py:112
 msgid "Perform selected channel conversion."
@@ -305,7 +338,7 @@ msgstr "如果指定，图像将在填充后调整为该尺寸"
 
 #: extensions/data/objectDetection/forms.py:76
 msgid "Resize Image Height"
-msgstr "调整图像的高度调整图像大小(宽×高)"
+msgstr "调整图像的高度"
 
 #: extensions/data/objectDetection/forms.py:85
 msgid "Padding Image Width"
@@ -1013,7 +1046,6 @@ msgid "enter path"
 msgstr "输入路径"
 
 #: templates/datasets/images/classification/new.html:263
-#, python-format
 msgid "Validation"
 msgstr "验证"
 

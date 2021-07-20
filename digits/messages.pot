@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:17-0700\n"
+"POT-Creation-Date: 2021-07-20 03:27-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgid "Feature Encoding"
 msgstr ""
 
 #: dataset/generic/forms.py:20 dataset/generic/forms.py:33
-#: extensions/data/imageProcessing/forms.py:93
+#: dataset/images/forms.py:23 extensions/data/imageProcessing/forms.py:93
 #: extensions/data/imageSegmentation/forms.py:110
 #: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
 #: model/images/forms.py:40 model/images/forms.py:52
@@ -58,15 +58,18 @@ msgid "None"
 msgstr ""
 
 #: dataset/generic/forms.py:21 dataset/generic/forms.py:34
+#: dataset/images/forms.py:24
 msgid "PNG (lossless)"
 msgstr ""
 
 #: dataset/generic/forms.py:22 dataset/generic/forms.py:35
+#: dataset/images/forms.py:25
 #, python-format
 msgid "JPEG (lossy, 90%% quality)"
 msgstr ""
 
 #: dataset/generic/forms.py:24 dataset/generic/forms.py:37
+#: dataset/images/forms.py:27
 msgid ""
 "Using either of these compression formats can save disk space, but can "
 "also require marginally more time for training."
@@ -116,6 +119,46 @@ msgstr ""
 msgid ""
 "Check that each entry in the database has the same shape.Disabling this "
 "will also disable mean image computation."
+msgstr ""
+
+#: dataset/images/forms.py:20
+msgid "Image Encoding"
+msgstr ""
+
+#: dataset/images/forms.py:34
+msgid "Image Type"
+msgstr ""
+
+#: dataset/images/forms.py:36 extensions/data/imageProcessing/forms.py:92
+#: extensions/data/imageSegmentation/forms.py:109
+#: extensions/data/objectDetection/forms.py:108
+msgid "Grayscale"
+msgstr ""
+
+#: dataset/images/forms.py:36
+msgid "Color"
+msgstr ""
+
+#: dataset/images/forms.py:37
+msgid "Color is 3-channel RGB. Grayscale is single channel monochrome."
+msgstr ""
+
+#: dataset/images/forms.py:40
+msgid "Resize Width"
+msgstr ""
+
+#: dataset/images/forms.py:45
+msgid "Resize Height"
+msgstr ""
+
+#: dataset/images/forms.py:50
+msgid "Resize Transformation"
+msgstr ""
+
+#: dataset/images/forms.py:53
+msgid ""
+"Options for dealing with aspect ratio changes during resize. See examples"
+" below."
 msgstr ""
 
 #: extensions/data/imageProcessing/data.py:107
@@ -192,12 +235,6 @@ msgstr ""
 #: extensions/data/imageSegmentation/forms.py:108
 #: extensions/data/objectDetection/forms.py:107
 msgid "RGB"
-msgstr ""
-
-#: extensions/data/imageProcessing/forms.py:92
-#: extensions/data/imageSegmentation/forms.py:109
-#: extensions/data/objectDetection/forms.py:108
-msgid "Grayscale"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:96
