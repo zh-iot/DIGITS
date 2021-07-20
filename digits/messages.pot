@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:41-0700\n"
+"POT-Creation-Date: 2021-07-20 02:47-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,6 +51,7 @@ msgstr ""
 
 #: dataset/generic/forms.py:20 dataset/generic/forms.py:33
 #: extensions/data/imageProcessing/forms.py:93
+#: extensions/data/imageSegmentation/forms.py:110
 #: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
 #: model/images/forms.py:40 model/images/forms.py:52
 msgid "None"
@@ -122,20 +123,25 @@ msgid "Processing"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:28
+#: extensions/data/imageSegmentation/forms.py:28
 #: extensions/data/objectDetection/forms.py:26
 msgid "Folder does not exist or is not reachable"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:33
+#: extensions/data/imageSegmentation/forms.py:44
 msgid "Feature image folder"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:38
 #: extensions/data/imageProcessing/forms.py:73
+#: extensions/data/imageSegmentation/forms.py:49
+#: extensions/data/imageSegmentation/forms.py:87
 msgid "Indicate a folder full of images."
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:42
+#: extensions/data/imageSegmentation/forms.py:53
 msgid "Label image folder"
 msgstr ""
 
@@ -149,39 +155,47 @@ msgid ""
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:54
+#: extensions/data/imageSegmentation/forms.py:68
 #, python-format
 msgid "%% for validation"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:59
+#: extensions/data/imageSegmentation/forms.py:73
 msgid ""
 "You can choose to set apart a certain percentage of images from the "
 "training images for the validation set."
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:63
+#: extensions/data/imageSegmentation/forms.py:77
 msgid "Separate validation images"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:68
+#: extensions/data/imageSegmentation/forms.py:82
 msgid "Validation feature image folder"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:77
+#: extensions/data/imageSegmentation/forms.py:91
 msgid "Validation label image folder"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:89
+#: extensions/data/imageSegmentation/forms.py:106
 #: extensions/data/objectDetection/forms.py:105
 msgid "Channel conversion"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:91
+#: extensions/data/imageSegmentation/forms.py:108
 #: extensions/data/objectDetection/forms.py:107
 msgid "RGB"
 msgstr ""
 
 #: extensions/data/imageProcessing/forms.py:92
+#: extensions/data/imageSegmentation/forms.py:109
 #: extensions/data/objectDetection/forms.py:108
 msgid "Grayscale"
 msgstr ""
@@ -191,8 +205,77 @@ msgstr ""
 msgid "Perform selected channel conversion."
 msgstr ""
 
+#: extensions/data/imageProcessing/template.html:10
+#: extensions/data/imageProcessing/template.html:16
+msgid "folder or URL"
+msgstr ""
+
 #: extensions/data/imageSegmentation/data.py:150
 msgid "Segmentation"
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:39
+msgid "File does not exist or is not reachable"
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:58
+#: extensions/data/imageSegmentation/forms.py:96
+msgid ""
+"Indicate a folder full of images. For each image in the feature image "
+"folder there must be one corresponding image in the label image folder. "
+"The label image must have the same filename except for the extension, "
+"which may differ. Label images are expected to be single-channel images "
+"(paletted or grayscale), or RGB images, in which case the color/class "
+"mappings need to be specified through a separate text file."
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:113
+msgid ""
+"Perform selected channel conversion on feature images. Label images are "
+"single channel and not affected by this parameter."
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:118
+msgid "Class labels (optional)"
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:122
+msgid ""
+"The 'i'th line of the file should give the string label associated with "
+"the '(i-1)'th numeric label. (E.g. the string label for the numeric label"
+" 0 is supposed to be on line 1.)"
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:129
+msgid "Color map specification"
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:131
+msgid "From label image"
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:132
+msgid "From text file"
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:135
+msgid ""
+"Specify how to map class IDs to colors. Select 'From label image' to use "
+"palette or grayscale from label images. For RGB image labels, select "
+"'From text file' and provide color map in separate text file."
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:142
+msgid "Color map file"
+msgstr ""
+
+#: extensions/data/imageSegmentation/forms.py:147
+msgid ""
+"Specify color/class mappings through a text file. Each line in the file "
+"should contain three space-separated integer values, one for each of the "
+"Red, Green, Blue channels. The 'i'th line of the file should give the "
+"color associated with the '(i-1)'th class. (E.g. the color for class #0 "
+"is supposed to be on line 1.)"
 msgstr ""
 
 #: extensions/data/objectDetection/data.py:172

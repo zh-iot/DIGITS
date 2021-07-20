@@ -9,6 +9,7 @@ from wtforms import validators
 from digits import utils
 from digits.utils import subclass
 from digits.utils.forms import validate_required_iff
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 
 @subclass
@@ -24,7 +25,7 @@ class DatasetForm(Form):
             # make sure the filesystem path exists
             if not os.path.exists(field.data) or not os.path.isdir(field.data):
                 raise validators.ValidationError(
-                    'Folder does not exist or is not reachable')
+                    lazy_gettext('Folder does not exist or is not reachable'))
             else:
                 return True
 
@@ -35,118 +36,118 @@ class DatasetForm(Form):
             # make sure the filesystem path exists
             if not os.path.exists(field.data) and not os.path.isdir(field.data):
                 raise validators.ValidationError(
-                    'File does not exist or is not reachable')
+                    lazy_gettext('File does not exist or is not reachable'))
             else:
                 return True
 
     feature_folder = utils.forms.StringField(
-        u'Feature image folder',
+        lazy_gettext(u'Feature image folder'),
         validators=[
             validators.DataRequired(),
             validate_folder_path,
         ],
-        tooltip="Indicate a folder full of images."
+        tooltip=lazy_gettext("Indicate a folder full of images.")
     )
 
     label_folder = utils.forms.StringField(
-        u'Label image folder',
+        lazy_gettext(u'Label image folder'),
         validators=[
             validators.DataRequired(),
             validate_folder_path,
         ],
-        tooltip="Indicate a folder full of images. For each image in the feature"
+        tooltip=lazy_gettext("Indicate a folder full of images. For each image in the feature"
                 " image folder there must be one corresponding image in the label"
                 " image folder. The label image must have the same filename except"
                 " for the extension, which may differ. Label images are expected"
                 " to be single-channel images (paletted or grayscale), or RGB"
                 " images, in which case the color/class mappings need to be"
-                " specified through a separate text file."
+                " specified through a separate text file.")
     )
 
     folder_pct_val = utils.forms.IntegerField(
-        u'% for validation',
+        lazy_gettext(u'%% for validation'),
         default=10,
         validators=[
             validators.NumberRange(min=0, max=100)
         ],
-        tooltip="You can choose to set apart a certain percentage of images "
-                "from the training images for the validation set."
+        tooltip=lazy_gettext("You can choose to set apart a certain percentage of images "
+                "from the training images for the validation set.")
     )
 
-    has_val_folder = utils.forms.BooleanField('Separate validation images',
+    has_val_folder = utils.forms.BooleanField(lazy_gettext('Separate validation images'),
                                               default=False,
                                               )
 
     validation_feature_folder = utils.forms.StringField(
-        u'Validation feature image folder',
+        lazy_gettext(u'Validation feature image folder'),
         validators=[
             validate_required_iff(has_val_folder=True),
             validate_folder_path,
         ],
-        tooltip="Indicate a folder full of images."
+        tooltip=lazy_gettext("Indicate a folder full of images.")
     )
 
     validation_label_folder = utils.forms.StringField(
-        u'Validation label image folder',
+        lazy_gettext(u'Validation label image folder'),
         validators=[
             validate_required_iff(has_val_folder=True),
             validate_folder_path,
         ],
-        tooltip="Indicate a folder full of images. For each image in the feature"
+        tooltip=lazy_gettext("Indicate a folder full of images. For each image in the feature"
                 " image folder there must be one corresponding image in the label"
                 " image folder. The label image must have the same filename except"
                 " for the extension, which may differ. Label images are expected"
                 " to be single-channel images (paletted or grayscale), or RGB"
                 " images, in which case the color/class mappings need to be"
-                " specified through a separate text file."
+                " specified through a separate text file.")
     )
 
     channel_conversion = utils.forms.SelectField(
-        'Channel conversion',
+        lazy_gettext('Channel conversion'),
         choices=[
-            ('RGB', 'RGB'),
-            ('L', 'Grayscale'),
-            ('none', 'None'),
+            ('RGB', lazy_gettext('RGB')),
+            ('L', lazy_gettext('Grayscale')),
+            ('none', lazy_gettext('None')),
         ],
         default='none',
-        tooltip="Perform selected channel conversion on feature images. Label"
-                " images are single channel and not affected by this parameter."
+        tooltip=lazy_gettext("Perform selected channel conversion on feature images. Label"
+                " images are single channel and not affected by this parameter.")
     )
 
     class_labels_file = utils.forms.StringField(
-        u'Class labels (optional)',
+        lazy_gettext(u'Class labels (optional)'),
         validators=[
             validate_file_path,
         ],
-        tooltip="The 'i'th line of the file should give the string label "
+        tooltip=lazy_gettext("The 'i'th line of the file should give the string label "
                 "associated with the '(i-1)'th numeric label. (E.g. the "
                 "string label for the numeric label 0 is supposed to be "
-                "on line 1.)"
+                "on line 1.)")
     )
 
     colormap_method = utils.forms.SelectField(
-        'Color map specification',
+        lazy_gettext('Color map specification'),
         choices=[
-            ('label', 'From label image'),
-            ('textfile', 'From text file'),
+            ('label', lazy_gettext('From label image')),
+            ('textfile', lazy_gettext('From text file')),
         ],
         default='label',
-        tooltip="Specify how to map class IDs to colors. Select 'From label "
+        tooltip=lazy_gettext("Specify how to map class IDs to colors. Select 'From label "
                 "image' to use palette or grayscale from label images. For "
                 "RGB image labels, select 'From text file' and provide "
-                "color map in separate text file."
+                "color map in separate text file.")
     )
 
     colormap_text_file = utils.forms.StringField(
-        'Color map file',
+        lazy_gettext('Color map file'),
         validators=[
             validate_required_iff(colormap_method="textfile"),
             validate_file_path,
         ],
-        tooltip="Specify color/class mappings through a text file. "
+        tooltip=lazy_gettext("Specify color/class mappings through a text file. "
                 "Each line in the file should contain three space-separated "
                 "integer values, one for each of the Red, Green, Blue "
                 "channels. The 'i'th line of the file should give the color "
                 "associated with the '(i-1)'th class. (E.g. the "
-                "color for class #0 is supposed to be on line 1.)"
+                "color for class #0 is supposed to be on line 1.)")
     )
