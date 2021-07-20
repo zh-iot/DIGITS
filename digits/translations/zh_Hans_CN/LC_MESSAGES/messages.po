@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:12-0700\n"
-"PO-Revision-Date: 2021-07-20 17:12+0800\n"
+"POT-Creation-Date: 2021-07-20 02:18-0700\n"
+"PO-Revision-Date: 2021-07-20 17:20+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgid "PNG (lossless)"
 msgstr "PNG (无损)"
 
 #: dataset/generic/forms.py:22 dataset/generic/forms.py:35
-#, fuzzy, python-format
+#, python-format
 msgid "JPEG (lossy, 90%% quality)"
 msgstr "JPEG(有损，90%质量)"
 
@@ -117,6 +117,52 @@ msgstr "分割"
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
 msgstr "目标检测"
+
+#: extensions/data/objectDetection/template.html:7
+msgid "Object Detection Dataset Options"
+msgstr "对象检测数据集选项"
+
+#: extensions/data/objectDetection/template.html:10
+msgid ""
+"Images can be stored in any of the supported file formats ('.png','.jpg','."
+"jpeg','.bmp','.ppm')."
+msgstr ""
+"图像可以存储在任何支持的文件格式('.png'，'.jpg'，'.jpeg'，'.bmp'，'.ppm')。"
+
+#: extensions/data/objectDetection/template.html:16
+#: extensions/data/objectDetection/template.html:27
+#: extensions/data/objectDetection/template.html:33
+#: extensions/data/objectDetection/template.html:39
+msgid "folder"
+msgstr "文件夹"
+
+#: extensions/data/objectDetection/template.html:20
+msgid ""
+"Label files are expected to have the .txt extension.\n"
+"    For example if an image file is named foo.png the corresponding label file "
+"should be foo.txt."
+msgstr ""
+"标签文件的扩展名应该是.txt。\n"
+"例如，如果一个图像文件名为foo.png，相应的标签文件应该是foo.txt。"
+
+#: extensions/data/objectDetection/template.html:43
+msgid "Pad image (Width x Height)"
+msgstr "填充图像(宽×高)"
+
+#: extensions/data/objectDetection/template.html:47
+msgid ""
+"If specified, input images will be padded to that dimension. Pad dimensions "
+"should be greater than those of input images."
+msgstr "如果指定，输入图像将填充到该维度。衬垫尺寸应大于输入图像的尺寸。"
+
+#: extensions/data/objectDetection/template.html:57
+msgid "Resize image (Width x Height)"
+msgstr "调整图像大小(宽×高)"
+
+#: extensions/data/objectDetection/template.html:61
+msgid ""
+"If specified, input images will be squashed to that dimension after padding."
+msgstr "如果指定，输入图像将在填充后被压缩到该维度。"
 
 #: model/forms.py:29
 msgid "Selected job doesn't exist. Maybe it was deleted by another user."

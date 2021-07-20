@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:12-0700\n"
+"POT-Creation-Date: 2021-07-20 02:18-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,6 +113,50 @@ msgstr ""
 
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
+msgstr ""
+
+#: extensions/data/objectDetection/template.html:7
+msgid "Object Detection Dataset Options"
+msgstr ""
+
+#: extensions/data/objectDetection/template.html:10
+msgid ""
+"Images can be stored in any of the supported file formats "
+"('.png','.jpg','.jpeg','.bmp','.ppm')."
+msgstr ""
+
+#: extensions/data/objectDetection/template.html:16
+#: extensions/data/objectDetection/template.html:27
+#: extensions/data/objectDetection/template.html:33
+#: extensions/data/objectDetection/template.html:39
+msgid "folder"
+msgstr ""
+
+#: extensions/data/objectDetection/template.html:20
+msgid ""
+"Label files are expected to have the .txt extension.\n"
+"    For example if an image file is named foo.png the corresponding label"
+" file should be foo.txt."
+msgstr ""
+
+#: extensions/data/objectDetection/template.html:43
+msgid "Pad image (Width x Height)"
+msgstr ""
+
+#: extensions/data/objectDetection/template.html:47
+msgid ""
+"If specified, input images will be padded to that dimension. Pad "
+"dimensions should be greater than those of input images."
+msgstr ""
+
+#: extensions/data/objectDetection/template.html:57
+msgid "Resize image (Width x Height)"
+msgstr ""
+
+#: extensions/data/objectDetection/template.html:61
+msgid ""
+"If specified, input images will be squashed to that dimension after "
+"padding."
 msgstr ""
 
 #: model/forms.py:29
