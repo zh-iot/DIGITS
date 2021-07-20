@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-19 19:59-0700\n"
-"PO-Revision-Date: 2021-07-20 11:01+0800\n"
+"POT-Creation-Date: 2021-07-19 20:09-0700\n"
+"PO-Revision-Date: 2021-07-20 11:11+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -303,18 +303,22 @@ msgid "The framework you choose is not currently supported."
 msgstr "您所选择的框架目前不受支持。"
 
 #: model/forms.py:272 templates/models/images/classification/new.html:525
+#: templates/models/images/generic/new.html:519
 msgid "Standard Networks"
 msgstr "标准的网络"
 
 #: model/forms.py:279 templates/models/images/classification/new.html:526
+#: templates/models/images/generic/new.html:520
 msgid "Previous Networks"
 msgstr "以前的网络"
 
 #: model/forms.py:288 templates/models/images/classification/new.html:527
+#: templates/models/images/generic/new.html:521
 msgid "Pretrained Networks"
 msgstr "预训练网络"
 
 #: model/forms.py:297 templates/models/images/classification/new.html:528
+#: templates/models/images/generic/new.html:522
 msgid "Custom Network"
 msgstr "自定义网络"
 
@@ -385,7 +389,8 @@ msgstr "减去的意思"
 msgid "None"
 msgstr "没有一个"
 
-#: model/images/forms.py:30
+#: model/images/forms.py:30 templates/models/images/generic/new.html:10
+#: templates/models/images/generic/new.html:19
 msgid "Image"
 msgstr "图像"
 
@@ -618,37 +623,54 @@ msgid "New Image Classification Model"
 msgstr "新的图像分类模型"
 
 #: templates/models/images/classification/new.html:14
+#: templates/models/images/generic/new.html:14
 #: templates/partials/home/model_pane.html:7
 msgid "New Model"
 msgstr "新建模型"
 
 #: templates/models/images/classification/new.html:46
+#: templates/models/images/generic/new.html:46
 msgid "Python Layers"
 msgstr "Python层"
 
 #: templates/models/images/classification/new.html:107
+#: templates/models/images/generic/new.html:106
 msgid "Solver Options"
 msgstr "解算器选项"
 
 #: templates/models/images/classification/new.html:180
+#: templates/models/images/generic/new.html:180
 msgid "Show advanced learning rate options"
 msgstr "显示高级学习速率选项"
 
 #: templates/models/images/classification/new.html:271
+#: templates/models/images/generic/new.html:270
 msgid "Visualize LR"
 msgstr "可视化LR"
 
 #: templates/models/images/classification/new.html:376
+#: templates/models/images/generic/new.html:375
 msgid "Data Transformations"
 msgstr "数据转换"
 
 #: templates/models/images/classification/new.html:389
+#: templates/models/images/generic/new.html:388
 msgid "Data Augmentations"
 msgstr "数据扩张"
 
 #: templates/models/images/classification/new.html:703
+#: templates/models/images/generic/new.html:670
 msgid "Visualize"
 msgstr "可视化"
+
+#: templates/models/images/generic/new.html:10
+msgid "New"
+msgstr "新建"
+
+#: templates/models/images/generic/new.html:10
+#: templates/models/images/generic/new.html:19
+msgid "Model"
+msgstr "模型"
 
 #: templates/partials/home/datasets_pane.html:7
 msgid "New Dataset"

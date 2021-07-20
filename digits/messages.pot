@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-19 19:59-0700\n"
+"POT-Creation-Date: 2021-07-19 20:09-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,18 +298,22 @@ msgid "The framework you choose is not currently supported."
 msgstr ""
 
 #: model/forms.py:272 templates/models/images/classification/new.html:525
+#: templates/models/images/generic/new.html:519
 msgid "Standard Networks"
 msgstr ""
 
 #: model/forms.py:279 templates/models/images/classification/new.html:526
+#: templates/models/images/generic/new.html:520
 msgid "Previous Networks"
 msgstr ""
 
 #: model/forms.py:288 templates/models/images/classification/new.html:527
+#: templates/models/images/generic/new.html:521
 msgid "Pretrained Networks"
 msgstr ""
 
 #: model/forms.py:297 templates/models/images/classification/new.html:528
+#: templates/models/images/generic/new.html:522
 msgid "Custom Network"
 msgstr ""
 
@@ -379,7 +383,8 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: model/images/forms.py:30
+#: model/images/forms.py:30 templates/models/images/generic/new.html:10
+#: templates/models/images/generic/new.html:19
 msgid "Image"
 msgstr ""
 
@@ -609,36 +614,53 @@ msgid "New Image Classification Model"
 msgstr ""
 
 #: templates/models/images/classification/new.html:14
+#: templates/models/images/generic/new.html:14
 #: templates/partials/home/model_pane.html:7
 msgid "New Model"
 msgstr ""
 
 #: templates/models/images/classification/new.html:46
+#: templates/models/images/generic/new.html:46
 msgid "Python Layers"
 msgstr ""
 
 #: templates/models/images/classification/new.html:107
+#: templates/models/images/generic/new.html:106
 msgid "Solver Options"
 msgstr ""
 
 #: templates/models/images/classification/new.html:180
+#: templates/models/images/generic/new.html:180
 msgid "Show advanced learning rate options"
 msgstr ""
 
 #: templates/models/images/classification/new.html:271
+#: templates/models/images/generic/new.html:270
 msgid "Visualize LR"
 msgstr ""
 
 #: templates/models/images/classification/new.html:376
+#: templates/models/images/generic/new.html:375
 msgid "Data Transformations"
 msgstr ""
 
 #: templates/models/images/classification/new.html:389
+#: templates/models/images/generic/new.html:388
 msgid "Data Augmentations"
 msgstr ""
 
 #: templates/models/images/classification/new.html:703
+#: templates/models/images/generic/new.html:670
 msgid "Visualize"
+msgstr ""
+
+#: templates/models/images/generic/new.html:10
+msgid "New"
+msgstr ""
+
+#: templates/models/images/generic/new.html:10
+#: templates/models/images/generic/new.html:19
+msgid "Model"
 msgstr ""
 
 #: templates/partials/home/datasets_pane.html:7
