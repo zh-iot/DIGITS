@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-19 20:09-0700\n"
+"POT-Creation-Date: 2021-07-19 23:11-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -533,6 +533,7 @@ msgstr ""
 #: templates/home.html:74 templates/partials/home/datasets_pane.html:44
 #: templates/partials/home/model_pane.html:65
 #: templates/partials/home/pretrained_model_pane.html:50
+#: templates/store.html:70
 msgid "Filter"
 msgstr ""
 
@@ -608,6 +609,50 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
+#: templates/store.html:53
+msgid "Model Store"
+msgstr ""
+
+#: templates/store.html:56
+msgid "Update Model List"
+msgstr ""
+
+#: templates/store.html:59
+msgid "No models in Model Store"
+msgstr ""
+
+#: templates/store.html:82
+msgid "Name"
+msgstr ""
+
+#: templates/store.html:83
+msgid "Contributor"
+msgstr ""
+
+#: templates/store.html:84
+msgid "Affiliate"
+msgstr ""
+
+#: templates/store.html:85
+msgid "Note"
+msgstr ""
+
+#: templates/store.html:86
+msgid "Data sets"
+msgstr ""
+
+#: templates/store.html:87 templates/store.html:141
+msgid "License"
+msgstr ""
+
+#: templates/store.html:102
+msgid "Import"
+msgstr ""
+
+#: templates/store.html:147
+msgid "Close"
+msgstr ""
+
 #: templates/models/images/classification/new.html:10
 #: templates/models/images/classification/new.html:19
 msgid "New Image Classification Model"
@@ -655,6 +700,7 @@ msgid "Visualize"
 msgstr ""
 
 #: templates/models/images/generic/new.html:10
+#: templates/models/images/generic/new.html:19
 msgid "New"
 msgstr ""
 
