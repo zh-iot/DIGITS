@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:27-0700\n"
-"PO-Revision-Date: 2021-07-20 18:29+0800\n"
+"POT-Creation-Date: 2021-07-20 03:38-0700\n"
+"PO-Revision-Date: 2021-07-20 18:44+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -51,9 +51,9 @@ msgstr "可选的组名，用于在主页面上的组织。"
 msgid "Feature Encoding"
 msgstr "功能编码"
 
-#: dataset/generic/forms.py:20 dataset/generic/forms.py:33 dataset/images/forms.py:23 extensions/data/imageProcessing/forms.py:93
-#: extensions/data/imageSegmentation/forms.py:110 extensions/data/objectDetection/forms.py:109 model/images/forms.py:29 model/images/forms.py:40
-#: model/images/forms.py:52
+#: dataset/generic/forms.py:20 dataset/generic/forms.py:33 dataset/images/classification/forms.py:40 dataset/images/forms.py:23
+#: extensions/data/imageProcessing/forms.py:93 extensions/data/imageSegmentation/forms.py:110 extensions/data/objectDetection/forms.py:109
+#: model/images/forms.py:29 model/images/forms.py:40 model/images/forms.py:52
 msgid "None"
 msgstr "没有"
 
@@ -90,11 +90,11 @@ msgstr "编码器线程数"
 msgid "Use specified number of encoder threads"
 msgstr "使用指定数量的编码器线程"
 
-#: dataset/generic/forms.py:63
+#: dataset/generic/forms.py:63 dataset/images/classification/forms.py:21
 msgid "DB backend"
 msgstr "DB后端"
 
-#: dataset/generic/forms.py:65
+#: dataset/generic/forms.py:65 dataset/images/classification/forms.py:23
 msgid "LMDB"
 msgstr "LMDB"
 
@@ -102,11 +102,11 @@ msgstr "LMDB"
 msgid "Enforce same shape"
 msgstr "执行相同的形状"
 
-#: dataset/generic/forms.py:73
+#: dataset/generic/forms.py:73 dataset/images/classification/forms.py:343
 msgid "Yes"
 msgstr "是的"
 
-#: dataset/generic/forms.py:74
+#: dataset/generic/forms.py:74 dataset/images/classification/forms.py:344
 msgid "No"
 msgstr "不是"
 
@@ -151,6 +151,229 @@ msgstr "调整转型"
 msgid "Options for dealing with aspect ratio changes during resize. See examples below."
 msgstr "在调整大小期间处理长宽比变化的选项。请参见下面的例子。"
 
+#: dataset/images/classification/forms.py:24
+msgid "HDF5"
+msgstr "HDF5"
+
+#: dataset/images/classification/forms.py:38
+msgid "DB compression"
+msgstr "数据库压缩"
+
+#: dataset/images/classification/forms.py:41
+msgid "GZIP"
+msgstr "GZIP"
+
+#: dataset/images/classification/forms.py:44
+msgid "Compressing the dataset may significantly decrease the size of your database files, but it may increase read and write times."
+msgstr "压缩数据集可能会显著减少数据库文件的大小，但可能会增加读写时间。"
+
+#: dataset/images/classification/forms.py:50
+msgid "Dataset type"
+msgstr "数据集类型"
+
+#: dataset/images/classification/forms.py:52
+msgid "Folder"
+msgstr "文件夹文件夹"
+
+#: dataset/images/classification/forms.py:53
+msgid "Textfiles"
+msgstr "文本文件"
+
+#: dataset/images/classification/forms.py:54
+msgid "S3"
+msgstr "S3"
+
+#: dataset/images/classification/forms.py:69
+msgid "URL not found"
+msgstr "URL没有找到"
+
+#: dataset/images/classification/forms.py:71
+#, python-format
+msgid "Caught %(name)s while checking URL: %(url)s"
+msgstr "检查URL时捕获%(name)s: %(url)s"
+
+#: dataset/images/classification/forms.py:78
+msgid "Folder does not exist"
+msgstr "文件夹不存在"
+
+#: dataset/images/classification/forms.py:80
+msgid "Filesystem path is not absolute"
+msgstr "文件系统路径不是绝对的"
+
+#: dataset/images/classification/forms.py:89 dataset/images/classification/forms.py:378
+msgid "Training Images"
+msgstr "训练图像"
+
+#: dataset/images/classification/forms.py:94
+msgid ""
+"Indicate a folder which holds subfolders full of images. Each subfolder should be named according to the desired label for the images that it "
+"holds. Can also be a URL for an apache/nginx auto-indexed folder."
+msgstr "指示包含充满图像的子文件夹的文件夹。每个子文件夹都应该根据它所包含的图像所需的标签来命名。也可以是apache/nginx自动索引文件夹的URL。"
+
+#: dataset/images/classification/forms.py:100 dataset/images/classification/forms.py:409 extensions/data/imageProcessing/forms.py:54
+#: extensions/data/imageSegmentation/forms.py:68
+#, python-format
+msgid "%% for validation"
+msgstr "%%进行验证"
+
+#: dataset/images/classification/forms.py:106 dataset/images/classification/forms.py:415 extensions/data/imageProcessing/forms.py:59
+#: extensions/data/imageSegmentation/forms.py:73
+msgid "You can choose to set apart a certain percentage of images from the training images for the validation set."
+msgstr "您可以选择为验证集从训练图像中分离出一定百分比的图像。"
+
+#: dataset/images/classification/forms.py:111 dataset/images/classification/forms.py:420
+#, python-format
+msgid "%% for testing"
+msgstr "% %用于测试"
+
+#: dataset/images/classification/forms.py:117 dataset/images/classification/forms.py:426
+msgid "You can choose to set apart a certain percentage of images from the training images for the test set."
+msgstr "您可以选择从测试集的训练图像中分离出一定百分比的图像。"
+
+#: dataset/images/classification/forms.py:122 dataset/images/classification/forms.py:163 dataset/images/classification/forms.py:205
+#: dataset/images/classification/forms.py:431
+msgid "Minimum samples per class"
+msgstr "每类最小样本"
+
+#: dataset/images/classification/forms.py:128 dataset/images/classification/forms.py:169 dataset/images/classification/forms.py:211
+#: dataset/images/classification/forms.py:437
+msgid ""
+"You can choose to specify a minimum number of samples per class. If a class has fewer samples than the specified amount it will be ignored. Leave "
+"blank to ignore this feature."
+msgstr "您可以选择指定每个类的最小样本数。如果一个类的样本少于指定的数量，它将被忽略。留空可以忽略此特性。"
+
+#: dataset/images/classification/forms.py:134 dataset/images/classification/forms.py:175 dataset/images/classification/forms.py:217
+#: dataset/images/classification/forms.py:443
+msgid "Maximum samples per class"
+msgstr "每类最大样本数"
+
+#: dataset/images/classification/forms.py:140 dataset/images/classification/forms.py:181 dataset/images/classification/forms.py:223
+#: dataset/images/classification/forms.py:449
+msgid ""
+"You can choose to specify a maximum number of samples per class. If a class has more samples than the specified amount extra samples will be "
+"ignored. Leave blank to ignore this feature."
+msgstr "您可以选择指定每个类的最大样本数。如果一个类有比指定数量更多的样本，额外的样本将被忽略。留空可以忽略此特性。"
+
+#: dataset/images/classification/forms.py:146
+msgid "Separate validation images folder"
+msgstr "单独的验证图像文件夹"
+
+#: dataset/images/classification/forms.py:154
+msgid "Validation Images"
+msgstr "验证图像"
+
+#: dataset/images/classification/forms.py:187
+msgid "Separate test images folder"
+msgstr "单独的测试图像文件夹"
+
+#: dataset/images/classification/forms.py:195
+msgid "Test Images"
+msgstr "测试的图片"
+
+#: dataset/images/classification/forms.py:233
+msgid "Use local files"
+msgstr "使用本地文件"
+
+#: dataset/images/classification/forms.py:238 dataset/images/classification/forms.py:246
+msgid "Training images"
+msgstr "训练图像"
+
+#: dataset/images/classification/forms.py:253
+msgid "Training images folder"
+msgstr "训练图像文件夹"
+
+#: dataset/images/classification/forms.py:263 dataset/images/classification/forms.py:298 dataset/images/classification/forms.py:333
+msgid "folder does not exist"
+msgstr "文件夹不存在"
+
+#: dataset/images/classification/forms.py:266
+msgid "Validation set"
+msgstr "验证设置"
+
+#: dataset/images/classification/forms.py:272 dataset/images/classification/forms.py:280
+msgid "Validation images"
+msgstr "验证图像"
+
+#: dataset/images/classification/forms.py:288
+msgid "Validation images folder"
+msgstr "验证图像文件夹"
+
+#: dataset/images/classification/forms.py:301
+msgid "Test set"
+msgstr "测试集"
+
+#: dataset/images/classification/forms.py:307 dataset/images/classification/forms.py:315
+msgid "Test images"
+msgstr "测试的图片"
+
+#: dataset/images/classification/forms.py:323
+msgid "Test images folder"
+msgstr "测试图片文件夹特征图像文件夹"
+
+#: dataset/images/classification/forms.py:341
+msgid "Shuffle lines"
+msgstr "洗牌行"
+
+#: dataset/images/classification/forms.py:348
+msgid "Shuffle the list[s] of images before creating the database."
+msgstr "在创建数据库之前，先洗牌图像列表。"
+
+#: dataset/images/classification/forms.py:352 dataset/images/classification/forms.py:363
+msgid "Labels"
+msgstr "标签"
+
+#: dataset/images/classification/forms.py:357 dataset/images/classification/forms.py:368 extensions/data/imageSegmentation/forms.py:122
+msgid ""
+"The 'i'th line of the file should give the string label associated with the '(i-1)'th numeric label. (E.g. the string label for the numeric label "
+"0 is supposed to be on line 1.)"
+msgstr "文件的'i'第一行应该给出与'(i-1)'第一个数字标签相关的字符串标签。(例如，数字标签0的字符串标签应该在第1行。)"
+
+#: dataset/images/classification/forms.py:379
+msgid "S3 end point URL"
+msgstr "S3端点URL"
+
+#: dataset/images/classification/forms.py:383 templates/datasets/images/classification/new.html:326
+msgid "Bucket Name"
+msgstr "Bucket名称"
+
+#: dataset/images/classification/forms.py:384
+msgid "bucket name"
+msgstr "bucket名称"
+
+#: dataset/images/classification/forms.py:388
+msgid "Training Images Path"
+msgstr "训练图像路径"
+
+#: dataset/images/classification/forms.py:389
+msgid ""
+"Indicate a path which holds subfolders full of images. Each subfolder should be named according to the desired label for the images that it "
+"holds. "
+msgstr "指示包含充满图像的子文件夹的路径。每个子文件夹都应该根据它所包含的图像所需的标签来命名。"
+
+#: dataset/images/classification/forms.py:394
+msgid "Access Key"
+msgstr "访问密钥"
+
+#: dataset/images/classification/forms.py:395
+msgid "Access Key to access this S3 End Point"
+msgstr "访问该S3端点的Access Key"
+
+#: dataset/images/classification/forms.py:399
+msgid "Secret Key"
+msgstr "秘密密钥"
+
+#: dataset/images/classification/forms.py:400
+msgid "Secret Key to access this S3 End Point"
+msgstr "访问此S3端点的密钥"
+
+#: dataset/images/classification/forms.py:404
+msgid "Keep Copies of Files on Disk"
+msgstr "在磁盘上保存文件的副本"
+
+#: dataset/images/classification/forms.py:405
+msgid "Checking this box will keep raw files retrieved from S3 stored on disk after the job is completed"
+msgstr "选中此框将在任务完成后将从S3检索到的原始文件存储在磁盘上"
+
 #: extensions/data/imageProcessing/data.py:107
 msgid "Processing"
 msgstr "处理中"
@@ -179,15 +402,6 @@ msgid ""
 msgstr ""
 "指示一个充满图像的文件夹。对于feature图像文件夹中的每个图像，在label图像文件夹中必须有一个对应的图像。标签映像必须具有相同的文件名，但扩展名可能不"
 "同。"
-
-#: extensions/data/imageProcessing/forms.py:54 extensions/data/imageSegmentation/forms.py:68
-#, python-format
-msgid "%% for validation"
-msgstr "%%进行验证"
-
-#: extensions/data/imageProcessing/forms.py:59 extensions/data/imageSegmentation/forms.py:73
-msgid "You can choose to set apart a certain percentage of images from the training images for the validation set."
-msgstr "您可以选择为验证集从训练图像中分离出一定百分比的图像。"
 
 #: extensions/data/imageProcessing/forms.py:63 extensions/data/imageSegmentation/forms.py:77
 msgid "Separate validation images"
@@ -242,12 +456,6 @@ msgstr "对特征图像进行选定的通道转换。标签图像为单通道，
 #: extensions/data/imageSegmentation/forms.py:118
 msgid "Class labels (optional)"
 msgstr "类标签(可选)"
-
-#: extensions/data/imageSegmentation/forms.py:122
-msgid ""
-"The 'i'th line of the file should give the string label associated with the '(i-1)'th numeric label. (E.g. the string label for the numeric label "
-"0 is supposed to be on line 1.)"
-msgstr "文件的'i'第一行应该给出与'(i-1)'第一个数字标签相关的字符串标签。(例如，数字标签0的字符串标签应该在第1行。)"
 
 #: extensions/data/imageSegmentation/forms.py:129
 msgid "Color map specification"
@@ -1056,10 +1264,6 @@ msgstr "测试"
 #: templates/datasets/images/classification/new.html:321
 msgid "S3 Endpoint URL(e.g. https://s3.yourcompany.com:443/)"
 msgstr "S3端点URL(例如。https://s3.yourcompany.com: 443 /)"
-
-#: templates/datasets/images/classification/new.html:326
-msgid "Bucket Name"
-msgstr "Bucket名称"
 
 #: templates/datasets/images/classification/new.html:331
 msgid "A Path To Image Folders"
