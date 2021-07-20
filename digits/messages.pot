@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 01:29-0700\n"
+"POT-Creation-Date: 2021-07-20 01:42-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,75 @@ msgstr ""
 
 #: views.py:95
 msgid "Retrieve from Model Store"
+msgstr ""
+
+#: dataset/generic/forms.py:18
+msgid "Feature Encoding"
+msgstr ""
+
+#: dataset/generic/forms.py:20 dataset/generic/forms.py:33
+#: model/images/forms.py:29 model/images/forms.py:40 model/images/forms.py:52
+msgid "None"
+msgstr ""
+
+#: dataset/generic/forms.py:21 dataset/generic/forms.py:34
+msgid "PNG (lossless)"
+msgstr ""
+
+#: dataset/generic/forms.py:22 dataset/generic/forms.py:35
+msgid "JPEG (lossy, 90% quality)"
+msgstr ""
+
+#: dataset/generic/forms.py:24 dataset/generic/forms.py:37
+msgid ""
+"Using either of these compression formats can save disk space, but can "
+"also require marginally more time for training."
+msgstr ""
+
+#: dataset/generic/forms.py:30
+msgid "Label Encoding"
+msgstr ""
+
+#: dataset/generic/forms.py:43
+msgid "Encoder batch size"
+msgstr ""
+
+#: dataset/generic/forms.py:49
+msgid "Encode data in batches of specified number of entries"
+msgstr ""
+
+#: dataset/generic/forms.py:53
+msgid "Number of encoder threads"
+msgstr ""
+
+#: dataset/generic/forms.py:59
+msgid "Use specified number of encoder threads"
+msgstr ""
+
+#: dataset/generic/forms.py:63
+msgid "DB backend"
+msgstr ""
+
+#: dataset/generic/forms.py:65
+msgid "LMDB"
+msgstr ""
+
+#: dataset/generic/forms.py:71
+msgid "Enforce same shape"
+msgstr ""
+
+#: dataset/generic/forms.py:73
+msgid "Yes"
+msgstr ""
+
+#: dataset/generic/forms.py:74
+msgid "No"
+msgstr ""
+
+#: dataset/generic/forms.py:78
+msgid ""
+"Check that each entry in the database has the same shape.Disabling this "
+"will also disable mean image computation."
 msgstr ""
 
 #: extensions/data/imageProcessing/data.py:107
@@ -377,10 +446,6 @@ msgstr ""
 
 #: model/images/forms.py:27
 msgid "Subtract Mean"
-msgstr ""
-
-#: model/images/forms.py:29 model/images/forms.py:40 model/images/forms.py:52
-msgid "None"
 msgstr ""
 
 #: model/images/forms.py:30 templates/models/images/generic/new.html:10
