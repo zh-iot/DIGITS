@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:36-0700\n"
+"POT-Creation-Date: 2021-07-20 02:41-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,6 +50,7 @@ msgid "Feature Encoding"
 msgstr ""
 
 #: dataset/generic/forms.py:20 dataset/generic/forms.py:33
+#: extensions/data/imageProcessing/forms.py:93
 #: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
 #: model/images/forms.py:40 model/images/forms.py:52
 msgid "None"
@@ -120,16 +121,82 @@ msgstr ""
 msgid "Processing"
 msgstr ""
 
+#: extensions/data/imageProcessing/forms.py:28
+#: extensions/data/objectDetection/forms.py:26
+msgid "Folder does not exist or is not reachable"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:33
+msgid "Feature image folder"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:38
+#: extensions/data/imageProcessing/forms.py:73
+msgid "Indicate a folder full of images."
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:42
+msgid "Label image folder"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:47
+#: extensions/data/imageProcessing/forms.py:82
+msgid ""
+"Indicate a folder full of images. For each image in the feature image "
+"folder there must be one corresponding image in the label image folder. "
+"The label image must have the same filename except for the extension, "
+"which may differ."
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:54
+#, python-format
+msgid "%% for validation"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:59
+msgid ""
+"You can choose to set apart a certain percentage of images from the "
+"training images for the validation set."
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:63
+msgid "Separate validation images"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:68
+msgid "Validation feature image folder"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:77
+msgid "Validation label image folder"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:89
+#: extensions/data/objectDetection/forms.py:105
+msgid "Channel conversion"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:91
+#: extensions/data/objectDetection/forms.py:107
+msgid "RGB"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:92
+#: extensions/data/objectDetection/forms.py:108
+msgid "Grayscale"
+msgstr ""
+
+#: extensions/data/imageProcessing/forms.py:96
+#: extensions/data/objectDetection/forms.py:112
+msgid "Perform selected channel conversion."
+msgstr ""
+
 #: extensions/data/imageSegmentation/data.py:150
 msgid "Segmentation"
 msgstr ""
 
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
-msgstr ""
-
-#: extensions/data/objectDetection/forms.py:26
-msgid "Folder does not exist or is not reachable"
 msgstr ""
 
 #: extensions/data/objectDetection/forms.py:31
@@ -185,22 +252,6 @@ msgstr ""
 
 #: extensions/data/objectDetection/forms.py:95
 msgid "Padding Image Height"
-msgstr ""
-
-#: extensions/data/objectDetection/forms.py:105
-msgid "Channel conversion"
-msgstr ""
-
-#: extensions/data/objectDetection/forms.py:107
-msgid "RGB"
-msgstr ""
-
-#: extensions/data/objectDetection/forms.py:108
-msgid "Grayscale"
-msgstr ""
-
-#: extensions/data/objectDetection/forms.py:112
-msgid "Perform selected channel conversion."
 msgstr ""
 
 #: extensions/data/objectDetection/forms.py:116

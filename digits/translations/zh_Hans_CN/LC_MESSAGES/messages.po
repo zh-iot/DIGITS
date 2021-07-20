@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:36-0700\n"
-"PO-Revision-Date: 2021-07-20 17:37+0800\n"
+"POT-Creation-Date: 2021-07-20 02:41-0700\n"
+"PO-Revision-Date: 2021-07-20 17:42+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -52,6 +52,7 @@ msgid "Feature Encoding"
 msgstr "功能编码"
 
 #: dataset/generic/forms.py:20 dataset/generic/forms.py:33
+#: extensions/data/imageProcessing/forms.py:93
 #: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
 #: model/images/forms.py:40 model/images/forms.py:52
 msgid "None"
@@ -122,6 +123,77 @@ msgstr "检查数据库中的每个条目是否具有相同的形状。禁用此
 msgid "Processing"
 msgstr "处理中"
 
+#: extensions/data/imageProcessing/forms.py:28
+#: extensions/data/objectDetection/forms.py:26
+msgid "Folder does not exist or is not reachable"
+msgstr "文件夹不存在或不可达"
+
+#: extensions/data/imageProcessing/forms.py:33
+msgid "Feature image folder"
+msgstr "特征图像文件夹"
+
+#: extensions/data/imageProcessing/forms.py:38
+#: extensions/data/imageProcessing/forms.py:73
+msgid "Indicate a folder full of images."
+msgstr "指示一个充满图像的文件夹。"
+
+#: extensions/data/imageProcessing/forms.py:42
+msgid "Label image folder"
+msgstr "标签图像文件夹"
+
+#: extensions/data/imageProcessing/forms.py:47
+#: extensions/data/imageProcessing/forms.py:82
+msgid ""
+"Indicate a folder full of images. For each image in the feature image folder "
+"there must be one corresponding image in the label image folder. The label image "
+"must have the same filename except for the extension, which may differ."
+msgstr ""
+"指示一个充满图像的文件夹。对于feature图像文件夹中的每个图像，在label图像文件夹中必"
+"须有一个对应的图像。标签映像必须具有相同的文件名，但扩展名可能不同。"
+
+#: extensions/data/imageProcessing/forms.py:54
+#, python-format
+msgid "%% for validation"
+msgstr "%%进行验证"
+
+#: extensions/data/imageProcessing/forms.py:59
+msgid ""
+"You can choose to set apart a certain percentage of images from the training "
+"images for the validation set."
+msgstr "您可以选择为验证集从训练图像中分离出一定百分比的图像。"
+
+#: extensions/data/imageProcessing/forms.py:63
+msgid "Separate validation images"
+msgstr "独立验证图片"
+
+#: extensions/data/imageProcessing/forms.py:68
+msgid "Validation feature image folder"
+msgstr "验证特征图像文件夹"
+
+#: extensions/data/imageProcessing/forms.py:77
+msgid "Validation label image folder"
+msgstr "验证标签图像文件夹"
+
+#: extensions/data/imageProcessing/forms.py:89
+#: extensions/data/objectDetection/forms.py:105
+msgid "Channel conversion"
+msgstr "转换频道"
+
+#: extensions/data/imageProcessing/forms.py:91
+#: extensions/data/objectDetection/forms.py:107
+msgid "RGB"
+msgstr "RGB"
+
+#: extensions/data/imageProcessing/forms.py:92
+#: extensions/data/objectDetection/forms.py:108
+msgid "Grayscale"
+msgstr "灰度"
+
+#: extensions/data/imageProcessing/forms.py:96
+#: extensions/data/objectDetection/forms.py:112
+msgid "Perform selected channel conversion."
+msgstr "执行选定的信道转换。"
+
 #: extensions/data/imageSegmentation/data.py:150
 msgid "Segmentation"
 msgstr "分割"
@@ -129,10 +201,6 @@ msgstr "分割"
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
 msgstr "目标检测"
-
-#: extensions/data/objectDetection/forms.py:26
-msgid "Folder does not exist or is not reachable"
-msgstr "文件夹不存在或不可达"
 
 #: extensions/data/objectDetection/forms.py:31
 msgid "Training image folder"
@@ -188,22 +256,6 @@ msgstr "如果指定，图像将填充到该维度"
 #: extensions/data/objectDetection/forms.py:95
 msgid "Padding Image Height"
 msgstr "填充图像的高度"
-
-#: extensions/data/objectDetection/forms.py:105
-msgid "Channel conversion"
-msgstr "转换频道"
-
-#: extensions/data/objectDetection/forms.py:107
-msgid "RGB"
-msgstr "RGB"
-
-#: extensions/data/objectDetection/forms.py:108
-msgid "Grayscale"
-msgstr "灰度"
-
-#: extensions/data/objectDetection/forms.py:112
-msgid "Perform selected channel conversion."
-msgstr "执行选定的信道转换。"
 
 #: extensions/data/objectDetection/forms.py:116
 msgid "Minimum box size (in pixels) for validation set"
