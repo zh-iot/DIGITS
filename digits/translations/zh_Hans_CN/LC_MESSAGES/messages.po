@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-19 23:11-0700\n"
-"PO-Revision-Date: 2021-07-20 14:15+0800\n"
+"POT-Creation-Date: 2021-07-20 01:29-0700\n"
+"PO-Revision-Date: 2021-07-20 16:32+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -661,6 +661,25 @@ msgstr "导入"
 msgid "Close"
 msgstr "关闭"
 
+#: templates/datasets/generic/new.html:10 templates/datasets/generic/new.html:19
+#: templates/models/images/generic/new.html:10
+#: templates/models/images/generic/new.html:19
+msgid "New"
+msgstr "新建"
+
+#: templates/datasets/generic/new.html:10 templates/datasets/generic/new.html:19
+msgid "Dataset"
+msgstr "数据集"
+
+#: templates/datasets/generic/new.html:14
+#: templates/partials/home/datasets_pane.html:7
+msgid "New Dataset"
+msgstr "新建数据集"
+
+#: templates/datasets/generic/new.html:73
+msgid "Create"
+msgstr "新建"
+
 #: templates/models/images/classification/new.html:10
 #: templates/models/images/classification/new.html:19
 msgid "New Image Classification Model"
@@ -709,17 +728,8 @@ msgstr "可视化"
 
 #: templates/models/images/generic/new.html:10
 #: templates/models/images/generic/new.html:19
-msgid "New"
-msgstr "新建"
-
-#: templates/models/images/generic/new.html:10
-#: templates/models/images/generic/new.html:19
 msgid "Model"
 msgstr "模型"
-
-#: templates/partials/home/datasets_pane.html:7
-msgid "New Dataset"
-msgstr "新建数据集"
 
 #: templates/partials/home/datasets_pane.html:26
 #: templates/partials/home/model_pane.html:26

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-19 23:11-0700\n"
+"POT-Creation-Date: 2021-07-20 01:29-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -653,6 +653,27 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
+#: templates/datasets/generic/new.html:10
+#: templates/datasets/generic/new.html:19
+#: templates/models/images/generic/new.html:10
+#: templates/models/images/generic/new.html:19
+msgid "New"
+msgstr ""
+
+#: templates/datasets/generic/new.html:10
+#: templates/datasets/generic/new.html:19
+msgid "Dataset"
+msgstr ""
+
+#: templates/datasets/generic/new.html:14
+#: templates/partials/home/datasets_pane.html:7
+msgid "New Dataset"
+msgstr ""
+
+#: templates/datasets/generic/new.html:73
+msgid "Create"
+msgstr ""
+
 #: templates/models/images/classification/new.html:10
 #: templates/models/images/classification/new.html:19
 msgid "New Image Classification Model"
@@ -701,16 +722,7 @@ msgstr ""
 
 #: templates/models/images/generic/new.html:10
 #: templates/models/images/generic/new.html:19
-msgid "New"
-msgstr ""
-
-#: templates/models/images/generic/new.html:10
-#: templates/models/images/generic/new.html:19
 msgid "Model"
-msgstr ""
-
-#: templates/partials/home/datasets_pane.html:7
-msgid "New Dataset"
 msgstr ""
 
 #: templates/partials/home/datasets_pane.html:26
