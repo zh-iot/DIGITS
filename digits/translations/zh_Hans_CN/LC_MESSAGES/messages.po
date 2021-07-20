@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-19 19:36-0700\n"
-"PO-Revision-Date: 2021-07-20 10:43+0800\n"
+"POT-Creation-Date: 2021-07-19 19:59-0700\n"
+"PO-Revision-Date: 2021-07-20 11:01+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -676,44 +676,66 @@ msgstr "加载模型"
 msgid "No Pretrained Models"
 msgstr "暂无预训练模型"
 
-#: utils/forms.py:76
-#, python-format
-msgid "Invalid field name '%s'."
-msgstr "无效的字段名称'%s'."
+#: utils/forms.py:33
+msgid "This field is required."
+msgstr "此字段是必需的。"
 
-#: utils/forms.py:78
+#: utils/forms.py:57
 #, python-format
-msgid "Field must be greater than %s."
-msgstr "字段必须大于%s."
+msgid "This field is required if %(other_field)s is set."
+msgstr "如果设置了%(other_field)s，该字段是必需的。"
 
-#: utils/forms.py:314
+#: utils/forms.py:77
+#, python-format
+msgid "Invalid field name '%(fieldname)s'."
+msgstr "无效的字段名称 '%(fieldname)s'."
+
+#: utils/forms.py:79
+#, python-format
+msgid "Field must be greater than %(fieldname)s."
+msgstr "字段必须大于%(fieldname)s."
+
+#: utils/forms.py:288 utils/forms.py:334
+msgid " (accepts comma separated list)"
+msgstr " (接受逗号分隔的列表)"
+
+#: utils/forms.py:290 utils/forms.py:336
+msgid "multiples allowed"
+msgstr "允许倍数"
+
+#: utils/forms.py:315
 msgid "Not a valid integer value"
 msgstr "不是有效的整数值"
 
-#: utils/forms.py:360
+#: utils/forms.py:361
 msgid "Not a valid float value"
 msgstr "不是一个有效的浮点值"
 
-#: utils/forms.py:410
+#: utils/forms.py:411
 msgid "No data."
 msgstr "暂无数据."
 
-#: utils/forms.py:412
+#: utils/forms.py:413
 #, python-format
 msgid "Number %(data)s must be at least %(min)s."
 msgstr "数字%(data)s必须至少%(min)s。"
 
-#: utils/forms.py:414
+#: utils/forms.py:415
 #, python-format
 msgid "Number %(data)s must be at most %(max)s."
 msgstr "数字%(data)s不能超过%(max)s。"
 
-#: utils/forms.py:416
+#: utils/forms.py:417
 #, python-format
 msgid "Number %(data)s must be greater than %(min)s."
 msgstr "数字%(data)s必须大于%(min)s。"
 
-#: utils/forms.py:418
+#: utils/forms.py:419
 #, python-format
 msgid "Number %(data)s must be less than %(max)s."
 msgstr "数字%(data)s必须小于%(max)s。"
+
+#: utils/forms.py:501
+#, python-format
+msgid "Field type, %(type)s, not cloned"
+msgstr "字段类型%(type)s没有克隆"

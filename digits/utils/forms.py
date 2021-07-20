@@ -8,6 +8,7 @@ from wtforms import validators
 from wtforms.compat import string_types
 
 from digits.utils.routing import get_request_arg
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 
 def validate_required_iff(**kwargs):
@@ -29,7 +30,7 @@ def validate_required_iff(**kwargs):
             if field.data is None \
                     or (isinstance(field.data, (str, unicode)) and not field.data.strip()) \
                     or (isinstance(field.data, FileStorage) and not field.data.filename.strip()):
-                raise validators.ValidationError('This field is required.')
+                raise validators.ValidationError(lazy_gettext('This field is required.'))
         else:
             # This field is not required, ignore other errors
             field.errors[:] = []
@@ -53,7 +54,7 @@ def validate_required_if_set(other_field, **kwargs):
             if field.data is None or \
                     (isinstance(field.data, (str, unicode)) and not field.data.strip()) \
                     or (isinstance(field.data, FileStorage) and not field.data.filename.strip()):
-                raise validators.ValidationError('This field is required if %s is set.' % other_field)
+                raise validators.ValidationError(lazy_gettext('This field is required if %(other_field)s is set.', other_field=other_field))
         else:
             # This field is not required, ignore other errors
             field.errors[:] = []
@@ -73,9 +74,9 @@ def validate_greater_than(fieldname):
         try:
             other = form[fieldname]
         except KeyError:
-            raise validators.ValidationError(field.gettext(u"Invalid field name '%s'.") % fieldname)
+            raise validators.ValidationError(lazy_gettext("Invalid field name '%(fieldname)s'.", fieldname=fieldname))
         if field.data != '' and field.data < other.data:
-            message = field.gettext(u'Field must be greater than %s.' % fieldname)
+            message = lazy_gettext('Field must be greater than %(fieldname)s.', fieldname=fieldname)
             raise validators.ValidationError(message)
     return _validator
 
@@ -284,9 +285,9 @@ class MultiIntegerField(wtforms.Field):
 
     def __init__(self, label='', validators=None, tooltip='', explanation_file='', **kwargs):
         super(MultiIntegerField, self).__init__(label, validators, **kwargs)
-        self.tooltip = Tooltip(self.id, self.short_name, tooltip + ' (accepts comma separated list)')
+        self.tooltip = Tooltip(self.id, self.short_name, tooltip + lazy_gettext(' (accepts comma separated list)'))
         self.explanation = Explanation(self.id, self.short_name, explanation_file)
-        self.small_text = 'multiples allowed'
+        self.small_text = lazy_gettext('multiples allowed')
 
     def __setattr__(self, name, value):
         if name == 'data':
@@ -311,7 +312,7 @@ class MultiIntegerField(wtforms.Field):
                 self.data = [int(float(datum)) for datum in valuelist[0]]
             except ValueError:
                 self.data = [None]
-                raise ValueError(self.gettext('Not a valid integer value'))
+                raise ValueError(lazy_gettext('Not a valid integer value'))
 
 
 class MultiFloatField(wtforms.Field):
@@ -330,9 +331,9 @@ class MultiFloatField(wtforms.Field):
 
     def __init__(self, label='', validators=None, tooltip='', explanation_file='', **kwargs):
         super(MultiFloatField, self).__init__(label, validators, **kwargs)
-        self.tooltip = Tooltip(self.id, self.short_name, tooltip + ' (accepts comma separated list)')
+        self.tooltip = Tooltip(self.id, self.short_name, tooltip + lazy_gettext(' (accepts comma separated list)'))
         self.explanation = Explanation(self.id, self.short_name, explanation_file)
-        self.small_text = 'multiples allowed'
+        self.small_text = lazy_gettext('multiples allowed')
 
     def __setattr__(self, name, value):
         if name == 'data':
@@ -357,7 +358,7 @@ class MultiFloatField(wtforms.Field):
                 self.data = [float(datum) for datum in valuelist[0]]
             except ValueError:
                 self.data = [None]
-                raise ValueError(self.gettext('Not a valid float value'))
+                raise ValueError(lazy_gettext('Not a valid float value'))
 
     def data_array(self):
         if isinstance(self.data, (list, tuple)):
@@ -407,17 +408,17 @@ class MultiNumberRange(object):
                     # we use %(min)s interpolation to support floats, None, and
                     # Decimals without throwing a formatting exception.
                     if flags & 1 << 0:
-                        message = field.gettext('No data.')
+                        message = lazy_gettext('No data.')
                     elif flags & 1 << 1:
-                        message = field.gettext('Number %(data)s must be at least %(min)s.')
+                        message = lazy_gettext('Number %(data)s must be at least %(min)s.', dict(data=data, min=self.min, max=self.max))
                     elif flags & 1 << 2:
-                        message = field.gettext('Number %(data)s must be at most %(max)s.')
+                        message = lazy_gettext('Number %(data)s must be at most %(max)s.', dict(data=data, min=self.min, max=self.max))
                     elif flags & 1 << 3:
-                        message = field.gettext('Number %(data)s must be greater than %(min)s.')
+                        message = lazy_gettext('Number %(data)s must be greater than %(min)s.', dict(data=data, min=self.min, max=self.max))
                     elif flags & 1 << 4:
-                        message = field.gettext('Number %(data)s must be less than %(max)s.')
+                        message = lazy_gettext('Number %(data)s must be less than %(max)s.', dict(data=data, min=self.min, max=self.max))
 
-                raise validators.ValidationError(message % dict(data=data, min=self.min, max=self.max))
+                raise validators.ValidationError(message)
 
 
 class MultiOptional(object):
@@ -497,7 +498,7 @@ def iterate_over_form(job, form, function, prefix=['form'], indent=''):
             if (len(attr.type) > 5 and attr.type[-5:] == 'Field' and
                 attr.type not in whitelist_fields and
                     attr.type not in blacklist_fields):
-                warnings |= add_warning(attr, 'Field type, %s, not cloned' % attr.type)
+                warnings |= add_warning(attr, lazy_gettext('Field type, %(type)s, not cloned', type=attr.type))
     return warnings
 
 # function to pass to iterate_over_form to save data to job

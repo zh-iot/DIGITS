@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-19 19:36-0700\n"
+"POT-Creation-Date: 2021-07-19 19:59-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -667,45 +667,67 @@ msgstr ""
 msgid "No Pretrained Models"
 msgstr ""
 
-#: utils/forms.py:76
-#, python-format
-msgid "Invalid field name '%s'."
+#: utils/forms.py:33
+msgid "This field is required."
 msgstr ""
 
-#: utils/forms.py:78
+#: utils/forms.py:57
 #, python-format
-msgid "Field must be greater than %s."
+msgid "This field is required if %(other_field)s is set."
 msgstr ""
 
-#: utils/forms.py:314
+#: utils/forms.py:77
+#, python-format
+msgid "Invalid field name '%(fieldname)s'."
+msgstr ""
+
+#: utils/forms.py:79
+#, python-format
+msgid "Field must be greater than %(fieldname)s."
+msgstr ""
+
+#: utils/forms.py:288 utils/forms.py:334
+msgid " (accepts comma separated list)"
+msgstr ""
+
+#: utils/forms.py:290 utils/forms.py:336
+msgid "multiples allowed"
+msgstr ""
+
+#: utils/forms.py:315
 msgid "Not a valid integer value"
 msgstr ""
 
-#: utils/forms.py:360
+#: utils/forms.py:361
 msgid "Not a valid float value"
 msgstr ""
 
-#: utils/forms.py:410
+#: utils/forms.py:411
 msgid "No data."
 msgstr ""
 
-#: utils/forms.py:412
+#: utils/forms.py:413
 #, python-format
 msgid "Number %(data)s must be at least %(min)s."
 msgstr ""
 
-#: utils/forms.py:414
+#: utils/forms.py:415
 #, python-format
 msgid "Number %(data)s must be at most %(max)s."
 msgstr ""
 
-#: utils/forms.py:416
+#: utils/forms.py:417
 #, python-format
 msgid "Number %(data)s must be greater than %(min)s."
 msgstr ""
 
-#: utils/forms.py:418
+#: utils/forms.py:419
 #, python-format
 msgid "Number %(data)s must be less than %(max)s."
+msgstr ""
+
+#: utils/forms.py:501
+#, python-format
+msgid "Field type, %(type)s, not cloned"
 msgstr ""
 
