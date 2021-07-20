@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:59-0700\n"
-"PO-Revision-Date: 2021-07-20 19:00+0800\n"
+"POT-Creation-Date: 2021-07-20 04:07-0700\n"
+"PO-Revision-Date: 2021-07-20 19:09+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -150,6 +150,22 @@ msgstr "调整转型"
 #: dataset/images/forms.py:53
 msgid "Options for dealing with aspect ratio changes during resize. See examples below."
 msgstr "在调整大小期间处理长宽比变化的选项。请参见下面的例子。"
+
+#: dataset/images/job.py:31
+msgid "Crop"
+msgstr "裁切"
+
+#: dataset/images/job.py:32
+msgid "Squash"
+msgstr "去除"
+
+#: dataset/images/job.py:33
+msgid "Fill"
+msgstr "填满"
+
+#: dataset/images/job.py:34
+msgid "Half crop, half fill"
+msgstr "一半裁切，一半填充"
 
 #: dataset/images/classification/forms.py:24
 msgid "HDF5"

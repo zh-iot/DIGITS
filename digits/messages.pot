@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:59-0700\n"
+"POT-Creation-Date: 2021-07-20 04:07-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,6 +160,22 @@ msgstr ""
 msgid ""
 "Options for dealing with aspect ratio changes during resize. See examples"
 " below."
+msgstr ""
+
+#: dataset/images/job.py:31
+msgid "Crop"
+msgstr ""
+
+#: dataset/images/job.py:32
+msgid "Squash"
+msgstr ""
+
+#: dataset/images/job.py:33
+msgid "Fill"
+msgstr ""
+
+#: dataset/images/job.py:34
+msgid "Half crop, half fill"
 msgstr ""
 
 #: dataset/images/classification/forms.py:24
