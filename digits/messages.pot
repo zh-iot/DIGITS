@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:04-0700\n"
+"POT-Creation-Date: 2021-07-20 03:17-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -207,6 +207,7 @@ msgstr ""
 
 #: extensions/data/imageProcessing/template.html:10
 #: extensions/data/imageProcessing/template.html:16
+#: templates/datasets/images/classification/new.html:106
 msgid "folder or URL"
 msgstr ""
 
@@ -1026,12 +1027,144 @@ msgid "Dataset"
 msgstr ""
 
 #: templates/datasets/generic/new.html:14
+#: templates/datasets/images/classification/new.html:14
 #: templates/partials/home/datasets_pane.html:7
 msgid "New Dataset"
 msgstr ""
 
 #: templates/datasets/generic/new.html:73
+#: templates/datasets/images/classification/new.html:506
 msgid "Create"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:10
+#: templates/datasets/images/classification/new.html:20
+msgid "New Image Classification Dataset"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:43
+msgid "Input images will be resized to fit."
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:60
+msgid "See example"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:94
+msgid "Use Image Folder"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:95
+msgid "Use Text Files"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:96
+msgid "Use S3"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:218
+msgid "Set"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:220
+msgid "Text file"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:223
+msgid ""
+"Each line in the file should be formatted as '<PATH> <LABEL>' where "
+"<PATH> specifies image path either on the local filesystem or a URL, and "
+"the <LABEL> is a numeric label that matches the uploaded labels file"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:226
+msgid "Image folder"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:226
+msgid "optional"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:229
+msgid "Paths in the text files will be appended with this value before reading"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:237
+msgid "Use local paths on server"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:242
+msgid ""
+"Check to use local paths on server, uncheck to upload files from client "
+"machine"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:248
+msgid "Training"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:253
+#: templates/datasets/images/classification/new.html:270
+#: templates/datasets/images/classification/new.html:287
+#: templates/datasets/images/classification/new.html:310
+msgid "enter path"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:263
+msgid "Validation"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:280
+msgid "Test"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:321
+msgid "S3 Endpoint URL(e.g. https://s3.yourcompany.com:443/)"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:326
+msgid "Bucket Name"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:331
+msgid "A Path To Image Folders"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:336
+msgid "S3 Access Key"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:341
+#: templates/datasets/images/classification/new.html:344
+msgid "S3 Secret Key"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:450
+#: templates/datasets/images/classification/new.html:458
+#: templates/models/python_layer_explanation.html:55
+msgid "NOTE"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:450
+msgid "HDF5 is currently only supported for classification."
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:452
+msgid ""
+"For the Caffe data layers, (change <i>Data</i> layers to <i>HDF5Data</i> "
+"layers)"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:453
+msgid "The Caffe <i>HDF5Data</i> layer does not support mean subtraction"
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:454
+msgid "Database exploration in the DIGITS UI is not supported."
+msgstr ""
+
+#: templates/datasets/images/classification/new.html:458
+msgid "TFRecords currently only works with Tensorflow, not with Caffe or Torch."
 msgstr ""
 
 #: templates/models/python_layer_explanation.html:3
@@ -1062,10 +1195,6 @@ msgid ""
 "layers.\n"
 "    As an example, here is a layer which re-creates the functionality of "
 "the standard Accuracy layer using JSON-encoded parameters:"
-msgstr ""
-
-#: templates/models/python_layer_explanation.html:55
-msgid "NOTE"
 msgstr ""
 
 #: templates/models/python_layer_explanation.html:55

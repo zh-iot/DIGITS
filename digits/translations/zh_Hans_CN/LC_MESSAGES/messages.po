@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:04-0700\n"
-"PO-Revision-Date: 2021-07-20 18:06+0800\n"
+"POT-Creation-Date: 2021-07-20 03:17-0700\n"
+"PO-Revision-Date: 2021-07-20 18:22+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -181,6 +181,7 @@ msgid "Perform selected channel conversion."
 msgstr "执行选定的信道转换。"
 
 #: extensions/data/imageProcessing/template.html:10 extensions/data/imageProcessing/template.html:16
+#: templates/datasets/images/classification/new.html:106
 msgid "folder or URL"
 msgstr "文件夹或URL"
 
@@ -936,13 +937,134 @@ msgstr "新建"
 msgid "Dataset"
 msgstr "数据集"
 
-#: templates/datasets/generic/new.html:14 templates/partials/home/datasets_pane.html:7
+#: templates/datasets/generic/new.html:14 templates/datasets/images/classification/new.html:14 templates/partials/home/datasets_pane.html:7
 msgid "New Dataset"
 msgstr "新建数据集"
 
-#: templates/datasets/generic/new.html:73
+#: templates/datasets/generic/new.html:73 templates/datasets/images/classification/new.html:506
 msgid "Create"
 msgstr "新建"
+
+#: templates/datasets/images/classification/new.html:10 templates/datasets/images/classification/new.html:20
+msgid "New Image Classification Dataset"
+msgstr "新的图像分类数据集"
+
+#: templates/datasets/images/classification/new.html:43
+msgid "Input images will be resized to fit."
+msgstr "输入图像将调整大小以适应。"
+
+#: templates/datasets/images/classification/new.html:60
+msgid "See example"
+msgstr "看例子"
+
+#: templates/datasets/images/classification/new.html:94
+msgid "Use Image Folder"
+msgstr "使用图片文件夹"
+
+#: templates/datasets/images/classification/new.html:95
+msgid "Use Text Files"
+msgstr "使用文本文件"
+
+#: templates/datasets/images/classification/new.html:96
+msgid "Use S3"
+msgstr "使用S3"
+
+#: templates/datasets/images/classification/new.html:218
+msgid "Set"
+msgstr "设置"
+
+#: templates/datasets/images/classification/new.html:220
+msgid "Text file"
+msgstr "文本文件"
+
+#: templates/datasets/images/classification/new.html:223
+msgid ""
+"Each line in the file should be formatted as '<PATH> <LABEL>' where <PATH> specifies image path either on the local filesystem or a URL, and the "
+"<LABEL> is a numeric label that matches the uploaded labels file"
+msgstr "文件中的每一行都应该被格式化为'<PATH> <LABEL>“ <PATH>指定本地文件系统上的图像路径或URL，以及<LABEL>是否与上传的标签文件匹配"
+
+#: templates/datasets/images/classification/new.html:226
+msgid "Image folder"
+msgstr "图片文件夹"
+
+#: templates/datasets/images/classification/new.html:226
+msgid "optional"
+msgstr "可选"
+
+#: templates/datasets/images/classification/new.html:229
+msgid "Paths in the text files will be appended with this value before reading"
+msgstr "文本文件中的路径将在读取之前附加此值"
+
+#: templates/datasets/images/classification/new.html:237
+msgid "Use local paths on server"
+msgstr "在服务器上使用本地路径"
+
+#: templates/datasets/images/classification/new.html:242
+msgid "Check to use local paths on server, uncheck to upload files from client machine"
+msgstr "勾选使用服务器上的本地路径，取消勾选从客户端上传文件"
+
+#: templates/datasets/images/classification/new.html:248
+msgid "Training"
+msgstr "训练"
+
+#: templates/datasets/images/classification/new.html:253 templates/datasets/images/classification/new.html:270
+#: templates/datasets/images/classification/new.html:287 templates/datasets/images/classification/new.html:310
+msgid "enter path"
+msgstr "输入路径"
+
+#: templates/datasets/images/classification/new.html:263
+#, python-format
+msgid "Validation"
+msgstr "验证"
+
+#: templates/datasets/images/classification/new.html:280
+msgid "Test"
+msgstr "测试"
+
+#: templates/datasets/images/classification/new.html:321
+msgid "S3 Endpoint URL(e.g. https://s3.yourcompany.com:443/)"
+msgstr "S3端点URL(例如。https://s3.yourcompany.com: 443 /)"
+
+#: templates/datasets/images/classification/new.html:326
+msgid "Bucket Name"
+msgstr "Bucket名称"
+
+#: templates/datasets/images/classification/new.html:331
+msgid "A Path To Image Folders"
+msgstr "图像文件夹的路径"
+
+#: templates/datasets/images/classification/new.html:336
+msgid "S3 Access Key"
+msgstr "S3访问密钥"
+
+#: templates/datasets/images/classification/new.html:341 templates/datasets/images/classification/new.html:344
+msgid "S3 Secret Key"
+msgstr "S3密钥"
+
+#: templates/datasets/images/classification/new.html:450 templates/datasets/images/classification/new.html:458
+#: templates/models/python_layer_explanation.html:55
+msgid "NOTE"
+msgstr "请注意"
+
+#: templates/datasets/images/classification/new.html:450
+msgid "HDF5 is currently only supported for classification."
+msgstr "HDF5目前只支持分类。"
+
+#: templates/datasets/images/classification/new.html:452
+msgid "For the Caffe data layers, (change <i>Data</i> layers to <i>HDF5Data</i> layers)"
+msgstr "对于Caffe数据层，(将<i> data </i> layers改为<i>HDF5Data</i> layers)"
+
+#: templates/datasets/images/classification/new.html:453
+msgid "The Caffe <i>HDF5Data</i> layer does not support mean subtraction"
+msgstr "Caffe <i>HDF5Data</i>层不支持减法"
+
+#: templates/datasets/images/classification/new.html:454
+msgid "Database exploration in the DIGITS UI is not supported."
+msgstr "不支持在DIGITS UI中进行数据库探索。"
+
+#: templates/datasets/images/classification/new.html:458
+msgid "TFRecords currently only works with Tensorflow, not with Caffe or Torch."
+msgstr "TFRecords目前只适用于Tensorflow，不适用于Caffe或Torch。"
 
 #: templates/models/python_layer_explanation.html:3
 msgid "Using Python layers"
@@ -974,10 +1096,6 @@ msgid ""
 msgstr ""
 "首先，您需要创建一个定义一个或多个层的Python文件。\n"
 "例如，下面这个层使用json编码的参数重新创建了标准精度层的功能:"
-
-#: templates/models/python_layer_explanation.html:55
-msgid "NOTE"
-msgstr "请注意"
 
 #: templates/models/python_layer_explanation.html:55
 msgid "The uploaded file will be renamed to <b>digits_python_layers.py</b>, discarding the original filename."
