@@ -32,7 +32,7 @@ class GenericDatasetForm(DatasetForm):
         choices=[
             ('none', lazy_gettext('None')),
             ('png', lazy_gettext('PNG (lossless)')),
-            ('jpg', lazy_gettext('JPEG (lossy, 90% quality)')),
+            ('jpg', lazy_gettext('JPEG (lossy, 90%% quality)')),
         ],
         tooltip=lazy_gettext("Using either of these compression formats can save disk"
                 " space, but can also require marginally more time for"
