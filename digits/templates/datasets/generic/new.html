@@ -7,7 +7,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-{{_('New')}} {{ extension_title }} {{_('Dataset')}}
+{{_('New')}}{{ extension_title }}{{_('Dataset')}}
 {% endblock %}
 
 {% block nav %}
@@ -16,7 +16,7 @@
 
 {% block content %}
 <div class="page-header">
-    <h1>{{_('New')}} {{ extension_title }} {{_('Dataset')}}</h1>
+    <h1>{{_('New')}}{{ extension_title }}{{_('Dataset')}}</h1>
 </div>
 
 <form action="{{url_for('digits.dataset.generic.views.create', extension_id=extension_id)}}" enctype="multipart/form-data" method="post">
