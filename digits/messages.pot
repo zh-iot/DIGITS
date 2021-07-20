@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:47-0700\n"
+"POT-Creation-Date: 2021-07-20 02:52-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -278,6 +278,26 @@ msgid ""
 "is supposed to be on line 1.)"
 msgstr ""
 
+#: extensions/data/imageSegmentation/template.html:10
+#: extensions/data/imageSegmentation/template.html:16
+#: extensions/data/imageSegmentation/template.html:31
+#: extensions/data/imageSegmentation/template.html:37
+#: extensions/data/objectDetection/template.html:16
+#: extensions/data/objectDetection/template.html:27
+#: extensions/data/objectDetection/template.html:33
+#: extensions/data/objectDetection/template.html:39
+msgid "folder"
+msgstr ""
+
+#: extensions/data/imageSegmentation/template.html:43
+#: extensions/data/imageSegmentation/template.html:55
+msgid "file"
+msgstr ""
+
+#: extensions/data/imageSegmentation/template.html:99
+msgid "Note: the recommended label encoding is PNG."
+msgstr ""
+
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
 msgstr ""
@@ -368,13 +388,6 @@ msgstr ""
 msgid ""
 "Images can be stored in any of the supported file formats "
 "('.png','.jpg','.jpeg','.bmp','.ppm')."
-msgstr ""
-
-#: extensions/data/objectDetection/template.html:16
-#: extensions/data/objectDetection/template.html:27
-#: extensions/data/objectDetection/template.html:33
-#: extensions/data/objectDetection/template.html:39
-msgid "folder"
 msgstr ""
 
 #: extensions/data/objectDetection/template.html:20

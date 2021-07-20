@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:47-0700\n"
-"PO-Revision-Date: 2021-07-20 17:49+0800\n"
+"POT-Creation-Date: 2021-07-20 02:52-0700\n"
+"PO-Revision-Date: 2021-07-20 17:53+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -51,11 +51,9 @@ msgstr "可选的组名，用于在主页面上的组织。"
 msgid "Feature Encoding"
 msgstr "功能编码"
 
-#: dataset/generic/forms.py:20 dataset/generic/forms.py:33
-#: extensions/data/imageProcessing/forms.py:93
-#: extensions/data/imageSegmentation/forms.py:110
-#: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
-#: model/images/forms.py:40 model/images/forms.py:52
+#: dataset/generic/forms.py:20 dataset/generic/forms.py:33 extensions/data/imageProcessing/forms.py:93
+#: extensions/data/imageSegmentation/forms.py:110 extensions/data/objectDetection/forms.py:109 model/images/forms.py:29 model/images/forms.py:40
+#: model/images/forms.py:52
 msgid "None"
 msgstr "没有"
 
@@ -69,9 +67,7 @@ msgid "JPEG (lossy, 90%% quality)"
 msgstr "JPEG(有损，90%%质量)"
 
 #: dataset/generic/forms.py:24 dataset/generic/forms.py:37
-msgid ""
-"Using either of these compression formats can save disk space, but can also require "
-"marginally more time for training."
+msgid "Using either of these compression formats can save disk space, but can also require marginally more time for training."
 msgstr "使用这两种压缩格式都可以节省磁盘空间，但也可能需要稍微多一点的训练时间。"
 
 #: dataset/generic/forms.py:30
@@ -115,99 +111,76 @@ msgid "No"
 msgstr "不是"
 
 #: dataset/generic/forms.py:78
-msgid ""
-"Check that each entry in the database has the same shape.Disabling this will also "
-"disable mean image computation."
+msgid "Check that each entry in the database has the same shape.Disabling this will also disable mean image computation."
 msgstr "检查数据库中的每个条目是否具有相同的形状。禁用此功能也将禁用平均图像计算。"
 
 #: extensions/data/imageProcessing/data.py:107
 msgid "Processing"
 msgstr "处理中"
 
-#: extensions/data/imageProcessing/forms.py:28
-#: extensions/data/imageSegmentation/forms.py:28
-#: extensions/data/objectDetection/forms.py:26
+#: extensions/data/imageProcessing/forms.py:28 extensions/data/imageSegmentation/forms.py:28 extensions/data/objectDetection/forms.py:26
 msgid "Folder does not exist or is not reachable"
 msgstr "文件夹不存在或不可达"
 
-#: extensions/data/imageProcessing/forms.py:33
-#: extensions/data/imageSegmentation/forms.py:44
+#: extensions/data/imageProcessing/forms.py:33 extensions/data/imageSegmentation/forms.py:44
 msgid "Feature image folder"
 msgstr "特征图像文件夹"
 
-#: extensions/data/imageProcessing/forms.py:38 extensions/data/imageProcessing/forms.py:73
-#: extensions/data/imageSegmentation/forms.py:49
+#: extensions/data/imageProcessing/forms.py:38 extensions/data/imageProcessing/forms.py:73 extensions/data/imageSegmentation/forms.py:49
 #: extensions/data/imageSegmentation/forms.py:87
 msgid "Indicate a folder full of images."
 msgstr "指示一个充满图像的文件夹。"
 
-#: extensions/data/imageProcessing/forms.py:42
-#: extensions/data/imageSegmentation/forms.py:53
+#: extensions/data/imageProcessing/forms.py:42 extensions/data/imageSegmentation/forms.py:53
 msgid "Label image folder"
 msgstr "标签图像文件夹"
 
 #: extensions/data/imageProcessing/forms.py:47 extensions/data/imageProcessing/forms.py:82
 msgid ""
-"Indicate a folder full of images. For each image in the feature image folder there must "
-"be one corresponding image in the label image folder. The label image must have the "
-"same filename except for the extension, which may differ."
+"Indicate a folder full of images. For each image in the feature image folder there must be one corresponding image in the label image folder. The "
+"label image must have the same filename except for the extension, which may differ."
 msgstr ""
-"指示一个充满图像的文件夹。对于feature图像文件夹中的每个图像，在label图像文件夹中必须有一"
-"个对应的图像。标签映像必须具有相同的文件名，但扩展名可能不同。"
+"指示一个充满图像的文件夹。对于feature图像文件夹中的每个图像，在label图像文件夹中必须有一个对应的图像。标签映像必须具有相同的文件名，但扩展名可能不"
+"同。"
 
-#: extensions/data/imageProcessing/forms.py:54
-#: extensions/data/imageSegmentation/forms.py:68
+#: extensions/data/imageProcessing/forms.py:54 extensions/data/imageSegmentation/forms.py:68
 #, python-format
 msgid "%% for validation"
 msgstr "%%进行验证"
 
-#: extensions/data/imageProcessing/forms.py:59
-#: extensions/data/imageSegmentation/forms.py:73
-msgid ""
-"You can choose to set apart a certain percentage of images from the training images for "
-"the validation set."
+#: extensions/data/imageProcessing/forms.py:59 extensions/data/imageSegmentation/forms.py:73
+msgid "You can choose to set apart a certain percentage of images from the training images for the validation set."
 msgstr "您可以选择为验证集从训练图像中分离出一定百分比的图像。"
 
-#: extensions/data/imageProcessing/forms.py:63
-#: extensions/data/imageSegmentation/forms.py:77
+#: extensions/data/imageProcessing/forms.py:63 extensions/data/imageSegmentation/forms.py:77
 msgid "Separate validation images"
 msgstr "独立验证图片"
 
-#: extensions/data/imageProcessing/forms.py:68
-#: extensions/data/imageSegmentation/forms.py:82
+#: extensions/data/imageProcessing/forms.py:68 extensions/data/imageSegmentation/forms.py:82
 msgid "Validation feature image folder"
 msgstr "验证特征图像文件夹"
 
-#: extensions/data/imageProcessing/forms.py:77
-#: extensions/data/imageSegmentation/forms.py:91
+#: extensions/data/imageProcessing/forms.py:77 extensions/data/imageSegmentation/forms.py:91
 msgid "Validation label image folder"
 msgstr "验证标签图像文件夹"
 
-#: extensions/data/imageProcessing/forms.py:89
-#: extensions/data/imageSegmentation/forms.py:106
-#: extensions/data/objectDetection/forms.py:105
+#: extensions/data/imageProcessing/forms.py:89 extensions/data/imageSegmentation/forms.py:106 extensions/data/objectDetection/forms.py:105
 msgid "Channel conversion"
 msgstr "转换频道"
 
-#: extensions/data/imageProcessing/forms.py:91
-#: extensions/data/imageSegmentation/forms.py:108
-#: extensions/data/objectDetection/forms.py:107
+#: extensions/data/imageProcessing/forms.py:91 extensions/data/imageSegmentation/forms.py:108 extensions/data/objectDetection/forms.py:107
 msgid "RGB"
 msgstr "RGB"
 
-#: extensions/data/imageProcessing/forms.py:92
-#: extensions/data/imageSegmentation/forms.py:109
-#: extensions/data/objectDetection/forms.py:108
+#: extensions/data/imageProcessing/forms.py:92 extensions/data/imageSegmentation/forms.py:109 extensions/data/objectDetection/forms.py:108
 msgid "Grayscale"
 msgstr "灰度"
 
-#: extensions/data/imageProcessing/forms.py:96
-#: extensions/data/objectDetection/forms.py:112
+#: extensions/data/imageProcessing/forms.py:96 extensions/data/objectDetection/forms.py:112
 msgid "Perform selected channel conversion."
 msgstr "执行选定的信道转换。"
 
-#: extensions/data/imageProcessing/template.html:10
-#: extensions/data/imageProcessing/template.html:16
+#: extensions/data/imageProcessing/template.html:10 extensions/data/imageProcessing/template.html:16
 msgid "folder or URL"
 msgstr "文件夹或URL"
 
@@ -219,23 +192,17 @@ msgstr "分割"
 msgid "File does not exist or is not reachable"
 msgstr "文件不存在或无法访问"
 
-#: extensions/data/imageSegmentation/forms.py:58
-#: extensions/data/imageSegmentation/forms.py:96
+#: extensions/data/imageSegmentation/forms.py:58 extensions/data/imageSegmentation/forms.py:96
 msgid ""
-"Indicate a folder full of images. For each image in the feature image folder there must "
-"be one corresponding image in the label image folder. The label image must have the "
-"same filename except for the extension, which may differ. Label images are expected to "
-"be single-channel images (paletted or grayscale), or RGB images, in which case the "
-"color/class mappings need to be specified through a separate text file."
+"Indicate a folder full of images. For each image in the feature image folder there must be one corresponding image in the label image folder. The "
+"label image must have the same filename except for the extension, which may differ. Label images are expected to be single-channel images "
+"(paletted or grayscale), or RGB images, in which case the color/class mappings need to be specified through a separate text file."
 msgstr ""
-"指示一个充满图像的文件夹。对于feature图像文件夹中的每个图像，在label图像文件夹中必须有一"
-"个对应的图像。标签映像必须具有相同的文件名，但扩展名可能不同。标签图像应该是单通道图像"
-"(调色板图像或灰度图像)或RGB图像，在这种情况下，颜色/类映射需要通过单独的文本文件指定。"
+"指示一个充满图像的文件夹。对于feature图像文件夹中的每个图像，在label图像文件夹中必须有一个对应的图像。标签映像必须具有相同的文件名，但扩展名可能不"
+"同。标签图像应该是单通道图像(调色板图像或灰度图像)或RGB图像，在这种情况下，颜色/类映射需要通过单独的文本文件指定。"
 
 #: extensions/data/imageSegmentation/forms.py:113
-msgid ""
-"Perform selected channel conversion on feature images. Label images are single channel "
-"and not affected by this parameter."
+msgid "Perform selected channel conversion on feature images. Label images are single channel and not affected by this parameter."
 msgstr "对特征图像进行选定的通道转换。标签图像为单通道，不受此参数影响。"
 
 #: extensions/data/imageSegmentation/forms.py:118
@@ -244,12 +211,9 @@ msgstr "类标签(可选)"
 
 #: extensions/data/imageSegmentation/forms.py:122
 msgid ""
-"The 'i'th line of the file should give the string label associated with the '(i-1)'th "
-"numeric label. (E.g. the string label for the numeric label 0 is supposed to be on line "
-"1.)"
-msgstr ""
-"文件的'i'第一行应该给出与'(i-1)'第一个数字标签相关的字符串标签。(例如，数字标签0的字符串"
-"标签应该在第1行。)"
+"The 'i'th line of the file should give the string label associated with the '(i-1)'th numeric label. (E.g. the string label for the numeric label "
+"0 is supposed to be on line 1.)"
+msgstr "文件的'i'第一行应该给出与'(i-1)'第一个数字标签相关的字符串标签。(例如，数字标签0的字符串标签应该在第1行。)"
 
 #: extensions/data/imageSegmentation/forms.py:129
 msgid "Color map specification"
@@ -265,12 +229,10 @@ msgstr "从文本文件"
 
 #: extensions/data/imageSegmentation/forms.py:135
 msgid ""
-"Specify how to map class IDs to colors. Select 'From label image' to use palette or "
-"grayscale from label images. For RGB image labels, select 'From text file' and provide "
-"color map in separate text file."
+"Specify how to map class IDs to colors. Select 'From label image' to use palette or grayscale from label images. For RGB image labels, select "
+"'From text file' and provide color map in separate text file."
 msgstr ""
-"指定如何将类id映射到颜色。选择“从标签图像”以从标签图像中使用调色板或灰度。对于RGB图像标"
-"签，选择“从文本文件”，并在单独的文本文件中提供彩色地图。"
+"指定如何将类id映射到颜色。选择“从标签图像”以从标签图像中使用调色板或灰度。对于RGB图像标签，选择“从文本文件”，并在单独的文本文件中提供彩色地图。"
 
 #: extensions/data/imageSegmentation/forms.py:142
 msgid "Color map file"
@@ -278,14 +240,27 @@ msgstr "颜色映射文件"
 
 #: extensions/data/imageSegmentation/forms.py:147
 msgid ""
-"Specify color/class mappings through a text file. Each line in the file should contain "
-"three space-separated integer values, one for each of the Red, Green, Blue channels. "
-"The 'i'th line of the file should give the color associated with the '(i-1)'th class. "
-"(E.g. the color for class #0 is supposed to be on line 1.)"
+"Specify color/class mappings through a text file. Each line in the file should contain three space-separated integer values, one for each of the "
+"Red, Green, Blue channels. The 'i'th line of the file should give the color associated with the '(i-1)'th class. (E.g. the color for class #0 is "
+"supposed to be on line 1.)"
 msgstr ""
-"通过文本文件指定颜色/类映射。文件中的每一行都应该包含三个用空格分隔的整数值，分别对应"
-"红、绿、蓝通道。文件的第i行应该给出与第i类相关的颜色。(例如，class #0的颜色应该在第一"
-"行。)"
+"通过文本文件指定颜色/类映射。文件中的每一行都应该包含三个用空格分隔的整数值，分别对应红、绿、蓝通道。文件的第i行应该给出与第i类相关的颜色。(例如，"
+"class #0的颜色应该在第一行。)"
+
+#: extensions/data/imageSegmentation/template.html:10 extensions/data/imageSegmentation/template.html:16
+#: extensions/data/imageSegmentation/template.html:31 extensions/data/imageSegmentation/template.html:37
+#: extensions/data/objectDetection/template.html:16 extensions/data/objectDetection/template.html:27
+#: extensions/data/objectDetection/template.html:33 extensions/data/objectDetection/template.html:39
+msgid "folder"
+msgstr "文件夹"
+
+#: extensions/data/imageSegmentation/template.html:43 extensions/data/imageSegmentation/template.html:55
+msgid "file"
+msgstr "文件下属"
+
+#: extensions/data/imageSegmentation/template.html:99
+msgid "Note: the recommended label encoding is PNG."
+msgstr "注意:推荐使用PNG格式。"
 
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
@@ -335,8 +310,7 @@ msgstr "调整图像的高度调整图像大小(宽×高)"
 msgid "Padding Image Width"
 msgstr "填充图像宽度"
 
-#: extensions/data/objectDetection/forms.py:91
-#: extensions/data/objectDetection/forms.py:101
+#: extensions/data/objectDetection/forms.py:91 extensions/data/objectDetection/forms.py:101
 msgid "If specified, images will be padded to that dimension"
 msgstr "如果指定，图像将填充到该维度"
 
@@ -350,8 +324,8 @@ msgstr "验证集的最小框大小(以像素为单位)"
 
 #: extensions/data/objectDetection/forms.py:122
 msgid ""
-"Retain only the boxes that are larger than the specified value in both dimensions. This "
-"only affects objects in the validation set. Enter 0 to disable this threshold."
+"Retain only the boxes that are larger than the specified value in both dimensions. This only affects objects in the validation set. Enter 0 to "
+"disable this threshold."
 msgstr "只保留两个维度中大于指定值的框。这只影响验证集中的对象。输入0禁用该阈值。"
 
 #: extensions/data/objectDetection/forms.py:128
@@ -360,36 +334,23 @@ msgstr "定制类"
 
 #: extensions/data/objectDetection/forms.py:132
 msgid ""
-"Enter a comma-separated list of class names. Class IDs are assigned sequentially, "
-"starting from 0. Unmapped class names automatically map to 0. Leave this field blank to "
-"use default class mappings. See object detection extension documentation for more "
-"information."
+"Enter a comma-separated list of class names. Class IDs are assigned sequentially, starting from 0. Unmapped class names automatically map to 0. "
+"Leave this field blank to use default class mappings. See object detection extension documentation for more information."
 msgstr ""
-"输入以逗号分隔的类名列表。类id按顺序分配，从0开始。未映射的类名自动映射到0。将此字段留空"
-"以使用默认的类映射。有关更多信息，请参见对象检测扩展文档。"
+"输入以逗号分隔的类名列表。类id按顺序分配，从0开始。未映射的类名自动映射到0。将此字段留空以使用默认的类映射。有关更多信息，请参见对象检测扩展文档。"
 
 #: extensions/data/objectDetection/template.html:7
 msgid "Object Detection Dataset Options"
 msgstr "对象检测数据集选项"
 
 #: extensions/data/objectDetection/template.html:10
-msgid ""
-"Images can be stored in any of the supported file formats ('.png','.jpg','.jpeg','."
-"bmp','.ppm')."
+msgid "Images can be stored in any of the supported file formats ('.png','.jpg','.jpeg','.bmp','.ppm')."
 msgstr "图像可以存储在任何支持的文件格式('.png'，'.jpg'，'.jpeg'，'.bmp'，'.ppm')。"
-
-#: extensions/data/objectDetection/template.html:16
-#: extensions/data/objectDetection/template.html:27
-#: extensions/data/objectDetection/template.html:33
-#: extensions/data/objectDetection/template.html:39
-msgid "folder"
-msgstr "文件夹"
 
 #: extensions/data/objectDetection/template.html:20
 msgid ""
 "Label files are expected to have the .txt extension.\n"
-"    For example if an image file is named foo.png the corresponding label file should "
-"be foo.txt."
+"    For example if an image file is named foo.png the corresponding label file should be foo.txt."
 msgstr ""
 "标签文件的扩展名应该是.txt。\n"
 "例如，如果一个图像文件名为foo.png，相应的标签文件应该是foo.txt。"
@@ -399,9 +360,7 @@ msgid "Pad image (Width x Height)"
 msgstr "填充图像(宽×高)"
 
 #: extensions/data/objectDetection/template.html:47
-msgid ""
-"If specified, input images will be padded to that dimension. Pad dimensions should be "
-"greater than those of input images."
+msgid "If specified, input images will be padded to that dimension. Pad dimensions should be greater than those of input images."
 msgstr "如果指定，输入图像将填充到该维度。衬垫尺寸应大于输入图像的尺寸。"
 
 #: extensions/data/objectDetection/template.html:57
@@ -480,8 +439,7 @@ msgid "Validation interval (in epochs)"
 msgstr "验证间隔(以epoch为单位)"
 
 #: model/forms.py:122
-msgid ""
-"How many epochs of training between running through one pass of the validation data?"
+msgid "How many epochs of training between running through one pass of the validation data?"
 msgstr "在运行一遍验证数据之间有多少个训练阶段?"
 
 #: model/forms.py:126
@@ -497,20 +455,15 @@ msgid "Random seed"
 msgstr "随机种子"
 
 #: model/forms.py:140
-msgid ""
-"If you provide a random seed, then back-to-back runs with the same model and dataset "
-"should give identical results."
-msgstr ""
-"如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同的结果。"
+msgid "If you provide a random seed, then back-to-back runs with the same model and dataset should give identical results."
+msgstr "如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同的结果。"
 
 #: model/forms.py:144
 msgid "Batch size"
 msgstr "批量大小"
 
 #: model/forms.py:149
-msgid ""
-"How many images to process at once. If blank, values are used from the network "
-"definition."
+msgid "How many images to process at once. If blank, values are used from the network definition."
 msgstr "一次要处理多少图像。如果为空，则使用网络定义中的值。"
 
 #: model/forms.py:153
@@ -518,9 +471,7 @@ msgid "Batch Accumulation"
 msgstr "批处理积累"
 
 #: model/forms.py:158
-msgid ""
-"Accumulate gradients over multiple batches (useful when you need a bigger batch size "
-"for training but it doesn't fit in memory)."
+msgid "Accumulate gradients over multiple batches (useful when you need a bigger batch size for training but it doesn't fit in memory)."
 msgstr "积累多个批次的梯度(当你需要更大的批次大小的训练，但它不适合内存时有用)。"
 
 #: model/forms.py:164
@@ -576,9 +527,7 @@ msgid "RMS decay value"
 msgstr "RMS衰减值"
 
 #: model/forms.py:195
-msgid ""
-"If the gradient updates results in oscillations the gradient is reduced by times 1-"
-"rms_decay. Otherwise it will be increased by rms_decay."
+msgid "If the gradient updates results in oscillations the gradient is reduced by times 1-rms_decay. Otherwise it will be increased by rms_decay."
 msgstr "如果梯度更新导致振荡，则梯度减小乘以1-rms_decay。否则将通过rms_decay增加。"
 
 #: model/forms.py:201
@@ -586,9 +535,7 @@ msgid "Base Learning Rate"
 msgstr "基础学习速率"
 
 #: model/forms.py:206
-msgid ""
-"Affects how quickly the network learns. If you are getting NaN for your loss, you "
-"probably need to lower this value."
+msgid "Affects how quickly the network learns. If you are getting NaN for your loss, you probably need to lower this value."
 msgstr "影响网络学习的速度。如果您要为您的损失获得NaN，您可能需要降低这个值。"
 
 #: model/forms.py:210
@@ -627,8 +574,7 @@ msgstr "S形递减"
 msgid "Step Size"
 msgstr "步长"
 
-#: model/forms.py:224 model/forms.py:235 model/forms.py:236 model/forms.py:237
-#: model/forms.py:241
+#: model/forms.py:224 model/forms.py:235 model/forms.py:236 model/forms.py:237 model/forms.py:241
 msgid "Gamma"
 msgstr "γ"
 
@@ -664,23 +610,19 @@ msgstr "自定义网络"
 msgid "The framework you choose is not currently supported."
 msgstr "您所选择的框架目前不受支持。"
 
-#: model/forms.py:272 templates/models/images/classification/new.html:525
-#: templates/models/images/generic/new.html:519
+#: model/forms.py:272 templates/models/images/classification/new.html:525 templates/models/images/generic/new.html:519
 msgid "Standard Networks"
 msgstr "标准的网络"
 
-#: model/forms.py:279 templates/models/images/classification/new.html:526
-#: templates/models/images/generic/new.html:520
+#: model/forms.py:279 templates/models/images/classification/new.html:526 templates/models/images/generic/new.html:520
 msgid "Previous Networks"
 msgstr "以前的网络"
 
-#: model/forms.py:288 templates/models/images/classification/new.html:527
-#: templates/models/images/generic/new.html:521
+#: model/forms.py:288 templates/models/images/classification/new.html:527 templates/models/images/generic/new.html:521
 msgid "Pretrained Networks"
 msgstr "预训练网络"
 
-#: model/forms.py:297 templates/models/images/classification/new.html:528
-#: templates/models/images/generic/new.html:522
+#: model/forms.py:297 templates/models/images/classification/new.html:528 templates/models/images/generic/new.html:522
 msgid "Custom Network"
 msgstr "自定义网络"
 
@@ -729,17 +671,14 @@ msgid "Crop Size"
 msgstr "作物的大小"
 
 #: model/images/forms.py:23
-msgid ""
-"If specified, during training a random square crop will be taken from the input image "
-"before using as input for the network."
+msgid "If specified, during training a random square crop will be taken from the input image before using as input for the network."
 msgstr "如果指定，在训练期间，将从输入图像中随机选取一个方形裁剪，然后作为网络的输入。"
 
 #: model/images/forms.py:27
 msgid "Subtract Mean"
 msgstr "减去的意思"
 
-#: model/images/forms.py:30 templates/models/images/generic/new.html:10
-#: templates/models/images/generic/new.html:19
+#: model/images/forms.py:30 templates/models/images/generic/new.html:10 templates/models/images/generic/new.html:19
 msgid "Image"
 msgstr "图像"
 
@@ -796,8 +735,7 @@ msgid "Rotation (+- deg)"
 msgstr "旋转（+-deg）"
 
 #: model/images/forms.py:67
-msgid ""
-"The uniform-random rotation angle that will be performed during batch preprocessing."
+msgid "The uniform-random rotation angle that will be performed during batch preprocessing."
 msgstr "在批预处理过程中执行的均匀-随机旋转角度。"
 
 #: model/images/forms.py:71
@@ -805,9 +743,7 @@ msgid "Rescale (stddev)"
 msgstr "重新缩放（斯特德夫）"
 
 #: model/images/forms.py:76
-msgid ""
-"Retaining image size, the image is rescaled with a +-stddev of this parameter. "
-"Suggested value is 0.07."
+msgid "Retaining image size, the image is rescaled with a +-stddev of this parameter. Suggested value is 0.07."
 msgstr "保留图像大小，使用该参数的+-stddev重新缩放图像。建议值为0.07。"
 
 #: model/images/forms.py:80
@@ -815,11 +751,8 @@ msgid "Noise (stddev)"
 msgstr "噪音（斯特德夫）"
 
 #: model/images/forms.py:85
-msgid ""
-"Adds AWGN (Additive White Gaussian Noise) during batch preprocessing, assuming [0 1] "
-"pixel-value range. Suggested value is 0.03."
-msgstr ""
-"批处理时加入AWGN (Additive White Gaussian Noise)，假设像素值范围为[0 1]。建议值为0.03。"
+msgid "Adds AWGN (Additive White Gaussian Noise) during batch preprocessing, assuming [0 1] pixel-value range. Suggested value is 0.03."
+msgstr "批处理时加入AWGN (Additive White Gaussian Noise)，假设像素值范围为[0 1]。建议值为0.03。"
 
 #: model/images/forms.py:89
 msgid "Contrast (factor)"
@@ -827,23 +760,19 @@ msgstr "对比(因素)"
 
 #: model/images/forms.py:94
 msgid ""
-"Per channel, the mean of the channel is computed and then adjusts each component x of "
-"each pixel to (x - mean) * contrast_factor + mean. The contrast_factor is picked form a "
-"random uniform distribution to yield a value between [1-contrast_factor, "
-"1+contrast_factor]. Suggested value is 0.8."
+"Per channel, the mean of the channel is computed and then adjusts each component x of each pixel to (x - mean) * contrast_factor + mean. The "
+"contrast_factor is picked form a random uniform distribution to yield a value between [1-contrast_factor, 1+contrast_factor]. Suggested value is "
+"0.8."
 msgstr ""
-"每个通道，通道的平均值被计算，然后调整每个像素的每个分量x为(x -均值)*对比度因子+均值。对"
-"比度因子以随机均匀分布的形式被选取，其值在[1-对比度因子，1+对比度因子]之间。建议值为"
-"0.8。"
+"每个通道，通道的平均值被计算，然后调整每个像素的每个分量x为(x -均值)*对比度因子+均值。对比度因子以随机均匀分布的形式被选取，其值在[1-对比度因子，"
+"1+对比度因子]之间。建议值为0.8。"
 
 #: model/images/forms.py:98
 msgid "Whitening"
 msgstr "美白"
 
 #: model/images/forms.py:101
-msgid ""
-"Per-image whitening by subtracting its own mean, and dividing by its own standard "
-"deviation."
+msgid "Per-image whitening by subtracting its own mean, and dividing by its own standard deviation."
 msgstr "每幅图像白化通过减去它自己的平均值，然后除以它自己的标准差。"
 
 #: model/images/forms.py:105
@@ -851,9 +780,7 @@ msgid "HSV Shifting"
 msgstr "HSV转移"
 
 #: model/images/forms.py:107
-msgid ""
-"Augmentation by normal-distributed random shifts in HSV color space, assuming [0 1] "
-"pixel-value range."
+msgid "Augmentation by normal-distributed random shifts in HSV color space, assuming [0 1] pixel-value range."
 msgstr "在HSV颜色空间中，假设像素值范围为[0 1]，通过正态分布的随机位移进行增强。"
 
 #: model/images/forms.py:110
@@ -861,9 +788,7 @@ msgid "Hue"
 msgstr "色调"
 
 #: model/images/forms.py:115 model/images/forms.py:123 model/images/forms.py:131
-msgid ""
-"Standard deviation of a shift that will be performed during preprocessing, assuming [0 "
-"1] pixel-value range."
+msgid "Standard deviation of a shift that will be performed during preprocessing, assuming [0 1] pixel-value range."
 msgstr "假设像素值范围为[0 1]，在预处理期间将执行的移位的标准偏差。"
 
 #: model/images/forms.py:118
@@ -886,14 +811,12 @@ msgstr "首页"
 msgid "Running Jobs"
 msgstr "正在运行作业"
 
-#: templates/home.html:74 templates/partials/home/datasets_pane.html:44
-#: templates/partials/home/model_pane.html:65
+#: templates/home.html:74 templates/partials/home/datasets_pane.html:44 templates/partials/home/model_pane.html:65
 #: templates/partials/home/pretrained_model_pane.html:50 templates/store.html:70
 msgid "Filter"
 msgstr "过滤"
 
-#: templates/home.html:85 templates/partials/home/datasets_pane.html:55
-#: templates/partials/home/model_pane.html:76
+#: templates/home.html:85 templates/partials/home/datasets_pane.html:55 templates/partials/home/model_pane.html:76
 #: templates/partials/home/pretrained_model_pane.html:61
 msgid "Delete"
 msgstr "删除"
@@ -902,14 +825,12 @@ msgstr "删除"
 msgid "Abort"
 msgstr "跳过"
 
-#: templates/home.html:95 templates/partials/home/datasets_pane.html:60
-#: templates/partials/home/model_pane.html:81
+#: templates/home.html:95 templates/partials/home/datasets_pane.html:60 templates/partials/home/model_pane.html:81
 #: templates/partials/home/pretrained_model_pane.html:66
 msgid "Group"
 msgstr "组"
 
-#: templates/home.html:133 templates/partials/home/datasets_pane.html:97
-#: templates/partials/home/model_pane.html:132
+#: templates/home.html:133 templates/partials/home/datasets_pane.html:97 templates/partials/home/model_pane.html:132
 #: templates/partials/home/pretrained_model_pane.html:102
 msgid "Ungrouped"
 msgstr "未分组"
@@ -955,9 +876,7 @@ msgid "Username"
 msgstr "用户名"
 
 #: templates/login.html:20
-msgid ""
-"Must begin with a letter and contain only lowercase letters, numbers, periods, dashes "
-"and underscores."
+msgid "Must begin with a letter and contain only lowercase letters, numbers, periods, dashes and underscores."
 msgstr "必须以字母开头，只能包含小写字母、数字、点、破折号和下划线。"
 
 #: templates/login.html:23
@@ -1008,8 +927,8 @@ msgstr "导入"
 msgid "Close"
 msgstr "关闭"
 
-#: templates/datasets/generic/new.html:10 templates/datasets/generic/new.html:19
-#: templates/models/images/generic/new.html:10 templates/models/images/generic/new.html:19
+#: templates/datasets/generic/new.html:10 templates/datasets/generic/new.html:19 templates/models/images/generic/new.html:10
+#: templates/models/images/generic/new.html:19
 msgid "New"
 msgstr "新建"
 
@@ -1025,48 +944,39 @@ msgstr "新建数据集"
 msgid "Create"
 msgstr "新建"
 
-#: templates/models/images/classification/new.html:10
-#: templates/models/images/classification/new.html:19
+#: templates/models/images/classification/new.html:10 templates/models/images/classification/new.html:19
 msgid "New Image Classification Model"
 msgstr "新的图像分类模型"
 
-#: templates/models/images/classification/new.html:14
-#: templates/models/images/generic/new.html:14 templates/partials/home/model_pane.html:7
+#: templates/models/images/classification/new.html:14 templates/models/images/generic/new.html:14 templates/partials/home/model_pane.html:7
 msgid "New Model"
 msgstr "新建模型"
 
-#: templates/models/images/classification/new.html:46
-#: templates/models/images/generic/new.html:46
+#: templates/models/images/classification/new.html:46 templates/models/images/generic/new.html:46
 msgid "Python Layers"
 msgstr "Python层"
 
-#: templates/models/images/classification/new.html:107
-#: templates/models/images/generic/new.html:106
+#: templates/models/images/classification/new.html:107 templates/models/images/generic/new.html:106
 msgid "Solver Options"
 msgstr "解算器选项"
 
-#: templates/models/images/classification/new.html:180
-#: templates/models/images/generic/new.html:180
+#: templates/models/images/classification/new.html:180 templates/models/images/generic/new.html:180
 msgid "Show advanced learning rate options"
 msgstr "显示高级学习速率选项"
 
-#: templates/models/images/classification/new.html:271
-#: templates/models/images/generic/new.html:270
+#: templates/models/images/classification/new.html:271 templates/models/images/generic/new.html:270
 msgid "Visualize LR"
 msgstr "可视化LR"
 
-#: templates/models/images/classification/new.html:376
-#: templates/models/images/generic/new.html:375
+#: templates/models/images/classification/new.html:376 templates/models/images/generic/new.html:375
 msgid "Data Transformations"
 msgstr "数据转换"
 
-#: templates/models/images/classification/new.html:389
-#: templates/models/images/generic/new.html:388
+#: templates/models/images/classification/new.html:389 templates/models/images/generic/new.html:388
 msgid "Data Augmentations"
 msgstr "数据扩张"
 
-#: templates/models/images/classification/new.html:703
-#: templates/models/images/generic/new.html:670
+#: templates/models/images/classification/new.html:703 templates/models/images/generic/new.html:670
 msgid "Visualize"
 msgstr "可视化"
 
@@ -1074,9 +984,7 @@ msgstr "可视化"
 msgid "Model"
 msgstr "模型"
 
-#: templates/partials/home/datasets_pane.html:26
-#: templates/partials/home/model_pane.html:26
-#: templates/partials/home/pretrained_model_pane.html:32
+#: templates/partials/home/datasets_pane.html:26 templates/partials/home/model_pane.html:26 templates/partials/home/pretrained_model_pane.html:32
 msgid "Group Jobs"
 msgstr "作业组"
 
