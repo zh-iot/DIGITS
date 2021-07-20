@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:18-0700\n"
+"POT-Creation-Date: 2021-07-20 02:30-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,8 @@ msgid "Feature Encoding"
 msgstr ""
 
 #: dataset/generic/forms.py:20 dataset/generic/forms.py:33
-#: model/images/forms.py:29 model/images/forms.py:40 model/images/forms.py:52
+#: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
+#: model/images/forms.py:40 model/images/forms.py:52
 msgid "None"
 msgstr ""
 
@@ -113,6 +114,104 @@ msgstr ""
 
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:26
+msgid "Folder does not exist or is not reachable"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:31
+msgid "Training image folder"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:36
+#: extensions/data/objectDetection/forms.py:54
+msgid "Indicate a folder of images to use for training"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:40
+msgid "Training label folder"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:45
+msgid "Indicate a folder of training labels"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:49
+msgid "Validation image folder"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:58
+msgid "Validation label folder"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:63
+msgid "Indicate a folder of validation labels"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:67
+msgid "Resize Image Width"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:72
+#: extensions/data/objectDetection/forms.py:81
+msgid "If specified, images will be resized to that dimension after padding"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:76
+msgid "Resize Image Height"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:85
+msgid "Padding Image Width"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:91
+#: extensions/data/objectDetection/forms.py:101
+msgid "If specified, images will be padded to that dimension"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:95
+msgid "Padding Image Height"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:105
+msgid "Channel conversion"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:107
+msgid "RGB"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:108
+msgid "Grayscale"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:112
+msgid "Perform selected channel conversion."
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:116
+msgid "Minimum box size (in pixels) for validation set"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:122
+msgid ""
+"Retain only the boxes that are larger than the specified value in both "
+"dimensions. This only affects objects in the validation set. Enter 0 to "
+"disable this threshold."
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:128
+msgid "Custom classes"
+msgstr ""
+
+#: extensions/data/objectDetection/forms.py:132
+msgid ""
+"Enter a comma-separated list of class names. Class IDs are assigned "
+"sequentially, starting from 0. Unmapped class names automatically map to "
+"0. Leave this field blank to use default class mappings. See object "
+"detection extension documentation for more information."
 msgstr ""
 
 #: extensions/data/objectDetection/template.html:7

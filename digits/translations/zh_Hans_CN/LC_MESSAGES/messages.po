@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:18-0700\n"
-"PO-Revision-Date: 2021-07-20 17:24+0800\n"
+"POT-Creation-Date: 2021-07-20 02:30-0700\n"
+"PO-Revision-Date: 2021-07-20 17:33+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -40,7 +40,8 @@ msgid "Feature Encoding"
 msgstr "功能编码"
 
 #: dataset/generic/forms.py:20 dataset/generic/forms.py:33
-#: model/images/forms.py:29 model/images/forms.py:40 model/images/forms.py:52
+#: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
+#: model/images/forms.py:40 model/images/forms.py:52
 msgid "None"
 msgstr "没有一个"
 
@@ -117,6 +118,107 @@ msgstr "分割"
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"
 msgstr "目标检测"
+
+#: extensions/data/objectDetection/forms.py:26
+msgid "Folder does not exist or is not reachable"
+msgstr "文件夹不存在或不可达"
+
+#: extensions/data/objectDetection/forms.py:31
+msgid "Training image folder"
+msgstr "训练图像文件夹"
+
+#: extensions/data/objectDetection/forms.py:36
+#: extensions/data/objectDetection/forms.py:54
+msgid "Indicate a folder of images to use for training"
+msgstr "指示用于训练的图像文件夹"
+
+#: extensions/data/objectDetection/forms.py:40
+msgid "Training label folder"
+msgstr "培训标签文件夹"
+
+#: extensions/data/objectDetection/forms.py:45
+msgid "Indicate a folder of training labels"
+msgstr "指示培训标签的文件夹"
+
+#: extensions/data/objectDetection/forms.py:49
+msgid "Validation image folder"
+msgstr "验证图像文件夹"
+
+#: extensions/data/objectDetection/forms.py:58
+msgid "Validation label folder"
+msgstr "验证标签文件夹"
+
+#: extensions/data/objectDetection/forms.py:63
+msgid "Indicate a folder of validation labels"
+msgstr "指示验证标签的文件夹"
+
+#: extensions/data/objectDetection/forms.py:67
+msgid "Resize Image Width"
+msgstr "调整图像的宽度"
+
+#: extensions/data/objectDetection/forms.py:72
+#: extensions/data/objectDetection/forms.py:81
+msgid "If specified, images will be resized to that dimension after padding"
+msgstr "如果指定，图像将在填充后调整为该尺寸"
+
+#: extensions/data/objectDetection/forms.py:76
+msgid "Resize Image Height"
+msgstr "调整图像的高度调整图像大小(宽×高)"
+
+#: extensions/data/objectDetection/forms.py:85
+msgid "Padding Image Width"
+msgstr "填充图像宽度"
+
+#: extensions/data/objectDetection/forms.py:91
+#: extensions/data/objectDetection/forms.py:101
+msgid "If specified, images will be padded to that dimension"
+msgstr "如果指定，图像将填充到该维度"
+
+#: extensions/data/objectDetection/forms.py:95
+msgid "Padding Image Height"
+msgstr "填充图像的高度"
+
+#: extensions/data/objectDetection/forms.py:105
+msgid "Channel conversion"
+msgstr "转换频道"
+
+#: extensions/data/objectDetection/forms.py:107
+msgid "RGB"
+msgstr "RGB"
+
+#: extensions/data/objectDetection/forms.py:108
+msgid "Grayscale"
+msgstr "灰度"
+
+#: extensions/data/objectDetection/forms.py:112
+msgid "Perform selected channel conversion."
+msgstr "执行选定的信道转换。"
+
+#: extensions/data/objectDetection/forms.py:116
+msgid "Minimum box size (in pixels) for validation set"
+msgstr "验证集的最小框大小(以像素为单位)"
+
+#: extensions/data/objectDetection/forms.py:122
+msgid ""
+"Retain only the boxes that are larger than the specified value in both "
+"dimensions. This only affects objects in the validation set. Enter 0 to "
+"disable this threshold."
+msgstr ""
+"只保留两个维度中大于指定值的框。这只影响验证集中的对象。输入0禁用该阈值。"
+
+#: extensions/data/objectDetection/forms.py:128
+msgid "Custom classes"
+msgstr "定制类"
+
+#: extensions/data/objectDetection/forms.py:132
+msgid ""
+"Enter a comma-separated list of class names. Class IDs are assigned "
+"sequentially, starting from 0. Unmapped class names automatically map to 0. "
+"Leave this field blank to use default class mappings. See object detection "
+"extension documentation for more information."
+msgstr ""
+"输入以逗号分隔的类名列表。类id按顺序分配，从0开始。未映射的类名自动映射到0。将"
+"此字段留空以使用默认的类映射。有关更多信息，请参见对象检测扩展文档。"
 
 #: extensions/data/objectDetection/template.html:7
 msgid "Object Detection Dataset Options"
