@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:51-0700\n"
-"PO-Revision-Date: 2021-07-20 18:52+0800\n"
+"POT-Creation-Date: 2021-07-20 03:59-0700\n"
+"PO-Revision-Date: 2021-07-20 19:00+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -39,11 +39,11 @@ msgstr "从模型库检索"
 msgid "Dataset Name"
 msgstr "名字"
 
-#: dataset/forms.py:21 model/forms.py:383
+#: dataset/forms.py:21 model/forms.py:381
 msgid "Group Name"
 msgstr "组名称"
 
-#: dataset/forms.py:22 model/forms.py:384
+#: dataset/forms.py:22 model/forms.py:382
 msgid "An optional group name for organization on the main page."
 msgstr "可选的组名，用于在主页面上的组织。"
 
@@ -872,39 +872,44 @@ msgstr "自定义网络"
 msgid "Pretrained model(s)"
 msgstr "预训练模型"
 
-#: model/forms.py:320
+#: model/forms.py:306
+#, python-format
+msgid "Paths to pretrained model files, separated by '%(pathsep)s'. Only edit this field if you understand how fine-tuning works in caffe or torch."
+msgstr "预训练模型文件的路径，以'%(pathsep)s'分隔。只有在您了解如何在caffe或torch中进行微调时才可以编辑此字段。"
+
+#: model/forms.py:318
 msgid "Select which GPU you would like to use"
 msgstr "选择你想要使用的图形处理器"
 
-#: model/forms.py:337
+#: model/forms.py:335
 msgid "Select which GPU[s] you would like to use"
 msgstr "选择您想要使用的图形处理器"
 
-#: model/forms.py:349
+#: model/forms.py:347
 msgid "The job won't start until all of the chosen GPUs are available."
 msgstr "在所有选定的gpu可用之前，作业不会启动。"
 
-#: model/forms.py:354
+#: model/forms.py:352
 msgid "Select which GPU[s] you would like to use (comma separated)"
 msgstr "选择你想要使用的GPU(逗号分隔)"
 
-#: model/forms.py:361
+#: model/forms.py:359
 msgid "Use this many GPUs (next available)"
 msgstr "使用这些gpu(下一个可用的)"
 
-#: model/forms.py:376
+#: model/forms.py:374
 msgid "Model Name"
 msgstr "模型名称"
 
-#: model/forms.py:380
+#: model/forms.py:378
 msgid "An identifier, later used to refer to this model in the Application."
 msgstr "一个标识符，稍后用于在应用程序中引用此模型。"
 
-#: model/forms.py:389
+#: model/forms.py:387
 msgid "Shuffle Train Data"
 msgstr "洗牌训练数据"
 
-#: model/forms.py:391
+#: model/forms.py:389
 msgid "For every epoch, shuffle the data before training."
 msgstr "对于每一个时代，训练前都要洗牌数据。"
 

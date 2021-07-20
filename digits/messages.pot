@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:51-0700\n"
+"POT-Creation-Date: 2021-07-20 03:59-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,11 @@ msgstr ""
 msgid "Dataset Name"
 msgstr ""
 
-#: dataset/forms.py:21 model/forms.py:383
+#: dataset/forms.py:21 model/forms.py:381
 msgid "Group Name"
 msgstr ""
 
-#: dataset/forms.py:22 model/forms.py:384
+#: dataset/forms.py:22 model/forms.py:382
 msgid "An optional group name for organization on the main page."
 msgstr ""
 
@@ -972,39 +972,46 @@ msgstr ""
 msgid "Pretrained model(s)"
 msgstr ""
 
-#: model/forms.py:320
+#: model/forms.py:306
+#, python-format
+msgid ""
+"Paths to pretrained model files, separated by '%(pathsep)s'. Only edit "
+"this field if you understand how fine-tuning works in caffe or torch."
+msgstr ""
+
+#: model/forms.py:318
 msgid "Select which GPU you would like to use"
 msgstr ""
 
-#: model/forms.py:337
+#: model/forms.py:335
 msgid "Select which GPU[s] you would like to use"
 msgstr ""
 
-#: model/forms.py:349
+#: model/forms.py:347
 msgid "The job won't start until all of the chosen GPUs are available."
 msgstr ""
 
-#: model/forms.py:354
+#: model/forms.py:352
 msgid "Select which GPU[s] you would like to use (comma separated)"
 msgstr ""
 
-#: model/forms.py:361
+#: model/forms.py:359
 msgid "Use this many GPUs (next available)"
 msgstr ""
 
-#: model/forms.py:376
+#: model/forms.py:374
 msgid "Model Name"
 msgstr ""
 
-#: model/forms.py:380
+#: model/forms.py:378
 msgid "An identifier, later used to refer to this model in the Application."
 msgstr ""
 
-#: model/forms.py:389
+#: model/forms.py:387
 msgid "Shuffle Train Data"
 msgstr ""
 
-#: model/forms.py:391
+#: model/forms.py:389
 msgid "For every epoch, shuffle the data before training."
 msgstr ""
 
