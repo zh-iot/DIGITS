@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:38-0700\n"
-"PO-Revision-Date: 2021-07-20 18:44+0800\n"
+"POT-Creation-Date: 2021-07-20 03:47-0700\n"
+"PO-Revision-Date: 2021-07-20 18:48+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -348,7 +348,7 @@ msgstr "训练图像路径"
 msgid ""
 "Indicate a path which holds subfolders full of images. Each subfolder should be named according to the desired label for the images that it "
 "holds. "
-msgstr "指示包含充满图像的子文件夹的路径。每个子文件夹都应该根据它所包含的图像所需的标签来命名。"
+msgstr "指示包含充满图像的子文件夹的路径。每个子文件夹都应该根据它所包含的图像所需的标签来命名 "
 
 #: dataset/images/classification/forms.py:394
 msgid "Access Key"
@@ -1189,6 +1189,10 @@ msgstr "新建"
 #: templates/datasets/images/classification/new.html:10 templates/datasets/images/classification/new.html:20
 msgid "New Image Classification Dataset"
 msgstr "新的图像分类数据集"
+
+#: templates/datasets/images/classification/new.html:39
+msgid "Image size (Width x Height)"
+msgstr "图像大小(宽×高)"
 
 #: templates/datasets/images/classification/new.html:43
 msgid "Input images will be resized to fit."
