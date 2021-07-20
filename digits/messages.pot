@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:52-0700\n"
+"POT-Creation-Date: 2021-07-20 03:04-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1032,6 +1032,52 @@ msgstr ""
 
 #: templates/datasets/generic/new.html:73
 msgid "Create"
+msgstr ""
+
+#: templates/models/python_layer_explanation.html:3
+msgid "Using Python layers"
+msgstr ""
+
+#: templates/models/python_layer_explanation.html:6
+msgid ""
+"Caffe lets you define custom layers with Python.\n"
+"    Python layers are obviously much slower than their C++ counterparts, "
+"but are easy to write and test quickly since using them doesn't require "
+"recompilation.\n"
+"    DIGITS moves some files around for you so that you can specify "
+"different Python layers for each network."
+msgstr ""
+
+#: templates/models/python_layer_explanation.html:11
+msgid ""
+"The BVLC and DIGITS documentation online has detailed information and "
+"tutorials about how to use these layers.\n"
+"    Some of that information has been re-created here for your "
+"convenience."
+msgstr ""
+
+#: templates/models/python_layer_explanation.html:16
+msgid ""
+"First, you'll need to create a Python file which defines one or more "
+"layers.\n"
+"    As an example, here is a layer which re-creates the functionality of "
+"the standard Accuracy layer using JSON-encoded parameters:"
+msgstr ""
+
+#: templates/models/python_layer_explanation.html:55
+msgid "NOTE"
+msgstr ""
+
+#: templates/models/python_layer_explanation.html:55
+msgid ""
+"The uploaded file will be renamed to <b>digits_python_layers.py</b>, "
+"discarding the original filename."
+msgstr ""
+
+#: templates/models/python_layer_explanation.html:59
+msgid ""
+"To add the layer to your network, include this prototxt snippet in your "
+"custom network definition:"
 msgstr ""
 
 #: templates/models/images/classification/new.html:10
