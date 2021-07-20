@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:30-0700\n"
+"POT-Creation-Date: 2021-07-20 02:36-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,18 @@ msgstr ""
 
 #: views.py:95
 msgid "Retrieve from Model Store"
+msgstr ""
+
+#: dataset/forms.py:17
+msgid "Dataset Name"
+msgstr ""
+
+#: dataset/forms.py:21 model/forms.py:383
+msgid "Group Name"
+msgstr ""
+
+#: dataset/forms.py:22 model/forms.py:384
+msgid "An optional group name for organization on the main page."
 msgstr ""
 
 #: dataset/generic/forms.py:18
@@ -560,14 +572,6 @@ msgstr ""
 
 #: model/forms.py:380
 msgid "An identifier, later used to refer to this model in the Application."
-msgstr ""
-
-#: model/forms.py:383
-msgid "Group Name"
-msgstr ""
-
-#: model/forms.py:384
-msgid "An optional group name for organization on the main page."
 msgstr ""
 
 #: model/forms.py:389

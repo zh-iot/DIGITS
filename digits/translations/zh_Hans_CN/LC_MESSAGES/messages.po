@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 02:30-0700\n"
-"PO-Revision-Date: 2021-07-20 17:33+0800\n"
+"POT-Creation-Date: 2021-07-20 02:36-0700\n"
+"PO-Revision-Date: 2021-07-20 17:37+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -35,6 +35,18 @@ msgstr "上传预训练模型"
 msgid "Retrieve from Model Store"
 msgstr "从模型库检索"
 
+#: dataset/forms.py:17
+msgid "Dataset Name"
+msgstr "名字"
+
+#: dataset/forms.py:21 model/forms.py:383
+msgid "Group Name"
+msgstr "组名称"
+
+#: dataset/forms.py:22 model/forms.py:384
+msgid "An optional group name for organization on the main page."
+msgstr "可选的组名，用于在主页面上的组织。"
+
 #: dataset/generic/forms.py:18
 msgid "Feature Encoding"
 msgstr "功能编码"
@@ -43,7 +55,7 @@ msgstr "功能编码"
 #: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
 #: model/images/forms.py:40 model/images/forms.py:52
 msgid "None"
-msgstr "没有一个"
+msgstr "没有"
 
 #: dataset/generic/forms.py:21 dataset/generic/forms.py:34
 msgid "PNG (lossless)"
@@ -102,10 +114,9 @@ msgstr "不是"
 
 #: dataset/generic/forms.py:78
 msgid ""
-"Check that each entry in the database has the same shape.Disabling this will "
-"also disable mean image computation."
-msgstr ""
-"检查数据库中的每个条目是否具有相同的形状。禁用此功能也将禁用平均图像计算。"
+"Check that each entry in the database has the same shape.Disabling this will also "
+"disable mean image computation."
+msgstr "检查数据库中的每个条目是否具有相同的形状。禁用此功能也将禁用平均图像计算。"
 
 #: extensions/data/imageProcessing/data.py:107
 msgid "Processing"
@@ -201,10 +212,9 @@ msgstr "验证集的最小框大小(以像素为单位)"
 #: extensions/data/objectDetection/forms.py:122
 msgid ""
 "Retain only the boxes that are larger than the specified value in both "
-"dimensions. This only affects objects in the validation set. Enter 0 to "
-"disable this threshold."
-msgstr ""
-"只保留两个维度中大于指定值的框。这只影响验证集中的对象。输入0禁用该阈值。"
+"dimensions. This only affects objects in the validation set. Enter 0 to disable "
+"this threshold."
+msgstr "只保留两个维度中大于指定值的框。这只影响验证集中的对象。输入0禁用该阈值。"
 
 #: extensions/data/objectDetection/forms.py:128
 msgid "Custom classes"
@@ -212,13 +222,13 @@ msgstr "定制类"
 
 #: extensions/data/objectDetection/forms.py:132
 msgid ""
-"Enter a comma-separated list of class names. Class IDs are assigned "
-"sequentially, starting from 0. Unmapped class names automatically map to 0. "
-"Leave this field blank to use default class mappings. See object detection "
-"extension documentation for more information."
+"Enter a comma-separated list of class names. Class IDs are assigned sequentially, "
+"starting from 0. Unmapped class names automatically map to 0. Leave this field "
+"blank to use default class mappings. See object detection extension documentation "
+"for more information."
 msgstr ""
-"输入以逗号分隔的类名列表。类id按顺序分配，从0开始。未映射的类名自动映射到0。将"
-"此字段留空以使用默认的类映射。有关更多信息，请参见对象检测扩展文档。"
+"输入以逗号分隔的类名列表。类id按顺序分配，从0开始。未映射的类名自动映射到0。将此字"
+"段留空以使用默认的类映射。有关更多信息，请参见对象检测扩展文档。"
 
 #: extensions/data/objectDetection/template.html:7
 msgid "Object Detection Dataset Options"
@@ -228,8 +238,7 @@ msgstr "对象检测数据集选项"
 msgid ""
 "Images can be stored in any of the supported file formats ('.png','.jpg','."
 "jpeg','.bmp','.ppm')."
-msgstr ""
-"图像可以存储在任何支持的文件格式('.png'，'.jpg'，'.jpeg'，'.bmp'，'.ppm')。"
+msgstr "图像可以存储在任何支持的文件格式('.png'，'.jpg'，'.jpeg'，'.bmp'，'.ppm')。"
 
 #: extensions/data/objectDetection/template.html:16
 #: extensions/data/objectDetection/template.html:27
@@ -262,8 +271,7 @@ msgid "Resize image (Width x Height)"
 msgstr "调整图像大小(宽×高)"
 
 #: extensions/data/objectDetection/template.html:61
-msgid ""
-"If specified, input images will be squashed to that dimension after padding."
+msgid "If specified, input images will be squashed to that dimension after padding."
 msgstr "如果指定，输入图像将在填充后被压缩到该维度。"
 
 #: model/forms.py:29
@@ -356,8 +364,8 @@ msgid ""
 "If you provide a random seed, then back-to-back runs with the same model and "
 "dataset should give identical results."
 msgstr ""
-"如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同的"
-"结果。"
+"如果您提供一个随机的种子，那么使用相同的模型和数据集背靠背运行应该会得到相同的结"
+"果。"
 
 #: model/forms.py:144
 msgid "Batch size"
@@ -375,8 +383,8 @@ msgstr "批处理积累"
 
 #: model/forms.py:158
 msgid ""
-"Accumulate gradients over multiple batches (useful when you need a bigger "
-"batch size for training but it doesn't fit in memory)."
+"Accumulate gradients over multiple batches (useful when you need a bigger batch "
+"size for training but it doesn't fit in memory)."
 msgstr "积累多个批次的梯度(当你需要更大的批次大小的训练，但它不适合内存时有用)。"
 
 #: model/forms.py:164
@@ -433,10 +441,9 @@ msgstr "RMS衰减值"
 
 #: model/forms.py:195
 msgid ""
-"If the gradient updates results in oscillations the gradient is reduced by "
-"times 1-rms_decay. Otherwise it will be increased by rms_decay."
-msgstr ""
-"如果梯度更新导致振荡，则梯度减小乘以1-rms_decay。否则将通过rms_decay增加。"
+"If the gradient updates results in oscillations the gradient is reduced by times "
+"1-rms_decay. Otherwise it will be increased by rms_decay."
+msgstr "如果梯度更新导致振荡，则梯度减小乘以1-rms_decay。否则将通过rms_decay增加。"
 
 #: model/forms.py:201
 msgid "Base Learning Rate"
@@ -444,8 +451,8 @@ msgstr "基础学习速率"
 
 #: model/forms.py:206
 msgid ""
-"Affects how quickly the network learns. If you are getting NaN for your loss, "
-"you probably need to lower this value."
+"Affects how quickly the network learns. If you are getting NaN for your loss, you "
+"probably need to lower this value."
 msgstr "影响网络学习的速度。如果您要为您的损失获得NaN，您可能需要降低这个值。"
 
 #: model/forms.py:210
@@ -573,14 +580,6 @@ msgstr "模型名称"
 msgid "An identifier, later used to refer to this model in the Application."
 msgstr "一个标识符，稍后用于在应用程序中引用此模型。"
 
-#: model/forms.py:383
-msgid "Group Name"
-msgstr "组名称"
-
-#: model/forms.py:384
-msgid "An optional group name for organization on the main page."
-msgstr "可选的组名，用于在主页面上的组织。"
-
 #: model/forms.py:389
 msgid "Shuffle Train Data"
 msgstr "洗牌训练数据"
@@ -595,8 +594,8 @@ msgstr "作物的大小"
 
 #: model/images/forms.py:23
 msgid ""
-"If specified, during training a random square crop will be taken from the "
-"input image before using as input for the network."
+"If specified, during training a random square crop will be taken from the input "
+"image before using as input for the network."
 msgstr ""
 "如果指定，在训练期间，将从输入图像中随机选取一个方形裁剪，然后作为网络的输入。"
 
@@ -683,11 +682,11 @@ msgstr "噪音（斯特德夫）"
 
 #: model/images/forms.py:85
 msgid ""
-"Adds AWGN (Additive White Gaussian Noise) during batch preprocessing, assuming "
-"[0 1] pixel-value range. Suggested value is 0.03."
+"Adds AWGN (Additive White Gaussian Noise) during batch preprocessing, assuming [0 "
+"1] pixel-value range. Suggested value is 0.03."
 msgstr ""
-"批处理时加入AWGN (Additive White Gaussian Noise)，假设像素值范围为[0 1]。建议值"
-"为0.03。"
+"批处理时加入AWGN (Additive White Gaussian Noise)，假设像素值范围为[0 1]。建议值为"
+"0.03。"
 
 #: model/images/forms.py:89
 msgid "Contrast (factor)"
@@ -695,14 +694,14 @@ msgstr "对比(因素)"
 
 #: model/images/forms.py:94
 msgid ""
-"Per channel, the mean of the channel is computed and then adjusts each "
-"component x of each pixel to (x - mean) * contrast_factor + mean. The "
-"contrast_factor is picked form a random uniform distribution to yield a value "
-"between [1-contrast_factor, 1+contrast_factor]. Suggested value is 0.8."
+"Per channel, the mean of the channel is computed and then adjusts each component "
+"x of each pixel to (x - mean) * contrast_factor + mean. The contrast_factor is "
+"picked form a random uniform distribution to yield a value between [1-"
+"contrast_factor, 1+contrast_factor]. Suggested value is 0.8."
 msgstr ""
-"每个通道，通道的平均值被计算，然后调整每个像素的每个分量x为(x -均值)*对比度因子"
-"+均值。对比度因子以随机均匀分布的形式被选取，其值在[1-对比度因子，1+对比度因子]"
-"之间。建议值为0.8。"
+"每个通道，通道的平均值被计算，然后调整每个像素的每个分量x为(x -均值)*对比度因子+均"
+"值。对比度因子以随机均匀分布的形式被选取，其值在[1-对比度因子，1+对比度因子]之间。"
+"建议值为0.8。"
 
 #: model/images/forms.py:98
 msgid "Whitening"
@@ -710,8 +709,8 @@ msgstr "美白"
 
 #: model/images/forms.py:101
 msgid ""
-"Per-image whitening by subtracting its own mean, and dividing by its own "
-"standard deviation."
+"Per-image whitening by subtracting its own mean, and dividing by its own standard "
+"deviation."
 msgstr "每幅图像白化通过减去它自己的平均值，然后除以它自己的标准差。"
 
 #: model/images/forms.py:105
@@ -720,8 +719,8 @@ msgstr "HSV转移"
 
 #: model/images/forms.py:107
 msgid ""
-"Augmentation by normal-distributed random shifts in HSV color space, assuming "
-"[0 1] pixel-value range."
+"Augmentation by normal-distributed random shifts in HSV color space, assuming [0 "
+"1] pixel-value range."
 msgstr "在HSV颜色空间中，假设像素值范围为[0 1]，通过正态分布的随机位移进行增强。"
 
 #: model/images/forms.py:110

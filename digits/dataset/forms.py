@@ -6,6 +6,7 @@ from wtforms.validators import DataRequired
 
 from digits import utils
 
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 class DatasetForm(Form):
     """
@@ -13,10 +14,10 @@ class DatasetForm(Form):
     (abstract class)
     """
 
-    dataset_name = utils.forms.StringField(u'Dataset Name',
+    dataset_name = utils.forms.StringField(lazy_gettext(u'Dataset Name'),
                                            validators=[DataRequired()]
                                            )
 
-    group_name = utils.forms.StringField('Group Name',
-                                         tooltip="An optional group name for organization on the main page."
+    group_name = utils.forms.StringField(lazy_gettext('Group Name'),
+                                         tooltip=lazy_gettext("An optional group name for organization on the main page.")
                                          )
