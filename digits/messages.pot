@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 03:47-0700\n"
+"POT-Creation-Date: 2021-07-20 03:51-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1531,6 +1531,33 @@ msgstr ""
 #: templates/models/images/classification/new.html:703
 #: templates/models/images/generic/new.html:670
 msgid "Visualize"
+msgstr ""
+
+#: templates/models/images/classification/partials/new/network_tab_standard.html:18
+msgid "Network"
+msgstr ""
+
+#: templates/models/images/classification/partials/new/network_tab_standard.html:19
+msgid "Details"
+msgstr ""
+
+#: templates/models/images/classification/partials/new/network_tab_standard.html:20
+msgid "Intended image size"
+msgstr ""
+
+#: templates/models/images/classification/partials/new/network_tab_standard.html:28
+#: templates/models/images/classification/partials/new/network_tab_standard.html:34
+#: templates/models/images/classification/partials/new/network_tab_standard.html:40
+#: templates/models/images/classification/partials/new/network_tab_standard.html:46
+msgid "Original paper"
+msgstr ""
+
+#: templates/models/images/classification/partials/new/network_tab_standard.html:31
+msgid "28x28 (gray)"
+msgstr ""
+
+#: templates/models/images/classification/partials/new/network_tab_standard.html:53
+msgid "Customize"
 msgstr ""
 
 #: templates/models/images/generic/new.html:10
