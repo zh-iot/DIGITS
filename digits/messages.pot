@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-18 23:57-0700\n"
+"POT-Creation-Date: 2021-07-19 19:36-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,6 +45,25 @@ msgstr ""
 msgid "Object Detection"
 msgstr ""
 
+#: model/forms.py:29
+msgid "Selected job doesn't exist. Maybe it was deleted by another user."
+msgstr ""
+
+#: model/forms.py:37
+#, python-format
+msgid "Bad network: %(msg)s"
+msgstr ""
+
+#: model/forms.py:50
+#, python-format
+msgid "Server side file, %(file)s, does not exist."
+msgstr ""
+
+#: model/forms.py:66
+#, python-format
+msgid "Python file, %(file)s, needs .py or .pyc extension."
+msgstr ""
+
 #: model/forms.py:72
 msgid "Select Dataset"
 msgstr ""
@@ -53,8 +72,20 @@ msgstr ""
 msgid "Choose the dataset to use for this model."
 msgstr ""
 
+#: model/forms.py:78
+msgid "Use client-side file"
+msgstr ""
+
+#: model/forms.py:83
+msgid "Client-side file"
+msgstr ""
+
 #: model/forms.py:87
 msgid "Choose a Python file on the client containing layer definitions."
+msgstr ""
+
+#: model/forms.py:90
+msgid "Server-side file"
 msgstr ""
 
 #: model/forms.py:95
@@ -167,6 +198,10 @@ msgstr ""
 
 #: model/forms.py:177
 msgid "What type of solver will be used?"
+msgstr ""
+
+#: model/forms.py:185
+msgid "Solver type not supported by this framework"
 msgstr ""
 
 #: model/forms.py:190

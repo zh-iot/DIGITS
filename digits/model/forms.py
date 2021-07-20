@@ -26,7 +26,7 @@ class ModelForm(Form):
             if choice[0] == field.data:
                 found = True
         if not found:
-            raise validators.ValidationError("Selected job doesn't exist. Maybe it was deleted by another user.")
+            raise validators.ValidationError(lazy_gettext("Selected job doesn't exist. Maybe it was deleted by another user."))
 
     def validate_NetParameter(form, field):
         fw = frameworks.get_framework_by_id(form['framework'].data)
@@ -34,7 +34,7 @@ class ModelForm(Form):
             # below function raises a BadNetworkException in case of validation error
             fw.validate_network(field.data)
         except frameworks.errors.BadNetworkError as e:
-            raise validators.ValidationError('Bad network: %s' % e.message)
+            raise validators.ValidationError(lazy_gettext('Bad network: %(msg)s',msg=e.message))
 
     def validate_file_exists(form, field):
         from_client = bool(form.python_layer_from_client.data)
@@ -47,7 +47,7 @@ class ModelForm(Form):
             return
 
         if not os.path.isfile(filename):
-            raise validators.ValidationError('Server side file, %s, does not exist.' % filename)
+            raise validators.ValidationError(lazy_gettext('Server side file, %(file)s, does not exist.', file=filename))
 
     def validate_py_ext(form, field):
         from_client = bool(form.python_layer_from_client.data)
@@ -63,7 +63,7 @@ class ModelForm(Form):
 
         (root, ext) = os.path.splitext(filename)
         if ext != '.py' and ext != '.pyc':
-            raise validators.ValidationError('Python file, %s, needs .py or .pyc extension.' % filename)
+            raise validators.ValidationError(lazy_gettext('Python file, %(file)s, needs .py or .pyc extension.', file=filename))
 
     # Fields
 
@@ -75,19 +75,19 @@ class ModelForm(Form):
     )
 
     python_layer_from_client = utils.forms.BooleanField(
-        u'Use client-side file',
+        lazy_gettext('Use client-side file'),
         default=False,
     )
 
     python_layer_client_file = utils.forms.FileField(
-        u'Client-side file',
+        lazy_gettext('Client-side file'),
         validators=[
             validate_py_ext
         ],
         tooltip=lazy_gettext("Choose a Python file on the client containing layer definitions.")
     )
     python_layer_server_file = utils.forms.StringField(
-        u'Server-side file',
+        lazy_gettext('Server-side file'),
         validators=[
             validate_file_exists,
             validate_py_ext
@@ -182,7 +182,7 @@ class ModelForm(Form):
         if fw is not None:
             if not fw.supports_solver_type(field.data):
                 raise validators.ValidationError(
-                    'Solver type not supported by this framework')
+                    lazy_gettext('Solver type not supported by this framework'))
 
     # Additional settings specific to selected solver
 
@@ -303,9 +303,9 @@ class ModelForm(Form):
 
     custom_network_snapshot = utils.forms.TextField(
         lazy_gettext('Pretrained model(s)'),
-        tooltip=("Paths to pretrained model files, separated by '%s'. "
+        tooltip=(lazy_gettext(("Paths to pretrained model files, separated by '%(pathsep)s'. "
                  "Only edit this field if you understand how fine-tuning "
-                 "works in caffe or torch." % os.path.pathsep)
+                 "works in caffe or torch."), pathsep=os.path.pathsep))
     )
 
     def validate_custom_network_snapshot(form, field):

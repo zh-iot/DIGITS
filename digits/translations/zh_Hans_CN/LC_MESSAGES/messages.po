@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-18 23:57-0700\n"
-"PO-Revision-Date: 2021-07-19 15:16+0800\n"
+"POT-Creation-Date: 2021-07-19 19:36-0700\n"
+"PO-Revision-Date: 2021-07-20 10:43+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -47,6 +47,25 @@ msgstr "分割"
 msgid "Object Detection"
 msgstr "目标检测"
 
+#: model/forms.py:29
+msgid "Selected job doesn't exist. Maybe it was deleted by another user."
+msgstr "所选作业不存在。可能是被其他用户删除了。"
+
+#: model/forms.py:37
+#, python-format
+msgid "Bad network: %(msg)s"
+msgstr "糟糕的网络:%(msg)s"
+
+#: model/forms.py:50
+#, python-format
+msgid "Server side file, %(file)s, does not exist."
+msgstr "服务器端文件%(file)s不存在。"
+
+#: model/forms.py:66
+#, python-format
+msgid "Python file, %(file)s, needs .py or .pyc extension."
+msgstr "Python文件%(file)s需要.py或.pyc扩展名。"
+
 #: model/forms.py:72
 msgid "Select Dataset"
 msgstr "选择数据集"
@@ -55,9 +74,21 @@ msgstr "选择数据集"
 msgid "Choose the dataset to use for this model."
 msgstr "选择要用于此模型的数据集。"
 
+#: model/forms.py:78
+msgid "Use client-side file"
+msgstr "使用客户端文件"
+
+#: model/forms.py:83
+msgid "Client-side file"
+msgstr "客户端文件"
+
 #: model/forms.py:87
 msgid "Choose a Python file on the client containing layer definitions."
 msgstr "在客户端上选择一个包含层定义的Python文件。"
+
+#: model/forms.py:90
+msgid "Server-side file"
+msgstr "服务器端文件"
 
 #: model/forms.py:95
 msgid "Choose a Python file on the server containing layer definitions."
@@ -172,6 +203,10 @@ msgstr "FTRL (Follow-The-Regularized-Leader)"
 #: model/forms.py:177
 msgid "What type of solver will be used?"
 msgstr "将使用什么类型的求解器?"
+
+#: model/forms.py:185
+msgid "Solver type not supported by this framework"
+msgstr "此框架不支持求解器类型"
 
 #: model/forms.py:190
 msgid "RMS decay value"
@@ -666,19 +701,19 @@ msgstr "暂无数据."
 #: utils/forms.py:412
 #, python-format
 msgid "Number %(data)s must be at least %(min)s."
-msgstr ""
+msgstr "数字%(data)s必须至少%(min)s。"
 
 #: utils/forms.py:414
 #, python-format
 msgid "Number %(data)s must be at most %(max)s."
-msgstr ""
+msgstr "数字%(data)s不能超过%(max)s。"
 
 #: utils/forms.py:416
 #, python-format
 msgid "Number %(data)s must be greater than %(min)s."
-msgstr ""
+msgstr "数字%(data)s必须大于%(min)s。"
 
 #: utils/forms.py:418
 #, python-format
 msgid "Number %(data)s must be less than %(max)s."
-msgstr ""
+msgstr "数字%(data)s必须小于%(max)s。"
