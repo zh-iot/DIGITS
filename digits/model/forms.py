@@ -305,7 +305,7 @@ class ModelForm(Form):
         lazy_gettext('Pretrained model(s)'),
         tooltip=(lazy_gettext(("Paths to pretrained model files, separated by '%(pathsep)s'. "
                  "Only edit this field if you understand how fine-tuning "
-                 "works in caffe or torch."), pathsep=os.path.pathsep))
+                 "works in caffe or torch.", pathsep=os.path.pathsep)))
     )
 
     def validate_custom_network_snapshot(form, field):
