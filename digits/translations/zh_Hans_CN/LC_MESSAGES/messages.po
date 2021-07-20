@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 01:42-0700\n"
-"PO-Revision-Date: 2021-07-20 16:44+0800\n"
+"POT-Creation-Date: 2021-07-20 02:12-0700\n"
+"PO-Revision-Date: 2021-07-20 17:12+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -49,7 +49,8 @@ msgid "PNG (lossless)"
 msgstr "PNG (无损)"
 
 #: dataset/generic/forms.py:22 dataset/generic/forms.py:35
-msgid "JPEG (lossy, 90% quality)"
+#, fuzzy, python-format
+msgid "JPEG (lossy, 90%% quality)"
 msgstr "JPEG(有损，90%质量)"
 
 #: dataset/generic/forms.py:24 dataset/generic/forms.py:37
