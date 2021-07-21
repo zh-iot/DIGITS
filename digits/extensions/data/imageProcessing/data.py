@@ -10,7 +10,7 @@ import numpy as np
 from digits.utils import image, subclass, override, constants
 from ..interface import DataIngestionInterface
 from .forms import DatasetForm
-from flask_babel import Babel, gettext as _
+from flask_babel import Babel, gettext as _, ngettext
 
 TEMPLATE = "template.html"
 
@@ -62,7 +62,7 @@ class DataIngestion(DataIngestionInterface):
         if image.ndim == 2:
             image = image[..., np.newaxis]
         elif image.ndim != 3:
-            raise ValueError("Unhandled number of channels: %d" % image.ndim)
+            raise ValueError(ngettext("Unhandled number of channels: %(ndim)d", ndim = image.ndim))
         # transpose to CHW
         image = image.transpose(2, 0, 1)
         return image
@@ -123,8 +123,8 @@ class DataIngestion(DataIngestionInterface):
         # make sure filenames match
         if len(feature_image_list) != len(label_image_list):
             raise ValueError(
-                "Expect same number of images in feature and label folders (%d!=%d)"
-                % (len(feature_image_list), len(label_image_list)))
+                ngettext("Expect same number of images in feature and label folders (%(num1)d!=%(num2)d)", dict(num1=len(feature_image_list), num2=len(label_image_list)))
+            )
 
         for idx in range(len(feature_image_list)):
             feature_name = os.path.splitext(
@@ -132,8 +132,7 @@ class DataIngestion(DataIngestionInterface):
             label_name = os.path.splitext(
                 os.path.split(label_image_list[idx])[1])[0]
             if feature_name != label_name:
-                raise ValueError("No corresponding feature/label pair found for (%s,%s)"
-                                 % (feature_name, label_name))
+                raise ValueError(_("No corresponding feature/label pair found for (%(feature)s,%(label)s)" , dict(feature=feature_name, label=label_name)))
 
         # split lists if there is no val folder
         if not self.has_val_folder:
@@ -151,7 +150,7 @@ class DataIngestion(DataIngestionInterface):
                 if filename.lower().endswith(image.SUPPORTED_EXTENSIONS):
                     image_files.append('%s' % os.path.join(dirpath, filename))
         if len(image_files) == 0:
-            raise ValueError("Unable to find supported images in %s" % folder)
+            raise ValueError(_("Unable to find supported images in %(folder)s", folder))
         return sorted(image_files)
 
     def split_image_list(self, filelist, stage):
@@ -160,8 +159,7 @@ class DataIngestion(DataIngestionInterface):
             random.shuffle(self.random_indices)
         elif len(filelist) != len(self.random_indices):
             raise ValueError(
-                "Expect same number of images in folders (%d!=%d)"
-                % (len(filelist), len(self.random_indices)))
+                ngettext("Expect same number of images in folders (%(num1)d!=%(num2)d)", dict(num1=len(filelist), num2=len(self.random_indices))))
         filelist = [filelist[idx] for idx in self.random_indices]
         pct_val = int(self.folder_pct_val)
         n_val_entries = int(math.floor(len(filelist) * pct_val / 100))
@@ -170,4 +168,4 @@ class DataIngestion(DataIngestionInterface):
         elif stage == constants.TRAIN_DB:
             return filelist[n_val_entries:]
         else:
-            raise ValueError("Unknown stage: %s" % stage)
+            raise ValueError(_("Unknown stage: %(stage)s", stage=stage))

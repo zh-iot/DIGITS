@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-21 00:44-0700\n"
-"PO-Revision-Date: 2021-07-21 15:45+0800\n"
+"POT-Creation-Date: 2021-07-21 01:23-0700\n"
+"PO-Revision-Date: 2021-07-21 16:26+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -451,6 +451,21 @@ msgstr "解析文件夹 (%(folder)s)"
 msgid "Processing"
 msgstr "处理中"
 
+#: extensions/data/imageProcessing/data.py:135 extensions/data/imageSegmentation/data.py:180
+#, python-format
+msgid "No corresponding feature/label pair found for (%(feature)s,%(label)s)"
+msgstr "(%(feature)s，%(label)s)没有找到对应的特性/标签对"
+
+#: extensions/data/imageProcessing/data.py:153 extensions/data/imageSegmentation/data.py:220 extensions/data/objectDetection/data.py:229
+#, python-format
+msgid "Unable to find supported images in %(folder)s"
+msgstr "无法在%(folder)s中找到支持的图像"
+
+#: extensions/data/imageProcessing/data.py:171 extensions/data/imageSegmentation/data.py:239
+#, python-format
+msgid "Unknown stage: %(stage)s"
+msgstr "未知的阶段:%(stage)s"
+
 #: extensions/data/imageProcessing/forms.py:28 extensions/data/imageSegmentation/forms.py:28 extensions/data/objectDetection/forms.py:26
 msgid "Folder does not exist or is not reachable"
 msgstr "文件夹不存在或不可达"
@@ -505,9 +520,34 @@ msgstr "执行选定的信道转换。"
 msgid "folder or URL"
 msgstr "文件夹或URL"
 
+#: extensions/data/imageSegmentation/data.py:62
+#, python-format
+msgid "Your color map file seems to be badly formatted: '%(val)s' is not an integer"
+msgstr "您的彩色地图文件似乎格式化不良:'%(val)s'不是一个整数"
+
+#: extensions/data/imageSegmentation/data.py:92
+msgid "All label images must use the same palette"
+msgstr "所有标签图像必须使用相同的调色板"
+
 #: extensions/data/imageSegmentation/data.py:150
 msgid "Segmentation"
 msgstr "分割"
+
+#: extensions/data/imageSegmentation/data.py:202
+#, python-format
+msgid ""
+"Labels are expected to be single-channel (paletted or  grayscale) images - %(filename)s mode is '%(mode)s'. If your labels are RGB images then "
+"set the 'Color Map Specification' field to 'from text file' and provide a color map text file."
+msgstr ""
+"标签应是单通道(调色板或灰度)图像- %(filename)s模式为'%(mode)s'。如果你的标签是RGB图像，然后设置'Color Map Specification'字段从文本文件'，并提供一"
+"个彩色地图文本文件。"
+
+#: extensions/data/imageSegmentation/data.py:208
+#, python-format
+msgid ""
+"Labels are expected to be RGB images - %(filename)s mode is '%(mode)s'. If your labels are palette or grayscale images then set the 'Color Map "
+"Specification' field to 'from label image'."
+msgstr "标签应该是RGB图像- %(filename)s模式是'%(mode)s'。如果您的标签是调色板或灰度图像，那么将“颜色地图规格”字段设置为“从标签图像”。"
 
 #: extensions/data/imageSegmentation/forms.py:39
 msgid "File does not exist or is not reachable"
@@ -576,6 +616,16 @@ msgstr "文件下属"
 #: extensions/data/imageSegmentation/template.html:99
 msgid "Note: the recommended label encoding is PNG."
 msgstr "注意:推荐使用PNG格式。"
+
+#: extensions/data/objectDetection/data.py:93
+#, python-format
+msgid "Unsupported image shape: %(shape)s"
+msgstr "不支持的图像形状:%(shape)s"
+
+#: extensions/data/objectDetection/data.py:103
+#, python-format
+msgid "Label key %(label_id)s not found in label folder"
+msgstr "在标签文件夹中找不到标签键%(label_id)s"
 
 #: extensions/data/objectDetection/data.py:172
 msgid "Object Detection"

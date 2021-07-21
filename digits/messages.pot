@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-21 00:44-0700\n"
+"POT-Creation-Date: 2021-07-21 01:23-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -512,6 +512,25 @@ msgstr ""
 msgid "Processing"
 msgstr ""
 
+#: extensions/data/imageProcessing/data.py:135
+#: extensions/data/imageSegmentation/data.py:180
+#, python-format
+msgid "No corresponding feature/label pair found for (%(feature)s,%(label)s)"
+msgstr ""
+
+#: extensions/data/imageProcessing/data.py:153
+#: extensions/data/imageSegmentation/data.py:220
+#: extensions/data/objectDetection/data.py:229
+#, python-format
+msgid "Unable to find supported images in %(folder)s"
+msgstr ""
+
+#: extensions/data/imageProcessing/data.py:171
+#: extensions/data/imageSegmentation/data.py:239
+#, python-format
+msgid "Unknown stage: %(stage)s"
+msgstr ""
+
 #: extensions/data/imageProcessing/forms.py:28
 #: extensions/data/imageSegmentation/forms.py:28
 #: extensions/data/objectDetection/forms.py:26
@@ -582,8 +601,36 @@ msgstr ""
 msgid "folder or URL"
 msgstr ""
 
+#: extensions/data/imageSegmentation/data.py:62
+#, python-format
+msgid ""
+"Your color map file seems to be badly formatted: '%(val)s' is not an "
+"integer"
+msgstr ""
+
+#: extensions/data/imageSegmentation/data.py:92
+msgid "All label images must use the same palette"
+msgstr ""
+
 #: extensions/data/imageSegmentation/data.py:150
 msgid "Segmentation"
+msgstr ""
+
+#: extensions/data/imageSegmentation/data.py:202
+#, python-format
+msgid ""
+"Labels are expected to be single-channel (paletted or  grayscale) images "
+"- %(filename)s mode is '%(mode)s'. If your labels are RGB images then set"
+" the 'Color Map Specification' field to 'from text file' and provide a "
+"color map text file."
+msgstr ""
+
+#: extensions/data/imageSegmentation/data.py:208
+#, python-format
+msgid ""
+"Labels are expected to be RGB images - %(filename)s mode is '%(mode)s'. "
+"If your labels are palette or grayscale images then set the 'Color Map "
+"Specification' field to 'from label image'."
 msgstr ""
 
 #: extensions/data/imageSegmentation/forms.py:39
@@ -661,6 +708,16 @@ msgstr ""
 
 #: extensions/data/imageSegmentation/template.html:99
 msgid "Note: the recommended label encoding is PNG."
+msgstr ""
+
+#: extensions/data/objectDetection/data.py:93
+#, python-format
+msgid "Unsupported image shape: %(shape)s"
+msgstr ""
+
+#: extensions/data/objectDetection/data.py:103
+#, python-format
+msgid "Label key %(label_id)s not found in label folder"
 msgstr ""
 
 #: extensions/data/objectDetection/data.py:172
