@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 23:54-0700\n"
+"POT-Creation-Date: 2021-07-21 00:11-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1314,6 +1314,10 @@ msgstr ""
 msgid "Upload Tar or Zip Archive"
 msgstr ""
 
+#: static/js/PretrainedModel.js:126
+msgid "Manual Entry"
+msgstr ""
+
 #: static/js/PretrainedModel.js:176
 msgid "Weights (**.caffemodel)"
 msgstr ""
@@ -1326,35 +1330,35 @@ msgstr ""
 msgid "Labels file: (labels.txt)"
 msgstr ""
 
-#: static/js/PretrainedModel.js:183 static/js/PretrainedModel.js:196
+#: static/js/PretrainedModel.js:182 static/js/PretrainedModel.js:194
 msgid "Upload Model"
 msgstr ""
 
-#: static/js/PretrainedModel.js:189
+#: static/js/PretrainedModel.js:188
 msgid "Weights (**.t7)"
 msgstr ""
 
-#: static/js/PretrainedModel.js:190
+#: static/js/PretrainedModel.js:189
 msgid "Model Definition: (model.lua)"
 msgstr ""
 
-#: static/js/PretrainedModel.js:191
+#: static/js/PretrainedModel.js:190
 msgid "Labels file: (Optional)"
 msgstr ""
 
-#: static/js/PretrainedModel.js:208
+#: static/js/PretrainedModel.js:206
 msgid "Uploading archive, one moment..."
 msgstr ""
 
-#: static/js/PretrainedModel.js:213
+#: static/js/PretrainedModel.js:211
 msgid "Bad File Type"
 msgstr ""
 
-#: static/js/PretrainedModel.js:214 static/js/PretrainedModel.js:229
+#: static/js/PretrainedModel.js:212 static/js/PretrainedModel.js:227
 msgid "Try Upload Again?"
 msgstr ""
 
-#: static/js/PretrainedModel.js:228
+#: static/js/PretrainedModel.js:226
 msgid "Upload Failed"
 msgstr ""
 

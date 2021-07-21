@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 23:54-0700\n"
-"PO-Revision-Date: 2021-07-21 14:58+0800\n"
+"POT-Creation-Date: 2021-07-21 00:11-0700\n"
+"PO-Revision-Date: 2021-07-21 15:12+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -1181,6 +1181,10 @@ msgstr "高度"
 msgid "Upload Tar or Zip Archive"
 msgstr "上传Tar或Zip档案"
 
+#: static/js/PretrainedModel.js:126
+msgid "Manual Entry"
+msgstr "人工输入"
+
 #: static/js/PretrainedModel.js:176
 msgid "Weights (**.caffemodel)"
 msgstr "权重(* * .caffemodel)"
@@ -1193,35 +1197,35 @@ msgstr "模型定义(original.prototxt)"
 msgid "Labels file: (labels.txt)"
 msgstr "标签文件:(labels.txt)"
 
-#: static/js/PretrainedModel.js:183 static/js/PretrainedModel.js:196
+#: static/js/PretrainedModel.js:182 static/js/PretrainedModel.js:194
 msgid "Upload Model"
 msgstr "上传模型"
 
-#: static/js/PretrainedModel.js:189
+#: static/js/PretrainedModel.js:188
 msgid "Weights (**.t7)"
 msgstr "权重(* * .t7)"
 
-#: static/js/PretrainedModel.js:190
+#: static/js/PretrainedModel.js:189
 msgid "Model Definition: (model.lua)"
 msgstr "模型定义:(model.lua)"
 
-#: static/js/PretrainedModel.js:191
+#: static/js/PretrainedModel.js:190
 msgid "Labels file: (Optional)"
 msgstr "标签文件:(可选)"
 
-#: static/js/PretrainedModel.js:208
+#: static/js/PretrainedModel.js:206
 msgid "Uploading archive, one moment..."
 msgstr "上传存档，等一下……"
 
-#: static/js/PretrainedModel.js:213
+#: static/js/PretrainedModel.js:211
 msgid "Bad File Type"
 msgstr "错误的文件类型"
 
-#: static/js/PretrainedModel.js:214 static/js/PretrainedModel.js:229
+#: static/js/PretrainedModel.js:212 static/js/PretrainedModel.js:227
 msgid "Try Upload Again?"
 msgstr "重新上传吗?"
 
-#: static/js/PretrainedModel.js:228
+#: static/js/PretrainedModel.js:226
 msgid "Upload Failed"
 msgstr "上传失败"
 

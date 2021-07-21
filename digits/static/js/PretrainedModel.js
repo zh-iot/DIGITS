@@ -123,7 +123,7 @@ var PretrainedModel = function(params) {
     well.append('div').attr('class', 'btn btn-sm btn-default')
       .style('margin', '3px')
       .attr('disabled', '')
-      .html('Manual Entry');
+      .html(gettext('Manual Entry'));
 
     var archive = self.archive;
 
