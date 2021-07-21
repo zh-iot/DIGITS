@@ -94,11 +94,11 @@ class ParseS3Task(Task):
     def name(self):
         sets = []
         if (self.percent_val + self.percent_test) < 100:
-            sets.append(_('train'))
+            sets.append('train')
         if self.percent_val > 0:
-            sets.append(_('val'))
+            sets.append('val')
         if self.percent_test > 0:
-            sets.append(_('test'))
+            sets.append('test')
 
         return _('Parse Folder (%(folder)s)', folder='/'.join(sets))
 
