@@ -1,6 +1,5 @@
 # Copyright (c) 2014-2017, NVIDIA CORPORATION.  All rights reserved.
 from __future__ import absolute_import
-from flask_babel import Babel, gettext as _, lazy_gettext
 
 import time
 
@@ -57,22 +56,22 @@ class Status():
     def set_dict(self, val):
         self.val = val
         if val == self.INIT:
-            self.name = _('Initialized')
+            self.name = 'Initialized'
             self.css = 'warning'
         elif val == self.WAIT:
-            self.name = _('Waiting')
+            self.name = 'Waiting'
             self.css = 'warning'
         elif val == self.RUN:
-            self.name = _('Running')
+            self.name = 'Running'
             self.css = 'info'
         elif val == self.DONE:
-            self.name = _('Done')
+            self.name = 'Done'
             self.css = 'success'
         elif val == self.ABORT:
-            self.name = _('Aborted')
+            self.name = 'Aborted'
             self.css = 'warning'
         elif val == self.ERROR:
-            self.name = _('Error')
+            self.name = 'Error'
             self.css = 'danger'
         else:
             self.name = '?'
