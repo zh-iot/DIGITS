@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 20:41-0700\n"
+"POT-Creation-Date: 2021-07-20 20:48-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,30 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+
+#: status.py:60
+msgid "Initialized"
+msgstr ""
+
+#: status.py:63
+msgid "Waiting"
+msgstr ""
+
+#: status.py:66
+msgid "Running"
+msgstr ""
+
+#: status.py:69
+msgid "Done"
+msgstr ""
+
+#: status.py:72
+msgid "Aborted"
+msgstr ""
+
+#: status.py:75
+msgid "Error"
+msgstr ""
 
 #: views.py:59 views.py:74
 msgid "Classification"
@@ -479,18 +503,6 @@ msgstr ""
 
 #: dataset/tasks/parse_folder.py:65 dataset/tasks/parse_s3.py:73
 msgid "the sum of percent_val and percent_test must not exceed 100"
-msgstr ""
-
-#: dataset/tasks/parse_folder.py:89 dataset/tasks/parse_s3.py:97
-msgid "train"
-msgstr ""
-
-#: dataset/tasks/parse_folder.py:91 dataset/tasks/parse_s3.py:99
-msgid "val"
-msgstr ""
-
-#: dataset/tasks/parse_folder.py:93 dataset/tasks/parse_s3.py:101
-msgid "test"
 msgstr ""
 
 #: dataset/tasks/parse_folder.py:95 dataset/tasks/parse_s3.py:103
