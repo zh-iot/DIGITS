@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 22:58-0700\n"
+"POT-Creation-Date: 2021-07-20 23:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,8 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
-#: views.py:89
+#: pretrained_model/tasks/upload_pretrained.py:38
+#: static/js/PretrainedModel.js:149 views.py:89
 msgid "Upload Pretrained Model"
 msgstr ""
 
@@ -134,19 +135,19 @@ msgstr ""
 msgid "Image Encoding"
 msgstr ""
 
-#: dataset/images/forms.py:34
+#: dataset/images/forms.py:34 static/js/PretrainedModel.js:81
 #: templates/datasets/images/classification/show.html:18
 msgid "Image Type"
 msgstr ""
 
 #: dataset/images/forms.py:36 extensions/data/imageProcessing/forms.py:92
 #: extensions/data/imageSegmentation/forms.py:109
-#: extensions/data/objectDetection/forms.py:108
+#: extensions/data/objectDetection/forms.py:108 static/js/PretrainedModel.js:28
 #: templates/datasets/images/classification/show.html:19
 msgid "Grayscale"
 msgstr ""
 
-#: dataset/images/forms.py:36
+#: dataset/images/forms.py:36 static/js/PretrainedModel.js:27
 #: templates/datasets/images/classification/show.html:19
 msgid "Color"
 msgstr ""
@@ -174,15 +175,15 @@ msgid ""
 " below."
 msgstr ""
 
-#: dataset/images/job.py:31
+#: dataset/images/job.py:31 static/js/PretrainedModel.js:33
 msgid "Crop"
 msgstr ""
 
-#: dataset/images/job.py:32
+#: dataset/images/job.py:32 static/js/PretrainedModel.js:32
 msgid "Squash"
 msgstr ""
 
-#: dataset/images/job.py:33
+#: dataset/images/job.py:33 static/js/PretrainedModel.js:34
 msgid "Fill"
 msgstr ""
 
@@ -1272,6 +1273,91 @@ msgstr ""
 msgid "Pretrained Model"
 msgstr ""
 
+#: pretrained_model/tasks/upload_pretrained.py:74
+#: pretrained_model/tasks/upload_pretrained.py:80
+msgid "Please implement me"
+msgstr ""
+
+#: static/js/PretrainedModel.js:22
+msgid "Caffe"
+msgstr ""
+
+#: static/js/PretrainedModel.js:23
+msgid "Torch"
+msgstr ""
+
+#: static/js/PretrainedModel.js:35
+msgid "Half Crop, Half Fill"
+msgstr ""
+
+#: static/js/PretrainedModel.js:72
+msgid "Jobname"
+msgstr ""
+
+#: static/js/PretrainedModel.js:75
+msgid "Framework"
+msgstr ""
+
+#: static/js/PretrainedModel.js:86
+msgid "Resize Mode"
+msgstr ""
+
+#: static/js/PretrainedModel.js:91
+msgid "Width"
+msgstr ""
+
+#: static/js/PretrainedModel.js:92
+msgid "Height"
+msgstr ""
+
+#: static/js/PretrainedModel.js:112
+msgid "Upload Tar or Zip Archive"
+msgstr ""
+
+#: static/js/PretrainedModel.js:176
+msgid "Weights (**.caffemodel)"
+msgstr ""
+
+#: static/js/PretrainedModel.js:177
+msgid "Model Definition (original.prototxt)"
+msgstr ""
+
+#: static/js/PretrainedModel.js:178
+msgid "Labels file: (labels.txt)"
+msgstr ""
+
+#: static/js/PretrainedModel.js:183 static/js/PretrainedModel.js:196
+msgid "Upload Model"
+msgstr ""
+
+#: static/js/PretrainedModel.js:189
+msgid "Weights (**.t7)"
+msgstr ""
+
+#: static/js/PretrainedModel.js:190
+msgid "Model Definition: (model.lua)"
+msgstr ""
+
+#: static/js/PretrainedModel.js:191
+msgid "Labels file: (Optional)"
+msgstr ""
+
+#: static/js/PretrainedModel.js:208
+msgid "Uploading archive, one moment..."
+msgstr ""
+
+#: static/js/PretrainedModel.js:213
+msgid "Bad File Type"
+msgstr ""
+
+#: static/js/PretrainedModel.js:214 static/js/PretrainedModel.js:229
+msgid "Try Upload Again?"
+msgstr ""
+
+#: static/js/PretrainedModel.js:228
+msgid "Upload Failed"
+msgstr ""
+
 #: templates/home.html:27
 msgid "available"
 msgstr ""
@@ -1379,23 +1465,23 @@ msgstr ""
 msgid "Notes"
 msgstr ""
 
-#: templates/layout.html:50
+#: templates/layout.html:57
 msgid "Logout"
 msgstr ""
 
-#: templates/layout.html:52 templates/login.html:9
+#: templates/layout.html:59 templates/login.html:9
 msgid "Login"
 msgstr ""
 
-#: templates/layout.html:57
+#: templates/layout.html:64
 msgid "Info"
 msgstr ""
 
-#: templates/layout.html:62 templates/layout.html:63
+#: templates/layout.html:69 templates/layout.html:70
 msgid "version"
 msgstr ""
 
-#: templates/layout.html:68
+#: templates/layout.html:75
 msgid "About"
 msgstr ""
 

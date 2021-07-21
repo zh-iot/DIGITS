@@ -4,7 +4,6 @@ var PretrainedModel = function(params) {
     selector: '#pretrainedModelContent',
     size: 600
   },params);
-
   var self = this;
   var inputs = PretrainedModel.mixins;
 
@@ -20,20 +19,20 @@ var PretrainedModel = function(params) {
   self.frameworkSelector = null;
 
   self.frameworks = [
-    {text: 'Caffe', value: 'caffe'},
-    {text: 'Torch', value: 'torch'}
+    {text: gettext('Caffe'), value: 'caffe'},
+    {text: gettext('Torch'), value: 'torch'}
   ];
 
   self.resize_channels = [
-    {text: 'Color', value: 3},
-    {text: 'Grayscale', value: 1}
+    {text: gettext('Color'), value: 3},
+    {text: gettext('Grayscale'), value: 1}
   ];
 
   self.resize_modes = [
-    {text: 'Squash', value: 'squash'},
-    {text: 'Crop', value: 'crop'},
-    {text: 'Fill', value: 'fill'},
-    {text: 'Half Crop, Half Fill', value: 'half_crop'}
+    {text: gettext('Squash'), value: 'squash'},
+    {text: gettext('Crop'), value: 'crop'},
+    {text: gettext('Fill'), value: 'fill'},
+    {text: gettext('Half Crop, Half Fill'), value: 'half_crop'}
   ];
 
   self.frameworkChanged = function() {
@@ -70,27 +69,27 @@ var PretrainedModel = function(params) {
 
     self.well();
     var row = self.newRow();
-    inputs.field(row.append('div').attr('class', 'col-xs-6'), 'text', 'Jobname', 'job_name');
+    inputs.field(row.append('div').attr('class', 'col-xs-6'), 'text', gettext('Jobname'), 'job_name');
 
     self.frameworkSelector = inputs.select(
-      row.append('div').attr('class', 'col-xs-6'), self.frameworks, 'Framework', 'framework'
+      row.append('div').attr('class', 'col-xs-6'), self.frameworks, gettext('Framework'), 'framework'
     );
     row = self.newRow();
     row.style('border-radius', '5px 5px 0px 0px');
     inputs.select(
       row.append('div').attr('class', 'col-xs-6'),
-        self.resize_channels, 'Image Type', 'image_type'
+        self.resize_channels, gettext('Image Type'), 'image_type'
     );
 
     inputs.select(
       row.append('div').attr('class', 'col-xs-6'),
-        self.resize_modes, 'Resize Mode', 'resize_mode'
+        self.resize_modes, gettext('Resize Mode'), 'resize_mode'
     );
 
     row = self.newRow();
     row.style('border-radius', '0px 0px 5px 5px');
-    inputs.field(row.append('div').attr('class', 'col-xs-6'), 'number', 'Width', 'width').attr('value', 256);
-    inputs.field(row.append('div').attr('class', 'col-xs-6'), 'number', 'Height', 'height').attr('value', 256);
+    inputs.field(row.append('div').attr('class', 'col-xs-6'), 'number', gettext('Width'), 'width').attr('value', 256);
+    inputs.field(row.append('div').attr('class', 'col-xs-6'), 'number', gettext('Height'), 'height').attr('value', 256);
 
     self.frameworkSelector.on('change', self.frameworkChanged);
     self.innerContainer = self.container.append('div');
@@ -110,7 +109,7 @@ var PretrainedModel = function(params) {
 
   self.well = function(params) {
     var props = _.extend({
-      text: 'Upload Tar or Zip Archive',
+      text: gettext('Upload Tar or Zip Archive'),
       class: '',
       state: 'primary'
     },params);
@@ -147,7 +146,7 @@ var PretrainedModel = function(params) {
 
   self.heading = function(params) {
     var props = _.extend({
-      text: 'Upload Pretrained Model',
+      text: gettext('Upload Pretrained Model'),
       classed: false
     },params);
 
@@ -174,27 +173,27 @@ var PretrainedModel = function(params) {
   self.caffeForm = function() {
     self.innerContainer.html('');
 
-    inputs.file(self.innerContainer, 'Weights (**.caffemodel)', 'weights_file');
-    inputs.file(self.innerContainer, 'Model Definition (original.prototxt)', 'model_def_file');
-    inputs.file(self.innerContainer, 'Labels file: (labels.txt)', 'labels_file');
+    inputs.file(self.innerContainer, gettext('Weights (**.caffemodel)'), 'weights_file');
+    inputs.file(self.innerContainer, gettext('Model Definition (original.prototxt)'), 'model_def_file');
+    inputs.file(self.innerContainer, gettext('Labels file: (labels.txt)'), 'labels_file');
 
     self.innerContainer.append('button').attr({type: 'submit', class: 'btn btn-default'})
       .on('click', self.submit)
       .style('background', 'white')
-      .html('Upload Model');
+      .html(gettext('Upload Model'));
   };
 
   self.torchForm = function(e) {
     self.innerContainer.html('');
 
-    inputs.file(self.innerContainer, 'Weights (**.t7)', 'weights_file');
-    inputs.file(self.innerContainer, 'Model Definition: (model.lua)', 'model_def_file');
-    inputs.file(self.innerContainer, 'Labels file: (Optional)', 'labels_file');
+    inputs.file(self.innerContainer, gettext('Weights (**.t7)'), 'weights_file');
+    inputs.file(self.innerContainer, gettext('Model Definition: (model.lua)'), 'model_def_file');
+    inputs.file(self.innerContainer, gettext('Labels file: (Optional)'), 'labels_file');
 
     self.innerContainer.append('button').attr({type: 'submit', class: 'btn btn-default'})
       .on('click', self.submit)
       .style('background', 'white')
-      .html('Upload Model');
+      .html(gettext('Upload Model'));
   };
 
 };
@@ -206,13 +205,13 @@ PretrainedModel.Actions = function(props) {
 
   self.uploadArchive = function(file) {
        var upload_url = URL_PREFIX + '/pretrained_models/upload_archive';
-       parent.heading({classed: false, text: 'Uploading archive, one moment...'});
+       parent.heading({classed: false, text: gettext('Uploading archive, one moment...')});
 
        var formData = new FormData();
        // Check file type.
        if (file.type.indexOf('zip') == -1) {
-         parent.heading({classed: true, text: 'Bad File Type'});
-         parent.well({class: '', text: 'Try Upload Again?', state: 'danger'});
+         parent.heading({classed: true, text: gettext('Bad File Type')});
+         parent.well({class: '', text: gettext('Try Upload Again?'), state: 'danger'});
          console.error('Bad File Type');
          return;
        }
@@ -226,8 +225,8 @@ PretrainedModel.Actions = function(props) {
             $('#pretrainedModelTab>a').click();
             parent.close();
           } else {
-            parent.heading({classed: true, text: 'Upload Failed'});
-            parent.well({class: '', text: 'Try Upload Again?', state: 'danger'});
+            parent.heading({classed: true, text: gettext('Upload Failed')});
+            parent.well({class: '', text: gettext('Try Upload Again?'), state: 'danger'});
             console.error('Failed to Upload File');
             console.error(xhr.responseText);
             var json = JSON.parse(xhr.responseText);

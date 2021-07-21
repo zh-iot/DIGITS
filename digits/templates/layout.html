@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.min.css', ver=dir_hash) }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', ver=dir_hash) }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/c3.min.css', ver=dir_hash) }}">
+    
+    <!-- 翻译文件 -->
+    <link rel="gettext" type="application/x-po" href="{{ url_for('static', filename='translations/zh.po') }}">
+    <script src="{{ url_for('static', filename='js/Gettext.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/import_gettext.js') }}"></script>
+
     <title>{% block title %}DIGITS{% endblock %}</title>
 
     <script type="text/javascript">
         var URL_PREFIX = "{{config['URL_PREFIX']}}";
     </script>
+    
     <script src="{{ url_for('static', filename='js/3rdparty/jquery-1.11.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/3rdparty/bootstrap-3.3.6.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/3rdparty/bootbox-4.3.0.min.js') }}"></script>

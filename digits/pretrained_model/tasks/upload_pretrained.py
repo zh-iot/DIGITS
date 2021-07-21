@@ -4,6 +4,7 @@ import os
 import shutil
 from digits.task import Task
 from digits.utils import subclass, override
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 
 @subclass
@@ -34,7 +35,7 @@ class UploadPretrainedModelTask(Task):
 
     @override
     def name(self):
-        return 'Upload Pretrained Model'
+        return _('Upload Pretrained Model')
 
     @override
     def __setstate__(self, state):
@@ -70,10 +71,10 @@ class UploadPretrainedModelTask(Task):
         """
         Get path to model definition
         """
-        raise NotImplementedError('Please implement me')
+        raise NotImplementedError(_('Please implement me'))
 
     def get_weights_path(self):
         """
         Get path to model weights
         """
-        raise NotImplementedError('Please implement me')
+        raise NotImplementedError(_('Please implement me'))
