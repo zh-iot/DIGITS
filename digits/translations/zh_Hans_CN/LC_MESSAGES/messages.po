@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-21 01:23-0700\n"
-"PO-Revision-Date: 2021-07-21 16:26+0800\n"
+"POT-Creation-Date: 2021-07-21 03:02-0700\n"
+"PO-Revision-Date: 2021-07-22 16:14+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -1406,6 +1406,10 @@ msgstr "相关工作"
 #: templates/job.html:287
 msgid "Notes"
 msgstr "注意"
+
+#: templates/job.html:315
+msgid "Enter notes"
+msgstr "输入笔记"
 
 #: templates/layout.html:57
 msgid "Logout"
