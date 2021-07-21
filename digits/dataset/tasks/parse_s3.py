@@ -9,6 +9,7 @@ import digits
 from digits import utils
 from digits.task import Task
 from digits.utils import subclass, override
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 # NOTE: Increment this every time the pickled object
 PICKLE_VERSION = 1
@@ -55,7 +56,7 @@ class ParseS3Task(Task):
             if pct < 0:
                 pct = 0
             elif pct > 100:
-                raise ValueError('percent_val must not exceed 100')
+                raise ValueError(lazy_gettext('percent_val must not exceed 100'))
             self.percent_val = pct
 
         if percent_test is None:
@@ -65,11 +66,11 @@ class ParseS3Task(Task):
             if pct < 0:
                 pct = 0
             elif pct > 100:
-                raise ValueError('percent_test must not exceed 100')
+                raise ValueError(lazy_gettext('percent_test must not exceed 100'))
             self.percent_test = pct
 
         if percent_val is not None and percent_test is not None and percent_val + percent_test > 100:
-            raise ValueError('the sum of percent_val and percent_test must not exceed 100')
+            raise ValueError(lazy_gettext('the sum of percent_val and percent_test must not exceed 100'))
 
         self.train_file = utils.constants.TRAIN_FILE
         self.val_file = utils.constants.VAL_FILE
@@ -93,13 +94,13 @@ class ParseS3Task(Task):
     def name(self):
         sets = []
         if (self.percent_val + self.percent_test) < 100:
-            sets.append('train')
+            sets.append(lazy_gettext('train'))
         if self.percent_val > 0:
-            sets.append('val')
+            sets.append(lazy_gettext('val'))
         if self.percent_test > 0:
-            sets.append('test')
+            sets.append(lazy_gettext('test'))
 
-        return 'Parse Folder (%s)' % ('/'.join(sets))
+        return lazy_gettext('Parse Folder (%(folder)s)', folder='/'.join(sets))
 
     @override
     def html_id(self):

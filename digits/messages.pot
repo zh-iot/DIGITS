@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 19:27-0700\n"
+"POT-Creation-Date: 2021-07-20 19:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -445,6 +445,35 @@ msgstr ""
 msgid ""
 "Checking this box will keep raw files retrieved from S3 stored on disk "
 "after the job is completed"
+msgstr ""
+
+#: dataset/tasks/parse_folder.py:51 dataset/tasks/parse_s3.py:59
+msgid "percent_val must not exceed 100"
+msgstr ""
+
+#: dataset/tasks/parse_folder.py:61 dataset/tasks/parse_s3.py:69
+msgid "percent_test must not exceed 100"
+msgstr ""
+
+#: dataset/tasks/parse_folder.py:65 dataset/tasks/parse_s3.py:73
+msgid "the sum of percent_val and percent_test must not exceed 100"
+msgstr ""
+
+#: dataset/tasks/parse_folder.py:89 dataset/tasks/parse_s3.py:97
+msgid "train"
+msgstr ""
+
+#: dataset/tasks/parse_folder.py:91 dataset/tasks/parse_s3.py:99
+msgid "val"
+msgstr ""
+
+#: dataset/tasks/parse_folder.py:93 dataset/tasks/parse_s3.py:101
+msgid "test"
+msgstr ""
+
+#: dataset/tasks/parse_folder.py:95 dataset/tasks/parse_s3.py:103
+#, python-format
+msgid "Parse Folder (%(folder)s)"
 msgstr ""
 
 #: extensions/data/imageProcessing/data.py:107
