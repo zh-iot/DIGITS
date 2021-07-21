@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 04:07-0700\n"
-"PO-Revision-Date: 2021-07-20 19:09+0800\n"
+"POT-Creation-Date: 2021-07-20 19:18-0700\n"
+"PO-Revision-Date: 2021-07-21 10:21+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -114,20 +114,20 @@ msgstr "不是"
 msgid "Check that each entry in the database has the same shape.Disabling this will also disable mean image computation."
 msgstr "检查数据库中的每个条目是否具有相同的形状。禁用此功能也将禁用平均图像计算。"
 
-#: dataset/images/forms.py:20
+#: dataset/images/forms.py:20 templates/datasets/images/classification/show.html:24
 msgid "Image Encoding"
 msgstr "图像编码"
 
-#: dataset/images/forms.py:34
+#: dataset/images/forms.py:34 templates/datasets/images/classification/show.html:18
 msgid "Image Type"
 msgstr "图像类型"
 
 #: dataset/images/forms.py:36 extensions/data/imageProcessing/forms.py:92 extensions/data/imageSegmentation/forms.py:109
-#: extensions/data/objectDetection/forms.py:108
+#: extensions/data/objectDetection/forms.py:108 templates/datasets/images/classification/show.html:19
 msgid "Grayscale"
 msgstr "灰度"
 
-#: dataset/images/forms.py:36
+#: dataset/images/forms.py:36 templates/datasets/images/classification/show.html:19
 msgid "Color"
 msgstr "颜色"
 
@@ -143,7 +143,7 @@ msgstr "调整宽度"
 msgid "Resize Height"
 msgstr "调整高度"
 
-#: dataset/images/forms.py:50
+#: dataset/images/forms.py:50 templates/datasets/images/classification/show.html:20
 msgid "Resize Transformation"
 msgstr "调整转型"
 
@@ -187,7 +187,7 @@ msgstr "压缩数据集可能会显著减少数据库文件的大小，但可能
 msgid "Dataset type"
 msgstr "数据集类型"
 
-#: dataset/images/classification/forms.py:52
+#: dataset/images/classification/forms.py:52 templates/datasets/images/classification/show.html:42
 msgid "Folder"
 msgstr "文件夹文件夹"
 
@@ -216,7 +216,7 @@ msgstr "文件夹不存在"
 msgid "Filesystem path is not absolute"
 msgstr "文件系统路径不是绝对的"
 
-#: dataset/images/classification/forms.py:89 dataset/images/classification/forms.py:378
+#: dataset/images/classification/forms.py:89 dataset/images/classification/forms.py:378 templates/datasets/images/classification/show.html:51
 msgid "Training Images"
 msgstr "训练图像"
 
@@ -274,7 +274,7 @@ msgstr "您可以选择指定每个类的最大样本数。如果一个类有比
 msgid "Separate validation images folder"
 msgstr "单独的验证图像文件夹"
 
-#: dataset/images/classification/forms.py:154
+#: dataset/images/classification/forms.py:154 templates/datasets/images/classification/show.html:55
 msgid "Validation Images"
 msgstr "验证图像"
 
@@ -318,7 +318,7 @@ msgstr "验证图像文件夹"
 msgid "Test set"
 msgstr "测试集"
 
-#: dataset/images/classification/forms.py:307 dataset/images/classification/forms.py:315
+#: dataset/images/classification/forms.py:307 dataset/images/classification/forms.py:315 templates/datasets/images/classification/show.html:64
 msgid "Test images"
 msgstr "测试的图片"
 
@@ -1207,6 +1207,54 @@ msgstr "新建数据集"
 msgid "Create"
 msgstr "新建"
 
+#: templates/datasets/generic/show.html:12
+msgid "Entry Count"
+msgstr "条目数"
+
+#: templates/datasets/generic/show.html:17
+msgid "Feature shape"
+msgstr "特性的形状"
+
+#: templates/datasets/generic/show.html:19 templates/datasets/generic/show.html:27
+msgid ""
+"Shown below is the shape of a sample entry in the database. Other entries might\n"
+"                      have a different shape if the dataset has variable entry shapes."
+msgstr ""
+"下面显示的是数据库中的示例条目的形状。其他条目可能\n"
+"如果数据集具有可变入口形状，则具有不同的形状。"
+
+#: templates/datasets/generic/show.html:25
+msgid "Label shape"
+msgstr "标签的形状"
+
+#: templates/datasets/generic/show.html:34
+msgid "DB"
+msgstr "DB"
+
+#: templates/datasets/generic/show.html:39 templates/datasets/images/classification/show.html:124
+msgid "Explore the db"
+msgstr "探索db"
+
+#: templates/datasets/generic/show.html:46
+msgid "DB create log file"
+msgstr "DB创建日志文件"
+
+#: templates/datasets/generic/show.html:50
+msgid "Mean file"
+msgstr "意思文件"
+
+#: templates/datasets/generic/show.html:63 templates/datasets/images/classification/show.html:8 templates/datasets/images/generic/show.html:46
+msgid "Job Information"
+msgstr "工作信息"
+
+#: templates/datasets/generic/show.html:67 templates/datasets/images/classification/show.html:12 templates/datasets/images/generic/show.html:50
+msgid "Job Directory"
+msgstr "工作目录"
+
+#: templates/datasets/generic/show.html:69 templates/datasets/images/classification/show.html:30 templates/datasets/images/generic/show.html:52
+msgid "Dataset size"
+msgstr "数据集的大小"
+
 #: templates/datasets/images/classification/new.html:10 templates/datasets/images/classification/new.html:20
 msgid "New Image Classification Dataset"
 msgstr "新的图像分类数据集"
@@ -1326,6 +1374,70 @@ msgstr "不支持在DIGITS UI中进行数据库探索。"
 #: templates/datasets/images/classification/new.html:458
 msgid "TFRecords currently only works with Tensorflow, not with Caffe or Torch."
 msgstr "TFRecords目前只适用于Tensorflow，不适用于Caffe或Torch。"
+
+#: templates/datasets/images/classification/show.html:16 templates/datasets/images/generic/show.html:24
+msgid "Image Dimensions"
+msgstr "图像尺寸"
+
+#: templates/datasets/images/classification/show.html:17
+msgid "(Width x Height)"
+msgstr "(宽度x高度)"
+
+#: templates/datasets/images/classification/show.html:22
+msgid "DB Backend"
+msgstr "DB后端"
+
+#: templates/datasets/images/classification/show.html:26
+msgid "DB Compression"
+msgstr "DB Compression"
+
+#: templates/datasets/images/classification/show.html:47
+msgid "Number of Categories"
+msgstr "数量的类别"
+
+#: templates/datasets/images/classification/show.html:82
+msgid "Input File"
+msgstr "输入文件"
+
+#: templates/datasets/images/classification/show.html:82
+msgid " (before shuffling)"
+msgstr " (洗牌之前)"
+
+#: templates/datasets/images/classification/show.html:85
+msgid "DB Creation log file"
+msgstr "DB创建日志文件"
+
+#: templates/datasets/images/classification/show.html:89
+msgid "DB Entries"
+msgstr "DB条目"
+
+#: templates/datasets/images/classification/show.html:92
+msgid "failed to load"
+msgstr "未能加载"
+
+#: templates/datasets/images/classification/show.html:111
+msgid "Image Mean"
+msgstr "图片的意思"
+
+#: templates/datasets/images/classification/show.html:150
+msgid "Category"
+msgstr "类别"
+
+#: templates/datasets/images/classification/show.html:159 templates/datasets/images/generic/show.html:16
+msgid "Image Count"
+msgstr "图像数"
+
+#: templates/datasets/images/generic/show.html:12
+msgid "Database"
+msgstr "数据库"
+
+#: templates/datasets/images/generic/show.html:27
+msgid "(Width x Height x Channels)"
+msgstr "(宽×高×通道)"
+
+#: templates/datasets/images/generic/show.html:33
+msgid "DB analysis log file"
+msgstr "DB分析日志文件"
 
 #: templates/models/python_layer_explanation.html:3
 msgid "Using Python layers"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 04:07-0700\n"
+"POT-Creation-Date: 2021-07-20 19:18-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,20 +123,24 @@ msgid ""
 msgstr ""
 
 #: dataset/images/forms.py:20
+#: templates/datasets/images/classification/show.html:24
 msgid "Image Encoding"
 msgstr ""
 
 #: dataset/images/forms.py:34
+#: templates/datasets/images/classification/show.html:18
 msgid "Image Type"
 msgstr ""
 
 #: dataset/images/forms.py:36 extensions/data/imageProcessing/forms.py:92
 #: extensions/data/imageSegmentation/forms.py:109
 #: extensions/data/objectDetection/forms.py:108
+#: templates/datasets/images/classification/show.html:19
 msgid "Grayscale"
 msgstr ""
 
 #: dataset/images/forms.py:36
+#: templates/datasets/images/classification/show.html:19
 msgid "Color"
 msgstr ""
 
@@ -153,6 +157,7 @@ msgid "Resize Height"
 msgstr ""
 
 #: dataset/images/forms.py:50
+#: templates/datasets/images/classification/show.html:20
 msgid "Resize Transformation"
 msgstr ""
 
@@ -201,6 +206,7 @@ msgid "Dataset type"
 msgstr ""
 
 #: dataset/images/classification/forms.py:52
+#: templates/datasets/images/classification/show.html:42
 msgid "Folder"
 msgstr ""
 
@@ -231,6 +237,7 @@ msgstr ""
 
 #: dataset/images/classification/forms.py:89
 #: dataset/images/classification/forms.py:378
+#: templates/datasets/images/classification/show.html:51
 msgid "Training Images"
 msgstr ""
 
@@ -310,6 +317,7 @@ msgid "Separate validation images folder"
 msgstr ""
 
 #: dataset/images/classification/forms.py:154
+#: templates/datasets/images/classification/show.html:55
 msgid "Validation Images"
 msgstr ""
 
@@ -359,6 +367,7 @@ msgstr ""
 
 #: dataset/images/classification/forms.py:307
 #: dataset/images/classification/forms.py:315
+#: templates/datasets/images/classification/show.html:64
 msgid "Test images"
 msgstr ""
 
@@ -1338,6 +1347,62 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
+#: templates/datasets/generic/show.html:12
+msgid "Entry Count"
+msgstr ""
+
+#: templates/datasets/generic/show.html:17
+msgid "Feature shape"
+msgstr ""
+
+#: templates/datasets/generic/show.html:19
+#: templates/datasets/generic/show.html:27
+msgid ""
+"Shown below is the shape of a sample entry in the database. Other entries"
+" might\n"
+"                      have a different shape if the dataset has variable "
+"entry shapes."
+msgstr ""
+
+#: templates/datasets/generic/show.html:25
+msgid "Label shape"
+msgstr ""
+
+#: templates/datasets/generic/show.html:34
+msgid "DB"
+msgstr ""
+
+#: templates/datasets/generic/show.html:39
+#: templates/datasets/images/classification/show.html:124
+msgid "Explore the db"
+msgstr ""
+
+#: templates/datasets/generic/show.html:46
+msgid "DB create log file"
+msgstr ""
+
+#: templates/datasets/generic/show.html:50
+msgid "Mean file"
+msgstr ""
+
+#: templates/datasets/generic/show.html:63
+#: templates/datasets/images/classification/show.html:8
+#: templates/datasets/images/generic/show.html:46
+msgid "Job Information"
+msgstr ""
+
+#: templates/datasets/generic/show.html:67
+#: templates/datasets/images/classification/show.html:12
+#: templates/datasets/images/generic/show.html:50
+msgid "Job Directory"
+msgstr ""
+
+#: templates/datasets/generic/show.html:69
+#: templates/datasets/images/classification/show.html:30
+#: templates/datasets/images/generic/show.html:52
+msgid "Dataset size"
+msgstr ""
+
 #: templates/datasets/images/classification/new.html:10
 #: templates/datasets/images/classification/new.html:20
 msgid "New Image Classification Dataset"
@@ -1466,6 +1531,72 @@ msgstr ""
 
 #: templates/datasets/images/classification/new.html:458
 msgid "TFRecords currently only works with Tensorflow, not with Caffe or Torch."
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:16
+#: templates/datasets/images/generic/show.html:24
+msgid "Image Dimensions"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:17
+msgid "(Width x Height)"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:22
+msgid "DB Backend"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:26
+msgid "DB Compression"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:47
+msgid "Number of Categories"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:82
+msgid "Input File"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:82
+msgid " (before shuffling)"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:85
+msgid "DB Creation log file"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:89
+msgid "DB Entries"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:92
+msgid "failed to load"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:111
+msgid "Image Mean"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:150
+msgid "Category"
+msgstr ""
+
+#: templates/datasets/images/classification/show.html:159
+#: templates/datasets/images/generic/show.html:16
+msgid "Image Count"
+msgstr ""
+
+#: templates/datasets/images/generic/show.html:12
+msgid "Database"
+msgstr ""
+
+#: templates/datasets/images/generic/show.html:27
+msgid "(Width x Height x Channels)"
+msgstr ""
+
+#: templates/datasets/images/generic/show.html:33
+msgid "DB analysis log file"
 msgstr ""
 
 #: templates/models/python_layer_explanation.html:3
