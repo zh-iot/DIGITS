@@ -9,6 +9,7 @@ import digits
 from digits import utils
 from digits.task import Task
 from digits.utils import subclass, override
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 # NOTE: Increment this every time the pickled version changes
 PICKLE_VERSION = 3
@@ -111,13 +112,13 @@ class CreateDbTask(Task):
     @override
     def name(self):
         if self.db_name == utils.constants.TRAIN_DB or 'train' in self.db_name.lower():
-            return 'Create DB (train)'
+            return _('Create DB (train)')
         elif self.db_name == utils.constants.VAL_DB or 'val' in self.db_name.lower():
-            return 'Create DB (val)'
+            return _('Create DB (val)')
         elif self.db_name == utils.constants.TEST_DB or 'test' in self.db_name.lower():
-            return 'Create DB (test)'
+            return _('Create DB (test)')
         else:
-            return 'Create DB (%s)' % self.db_name
+            return _('Create DB (%(db)s)', db=self.db_name)
 
     @override
     def before_run(self):
@@ -283,9 +284,9 @@ class CreateDbTask(Task):
         if hasattr(self, '_labels') and self._labels and len(self._labels) > 0:
             return self._labels
 
-        assert hasattr(self, 'labels_file'), 'labels_file not set'
-        assert self.labels_file, 'labels_file not set'
-        assert os.path.exists(self.path(self.labels_file)), 'labels_file does not exist'
+        assert hasattr(self, 'labels_file'), _('labels_file not set')
+        assert self.labels_file, _('labels_file not set')
+        assert os.path.exists(self.path(self.labels_file)), _('labels_file does not exist')
 
         labels = []
         with open(self.path(self.labels_file)) as infile:
@@ -294,7 +295,7 @@ class CreateDbTask(Task):
                 if label:
                     labels.append(label)
 
-        assert len(labels) > 0, 'no labels in labels_file'
+        assert len(labels) > 0, _('no labels in labels_file')
 
         self._labels = labels
         return self._labels

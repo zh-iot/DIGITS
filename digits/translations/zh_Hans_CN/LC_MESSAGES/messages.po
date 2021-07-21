@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 19:54-0700\n"
-"PO-Revision-Date: 2021-07-21 10:56+0800\n"
+"POT-Creation-Date: 2021-07-20 20:06-0700\n"
+"PO-Revision-Date: 2021-07-21 11:09+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -390,13 +390,42 @@ msgstr "在磁盘上保存文件的副本"
 msgid "Checking this box will keep raw files retrieved from S3 stored on disk after the job is completed"
 msgstr "选中此框将在任务完成后将从S3检索到的原始文件存储在磁盘上"
 
+#: dataset/tasks/create_db.py:115
+msgid "Create DB (train)"
+msgstr "创建数据库(训练)"
+
+#: dataset/tasks/create_db.py:117
+msgid "Create DB (val)"
+msgstr "创建数据库(值)"
+
+#: dataset/tasks/create_db.py:119
+msgid "Create DB (test)"
+msgstr "创建数据库(测试)"
+
+#: dataset/tasks/create_db.py:121
+#, python-format
+msgid "Create DB (%(db)s)"
+msgstr "创建数据库(%(db)s)"
+
+#: dataset/tasks/create_db.py:287 dataset/tasks/create_db.py:288
+msgid "labels_file not set"
+msgstr "labels_file没有设置"
+
+#: dataset/tasks/create_db.py:289
+msgid "labels_file does not exist"
+msgstr "labels_file不存在"
+
+#: dataset/tasks/create_db.py:298
+msgid "no labels in labels_file"
+msgstr "labels_file中没有标签"
+
 #: dataset/tasks/parse_folder.py:51 dataset/tasks/parse_s3.py:59
 msgid "percent_val must not exceed 100"
-msgstr "Percent_val不能超过100"
+msgstr "percent_val不能超过100"
 
 #: dataset/tasks/parse_folder.py:61 dataset/tasks/parse_s3.py:69
 msgid "percent_test must not exceed 100"
-msgstr "Percent_test不能超过100"
+msgstr "percent_test不能超过100"
 
 #: dataset/tasks/parse_folder.py:65 dataset/tasks/parse_s3.py:73
 msgid "the sum of percent_val and percent_test must not exceed 100"
