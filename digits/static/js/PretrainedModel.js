@@ -179,7 +179,6 @@ var PretrainedModel = function(params) {
 
     self.innerContainer.append('button').attr({type: 'submit', class: 'btn btn-default'})
       .on('click', self.submit)
-      .style('background', 'white')
       .html(gettext('Upload Model'));
   };
 
@@ -192,7 +191,6 @@ var PretrainedModel = function(params) {
 
     self.innerContainer.append('button').attr({type: 'submit', class: 'btn btn-default'})
       .on('click', self.submit)
-      .style('background', 'white')
       .html(gettext('Upload Model'));
   };
 
@@ -270,7 +268,7 @@ PretrainedModel.mixins = {
     var btn = group.append('span').attr('class', 'input-group-btn')
       .append('span')
         .attr('class', 'btn btn-default btn-file')
-        .style({width: '205px', background: 'whitesmoke'});
+        .style({width: '205px'});
     btn.append('span').style('font-size', '12px').text(label);
     var input = btn.append('input').attr({type: 'file', name: name});
 
