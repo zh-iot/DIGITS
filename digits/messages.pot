@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 21:35-0700\n"
+"POT-Creation-Date: 2021-07-20 22:45-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,6 +55,9 @@ msgstr ""
 #: extensions/data/imageSegmentation/forms.py:110
 #: extensions/data/objectDetection/forms.py:109 model/images/forms.py:29
 #: model/images/forms.py:40 model/images/forms.py:52
+#: templates/models/images/classification/partials/new/network_tab_previous.html:38
+#: templates/models/images/generic/partials/new/network_tab_pretrained.html:25
+#: templates/models/images/generic/partials/new/network_tab_previous.html:37
 msgid "None"
 msgstr ""
 
@@ -1014,6 +1017,10 @@ msgstr ""
 msgid "Step"
 msgstr ""
 
+#: model/forms.py:248
+msgid "Network type"
+msgstr ""
+
 #: model/forms.py:250
 msgid "Standard network"
 msgstr ""
@@ -1259,6 +1266,9 @@ msgid "Generic Image Model"
 msgstr ""
 
 #: pretrained_model/job.py:72
+#: templates/models/images/classification/partials/new/network_tab_previous.html:11
+#: templates/models/images/generic/partials/new/network_tab_pretrained.html:10
+#: templates/models/images/generic/partials/new/network_tab_previous.html:10
 msgid "Pretrained Model"
 msgstr ""
 
@@ -1810,15 +1820,32 @@ msgstr ""
 msgid "Visualize"
 msgstr ""
 
+#: templates/models/images/classification/partials/new/network_tab_previous.html:10
 #: templates/models/images/classification/partials/new/network_tab_standard.html:18
+#: templates/models/images/generic/partials/new/network_tab_previous.html:9
+#: templates/models/images/generic/partials/new/network_tab_standard.html:4
 msgid "Network"
 msgstr ""
 
+#: templates/models/images/classification/partials/new/network_tab_previous.html:21
+#: templates/models/images/generic/partials/new/network_tab_previous.html:20
+msgid "View"
+msgstr ""
+
+#: templates/models/images/classification/partials/new/network_tab_previous.html:34
+#: templates/models/images/classification/partials/new/network_tab_standard.html:53
+#: templates/models/images/generic/partials/new/network_tab_pretrained.html:21
+#: templates/models/images/generic/partials/new/network_tab_previous.html:33
+msgid "Customize"
+msgstr ""
+
 #: templates/models/images/classification/partials/new/network_tab_standard.html:19
+#: templates/models/images/generic/partials/new/network_tab_standard.html:5
 msgid "Details"
 msgstr ""
 
 #: templates/models/images/classification/partials/new/network_tab_standard.html:20
+#: templates/models/images/generic/partials/new/network_tab_standard.html:6
 msgid "Intended image size"
 msgstr ""
 
@@ -1831,10 +1858,6 @@ msgstr ""
 
 #: templates/models/images/classification/partials/new/network_tab_standard.html:31
 msgid "28x28 (gray)"
-msgstr ""
-
-#: templates/models/images/classification/partials/new/network_tab_standard.html:53
-msgid "Customize"
 msgstr ""
 
 #: templates/models/images/generic/new.html:10

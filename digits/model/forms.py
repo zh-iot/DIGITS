@@ -245,7 +245,7 @@ class ModelForm(Form):
     # Use a SelectField instead of a HiddenField so that the default value
     # is used when nothing is provided (through the REST API)
     method = wtforms.SelectField(
-        u'Network type',
+        lazy_gettext(u'Network type'),
         choices=[
             ('standard', lazy_gettext('Standard network')),
             ('previous', lazy_gettext('Previous network')),
