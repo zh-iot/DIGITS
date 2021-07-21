@@ -56,7 +56,7 @@ class ParseS3Task(Task):
             if pct < 0:
                 pct = 0
             elif pct > 100:
-                raise ValueError(lazy_gettext('percent_val must not exceed 100'))
+                raise ValueError(_('percent_val must not exceed 100'))
             self.percent_val = pct
 
         if percent_test is None:
@@ -66,11 +66,11 @@ class ParseS3Task(Task):
             if pct < 0:
                 pct = 0
             elif pct > 100:
-                raise ValueError(lazy_gettext('percent_test must not exceed 100'))
+                raise ValueError(_('percent_test must not exceed 100'))
             self.percent_test = pct
 
         if percent_val is not None and percent_test is not None and percent_val + percent_test > 100:
-            raise ValueError(lazy_gettext('the sum of percent_val and percent_test must not exceed 100'))
+            raise ValueError(_('the sum of percent_val and percent_test must not exceed 100'))
 
         self.train_file = utils.constants.TRAIN_FILE
         self.val_file = utils.constants.VAL_FILE
@@ -94,13 +94,13 @@ class ParseS3Task(Task):
     def name(self):
         sets = []
         if (self.percent_val + self.percent_test) < 100:
-            sets.append(lazy_gettext('train'))
+            sets.append(_('train'))
         if self.percent_val > 0:
-            sets.append(lazy_gettext('val'))
+            sets.append(_('val'))
         if self.percent_test > 0:
-            sets.append(lazy_gettext('test'))
+            sets.append(_('test'))
 
-        return lazy_gettext('Parse Folder (%(folder)s)', folder='/'.join(sets))
+        return _('Parse Folder (%(folder)s)', folder='/'.join(sets))
 
     @override
     def html_id(self):
