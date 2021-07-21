@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 20:48-0700\n"
+"POT-Creation-Date: 2021-07-20 21:35-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,30 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-
-#: status.py:60
-msgid "Initialized"
-msgstr ""
-
-#: status.py:63
-msgid "Waiting"
-msgstr ""
-
-#: status.py:66
-msgid "Running"
-msgstr ""
-
-#: status.py:69
-msgid "Done"
-msgstr ""
-
-#: status.py:72
-msgid "Aborted"
-msgstr ""
-
-#: status.py:75
-msgid "Error"
-msgstr ""
 
 #: views.py:59 views.py:74
 msgid "Classification"
@@ -144,6 +120,10 @@ msgstr ""
 msgid ""
 "Check that each entry in the database has the same shape.Disabling this "
 "will also disable mean image computation."
+msgstr ""
+
+#: dataset/generic/job.py:114
+msgid "Generic Dataset"
 msgstr ""
 
 #: dataset/images/forms.py:20
@@ -471,6 +451,20 @@ msgid ""
 "after the job is completed"
 msgstr ""
 
+#: dataset/images/classification/job.py:57
+msgid ""
+"This dataset was created with unencoded RGB channels. Caffe requires BGR "
+"input."
+msgstr ""
+
+#: dataset/images/classification/job.py:134
+msgid "Image Classification Dataset"
+msgstr ""
+
+#: dataset/images/generic/job.py:115
+msgid "Generic Image Dataset"
+msgstr ""
+
 #: dataset/tasks/create_db.py:115 dataset/tasks/create_db.py:117
 #: dataset/tasks/create_db.py:119
 msgid "Create DB"
@@ -782,6 +776,10 @@ msgstr ""
 msgid ""
 "If specified, input images will be squashed to that dimension after "
 "padding."
+msgstr ""
+
+#: inference/images/job.py:17
+msgid "Image Inference"
 msgstr ""
 
 #: model/forms.py:29
@@ -1250,6 +1248,18 @@ msgstr ""
 
 #: model/images/forms.py:126
 msgid "Value"
+msgstr ""
+
+#: model/images/classification/job.py:26
+msgid "Image Classification Model"
+msgstr ""
+
+#: model/images/generic/job.py:26
+msgid "Generic Image Model"
+msgstr ""
+
+#: pretrained_model/job.py:72
+msgid "Pretrained Model"
 msgstr ""
 
 #: templates/home.html:27

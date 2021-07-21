@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 20:48-0700\n"
-"PO-Revision-Date: 2021-07-21 11:49+0800\n"
+"POT-Creation-Date: 2021-07-20 21:35-0700\n"
+"PO-Revision-Date: 2021-07-21 12:36+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -18,30 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 "X-Generator: Poedit 3.0\n"
-
-#: status.py:60
-msgid "Initialized"
-msgstr "初始化"
-
-#: status.py:63
-msgid "Waiting"
-msgstr "等待中"
-
-#: status.py:66
-msgid "Running"
-msgstr "运行中"
-
-#: status.py:69
-msgid "Done"
-msgstr "完成"
-
-#: status.py:72
-msgid "Aborted"
-msgstr "中止"
-
-#: status.py:75
-msgid "Error"
-msgstr "错误"
 
 #: views.py:59 views.py:74
 msgid "Classification"
@@ -137,6 +113,10 @@ msgstr "不是"
 #: dataset/generic/forms.py:78
 msgid "Check that each entry in the database has the same shape.Disabling this will also disable mean image computation."
 msgstr "检查数据库中的每个条目是否具有相同的形状。禁用此功能也将禁用平均图像计算。"
+
+#: dataset/generic/job.py:114
+msgid "Generic Dataset"
+msgstr "通用数据集"
 
 #: dataset/images/forms.py:20 templates/datasets/images/classification/show.html:24
 msgid "Image Encoding"
@@ -414,6 +394,18 @@ msgstr "在磁盘上保存文件的副本"
 msgid "Checking this box will keep raw files retrieved from S3 stored on disk after the job is completed"
 msgstr "选中此框将在任务完成后将从S3检索到的原始文件存储在磁盘上"
 
+#: dataset/images/classification/job.py:57
+msgid "This dataset was created with unencoded RGB channels. Caffe requires BGR input."
+msgstr "此数据集是使用未编码的RGB通道创建的。Caffe需要BGR输入。"
+
+#: dataset/images/classification/job.py:134
+msgid "Image Classification Dataset"
+msgstr "图像分类数据集"
+
+#: dataset/images/generic/job.py:115
+msgid "Generic Image Dataset"
+msgstr "通用的图像数据集"
+
 #: dataset/tasks/create_db.py:115 dataset/tasks/create_db.py:117 dataset/tasks/create_db.py:119
 msgid "Create DB"
 msgstr "新建数据库"
@@ -690,6 +682,10 @@ msgstr "调整图像大小(宽×高)"
 #: extensions/data/objectDetection/template.html:61
 msgid "If specified, input images will be squashed to that dimension after padding."
 msgstr "如果指定，输入图像将在填充后被压缩到该维度。"
+
+#: inference/images/job.py:17
+msgid "Image Inference"
+msgstr ""
 
 #: model/forms.py:29
 msgid "Selected job doesn't exist. Maybe it was deleted by another user."
@@ -1123,6 +1119,18 @@ msgstr "饱和"
 #: model/images/forms.py:126
 msgid "Value"
 msgstr "值"
+
+#: model/images/classification/job.py:26
+msgid "Image Classification Model"
+msgstr "图像分类模型"
+
+#: model/images/generic/job.py:26
+msgid "Generic Image Model"
+msgstr "通用图像模型"
+
+#: pretrained_model/job.py:72
+msgid "Pretrained Model"
+msgstr "预训练模型"
 
 #: templates/home.html:27
 msgid "available"
@@ -1756,3 +1764,21 @@ msgstr "字段类型%(type)s没有克隆"
 
 #~ msgid "test"
 #~ msgstr "测试"
+
+#~ msgid "Initialized"
+#~ msgstr "初始化"
+
+#~ msgid "Waiting"
+#~ msgstr "等待中"
+
+#~ msgid "Running"
+#~ msgstr "运行中"
+
+#~ msgid "Done"
+#~ msgstr "完成"
+
+#~ msgid "Aborted"
+#~ msgstr "中止"
+
+#~ msgid "Error"
+#~ msgstr "错误"

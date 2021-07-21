@@ -5,6 +5,7 @@ import os.path
 
 from ..job import ImageModelJob
 from digits.utils import subclass, override
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 # NOTE: Increment this every time the pickled object changes
 PICKLE_VERSION = 1
@@ -22,7 +23,7 @@ class ImageClassificationModelJob(ImageModelJob):
 
     @override
     def job_type(self):
-        return 'Image Classification Model'
+        return _('Image Classification Model')
 
     @override
     def download_files(self, epoch=-1, frozen_file=False):

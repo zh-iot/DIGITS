@@ -5,7 +5,7 @@ import os
 from digits.job import Job
 from digits.utils import subclass, override
 from digits.pretrained_model.tasks import CaffeUploadTask, TorchUploadTask, TensorflowUploadTask
-
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 @subclass
 class PretrainedModelJob(Job):
@@ -69,7 +69,7 @@ class PretrainedModelJob(Job):
 
     @override
     def job_type(self):
-        return "Pretrained Model"
+        return _("Pretrained Model")
 
     @override
     def __getstate__(self):

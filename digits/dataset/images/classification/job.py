@@ -7,6 +7,7 @@ from ..job import ImageDatasetJob
 from digits.dataset import tasks
 from digits.status import Status
 from digits.utils import subclass, override, constants
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 # NOTE: Increment this every time the pickled object changes
 PICKLE_VERSION = 2
@@ -53,7 +54,7 @@ class ImageClassificationDatasetJob(ImageDatasetJob):
                     self.status = Status.ERROR
                     for task in self.tasks:
                         task.status = Status.ERROR
-                        task.exception = ('This dataset was created with unencoded '
+                        task.exception = _('This dataset was created with unencoded '
                                           'RGB channels. Caffe requires BGR input.')
 
         self.pickver_job_dataset_image_classification = PICKLE_VERSION
@@ -130,7 +131,7 @@ class ImageClassificationDatasetJob(ImageDatasetJob):
 
     @override
     def job_type(self):
-        return 'Image Classification Dataset'
+        return _('Image Classification Dataset')
 
     @override
     def json_dict(self, verbose=False):
