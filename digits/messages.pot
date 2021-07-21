@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-21 00:11-0700\n"
+"POT-Creation-Date: 2021-07-21 00:44-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1360,6 +1360,34 @@ msgstr ""
 
 #: static/js/PretrainedModel.js:226
 msgid "Upload Failed"
+msgstr ""
+
+#: static/js/model-graphs.js:13 static/js/model-graphs.js:75
+msgid "Epoch"
+msgstr ""
+
+#: static/js/model-graphs.js:26
+msgid "Loss"
+msgstr ""
+
+#: static/js/model-graphs.js:35
+msgid "Accuracy (%)"
+msgstr ""
+
+#: static/js/model-graphs.js:88
+msgid "Learning Rate"
+msgstr ""
+
+#: static/js/timeline-tracing.js:11
+msgid "No Trace Selected"
+msgstr ""
+
+#: static/js/timeline-tracing.js:22
+msgid "Trace #"
+msgstr ""
+
+#: static/js/timeline-tracing.js:27
+msgid "Import error"
 msgstr ""
 
 #: templates/home.html:27

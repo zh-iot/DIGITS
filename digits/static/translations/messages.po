@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-21 00:11-0700\n"
-"PO-Revision-Date: 2021-07-21 15:12+0800\n"
+"POT-Creation-Date: 2021-07-21 00:44-0700\n"
+"PO-Revision-Date: 2021-07-21 15:45+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -1228,6 +1228,34 @@ msgstr "重新上传吗?"
 #: static/js/PretrainedModel.js:226
 msgid "Upload Failed"
 msgstr "上传失败"
+
+#: static/js/model-graphs.js:13 static/js/model-graphs.js:75
+msgid "Epoch"
+msgstr "时期"
+
+#: static/js/model-graphs.js:26
+msgid "Loss"
+msgstr "损失"
+
+#: static/js/model-graphs.js:35
+msgid "Accuracy (%)"
+msgstr "精度(%)"
+
+#: static/js/model-graphs.js:88
+msgid "Learning Rate"
+msgstr "学习速率"
+
+#: static/js/timeline-tracing.js:11
+msgid "No Trace Selected"
+msgstr "没有跟踪选定的"
+
+#: static/js/timeline-tracing.js:22
+msgid "Trace #"
+msgstr "跟踪号#"
+
+#: static/js/timeline-tracing.js:27
+msgid "Import error"
+msgstr "导入错误"
 
 #: templates/home.html:27
 msgid "available"
