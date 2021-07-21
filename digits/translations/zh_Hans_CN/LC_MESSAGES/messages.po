@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 20:06-0700\n"
-"PO-Revision-Date: 2021-07-21 11:09+0800\n"
+"POT-Creation-Date: 2021-07-20 20:41-0700\n"
+"PO-Revision-Date: 2021-07-21 11:43+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -390,17 +390,9 @@ msgstr "在磁盘上保存文件的副本"
 msgid "Checking this box will keep raw files retrieved from S3 stored on disk after the job is completed"
 msgstr "选中此框将在任务完成后将从S3检索到的原始文件存储在磁盘上"
 
-#: dataset/tasks/create_db.py:115
-msgid "Create DB (train)"
-msgstr "创建数据库(训练)"
-
-#: dataset/tasks/create_db.py:117
-msgid "Create DB (val)"
-msgstr "创建数据库(值)"
-
-#: dataset/tasks/create_db.py:119
-msgid "Create DB (test)"
-msgstr "创建数据库(测试)"
+#: dataset/tasks/create_db.py:115 dataset/tasks/create_db.py:117 dataset/tasks/create_db.py:119
+msgid "Create DB"
+msgstr "新建数据库"
 
 #: dataset/tasks/create_db.py:121
 #, python-format
@@ -1734,3 +1726,12 @@ msgstr "数字%(data)s必须小于%(max)s。"
 #, python-format
 msgid "Field type, %(type)s, not cloned"
 msgstr "字段类型%(type)s没有克隆"
+
+#~ msgid "Create DB (train)"
+#~ msgstr "创建数据库(训练)"
+
+#~ msgid "Create DB (val)"
+#~ msgstr "创建数据库(值)"
+
+#~ msgid "Create DB (test)"
+#~ msgstr "创建数据库(测试)"

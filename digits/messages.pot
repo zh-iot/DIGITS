@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 20:06-0700\n"
+"POT-Creation-Date: 2021-07-20 20:41-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -447,16 +447,9 @@ msgid ""
 "after the job is completed"
 msgstr ""
 
-#: dataset/tasks/create_db.py:115
-msgid "Create DB (train)"
-msgstr ""
-
-#: dataset/tasks/create_db.py:117
-msgid "Create DB (val)"
-msgstr ""
-
+#: dataset/tasks/create_db.py:115 dataset/tasks/create_db.py:117
 #: dataset/tasks/create_db.py:119
-msgid "Create DB (test)"
+msgid "Create DB"
 msgstr ""
 
 #: dataset/tasks/create_db.py:121

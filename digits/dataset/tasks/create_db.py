@@ -112,11 +112,11 @@ class CreateDbTask(Task):
     @override
     def name(self):
         if self.db_name == utils.constants.TRAIN_DB or 'train' in self.db_name.lower():
-            return _('Create DB (train)')
+            return _('Create DB')+'(train)'
         elif self.db_name == utils.constants.VAL_DB or 'val' in self.db_name.lower():
-            return _('Create DB (val)')
+            return _('Create DB')+'(val)'
         elif self.db_name == utils.constants.TEST_DB or 'test' in self.db_name.lower():
-            return _('Create DB (test)')
+            return _('Create DB')+'(test)'
         else:
             return _('Create DB (%(db)s)', db=self.db_name)
 
