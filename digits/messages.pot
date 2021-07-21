@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 22:55-0700\n"
+"POT-Creation-Date: 2021-07-20 22:58-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1477,6 +1477,8 @@ msgstr ""
 
 #: templates/datasets/generic/new.html:73
 #: templates/datasets/images/classification/new.html:506
+#: templates/datasets/images/generic/new.html:109
+#: templates/models/images/classification/new.html:787
 #: templates/models/images/generic/new.html:751
 msgid "Create"
 msgstr ""
@@ -1821,6 +1823,11 @@ msgstr ""
 msgid "Data Transformations"
 msgstr ""
 
+#: templates/models/images/classification/new.html:385
+#: templates/models/images/generic/new.html:384
+msgid "none"
+msgstr ""
+
 #: templates/models/images/classification/new.html:389
 #: templates/models/images/generic/new.html:388
 msgid "Data Augmentations"
@@ -1874,10 +1881,6 @@ msgstr ""
 #: templates/models/images/generic/new.html:10
 #: templates/models/images/generic/new.html:19
 msgid "Model"
-msgstr ""
-
-#: templates/models/images/generic/new.html:384
-msgid "none"
 msgstr ""
 
 #: templates/partials/home/datasets_pane.html:26

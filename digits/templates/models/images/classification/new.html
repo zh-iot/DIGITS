@@ -382,7 +382,7 @@ showHideSolverSpecificOptions();
                 <div class="form-group{{mark_errors([form.crop_size])}} data-transformation-input" id="CROPPING">
                     {{form.crop_size.label}}
                     {{form.crop_size.tooltip}}
-                    {{form.crop_size(class='form-control', placeholder='none')}}
+                    {{form.crop_size(class='form-control', placeholder=_('none'))}}
                 </div>
             </div>
             <div class="well" id="data-augmentation" style="display:none;">
@@ -784,7 +784,7 @@ $('#network-tabs a[href="#network-tab-'+$("#method").val()+'"]').tab('show');
                 {{form.model_name.tooltip}}
                 {{form.model_name(class='form-control')}}
             </div>
-            <input type="submit" name="create-model" class="btn btn-primary" value="Create">
+            <input type="submit" name="create-model" class="btn btn-primary" value="{{_('Create')}}">
         </div>
     </div>
 
