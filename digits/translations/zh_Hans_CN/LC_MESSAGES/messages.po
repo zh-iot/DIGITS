@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 22:48-0700\n"
-"PO-Revision-Date: 2021-07-21 13:50+0800\n"
+"POT-Creation-Date: 2021-07-20 22:53-0700\n"
+"PO-Revision-Date: 2021-07-21 13:54+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -997,7 +997,7 @@ msgstr "对于每一个时代，训练前都要洗牌数据。"
 
 #: model/images/forms.py:18
 msgid "Crop Size"
-msgstr "作物的大小"
+msgstr "裁剪大小"
 
 #: model/images/forms.py:23
 msgid "If specified, during training a random square crop will be taken from the input image before using as input for the network."
@@ -1692,6 +1692,10 @@ msgstr "28 x28(灰色)"
 #: templates/models/images/generic/new.html:10 templates/models/images/generic/new.html:19
 msgid "Model"
 msgstr "模型"
+
+#: templates/models/images/generic/new.html:384
+msgid "none"
+msgstr "无"
 
 #: templates/partials/home/datasets_pane.html:26 templates/partials/home/model_pane.html:26 templates/partials/home/pretrained_model_pane.html:32
 msgid "Group Jobs"
