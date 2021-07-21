@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-20 22:45-0700\n"
+"POT-Creation-Date: 2021-07-20 22:48-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1793,6 +1793,16 @@ msgstr ""
 #: templates/models/images/classification/new.html:107
 #: templates/models/images/generic/new.html:106
 msgid "Solver Options"
+msgstr ""
+
+#: templates/models/images/classification/new.html:142
+#: templates/models/images/generic/new.html:142
+msgid "[none]"
+msgstr ""
+
+#: templates/models/images/classification/new.html:150
+#: templates/models/images/generic/new.html:150
+msgid "[network defaults]"
 msgstr ""
 
 #: templates/models/images/classification/new.html:180
