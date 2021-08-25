@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-24 23:08-0700\n"
+"POT-Creation-Date: 2021-08-24 23:59-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1743,6 +1743,35 @@ msgstr ""
 msgid "Dataset size"
 msgstr ""
 
+#: templates/datasets/images/explore.html:6
+msgid "Explorer"
+msgstr ""
+
+#: templates/datasets/images/explore.html:18
+msgid "Exploring"
+msgstr ""
+
+#: templates/datasets/images/classification/summary.html:33
+#: templates/datasets/images/explore.html:18
+msgid "images"
+msgstr ""
+
+#: templates/datasets/images/explore.html:22
+msgid "Show all images"
+msgstr ""
+
+#: templates/datasets/images/explore.html:24
+msgid "or"
+msgstr ""
+
+#: templates/datasets/images/explore.html:25
+msgid "filter by class"
+msgstr ""
+
+#: templates/datasets/images/explore.html:32
+msgid "Items per page"
+msgstr ""
+
 #: templates/datasets/images/classification/new.html:10
 #: templates/datasets/images/classification/new.html:20
 msgid "New Image Classification Dataset"
@@ -1943,10 +1972,6 @@ msgstr ""
 
 #: templates/datasets/images/classification/summary.html:24
 msgid "GRAYSCALE"
-msgstr ""
-
-#: templates/datasets/images/classification/summary.html:33
-msgid "images"
 msgstr ""
 
 #: templates/datasets/images/generic/new.html:10
