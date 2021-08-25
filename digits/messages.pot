@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-22 20:09-0700\n"
+"POT-Creation-Date: 2021-08-24 22:47-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1319,6 +1319,18 @@ msgstr ""
 msgid "Image Classification Model"
 msgstr ""
 
+#: model/images/classification/views.py:407
+msgid "Classify One Image"
+msgstr ""
+
+#: model/images/classification/views.py:501
+msgid "Classify Many Images"
+msgstr ""
+
+#: model/images/classification/views.py:657
+msgid "TopN Image Classification"
+msgstr ""
+
 #: model/images/generic/job.py:26
 msgid "Generic Image Model"
 msgstr ""
@@ -1982,6 +1994,87 @@ msgid ""
 "custom network definition:"
 msgstr ""
 
+#: templates/models/images/classification/classify_one.html:6
+#: templates/models/images/classification/show.html:307
+msgid "Classify One"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:29
+msgid "Predictions"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:41
+msgid "Classification failed, see job log"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:96
+#: templates/models/images/classification/show.html:75
+#: templates/models/images/classification/show.html:79
+#: templates/models/images/generic/infer_extension.html:118
+#: templates/models/images/generic/infer_one.html:108
+msgid "Description"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:97
+#: templates/models/images/generic/infer_extension.html:119
+#: templates/models/images/generic/infer_one.html:109
+msgid "Statistics"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:98
+#: templates/models/images/generic/infer_extension.html:120
+#: templates/models/images/generic/infer_one.html:110
+msgid "Visualization"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:107
+#: templates/models/images/generic/infer_extension.html:129
+#: templates/models/images/generic/infer_one.html:119
+msgid "layer"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:112
+#: templates/models/images/generic/infer_extension.html:134
+#: templates/models/images/generic/infer_one.html:124
+msgid "learned parameters"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:117
+#: templates/models/images/generic/infer_extension.html:139
+#: templates/models/images/generic/infer_one.html:129
+msgid "Data shape"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:118
+#: templates/models/images/generic/infer_extension.html:140
+#: templates/models/images/generic/infer_one.html:130
+msgid "Mean"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:119
+#: templates/models/images/generic/infer_extension.html:141
+#: templates/models/images/generic/infer_one.html:131
+msgid "Std deviation"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:134
+#: templates/models/images/generic/infer_extension.html:156
+#: templates/models/images/generic/infer_one.html:146
+msgid "Not shown"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:140
+#: templates/models/images/generic/infer_extension.html:162
+#: templates/models/images/generic/infer_one.html:152
+msgid "Totals"
+msgstr ""
+
+#: templates/models/images/classification/classify_one.html:142
+#: templates/models/images/generic/infer_extension.html:164
+#: templates/models/images/generic/infer_one.html:154
+msgid "Total learned parameters"
+msgstr ""
+
 #: templates/models/images/classification/new.html:10
 #: templates/models/images/classification/new.html:19
 msgid "New Image Classification Model"
@@ -2061,11 +2154,6 @@ msgstr ""
 #: templates/models/images/classification/show.html:69
 #: templates/models/images/classification/show.html:254
 msgid "Publish to inference server"
-msgstr ""
-
-#: templates/models/images/classification/show.html:75
-#: templates/models/images/classification/show.html:79
-msgid "Description"
 msgstr ""
 
 #: templates/models/images/classification/show.html:84
@@ -2174,10 +2262,6 @@ msgid ""
 " classification considerably."
 msgstr ""
 
-#: templates/models/images/classification/show.html:307
-msgid "Classify One"
-msgstr ""
-
 #: templates/models/images/classification/show.html:311
 #: templates/models/images/generic/show.html:332
 msgid "Test a list of images"
@@ -2279,6 +2363,48 @@ msgstr ""
 msgid "28x28 (gray)"
 msgstr ""
 
+#: templates/models/images/generic/infer_extension.html:11
+#: templates/models/images/generic/show.html:364
+msgid "Test Many"
+msgstr ""
+
+#: templates/models/images/generic/infer_extension.html:37
+msgid "Summary"
+msgstr ""
+
+#: templates/models/images/generic/infer_extension.html:47
+msgid "Output visualizations"
+msgstr ""
+
+#: templates/models/images/generic/infer_extension.html:52
+msgid "Index"
+msgstr ""
+
+#: templates/models/images/generic/infer_extension.html:53
+msgid "Data"
+msgstr ""
+
+#: templates/models/images/generic/infer_extension.html:115
+msgid "Layer visualizations"
+msgstr ""
+
+#: templates/models/images/generic/infer_one.html:11
+#: templates/models/images/generic/show.html:314
+msgid "Test One"
+msgstr ""
+
+#: templates/models/images/generic/infer_one.html:39
+msgid "Source image"
+msgstr ""
+
+#: templates/models/images/generic/infer_one.html:43
+msgid "Inference visualization"
+msgstr ""
+
+#: templates/models/images/generic/infer_one.html:49
+msgid "Inference failed, see job log"
+msgstr ""
+
 #: templates/models/images/generic/new.html:10
 #: templates/models/images/generic/new.html:19
 msgid "Model"
@@ -2312,10 +2438,6 @@ msgstr ""
 msgid "Select Inference form"
 msgstr ""
 
-#: templates/models/images/generic/show.html:314
-msgid "Test One"
-msgstr ""
-
 #: templates/models/images/generic/show.html:316
 msgid "Test a Database"
 msgstr ""
@@ -2330,10 +2452,6 @@ msgstr ""
 
 #: templates/models/images/generic/show.html:328
 msgid "Test DB"
-msgstr ""
-
-#: templates/models/images/generic/show.html:364
-msgid "Test Many"
 msgstr ""
 
 #: templates/models/images/generic/show.html:369

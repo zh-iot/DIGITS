@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-22 20:09-0700\n"
-"PO-Revision-Date: 2021-08-25 11:32+0800\n"
+"POT-Creation-Date: 2021-08-24 22:47-0700\n"
+"PO-Revision-Date: 2021-08-25 13:55+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -1181,6 +1181,18 @@ msgstr "值"
 msgid "Image Classification Model"
 msgstr "图像分类模型"
 
+#: model/images/classification/views.py:407
+msgid "Classify One Image"
+msgstr "一个图像进行分类"
+
+#: model/images/classification/views.py:501
+msgid "Classify Many Images"
+msgstr "许多图像进行分类"
+
+#: model/images/classification/views.py:657
+msgid "TopN Image Classification"
+msgstr "TopN图像分类"
+
 #: model/images/generic/job.py:26
 msgid "Generic Image Model"
 msgstr "通用图像模型"
@@ -1793,6 +1805,74 @@ msgstr "上传的文件将被重命名为<b>digits_python_layers.py</b>，放弃
 msgid "To add the layer to your network, include this prototxt snippet in your custom network definition:"
 msgstr "要将该层添加到你的网络中，在你的自定义网络定义中包含这个prototxt片段:"
 
+#: templates/models/images/classification/classify_one.html:6 templates/models/images/classification/show.html:307
+msgid "Classify One"
+msgstr "一个分类分类"
+
+#: templates/models/images/classification/classify_one.html:29
+msgid "Predictions"
+msgstr "预测"
+
+#: templates/models/images/classification/classify_one.html:41
+msgid "Classification failed, see job log"
+msgstr "分类失败，请参阅作业日志"
+
+#: templates/models/images/classification/classify_one.html:96 templates/models/images/classification/show.html:75
+#: templates/models/images/classification/show.html:79 templates/models/images/generic/infer_extension.html:118
+#: templates/models/images/generic/infer_one.html:108
+msgid "Description"
+msgstr "描述"
+
+#: templates/models/images/classification/classify_one.html:97 templates/models/images/generic/infer_extension.html:119
+#: templates/models/images/generic/infer_one.html:109
+msgid "Statistics"
+msgstr "统计数据"
+
+#: templates/models/images/classification/classify_one.html:98 templates/models/images/generic/infer_extension.html:120
+#: templates/models/images/generic/infer_one.html:110
+msgid "Visualization"
+msgstr "可视化"
+
+#: templates/models/images/classification/classify_one.html:107 templates/models/images/generic/infer_extension.html:129
+#: templates/models/images/generic/infer_one.html:119
+msgid "layer"
+msgstr "层"
+
+#: templates/models/images/classification/classify_one.html:112 templates/models/images/generic/infer_extension.html:134
+#: templates/models/images/generic/infer_one.html:124
+msgid "learned parameters"
+msgstr "学习的参数"
+
+#: templates/models/images/classification/classify_one.html:117 templates/models/images/generic/infer_extension.html:139
+#: templates/models/images/generic/infer_one.html:129
+msgid "Data shape"
+msgstr "数据的形状"
+
+#: templates/models/images/classification/classify_one.html:118 templates/models/images/generic/infer_extension.html:140
+#: templates/models/images/generic/infer_one.html:130
+msgid "Mean"
+msgstr "意思"
+
+#: templates/models/images/classification/classify_one.html:119 templates/models/images/generic/infer_extension.html:141
+#: templates/models/images/generic/infer_one.html:131
+msgid "Std deviation"
+msgstr "标准偏差"
+
+#: templates/models/images/classification/classify_one.html:134 templates/models/images/generic/infer_extension.html:156
+#: templates/models/images/generic/infer_one.html:146
+msgid "Not shown"
+msgstr "没有显示"
+
+#: templates/models/images/classification/classify_one.html:140 templates/models/images/generic/infer_extension.html:162
+#: templates/models/images/generic/infer_one.html:152
+msgid "Totals"
+msgstr "总数"
+
+#: templates/models/images/classification/classify_one.html:142 templates/models/images/generic/infer_extension.html:164
+#: templates/models/images/generic/infer_one.html:154
+msgid "Total learned parameters"
+msgstr "总学参数"
+
 #: templates/models/images/classification/new.html:10 templates/models/images/classification/new.html:19
 msgid "New Image Classification Model"
 msgstr "新的图像分类模型"
@@ -1856,10 +1936,6 @@ msgstr "输出"
 #: templates/models/images/classification/show.html:69 templates/models/images/classification/show.html:254
 msgid "Publish to inference server"
 msgstr "发布到推理服务器"
-
-#: templates/models/images/classification/show.html:75 templates/models/images/classification/show.html:79
-msgid "Description"
-msgstr "描述"
 
 #: templates/models/images/classification/show.html:84
 msgid "Output layer"
@@ -1948,10 +2024,6 @@ msgid ""
 "considerably."
 msgstr "对于网络中的每一层，显示权重/激活的统计数据，并尝试直观地表示数据。可以大大延迟分类。"
 
-#: templates/models/images/classification/show.html:307
-msgid "Classify One"
-msgstr "一个分类分类"
-
 #: templates/models/images/classification/show.html:311 templates/models/images/generic/show.html:332
 msgid "Test a list of images"
 msgstr "测试图像列表"
@@ -2039,6 +2111,46 @@ msgstr "原始论文"
 msgid "28x28 (gray)"
 msgstr "28 x28(灰色)"
 
+#: templates/models/images/generic/infer_extension.html:11 templates/models/images/generic/show.html:364
+msgid "Test Many"
+msgstr "测试多个"
+
+#: templates/models/images/generic/infer_extension.html:37
+msgid "Summary"
+msgstr "总结"
+
+#: templates/models/images/generic/infer_extension.html:47
+msgid "Output visualizations"
+msgstr "输出可视化"
+
+#: templates/models/images/generic/infer_extension.html:52
+msgid "Index"
+msgstr "指数"
+
+#: templates/models/images/generic/infer_extension.html:53
+msgid "Data"
+msgstr "数据"
+
+#: templates/models/images/generic/infer_extension.html:115
+msgid "Layer visualizations"
+msgstr "层可视化"
+
+#: templates/models/images/generic/infer_one.html:11 templates/models/images/generic/show.html:314
+msgid "Test One"
+msgstr "测试1"
+
+#: templates/models/images/generic/infer_one.html:39
+msgid "Source image"
+msgstr "源图像"
+
+#: templates/models/images/generic/infer_one.html:43
+msgid "Inference visualization"
+msgstr "推理的可视化"
+
+#: templates/models/images/generic/infer_one.html:49
+msgid "Inference failed, see job log"
+msgstr "推断失败，请参阅作业日志"
+
 #: templates/models/images/generic/new.html:10 templates/models/images/generic/new.html:19
 msgid "Model"
 msgstr "模型"
@@ -2071,10 +2183,6 @@ msgstr "不要调整输入图像的大小"
 msgid "Select Inference form"
 msgstr "选择推理形式"
 
-#: templates/models/images/generic/show.html:314
-msgid "Test One"
-msgstr "测试1测试集"
-
 #: templates/models/images/generic/show.html:316
 msgid "Test a Database"
 msgstr "测试数据库数据库"
@@ -2090,10 +2198,6 @@ msgstr "指定服务器上LMDB数据库的路径"
 #: templates/models/images/generic/show.html:328
 msgid "Test DB"
 msgstr "测试数据库"
-
-#: templates/models/images/generic/show.html:364
-msgid "Test Many"
-msgstr "测试多个"
 
 #: templates/models/images/generic/show.html:369
 msgid "Infer a list of images and show the network outputs."
