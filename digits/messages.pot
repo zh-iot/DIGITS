@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-21 03:02-0700\n"
+"POT-Creation-Date: 2021-07-22 20:09-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1325,8 +1325,10 @@ msgstr ""
 
 #: pretrained_model/job.py:72
 #: templates/models/images/classification/partials/new/network_tab_previous.html:11
+#: templates/models/images/classification/show.html:29
 #: templates/models/images/generic/partials/new/network_tab_pretrained.html:10
 #: templates/models/images/generic/partials/new/network_tab_previous.html:10
+#: templates/models/images/generic/show.html:29
 msgid "Pretrained Model"
 msgstr ""
 
@@ -1574,10 +1576,6 @@ msgstr ""
 msgid "version"
 msgstr ""
 
-#: templates/layout.html:75
-msgid "About"
-msgstr ""
-
 #: templates/login.html:19
 msgid "Username"
 msgstr ""
@@ -1588,7 +1586,7 @@ msgid ""
 "periods, dashes and underscores."
 msgstr ""
 
-#: templates/login.html:23
+#: templates/login.html:23 templates/models/images/classification/show.html:137
 msgid "Submit"
 msgstr ""
 
@@ -1645,11 +1643,14 @@ msgstr ""
 
 #: templates/datasets/generic/new.html:10
 #: templates/datasets/generic/new.html:19
+#: templates/models/images/classification/show.html:37
+#: templates/models/images/generic/show.html:39
 msgid "Dataset"
 msgstr ""
 
 #: templates/datasets/generic/new.html:14
 #: templates/datasets/images/classification/new.html:14
+#: templates/datasets/images/generic/new.html:14
 #: templates/partials/home/datasets_pane.html:7
 msgid "New Dataset"
 msgstr ""
@@ -1709,6 +1710,8 @@ msgstr ""
 #: templates/datasets/generic/show.html:67
 #: templates/datasets/images/classification/show.html:12
 #: templates/datasets/images/generic/show.html:50
+#: templates/models/images/classification/show.html:16
+#: templates/models/images/generic/show.html:16
 msgid "Job Directory"
 msgstr ""
 
@@ -1763,10 +1766,14 @@ msgid ""
 msgstr ""
 
 #: templates/datasets/images/classification/new.html:226
+#: templates/models/images/classification/show.html:328
+#: templates/models/images/generic/show.html:349
 msgid "Image folder"
 msgstr ""
 
 #: templates/datasets/images/classification/new.html:226
+#: templates/models/images/classification/show.html:328
+#: templates/models/images/generic/show.html:349
 msgid "optional"
 msgstr ""
 
@@ -1796,10 +1803,12 @@ msgid "enter path"
 msgstr ""
 
 #: templates/datasets/images/classification/new.html:263
+#: templates/datasets/images/generic/new.html:55
 msgid "Validation"
 msgstr ""
 
 #: templates/datasets/images/classification/new.html:280
+#: templates/models/images/generic/show.html:261
 msgid "Test"
 msgstr ""
 
@@ -1900,6 +1909,23 @@ msgstr ""
 #: templates/datasets/images/classification/show.html:159
 #: templates/datasets/images/generic/show.html:16
 msgid "Image Count"
+msgstr ""
+
+#: templates/datasets/images/generic/new.html:10
+#: templates/datasets/images/generic/new.html:19
+msgid "New Image Dataset"
+msgstr ""
+
+#: templates/datasets/images/generic/new.html:31
+msgid "Use Prebuilt LMDBs"
+msgstr ""
+
+#: templates/datasets/images/generic/new.html:42
+msgid "Images LMDB"
+msgstr ""
+
+#: templates/datasets/images/generic/new.html:43
+msgid "Labels LMDB"
 msgstr ""
 
 #: templates/datasets/images/generic/show.html:12
@@ -2017,6 +2043,202 @@ msgstr ""
 msgid "Visualize"
 msgstr ""
 
+#: templates/models/images/classification/show.html:18
+#: templates/models/images/generic/show.html:18
+msgid "Disk Size"
+msgstr ""
+
+#: templates/models/images/classification/show.html:25
+#: templates/models/images/generic/show.html:25
+msgid "Raw"
+msgstr ""
+
+#: templates/models/images/classification/show.html:25
+#: templates/models/images/generic/show.html:25
+msgid "output"
+msgstr ""
+
+#: templates/models/images/classification/show.html:69
+#: templates/models/images/classification/show.html:254
+msgid "Publish to inference server"
+msgstr ""
+
+#: templates/models/images/classification/show.html:75
+#: templates/models/images/classification/show.html:79
+msgid "Description"
+msgstr ""
+
+#: templates/models/images/classification/show.html:84
+msgid "Output layer"
+msgstr ""
+
+#: templates/models/images/classification/show.html:88
+msgid "softmax"
+msgstr ""
+
+#: templates/models/images/classification/show.html:93
+msgid "Input layer"
+msgstr ""
+
+#: templates/models/images/classification/show.html:97
+msgid "in"
+msgstr ""
+
+#: templates/models/images/classification/show.html:102
+msgid "Input shape"
+msgstr ""
+
+#: templates/models/images/classification/show.html:111
+msgid "Output shape"
+msgstr ""
+
+#: templates/models/images/classification/show.html:120
+msgid "Modality"
+msgstr ""
+
+#: templates/models/images/classification/show.html:154
+msgid ""
+"Use bottom chart to select region of interest. Drag to pan left/right. "
+"Click outside of region to unselect."
+msgstr ""
+
+#: templates/models/images/classification/show.html:160
+#: templates/models/images/generic/show.html:69
+msgid "View Large"
+msgstr ""
+
+#: templates/models/images/classification/show.html:165
+#: templates/models/images/generic/show.html:74
+msgid "View Timeline Traces"
+msgstr ""
+
+#: templates/models/images/classification/show.html:197
+#: templates/models/images/generic/show.html:106
+msgid "Trained Models"
+msgstr ""
+
+#: templates/models/images/classification/show.html:200
+#: templates/models/images/generic/show.html:109
+msgid "Select Model"
+msgstr ""
+
+#: templates/models/images/classification/show.html:242
+#: templates/models/images/generic/show.html:151
+msgid "Download Model"
+msgstr ""
+
+#: templates/models/images/classification/show.html:249
+#: templates/models/images/generic/show.html:158
+msgid "Make Pretrained Model"
+msgstr ""
+
+#: templates/models/images/classification/show.html:261
+#: templates/models/images/generic/show.html:268
+msgid "Test a single image"
+msgstr ""
+
+#: templates/models/images/classification/show.html:263
+#: templates/models/images/generic/show.html:270
+msgid "Image Path"
+msgstr ""
+
+#: templates/models/images/classification/show.html:267
+#: templates/models/images/generic/show.html:274
+msgid "Can be a path on the server's filesystem, or a URL."
+msgstr ""
+
+#: templates/models/images/classification/show.html:272
+#: templates/models/images/generic/show.html:279
+msgid "Upload image"
+msgstr ""
+
+#: templates/models/images/classification/show.html:277
+#: templates/models/images/classification/show.html:318
+#: templates/models/images/generic/show.html:284
+#: templates/models/images/generic/show.html:339
+msgid "Browse"
+msgstr ""
+
+#: templates/models/images/classification/show.html:293
+#: templates/models/images/generic/show.html:244
+#: templates/models/images/generic/show.html:300
+msgid "Show visualizations and statistics"
+msgstr ""
+
+#: templates/models/images/classification/show.html:298
+#: templates/models/images/generic/show.html:249
+#: templates/models/images/generic/show.html:305
+msgid ""
+"For each layer in the network, show statistics for the "
+"weights/activations and attempt to represent the data visually. Can delay"
+" classification considerably."
+msgstr ""
+
+#: templates/models/images/classification/show.html:307
+msgid "Classify One"
+msgstr ""
+
+#: templates/models/images/classification/show.html:311
+#: templates/models/images/generic/show.html:332
+msgid "Test a list of images"
+msgstr ""
+
+#: templates/models/images/classification/show.html:313
+#: templates/models/images/generic/show.html:334
+msgid "Upload Image List"
+msgstr ""
+
+#: templates/models/images/classification/show.html:324
+#: templates/models/images/generic/show.html:345
+msgid "Accepts a list of filenames or urls (you can use your val.txt file)"
+msgstr ""
+
+#: templates/models/images/classification/show.html:330
+#: templates/models/images/generic/show.html:351
+msgid ""
+"Relative paths in the text file will be prepended with this value before "
+"reading"
+msgstr ""
+
+#: templates/models/images/classification/show.html:333
+#: templates/models/images/generic/show.html:354
+msgid "Number of images use from the file"
+msgstr ""
+
+#: templates/models/images/classification/show.html:334
+#: templates/models/images/generic/show.html:355
+msgid "All"
+msgstr ""
+
+#: templates/models/images/classification/show.html:335
+#: templates/models/images/generic/show.html:356
+msgid "Leave blank to use all"
+msgstr ""
+
+#: templates/models/images/classification/show.html:343
+msgid "Classify Many"
+msgstr ""
+
+#: templates/models/images/classification/show.html:348
+msgid ""
+"Classify a list of images and show the top 5 category predictions for "
+"each."
+msgstr ""
+
+#: templates/models/images/classification/show.html:351
+msgid "Number of images to show per category"
+msgstr ""
+
+#: templates/models/images/classification/show.html:360
+msgid "Top N Predictions per Category"
+msgstr ""
+
+#: templates/models/images/classification/show.html:365
+msgid ""
+"Classify a list of images and show the top N results per category by "
+"confidence."
+msgstr ""
+
 #: templates/models/images/classification/partials/new/network_tab_previous.html:10
 #: templates/models/images/classification/partials/new/network_tab_standard.html:18
 #: templates/models/images/generic/partials/new/network_tab_previous.html:9
@@ -2060,6 +2282,62 @@ msgstr ""
 #: templates/models/images/generic/new.html:10
 #: templates/models/images/generic/new.html:19
 msgid "Model"
+msgstr ""
+
+#: templates/models/images/generic/show.html:32
+msgid "Visualizations"
+msgstr ""
+
+#: templates/models/images/generic/show.html:33
+msgid "Tensorboard"
+msgstr ""
+
+#: templates/models/images/generic/show.html:164
+msgid "Select Visualization Method"
+msgstr ""
+
+#: templates/models/images/generic/show.html:174
+msgid "Visualization Options"
+msgstr ""
+
+#: templates/models/images/generic/show.html:201
+msgid "Inference Options"
+msgstr ""
+
+#: templates/models/images/generic/show.html:207
+msgid "Do not resize input image(s)"
+msgstr ""
+
+#: templates/models/images/generic/show.html:222
+msgid "Select Inference form"
+msgstr ""
+
+#: templates/models/images/generic/show.html:314
+msgid "Test One"
+msgstr ""
+
+#: templates/models/images/generic/show.html:316
+msgid "Test a Database"
+msgstr ""
+
+#: templates/models/images/generic/show.html:318
+msgid "LMDB path"
+msgstr ""
+
+#: templates/models/images/generic/show.html:320
+msgid "Specify path to LMDB database on server"
+msgstr ""
+
+#: templates/models/images/generic/show.html:328
+msgid "Test DB"
+msgstr ""
+
+#: templates/models/images/generic/show.html:364
+msgid "Test Many"
+msgstr ""
+
+#: templates/models/images/generic/show.html:369
+msgid "Infer a list of images and show the network outputs."
 msgstr ""
 
 #: templates/partials/home/datasets_pane.html:26

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-21 03:02-0700\n"
-"PO-Revision-Date: 2021-07-22 16:14+0800\n"
+"POT-Creation-Date: 2021-07-22 20:09-0700\n"
+"PO-Revision-Date: 2021-08-25 11:32+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -1186,8 +1186,8 @@ msgid "Generic Image Model"
 msgstr "通用图像模型"
 
 #: pretrained_model/job.py:72 templates/models/images/classification/partials/new/network_tab_previous.html:11
-#: templates/models/images/generic/partials/new/network_tab_pretrained.html:10
-#: templates/models/images/generic/partials/new/network_tab_previous.html:10
+#: templates/models/images/classification/show.html:29 templates/models/images/generic/partials/new/network_tab_pretrained.html:10
+#: templates/models/images/generic/partials/new/network_tab_previous.html:10 templates/models/images/generic/show.html:29
 msgid "Pretrained Model"
 msgstr "预训练模型"
 
@@ -1427,10 +1427,6 @@ msgstr "信息"
 msgid "version"
 msgstr "版本"
 
-#: templates/layout.html:75
-msgid "About"
-msgstr "关于"
-
 #: templates/login.html:19
 msgid "Username"
 msgstr "用户名"
@@ -1439,7 +1435,7 @@ msgstr "用户名"
 msgid "Must begin with a letter and contain only lowercase letters, numbers, periods, dashes and underscores."
 msgstr "必须以字母开头，只能包含小写字母、数字、点、破折号和下划线。"
 
-#: templates/login.html:23
+#: templates/login.html:23 templates/models/images/classification/show.html:137
 msgid "Submit"
 msgstr "提交"
 
@@ -1492,11 +1488,13 @@ msgstr "关闭"
 msgid "New"
 msgstr "新建"
 
-#: templates/datasets/generic/new.html:10 templates/datasets/generic/new.html:19
+#: templates/datasets/generic/new.html:10 templates/datasets/generic/new.html:19 templates/models/images/classification/show.html:37
+#: templates/models/images/generic/show.html:39
 msgid "Dataset"
 msgstr "数据集"
 
-#: templates/datasets/generic/new.html:14 templates/datasets/images/classification/new.html:14 templates/partials/home/datasets_pane.html:7
+#: templates/datasets/generic/new.html:14 templates/datasets/images/classification/new.html:14 templates/datasets/images/generic/new.html:14
+#: templates/partials/home/datasets_pane.html:7
 msgid "New Dataset"
 msgstr "新建数据集"
 
@@ -1546,6 +1544,7 @@ msgid "Job Information"
 msgstr "工作信息"
 
 #: templates/datasets/generic/show.html:67 templates/datasets/images/classification/show.html:12 templates/datasets/images/generic/show.html:50
+#: templates/models/images/classification/show.html:16 templates/models/images/generic/show.html:16
 msgid "Job Directory"
 msgstr "工作目录"
 
@@ -1595,11 +1594,13 @@ msgid ""
 "<LABEL> is a numeric label that matches the uploaded labels file"
 msgstr "文件中的每一行都应该被格式化为'<PATH> <LABEL>“ <PATH>指定本地文件系统上的图像路径或URL，以及<LABEL>是否与上传的标签文件匹配"
 
-#: templates/datasets/images/classification/new.html:226
+#: templates/datasets/images/classification/new.html:226 templates/models/images/classification/show.html:328
+#: templates/models/images/generic/show.html:349
 msgid "Image folder"
 msgstr "图片文件夹"
 
-#: templates/datasets/images/classification/new.html:226
+#: templates/datasets/images/classification/new.html:226 templates/models/images/classification/show.html:328
+#: templates/models/images/generic/show.html:349
 msgid "optional"
 msgstr "可选"
 
@@ -1624,11 +1625,11 @@ msgstr "训练"
 msgid "enter path"
 msgstr "输入路径"
 
-#: templates/datasets/images/classification/new.html:263
+#: templates/datasets/images/classification/new.html:263 templates/datasets/images/generic/new.html:55
 msgid "Validation"
 msgstr "验证"
 
-#: templates/datasets/images/classification/new.html:280
+#: templates/datasets/images/classification/new.html:280 templates/models/images/generic/show.html:261
 msgid "Test"
 msgstr "测试"
 
@@ -1725,9 +1726,25 @@ msgstr "类别"
 msgid "Image Count"
 msgstr "图像数"
 
+#: templates/datasets/images/generic/new.html:10 templates/datasets/images/generic/new.html:19
+msgid "New Image Dataset"
+msgstr "新的图像数据集"
+
+#: templates/datasets/images/generic/new.html:31
+msgid "Use Prebuilt LMDBs"
+msgstr "使用预先构建的LMDB"
+
+#: templates/datasets/images/generic/new.html:42
+msgid "Images LMDB"
+msgstr "LMDB图像"
+
+#: templates/datasets/images/generic/new.html:43
+msgid "Labels LMDB"
+msgstr "LMDB标签"
+
 #: templates/datasets/images/generic/show.html:12
 msgid "Database"
-msgstr "数据库"
+msgstr "数据库数据库"
 
 #: templates/datasets/images/generic/show.html:27
 msgid "(Width x Height x Channels)"
@@ -1824,6 +1841,165 @@ msgstr "数据扩张"
 msgid "Visualize"
 msgstr "可视化"
 
+#: templates/models/images/classification/show.html:18 templates/models/images/generic/show.html:18
+msgid "Disk Size"
+msgstr "磁盘大小"
+
+#: templates/models/images/classification/show.html:25 templates/models/images/generic/show.html:25
+msgid "Raw"
+msgstr "Raw"
+
+#: templates/models/images/classification/show.html:25 templates/models/images/generic/show.html:25
+msgid "output"
+msgstr "输出"
+
+#: templates/models/images/classification/show.html:69 templates/models/images/classification/show.html:254
+msgid "Publish to inference server"
+msgstr "发布到推理服务器"
+
+#: templates/models/images/classification/show.html:75 templates/models/images/classification/show.html:79
+msgid "Description"
+msgstr "描述"
+
+#: templates/models/images/classification/show.html:84
+msgid "Output layer"
+msgstr "输出层"
+
+#: templates/models/images/classification/show.html:88
+msgid "softmax"
+msgstr "softmax"
+
+#: templates/models/images/classification/show.html:93
+msgid "Input layer"
+msgstr "输入层"
+
+#: templates/models/images/classification/show.html:97
+msgid "in"
+msgstr "输入"
+
+#: templates/models/images/classification/show.html:102
+msgid "Input shape"
+msgstr "输入形状"
+
+#: templates/models/images/classification/show.html:111
+msgid "Output shape"
+msgstr "输出形状"
+
+#: templates/models/images/classification/show.html:120
+msgid "Modality"
+msgstr "形态"
+
+#: templates/models/images/classification/show.html:154
+msgid "Use bottom chart to select region of interest. Drag to pan left/right. Click outside of region to unselect."
+msgstr "使用底部图表选择感兴趣的区域。拖动到左/右平移。单击区域外取消选择。"
+
+#: templates/models/images/classification/show.html:160 templates/models/images/generic/show.html:69
+msgid "View Large"
+msgstr "查看大图"
+
+#: templates/models/images/classification/show.html:165 templates/models/images/generic/show.html:74
+msgid "View Timeline Traces"
+msgstr "时间轴视图痕迹"
+
+#: templates/models/images/classification/show.html:197 templates/models/images/generic/show.html:106
+msgid "Trained Models"
+msgstr "训练模型预训练模型"
+
+#: templates/models/images/classification/show.html:200 templates/models/images/generic/show.html:109
+msgid "Select Model"
+msgstr "选择模型"
+
+#: templates/models/images/classification/show.html:242 templates/models/images/generic/show.html:151
+msgid "Download Model"
+msgstr "下载模型"
+
+#: templates/models/images/classification/show.html:249 templates/models/images/generic/show.html:158
+msgid "Make Pretrained Model"
+msgstr "使预训练模型"
+
+#: templates/models/images/classification/show.html:261 templates/models/images/generic/show.html:268
+msgid "Test a single image"
+msgstr "测试单个图像"
+
+#: templates/models/images/classification/show.html:263 templates/models/images/generic/show.html:270
+msgid "Image Path"
+msgstr "图片路径"
+
+#: templates/models/images/classification/show.html:267 templates/models/images/generic/show.html:274
+msgid "Can be a path on the server's filesystem, or a URL."
+msgstr "可以是服务器文件系统上的路径，也可以是URL。"
+
+#: templates/models/images/classification/show.html:272 templates/models/images/generic/show.html:279
+msgid "Upload image"
+msgstr "上传图片"
+
+#: templates/models/images/classification/show.html:277 templates/models/images/classification/show.html:318
+#: templates/models/images/generic/show.html:284 templates/models/images/generic/show.html:339
+msgid "Browse"
+msgstr "浏览"
+
+#: templates/models/images/classification/show.html:293 templates/models/images/generic/show.html:244 templates/models/images/generic/show.html:300
+msgid "Show visualizations and statistics"
+msgstr "显示可视化和统计数据"
+
+#: templates/models/images/classification/show.html:298 templates/models/images/generic/show.html:249 templates/models/images/generic/show.html:305
+msgid ""
+"For each layer in the network, show statistics for the weights/activations and attempt to represent the data visually. Can delay classification "
+"considerably."
+msgstr "对于网络中的每一层，显示权重/激活的统计数据，并尝试直观地表示数据。可以大大延迟分类。"
+
+#: templates/models/images/classification/show.html:307
+msgid "Classify One"
+msgstr "一个分类分类"
+
+#: templates/models/images/classification/show.html:311 templates/models/images/generic/show.html:332
+msgid "Test a list of images"
+msgstr "测试图像列表"
+
+#: templates/models/images/classification/show.html:313 templates/models/images/generic/show.html:334
+msgid "Upload Image List"
+msgstr "上传图片列表"
+
+#: templates/models/images/classification/show.html:324 templates/models/images/generic/show.html:345
+msgid "Accepts a list of filenames or urls (you can use your val.txt file)"
+msgstr "接受文件名或url列表(可以使用val.txt文件)"
+
+#: templates/models/images/classification/show.html:330 templates/models/images/generic/show.html:351
+msgid "Relative paths in the text file will be prepended with this value before reading"
+msgstr "文本文件中的相对路径在读取之前将被加上这个值"
+
+#: templates/models/images/classification/show.html:333 templates/models/images/generic/show.html:354
+msgid "Number of images use from the file"
+msgstr "从文件中使用的图像数量"
+
+#: templates/models/images/classification/show.html:334 templates/models/images/generic/show.html:355
+msgid "All"
+msgstr "全部"
+
+#: templates/models/images/classification/show.html:335 templates/models/images/generic/show.html:356
+msgid "Leave blank to use all"
+msgstr "如果为空则选择全部"
+
+#: templates/models/images/classification/show.html:343
+msgid "Classify Many"
+msgstr "许多分类"
+
+#: templates/models/images/classification/show.html:348
+msgid "Classify a list of images and show the top 5 category predictions for each."
+msgstr "分类图片列表，并显示前5类预测。"
+
+#: templates/models/images/classification/show.html:351
+msgid "Number of images to show per category"
+msgstr "每个类别显示的图像数量"
+
+#: templates/models/images/classification/show.html:360
+msgid "Top N Predictions per Category"
+msgstr "每个类别的前N个预测"
+
+#: templates/models/images/classification/show.html:365
+msgid "Classify a list of images and show the top N results per category by confidence."
+msgstr "分类一个图像列表，并显示每个类别的前N个结果的信心。"
+
 #: templates/models/images/classification/partials/new/network_tab_previous.html:10
 #: templates/models/images/classification/partials/new/network_tab_standard.html:18
 #: templates/models/images/generic/partials/new/network_tab_previous.html:9 templates/models/images/generic/partials/new/network_tab_standard.html:4
@@ -1866,6 +2042,62 @@ msgstr "28 x28(灰色)"
 #: templates/models/images/generic/new.html:10 templates/models/images/generic/new.html:19
 msgid "Model"
 msgstr "模型"
+
+#: templates/models/images/generic/show.html:32
+msgid "Visualizations"
+msgstr "可视化验证"
+
+#: templates/models/images/generic/show.html:33
+msgid "Tensorboard"
+msgstr "Tensorboard"
+
+#: templates/models/images/generic/show.html:164
+msgid "Select Visualization Method"
+msgstr "选择可视化方法"
+
+#: templates/models/images/generic/show.html:174
+msgid "Visualization Options"
+msgstr "可视化选项"
+
+#: templates/models/images/generic/show.html:201
+msgid "Inference Options"
+msgstr "推理选项"
+
+#: templates/models/images/generic/show.html:207
+msgid "Do not resize input image(s)"
+msgstr "不要调整输入图像的大小"
+
+#: templates/models/images/generic/show.html:222
+msgid "Select Inference form"
+msgstr "选择推理形式"
+
+#: templates/models/images/generic/show.html:314
+msgid "Test One"
+msgstr "测试1测试集"
+
+#: templates/models/images/generic/show.html:316
+msgid "Test a Database"
+msgstr "测试数据库数据库"
+
+#: templates/models/images/generic/show.html:318
+msgid "LMDB path"
+msgstr "LMDB路径"
+
+#: templates/models/images/generic/show.html:320
+msgid "Specify path to LMDB database on server"
+msgstr "指定服务器上LMDB数据库的路径"
+
+#: templates/models/images/generic/show.html:328
+msgid "Test DB"
+msgstr "测试数据库"
+
+#: templates/models/images/generic/show.html:364
+msgid "Test Many"
+msgstr "测试多个"
+
+#: templates/models/images/generic/show.html:369
+msgid "Infer a list of images and show the network outputs."
+msgstr "推断图像列表并显示网络输出。"
 
 #: templates/partials/home/datasets_pane.html:26 templates/partials/home/model_pane.html:26 templates/partials/home/pretrained_model_pane.html:32
 msgid "Group Jobs"
@@ -1986,3 +2218,6 @@ msgstr "字段类型%(type)s没有克隆"
 
 #~ msgid "Error"
 #~ msgstr "错误"
+
+#~ msgid "About"
+#~ msgstr "关于"
