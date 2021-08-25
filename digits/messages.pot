@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-24 22:47-0700\n"
+"POT-Creation-Date: 2021-08-24 23:08-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,7 @@ msgid "Use specified number of encoder threads"
 msgstr ""
 
 #: dataset/generic/forms.py:63 dataset/images/classification/forms.py:21
+#: templates/datasets/images/classification/summary.html:27
 msgid "DB backend"
 msgstr ""
 
@@ -137,6 +138,7 @@ msgstr ""
 
 #: dataset/images/forms.py:34 static/js/PretrainedModel.js:81
 #: templates/datasets/images/classification/show.html:18
+#: templates/datasets/images/classification/summary.html:19
 msgid "Image Type"
 msgstr ""
 
@@ -843,6 +845,10 @@ msgstr ""
 msgid "Image Inference"
 msgstr ""
 
+#: inference/tasks/inference.py:56
+msgid "Infer Model"
+msgstr ""
+
 #: model/forms.py:29
 msgid "Selected job doesn't exist. Maybe it was deleted by another user."
 msgstr ""
@@ -1333,6 +1339,10 @@ msgstr ""
 
 #: model/images/generic/job.py:26
 msgid "Generic Image Model"
+msgstr ""
+
+#: model/tasks/caffe_train.py:212
+msgid "Train Caffe Model"
 msgstr ""
 
 #: pretrained_model/job.py:72
@@ -1921,6 +1931,22 @@ msgstr ""
 #: templates/datasets/images/classification/show.html:159
 #: templates/datasets/images/generic/show.html:16
 msgid "Image Count"
+msgstr ""
+
+#: templates/datasets/images/classification/summary.html:17
+msgid "Image Size"
+msgstr ""
+
+#: templates/datasets/images/classification/summary.html:22
+msgid "COLOR"
+msgstr ""
+
+#: templates/datasets/images/classification/summary.html:24
+msgid "GRAYSCALE"
+msgstr ""
+
+#: templates/datasets/images/classification/summary.html:33
+msgid "images"
 msgstr ""
 
 #: templates/datasets/images/generic/new.html:10

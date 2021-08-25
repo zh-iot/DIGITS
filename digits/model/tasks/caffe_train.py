@@ -22,6 +22,7 @@ from digits.config import config_value
 from digits.status import Status
 from digits.utils import subclass, override, constants
 from digits.utils.filesystem import tail
+from flask_babel import Babel, gettext as _
 
 # Must import after importing digit.config
 import caffe
@@ -208,7 +209,7 @@ class CaffeTrainTask(TrainTask):
 
     @override
     def name(self):
-        return 'Train Caffe Model'
+        return _('Train Caffe Model')
 
     @override
     def before_run(self):
