@@ -14,9 +14,9 @@ GROUP = "digits.plugins.data"
 
 # built-in extensions
 builtin_data_extensions = [
+    imageSegmentation.DataIngestion,
     objectDetection.DataIngestion,
-    imageProcessing.DataIngestion,
-    # imageSegmentation.DataIngestion,
+    # imageProcessing.DataIngestion,
 ]
 
 
