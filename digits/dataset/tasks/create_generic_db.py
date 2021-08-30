@@ -38,7 +38,7 @@ class CreateGenericDbTask(Task):
 
     @override
     def name(self):
-        return _('Create %(stage)s DB', self.stage)
+        return _('Create %(stage)s DB', stage=self.stage)
         # return 'Create %s DB' % self.stage
 
     @override
