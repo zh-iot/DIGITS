@@ -7,6 +7,8 @@ from digits.utils import subclass, override
 from .forms import ConfigForm
 from ..interface import VisualizationInterface
 
+from flask_babel import Babel, gettext as _,ngettext
+
 CONFIG_TEMPLATE = "config_template.html"
 VIEW_TEMPLATE = "view_template.html"
 
@@ -50,7 +52,7 @@ class Visualization(VisualizationInterface):
 
     @staticmethod
     def get_title():
-        return 'Raw Data'
+        return _('Raw Data')
 
     @override
     def get_view_template(self, data):

@@ -147,7 +147,7 @@ class DataIngestion(DataIngestionInterface):
     @staticmethod
     @override
     def get_title():
-        return _("Segmentation")
+        return _("Image Segmentation")
 
     @override
     def itemize_entries(self, stage):

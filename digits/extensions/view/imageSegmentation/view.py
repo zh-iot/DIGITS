@@ -16,6 +16,8 @@ from digits.utils.constants import COLOR_PALETTE_ATTRIBUTE
 from .forms import ConfigForm
 from ..interface import VisualizationInterface
 
+from flask_babel import Babel, gettext as _,ngettext
+
 CONFIG_TEMPLATE = "config_template.html"
 HEADER_TEMPLATE = "header_template.html"
 APP_BEGIN_TEMPLATE = "app_begin_template.html"
@@ -144,7 +146,7 @@ class Visualization(VisualizationInterface):
     @staticmethod
     def get_title():
         """returns: name string to display in html."""
-        return 'Image Segmentation'
+        return _('Image Segmentation')
 
     @staticmethod
     def get_dirname():

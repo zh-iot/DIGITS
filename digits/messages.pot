@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-30 00:00-0700\n"
+"POT-Creation-Date: 2021-08-30 01:04-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -615,7 +615,8 @@ msgid "All label images must use the same palette"
 msgstr ""
 
 #: extensions/data/imageSegmentation/data.py:150
-msgid "Segmentation"
+#: extensions/view/imageSegmentation/view.py:149
+msgid "Image Segmentation"
 msgstr ""
 
 #: extensions/data/imageSegmentation/data.py:202
@@ -839,6 +840,18 @@ msgstr ""
 msgid ""
 "If specified, input images will be squashed to that dimension after "
 "padding."
+msgstr ""
+
+#: extensions/view/boundingBox/view.py:84
+msgid "Bounding boxes"
+msgstr ""
+
+#: extensions/view/imageOutput/view.py:64
+msgid "Image output"
+msgstr ""
+
+#: extensions/view/rawData/view.py:55
+msgid "Raw Data"
 msgstr ""
 
 #: inference/images/job.py:17

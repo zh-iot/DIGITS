@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-30 00:00-0700\n"
-"PO-Revision-Date: 2021-08-30 15:03+0800\n"
+"POT-Creation-Date: 2021-08-30 01:04-0700\n"
+"PO-Revision-Date: 2021-08-30 17:05+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr "可选的组名，用于在主页面上的组织。"
 
 #: dataset/generic/forms.py:18
 msgid "Feature Encoding"
-msgstr "功能编码"
+msgstr "图像编码"
 
 #: dataset/generic/forms.py:20 dataset/generic/forms.py:33 dataset/images/classification/forms.py:40 dataset/images/forms.py:23
 #: extensions/data/imageProcessing/forms.py:93 extensions/data/imageSegmentation/forms.py:110 extensions/data/objectDetection/forms.py:109
@@ -79,7 +79,7 @@ msgstr "标签编码"
 
 #: dataset/generic/forms.py:43
 msgid "Encoder batch size"
-msgstr "编码器批大小"
+msgstr "编码器批尺寸"
 
 #: dataset/generic/forms.py:49
 msgid "Encode data in batches of specified number of entries"
@@ -103,7 +103,7 @@ msgstr "LMDB"
 
 #: dataset/generic/forms.py:71
 msgid "Enforce same shape"
-msgstr "执行相同的形状"
+msgstr "转换相同的形状"
 
 #: dataset/generic/forms.py:73 dataset/images/classification/forms.py:343
 msgid "Yes"
@@ -506,7 +506,7 @@ msgstr "验证标签图像文件夹"
 
 #: extensions/data/imageProcessing/forms.py:89 extensions/data/imageSegmentation/forms.py:106 extensions/data/objectDetection/forms.py:105
 msgid "Channel conversion"
-msgstr "转换频道"
+msgstr "转换通道"
 
 #: extensions/data/imageProcessing/forms.py:91 extensions/data/imageSegmentation/forms.py:108 extensions/data/objectDetection/forms.py:107
 msgid "RGB"
@@ -530,9 +530,9 @@ msgstr "您的彩色地图文件似乎格式化不良:'%(val)s'不是一个整�
 msgid "All label images must use the same palette"
 msgstr "所有标签图像必须使用相同的调色板"
 
-#: extensions/data/imageSegmentation/data.py:150
-msgid "Segmentation"
-msgstr "分割"
+#: extensions/data/imageSegmentation/data.py:150 extensions/view/imageSegmentation/view.py:149
+msgid "Image Segmentation"
+msgstr "图像分割"
 
 #: extensions/data/imageSegmentation/data.py:202
 #, python-format
@@ -736,6 +736,18 @@ msgstr "调整图像大小(宽×高)"
 #: extensions/data/objectDetection/template.html:61
 msgid "If specified, input images will be squashed to that dimension after padding."
 msgstr "如果指定，输入图像将在填充后被压缩到该维度。"
+
+#: extensions/view/boundingBox/view.py:84
+msgid "Bounding boxes"
+msgstr "边界框"
+
+#: extensions/view/imageOutput/view.py:64
+msgid "Image output"
+msgstr "图像输出"
+
+#: extensions/view/rawData/view.py:55
+msgid "Raw Data"
+msgstr "Raw数据"
 
 #: inference/images/job.py:17
 msgid "Image Inference"
