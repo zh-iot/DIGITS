@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-24 23:59-0700\n"
-"PO-Revision-Date: 2021-08-30 14:18+0800\n"
+"POT-Creation-Date: 2021-08-29 23:34-0700\n"
+"PO-Revision-Date: 2021-08-30 14:36+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Classification"
 msgstr "分类"
 
-#: views.py:64 views.py:79
+#: views.py:79
 msgid "Other"
 msgstr "其他"
 
@@ -1205,6 +1205,26 @@ msgstr "通用图像模型"
 #: model/tasks/caffe_train.py:212
 msgid "Train Caffe Model"
 msgstr "训练Caffe模型"
+
+#: model/tasks/caffe_train.py:1601
+msgid "Solver"
+msgstr "解算器"
+
+#: model/tasks/caffe_train.py:1602
+msgid "Network (train/val)"
+msgstr "网络 (train/val)"
+
+#: model/tasks/caffe_train.py:1603
+msgid "Network (deploy)"
+msgstr "网络 (deploy)"
+
+#: model/tasks/caffe_train.py:1606 model/tasks/caffe_train.py:1608
+msgid "Python layer"
+msgstr "Python层"
+
+#: model/tasks/caffe_train.py:1611
+msgid "Network (original)"
+msgstr "网络 (original)"
 
 #: pretrained_model/job.py:72 templates/models/images/classification/partials/new/network_tab_previous.html:11
 #: templates/models/images/classification/show.html:29 templates/models/images/generic/partials/new/network_tab_pretrained.html:10

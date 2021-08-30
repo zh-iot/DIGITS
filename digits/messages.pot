@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-24 23:59-0700\n"
+"POT-Creation-Date: 2021-08-29 23:34-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Classification"
 msgstr ""
 
-#: views.py:64 views.py:79
+#: views.py:79
 msgid "Other"
 msgstr ""
 
@@ -1343,6 +1343,26 @@ msgstr ""
 
 #: model/tasks/caffe_train.py:212
 msgid "Train Caffe Model"
+msgstr ""
+
+#: model/tasks/caffe_train.py:1601
+msgid "Solver"
+msgstr ""
+
+#: model/tasks/caffe_train.py:1602
+msgid "Network (train/val)"
+msgstr ""
+
+#: model/tasks/caffe_train.py:1603
+msgid "Network (deploy)"
+msgstr ""
+
+#: model/tasks/caffe_train.py:1606 model/tasks/caffe_train.py:1608
+msgid "Python layer"
+msgstr ""
+
+#: model/tasks/caffe_train.py:1611
+msgid "Network (original)"
 msgstr ""
 
 #: pretrained_model/job.py:72

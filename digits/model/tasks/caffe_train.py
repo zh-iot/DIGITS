@@ -1598,17 +1598,17 @@ class CaffeTrainTask(TrainTask):
         return paths to model files
         """
         model_files = {
-            "Solver": self.solver_file,
-            "Network (train/val)": self.train_val_file,
-            "Network (deploy)": self.deploy_file
+            _("Solver"): self.solver_file,
+            _("Network (train/val)"): self.train_val_file,
+            _("Network (deploy)"): self.deploy_file
         }
         if os.path.exists(os.path.join(self.job_dir, CAFFE_PYTHON_LAYER_FILE)):
-            model_files.update({"Python layer": os.path.join(self.job_dir, CAFFE_PYTHON_LAYER_FILE)})
+            model_files.update({_("Python layer"): os.path.join(self.job_dir, CAFFE_PYTHON_LAYER_FILE)})
         elif os.path.exists(os.path.join(self.job_dir, CAFFE_PYTHON_LAYER_FILE + 'c')):
-            model_files.update({"Python layer": os.path.join(self.job_dir, CAFFE_PYTHON_LAYER_FILE + 'c')})
+            model_files.update({_("Python layer"): os.path.join(self.job_dir, CAFFE_PYTHON_LAYER_FILE + 'c')})
         if hasattr(self, "model_file"):
             if self.model_file is not None:
-                model_files.update({"Network (original)": self.model_file})
+                model_files.update({_("Network (original)"): self.model_file})
         return model_files
 
     @override
