@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-08-24 23:59-0700\n"
-"PO-Revision-Date: 2021-08-30 14:12+0800\n"
+"PO-Revision-Date: 2021-08-30 14:18+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -794,7 +794,7 @@ msgstr "在服务器上选择一个包含层定义的Python文件。"
 
 #: model/forms.py:99
 msgid "Training epochs"
-msgstr "培训的时代"
+msgstr "训练迭代次数"
 
 #: model/forms.py:104
 msgid "How many passes through the training data?"
@@ -1059,7 +1059,7 @@ msgstr "如果指定，在训练期间，将从输入图像中随机选取一个
 
 #: model/images/forms.py:27
 msgid "Subtract Mean"
-msgstr "减去的意思"
+msgstr "减去平均图像"
 
 #: model/images/forms.py:30 templates/models/images/generic/new.html:10 templates/models/images/generic/new.html:19
 msgid "Image"
@@ -2297,7 +2297,7 @@ msgstr " (接受逗号分隔的列表)"
 
 #: utils/forms.py:290 utils/forms.py:336
 msgid "multiples allowed"
-msgstr "允许倍数"
+msgstr "允许多个"
 
 #: utils/forms.py:315
 msgid "Not a valid integer value"
