@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-08-24 23:59-0700\n"
-"PO-Revision-Date: 2021-08-25 15:01+0800\n"
+"PO-Revision-Date: 2021-08-30 14:06+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -165,7 +165,7 @@ msgstr "裁切"
 
 #: dataset/images/job.py:32 static/js/PretrainedModel.js:32
 msgid "Squash"
-msgstr "去除"
+msgstr "挤压"
 
 #: dataset/images/job.py:33 static/js/PretrainedModel.js:34
 msgid "Fill"
@@ -238,7 +238,7 @@ msgstr "指示包含充满图像的子文件夹的文件夹。每个子文件夹
 #: extensions/data/imageSegmentation/forms.py:68
 #, python-format
 msgid "%% for validation"
-msgstr "%%进行验证"
+msgstr "进行验证"
 
 #: dataset/images/classification/forms.py:106 dataset/images/classification/forms.py:415 extensions/data/imageProcessing/forms.py:59
 #: extensions/data/imageSegmentation/forms.py:73
@@ -248,7 +248,7 @@ msgstr "您可以选择为验证集从训练图像中分离出一定百分比的
 #: dataset/images/classification/forms.py:111 dataset/images/classification/forms.py:420
 #, python-format
 msgid "%% for testing"
-msgstr "% %用于测试"
+msgstr "用于测试"
 
 #: dataset/images/classification/forms.py:117 dataset/images/classification/forms.py:426
 msgid "You can choose to set apart a certain percentage of images from the training images for the test set."
