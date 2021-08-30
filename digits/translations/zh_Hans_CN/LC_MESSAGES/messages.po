@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-08-24 23:59-0700\n"
-"PO-Revision-Date: 2021-08-30 14:06+0800\n"
+"PO-Revision-Date: 2021-08-30 14:12+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -1741,7 +1741,7 @@ msgstr "数据库压缩"
 
 #: templates/datasets/images/classification/show.html:47
 msgid "Number of Categories"
-msgstr "数量的类别"
+msgstr "类别的数量"
 
 #: templates/datasets/images/classification/show.html:82
 msgid "Input File"
@@ -1749,7 +1749,7 @@ msgstr "输入文件"
 
 #: templates/datasets/images/classification/show.html:82
 msgid " (before shuffling)"
-msgstr " (洗牌之前)"
+msgstr " (乱序之前)"
 
 #: templates/datasets/images/classification/show.html:85
 msgid "DB Creation log file"
@@ -1765,7 +1765,7 @@ msgstr "未能加载"
 
 #: templates/datasets/images/classification/show.html:111
 msgid "Image Mean"
-msgstr "图片的意思"
+msgstr "平均图片"
 
 #: templates/datasets/images/classification/show.html:150
 msgid "Category"
