@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-30 01:04-0700\n"
-"PO-Revision-Date: 2021-08-30 17:10+0800\n"
+"POT-Creation-Date: 2021-08-30 02:15-0700\n"
+"PO-Revision-Date: 2021-08-30 17:16+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -430,6 +430,11 @@ msgstr "labels_file不存在"
 #: dataset/tasks/create_db.py:298
 msgid "no labels in labels_file"
 msgstr "labels_file中没有标签"
+
+#: dataset/tasks/create_generic_db.py:41
+#, python-format
+msgid "Create %(stage)s DB"
+msgstr "新建%(stage)s 数据库"
 
 #: dataset/tasks/parse_folder.py:51 dataset/tasks/parse_s3.py:59
 msgid "percent_val must not exceed 100"

@@ -8,6 +8,7 @@ import sys
 import digits
 from digits.task import Task
 from digits.utils import subclass, override
+from flask_babel import Babel, gettext as _, lazy_gettext
 
 # NOTE: Increment this every time the pickled version changes
 PICKLE_VERSION = 1
@@ -37,7 +38,8 @@ class CreateGenericDbTask(Task):
 
     @override
     def name(self):
-        return 'Create %s DB' % self.stage
+        return _('Create %(stage)s DB', self.stage)
+        # return 'Create %s DB' % self.stage
 
     @override
     def __getstate__(self):
