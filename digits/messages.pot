@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-29 23:34-0700\n"
+"POT-Creation-Date: 2021-08-30 00:00-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2065,6 +2065,53 @@ msgid ""
 "custom network definition:"
 msgstr ""
 
+#: templates/models/images/classification/classify_many.html:6
+#: templates/models/images/classification/show.html:343
+msgid "Classify Many"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:22
+#: templates/models/images/classification/classify_one.html:41
+msgid "Classification failed, see job log"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:28
+#: templates/models/images/generic/infer_extension.html:37
+msgid "Summary"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:32
+msgid "Top-1 accuracy"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:36
+msgid "Top-5 accuracy"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:49
+msgid "Confusion matrix"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:57
+msgid "Per-class accuracy"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:75
+msgid "All classifications"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:80
+msgid "Path"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:81
+msgid "Ground truth"
+msgstr ""
+
+#: templates/models/images/classification/classify_many.html:82
+msgid "Top predictions"
+msgstr ""
+
 #: templates/models/images/classification/classify_one.html:6
 #: templates/models/images/classification/show.html:307
 msgid "Classify One"
@@ -2072,10 +2119,6 @@ msgstr ""
 
 #: templates/models/images/classification/classify_one.html:29
 msgid "Predictions"
-msgstr ""
-
-#: templates/models/images/classification/classify_one.html:41
-msgid "Classification failed, see job log"
 msgstr ""
 
 #: templates/models/images/classification/classify_one.html:96
@@ -2370,10 +2413,6 @@ msgstr ""
 msgid "Leave blank to use all"
 msgstr ""
 
-#: templates/models/images/classification/show.html:343
-msgid "Classify Many"
-msgstr ""
-
 #: templates/models/images/classification/show.html:348
 msgid ""
 "Classify a list of images and show the top 5 category predictions for "
@@ -2437,10 +2476,6 @@ msgstr ""
 #: templates/models/images/generic/infer_extension.html:11
 #: templates/models/images/generic/show.html:364
 msgid "Test Many"
-msgstr ""
-
-#: templates/models/images/generic/infer_extension.html:37
-msgid "Summary"
 msgstr ""
 
 #: templates/models/images/generic/infer_extension.html:47
