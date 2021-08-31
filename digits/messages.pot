@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-30 19:16-0700\n"
+"POT-Creation-Date: 2021-08-30 19:44-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1204,7 +1204,8 @@ msgstr ""
 msgid "Subtract Mean"
 msgstr ""
 
-#: model/images/forms.py:30 templates/models/images/generic/new.html:10
+#: model/images/forms.py:30 templates/models/images/generic/infer_many.html:52
+#: templates/models/images/generic/new.html:10
 #: templates/models/images/generic/new.html:19
 msgid "Image"
 msgstr ""
@@ -1357,6 +1358,10 @@ msgstr ""
 
 #: model/images/generic/job.py:26
 msgid "Generic Image Model"
+msgstr ""
+
+#: model/images/generic/views.py:554 model/images/generic/views.py:670
+msgid "Infer Many Images"
 msgstr ""
 
 #: model/tasks/caffe_train.py:212
@@ -2115,7 +2120,9 @@ msgid "Classification failed, see job log"
 msgstr ""
 
 #: templates/models/images/classification/classify_many.html:28
+#: templates/models/images/generic/infer_db.html:37
 #: templates/models/images/generic/infer_extension.html:37
+#: templates/models/images/generic/infer_many.html:36
 msgid "Summary"
 msgstr ""
 
@@ -2512,21 +2519,42 @@ msgstr ""
 msgid "28x28 (gray)"
 msgstr ""
 
+#: templates/models/images/generic/infer_db.html:11
 #: templates/models/images/generic/infer_extension.html:11
+#: templates/models/images/generic/infer_many.html:11
 #: templates/models/images/generic/show.html:380
 msgid "Test Many"
 msgstr ""
 
-#: templates/models/images/generic/infer_extension.html:47
-msgid "Output visualizations"
+#: templates/models/images/generic/infer_db.html:27
+#: templates/models/images/generic/infer_many.html:26
+#: templates/models/images/generic/infer_one.html:49
+msgid "Inference failed, see job log"
 msgstr ""
 
+#: templates/models/images/generic/infer_db.html:48
+#: templates/models/images/generic/infer_many.html:47
+#: templates/models/images/generic/show.html:32
+msgid "Visualizations"
+msgstr ""
+
+#: templates/models/images/generic/infer_db.html:51
 #: templates/models/images/generic/infer_extension.html:52
 msgid "Index"
 msgstr ""
 
+#: templates/models/images/generic/infer_db.html:52
+msgid "Key"
+msgstr ""
+
+#: templates/models/images/generic/infer_db.html:53
 #: templates/models/images/generic/infer_extension.html:53
+#: templates/models/images/generic/infer_many.html:53
 msgid "Data"
+msgstr ""
+
+#: templates/models/images/generic/infer_extension.html:47
+msgid "Output visualizations"
 msgstr ""
 
 #: templates/models/images/generic/infer_extension.html:115
@@ -2546,17 +2574,9 @@ msgstr ""
 msgid "Inference visualization"
 msgstr ""
 
-#: templates/models/images/generic/infer_one.html:49
-msgid "Inference failed, see job log"
-msgstr ""
-
 #: templates/models/images/generic/new.html:10
 #: templates/models/images/generic/new.html:19
 msgid "Model"
-msgstr ""
-
-#: templates/models/images/generic/show.html:32
-msgid "Visualizations"
 msgstr ""
 
 #: templates/models/images/generic/show.html:33

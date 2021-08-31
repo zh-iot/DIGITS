@@ -21,6 +21,7 @@ from digits.utils import constants
 from digits.utils.forms import fill_form_if_cloned, save_form_to_job
 from digits.utils.routing import request_wants_json, job_from_request
 from digits.webapp import scheduler
+from flask_babel import Babel, gettext
 
 blueprint = flask.Blueprint(__name__, __name__)
 
@@ -550,7 +551,7 @@ def infer_db():
     # create inference job
     inference_job = ImageInferenceJob(
         username=utils.auth.get_username(),
-        name="Infer Many Images",
+        name= gettext("Infer Many Images"),
         model=model_job,
         images=db_path,
         epoch=epoch,
@@ -666,7 +667,7 @@ def infer_many():
     # create inference job
     inference_job = ImageInferenceJob(
         username=utils.auth.get_username(),
-        name="Infer Many Images",
+        name=gettext("Infer Many Images"),
         model=model_job,
         images=paths,
         epoch=epoch,
