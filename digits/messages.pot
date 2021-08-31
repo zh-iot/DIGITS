@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-30 02:15-0700\n"
+"POT-Creation-Date: 2021-08-30 19:16-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1856,13 +1856,13 @@ msgstr ""
 
 #: templates/datasets/images/classification/new.html:226
 #: templates/models/images/classification/show.html:328
-#: templates/models/images/generic/show.html:349
+#: templates/models/images/generic/show.html:365
 msgid "Image folder"
 msgstr ""
 
 #: templates/datasets/images/classification/new.html:226
 #: templates/models/images/classification/show.html:328
-#: templates/models/images/generic/show.html:349
+#: templates/models/images/generic/show.html:365
 msgid "optional"
 msgstr ""
 
@@ -1897,7 +1897,7 @@ msgid "Validation"
 msgstr ""
 
 #: templates/datasets/images/classification/new.html:280
-#: templates/models/images/generic/show.html:261
+#: templates/models/images/generic/show.html:277
 msgid "Test"
 msgstr ""
 
@@ -2039,6 +2039,27 @@ msgstr ""
 
 #: templates/datasets/images/generic/show.html:33
 msgid "DB analysis log file"
+msgstr ""
+
+#: templates/models/gpu_utilization.html:2
+msgid "Hardware"
+msgstr ""
+
+#: templates/models/gpu_utilization.html:7
+#: templates/models/gpu_utilization.html:31
+msgid "Memory"
+msgstr ""
+
+#: templates/models/gpu_utilization.html:14
+msgid "GPU Utilization"
+msgstr ""
+
+#: templates/models/gpu_utilization.html:18
+msgid "Temperature"
+msgstr ""
+
+#: templates/models/gpu_utilization.html:26
+msgid "CPU Utilization"
 msgstr ""
 
 #: templates/models/python_layer_explanation.html:3
@@ -2353,41 +2374,41 @@ msgid "Make Pretrained Model"
 msgstr ""
 
 #: templates/models/images/classification/show.html:261
-#: templates/models/images/generic/show.html:268
+#: templates/models/images/generic/show.html:284
 msgid "Test a single image"
 msgstr ""
 
 #: templates/models/images/classification/show.html:263
-#: templates/models/images/generic/show.html:270
+#: templates/models/images/generic/show.html:286
 msgid "Image Path"
 msgstr ""
 
 #: templates/models/images/classification/show.html:267
-#: templates/models/images/generic/show.html:274
+#: templates/models/images/generic/show.html:290
 msgid "Can be a path on the server's filesystem, or a URL."
 msgstr ""
 
 #: templates/models/images/classification/show.html:272
-#: templates/models/images/generic/show.html:279
+#: templates/models/images/generic/show.html:295
 msgid "Upload image"
 msgstr ""
 
 #: templates/models/images/classification/show.html:277
 #: templates/models/images/classification/show.html:318
-#: templates/models/images/generic/show.html:284
-#: templates/models/images/generic/show.html:339
+#: templates/models/images/generic/show.html:300
+#: templates/models/images/generic/show.html:355
 msgid "Browse"
 msgstr ""
 
 #: templates/models/images/classification/show.html:293
-#: templates/models/images/generic/show.html:244
-#: templates/models/images/generic/show.html:300
+#: templates/models/images/generic/show.html:260
+#: templates/models/images/generic/show.html:316
 msgid "Show visualizations and statistics"
 msgstr ""
 
 #: templates/models/images/classification/show.html:298
-#: templates/models/images/generic/show.html:249
-#: templates/models/images/generic/show.html:305
+#: templates/models/images/generic/show.html:265
+#: templates/models/images/generic/show.html:321
 msgid ""
 "For each layer in the network, show statistics for the "
 "weights/activations and attempt to represent the data visually. Can delay"
@@ -2395,39 +2416,39 @@ msgid ""
 msgstr ""
 
 #: templates/models/images/classification/show.html:311
-#: templates/models/images/generic/show.html:332
+#: templates/models/images/generic/show.html:348
 msgid "Test a list of images"
 msgstr ""
 
 #: templates/models/images/classification/show.html:313
-#: templates/models/images/generic/show.html:334
+#: templates/models/images/generic/show.html:350
 msgid "Upload Image List"
 msgstr ""
 
 #: templates/models/images/classification/show.html:324
-#: templates/models/images/generic/show.html:345
+#: templates/models/images/generic/show.html:361
 msgid "Accepts a list of filenames or urls (you can use your val.txt file)"
 msgstr ""
 
 #: templates/models/images/classification/show.html:330
-#: templates/models/images/generic/show.html:351
+#: templates/models/images/generic/show.html:367
 msgid ""
 "Relative paths in the text file will be prepended with this value before "
 "reading"
 msgstr ""
 
 #: templates/models/images/classification/show.html:333
-#: templates/models/images/generic/show.html:354
+#: templates/models/images/generic/show.html:370
 msgid "Number of images use from the file"
 msgstr ""
 
 #: templates/models/images/classification/show.html:334
-#: templates/models/images/generic/show.html:355
+#: templates/models/images/generic/show.html:371
 msgid "All"
 msgstr ""
 
 #: templates/models/images/classification/show.html:335
-#: templates/models/images/generic/show.html:356
+#: templates/models/images/generic/show.html:372
 msgid "Leave blank to use all"
 msgstr ""
 
@@ -2492,7 +2513,7 @@ msgid "28x28 (gray)"
 msgstr ""
 
 #: templates/models/images/generic/infer_extension.html:11
-#: templates/models/images/generic/show.html:364
+#: templates/models/images/generic/show.html:380
 msgid "Test Many"
 msgstr ""
 
@@ -2513,7 +2534,7 @@ msgid "Layer visualizations"
 msgstr ""
 
 #: templates/models/images/generic/infer_one.html:11
-#: templates/models/images/generic/show.html:314
+#: templates/models/images/generic/show.html:330
 msgid "Test One"
 msgstr ""
 
@@ -2542,43 +2563,45 @@ msgstr ""
 msgid "Tensorboard"
 msgstr ""
 
-#: templates/models/images/generic/show.html:164
+#: templates/models/images/generic/show.html:165
 msgid "Select Visualization Method"
 msgstr ""
 
-#: templates/models/images/generic/show.html:174
-msgid "Visualization Options"
-msgstr ""
-
-#: templates/models/images/generic/show.html:201
+#: templates/models/images/generic/show.html:175
+#: templates/models/images/generic/show.html:217
 msgid "Inference Options"
 msgstr ""
 
-#: templates/models/images/generic/show.html:207
+#: templates/models/images/generic/show.html:179
+#: templates/models/images/generic/show.html:223
 msgid "Do not resize input image(s)"
 msgstr ""
 
-#: templates/models/images/generic/show.html:222
+#: templates/models/images/generic/show.html:190
+msgid "Visualization Options"
+msgstr ""
+
+#: templates/models/images/generic/show.html:238
 msgid "Select Inference form"
 msgstr ""
 
-#: templates/models/images/generic/show.html:316
+#: templates/models/images/generic/show.html:332
 msgid "Test a Database"
 msgstr ""
 
-#: templates/models/images/generic/show.html:318
+#: templates/models/images/generic/show.html:334
 msgid "LMDB path"
 msgstr ""
 
-#: templates/models/images/generic/show.html:320
+#: templates/models/images/generic/show.html:336
 msgid "Specify path to LMDB database on server"
 msgstr ""
 
-#: templates/models/images/generic/show.html:328
+#: templates/models/images/generic/show.html:344
 msgid "Test DB"
 msgstr ""
 
-#: templates/models/images/generic/show.html:369
+#: templates/models/images/generic/show.html:385
 msgid "Infer a list of images and show the network outputs."
 msgstr ""
 

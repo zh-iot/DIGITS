@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-30 02:15-0700\n"
-"PO-Revision-Date: 2021-08-30 17:16+0800\n"
+"POT-Creation-Date: 2021-08-30 19:16-0700\n"
+"PO-Revision-Date: 2021-08-31 10:18+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -1217,7 +1217,7 @@ msgstr "TopN图像分类"
 
 #: model/images/generic/job.py:26
 msgid "Generic Image Model"
-msgstr "通用图像模型"
+msgstr "图像分割模型"
 
 #: model/tasks/caffe_train.py:212
 msgid "Train Caffe Model"
@@ -1681,12 +1681,12 @@ msgid ""
 msgstr "文件中的每一行都应该被格式化为'<PATH> <LABEL>“ <PATH>指定本地文件系统上的图像路径或URL，以及<LABEL>是否与上传的标签文件匹配"
 
 #: templates/datasets/images/classification/new.html:226 templates/models/images/classification/show.html:328
-#: templates/models/images/generic/show.html:349
+#: templates/models/images/generic/show.html:365
 msgid "Image folder"
 msgstr "图片文件夹"
 
 #: templates/datasets/images/classification/new.html:226 templates/models/images/classification/show.html:328
-#: templates/models/images/generic/show.html:349
+#: templates/models/images/generic/show.html:365
 msgid "optional"
 msgstr "可选"
 
@@ -1715,7 +1715,7 @@ msgstr "输入路径"
 msgid "Validation"
 msgstr "验证"
 
-#: templates/datasets/images/classification/new.html:280 templates/models/images/generic/show.html:261
+#: templates/datasets/images/classification/new.html:280 templates/models/images/generic/show.html:277
 msgid "Test"
 msgstr "测试"
 
@@ -1851,6 +1851,26 @@ msgstr "(宽×高×通道)"
 #: templates/datasets/images/generic/show.html:33
 msgid "DB analysis log file"
 msgstr "数据库分析日志文件"
+
+#: templates/models/gpu_utilization.html:2
+msgid "Hardware"
+msgstr "硬件"
+
+#: templates/models/gpu_utilization.html:7 templates/models/gpu_utilization.html:31
+msgid "Memory"
+msgstr "内存"
+
+#: templates/models/gpu_utilization.html:14
+msgid "GPU Utilization"
+msgstr "GPU的利用率"
+
+#: templates/models/gpu_utilization.html:18
+msgid "Temperature"
+msgstr "温度"
+
+#: templates/models/gpu_utilization.html:26
+msgid "CPU Utilization"
+msgstr "CPU利用率"
 
 #: templates/models/python_layer_explanation.html:3
 msgid "Using Python layers"
@@ -2119,62 +2139,62 @@ msgstr "下载模型"
 msgid "Make Pretrained Model"
 msgstr "使预训练模型"
 
-#: templates/models/images/classification/show.html:261 templates/models/images/generic/show.html:268
+#: templates/models/images/classification/show.html:261 templates/models/images/generic/show.html:284
 msgid "Test a single image"
 msgstr "测试单个图像"
 
-#: templates/models/images/classification/show.html:263 templates/models/images/generic/show.html:270
+#: templates/models/images/classification/show.html:263 templates/models/images/generic/show.html:286
 msgid "Image Path"
 msgstr "图片路径"
 
-#: templates/models/images/classification/show.html:267 templates/models/images/generic/show.html:274
+#: templates/models/images/classification/show.html:267 templates/models/images/generic/show.html:290
 msgid "Can be a path on the server's filesystem, or a URL."
 msgstr "可以是服务器文件系统上的路径，也可以是URL。"
 
-#: templates/models/images/classification/show.html:272 templates/models/images/generic/show.html:279
+#: templates/models/images/classification/show.html:272 templates/models/images/generic/show.html:295
 msgid "Upload image"
 msgstr "上传图片"
 
 #: templates/models/images/classification/show.html:277 templates/models/images/classification/show.html:318
-#: templates/models/images/generic/show.html:284 templates/models/images/generic/show.html:339
+#: templates/models/images/generic/show.html:300 templates/models/images/generic/show.html:355
 msgid "Browse"
 msgstr "浏览"
 
-#: templates/models/images/classification/show.html:293 templates/models/images/generic/show.html:244 templates/models/images/generic/show.html:300
+#: templates/models/images/classification/show.html:293 templates/models/images/generic/show.html:260 templates/models/images/generic/show.html:316
 msgid "Show visualizations and statistics"
 msgstr "显示可视化和统计数据"
 
-#: templates/models/images/classification/show.html:298 templates/models/images/generic/show.html:249 templates/models/images/generic/show.html:305
+#: templates/models/images/classification/show.html:298 templates/models/images/generic/show.html:265 templates/models/images/generic/show.html:321
 msgid ""
 "For each layer in the network, show statistics for the weights/activations and attempt to represent the data visually. Can delay classification "
 "considerably."
 msgstr "对于网络中的每一层，显示权重/激活的统计数据，并尝试直观地表示数据。可以大大延迟分类。"
 
-#: templates/models/images/classification/show.html:311 templates/models/images/generic/show.html:332
+#: templates/models/images/classification/show.html:311 templates/models/images/generic/show.html:348
 msgid "Test a list of images"
 msgstr "测试图像列表"
 
-#: templates/models/images/classification/show.html:313 templates/models/images/generic/show.html:334
+#: templates/models/images/classification/show.html:313 templates/models/images/generic/show.html:350
 msgid "Upload Image List"
 msgstr "上传图片列表"
 
-#: templates/models/images/classification/show.html:324 templates/models/images/generic/show.html:345
+#: templates/models/images/classification/show.html:324 templates/models/images/generic/show.html:361
 msgid "Accepts a list of filenames or urls (you can use your val.txt file)"
 msgstr "接受文件名或url列表(可以使用val.txt文件)"
 
-#: templates/models/images/classification/show.html:330 templates/models/images/generic/show.html:351
+#: templates/models/images/classification/show.html:330 templates/models/images/generic/show.html:367
 msgid "Relative paths in the text file will be prepended with this value before reading"
 msgstr "文本文件中的相对路径在读取之前将被加上这个值"
 
-#: templates/models/images/classification/show.html:333 templates/models/images/generic/show.html:354
+#: templates/models/images/classification/show.html:333 templates/models/images/generic/show.html:370
 msgid "Number of images use from the file"
 msgstr "从文件中使用的图像数量"
 
-#: templates/models/images/classification/show.html:334 templates/models/images/generic/show.html:355
+#: templates/models/images/classification/show.html:334 templates/models/images/generic/show.html:371
 msgid "All"
 msgstr "全部"
 
-#: templates/models/images/classification/show.html:335 templates/models/images/generic/show.html:356
+#: templates/models/images/classification/show.html:335 templates/models/images/generic/show.html:372
 msgid "Leave blank to use all"
 msgstr "如果为空则选择全部"
 
@@ -2233,7 +2253,7 @@ msgstr "原始论文"
 msgid "28x28 (gray)"
 msgstr "28 x28(灰色)"
 
-#: templates/models/images/generic/infer_extension.html:11 templates/models/images/generic/show.html:364
+#: templates/models/images/generic/infer_extension.html:11 templates/models/images/generic/show.html:380
 msgid "Test Many"
 msgstr "测试多个"
 
@@ -2253,7 +2273,7 @@ msgstr "数据"
 msgid "Layer visualizations"
 msgstr "层可视化"
 
-#: templates/models/images/generic/infer_one.html:11 templates/models/images/generic/show.html:314
+#: templates/models/images/generic/infer_one.html:11 templates/models/images/generic/show.html:330
 msgid "Test One"
 msgstr "测试1"
 
@@ -2281,43 +2301,43 @@ msgstr "可视化验证"
 msgid "Tensorboard"
 msgstr "Tensorboard"
 
-#: templates/models/images/generic/show.html:164
+#: templates/models/images/generic/show.html:165
 msgid "Select Visualization Method"
 msgstr "选择可视化方法"
 
-#: templates/models/images/generic/show.html:174
-msgid "Visualization Options"
-msgstr "可视化选项"
-
-#: templates/models/images/generic/show.html:201
+#: templates/models/images/generic/show.html:175 templates/models/images/generic/show.html:217
 msgid "Inference Options"
 msgstr "推理选项"
 
-#: templates/models/images/generic/show.html:207
+#: templates/models/images/generic/show.html:179 templates/models/images/generic/show.html:223
 msgid "Do not resize input image(s)"
 msgstr "不要调整输入图像的大小"
 
-#: templates/models/images/generic/show.html:222
+#: templates/models/images/generic/show.html:190
+msgid "Visualization Options"
+msgstr "可视化选项"
+
+#: templates/models/images/generic/show.html:238
 msgid "Select Inference form"
 msgstr "选择推理形式"
 
-#: templates/models/images/generic/show.html:316
+#: templates/models/images/generic/show.html:332
 msgid "Test a Database"
 msgstr "测试数据库数据库"
 
-#: templates/models/images/generic/show.html:318
+#: templates/models/images/generic/show.html:334
 msgid "LMDB path"
 msgstr "LMDB路径"
 
-#: templates/models/images/generic/show.html:320
+#: templates/models/images/generic/show.html:336
 msgid "Specify path to LMDB database on server"
 msgstr "指定服务器上LMDB数据库的路径"
 
-#: templates/models/images/generic/show.html:328
+#: templates/models/images/generic/show.html:344
 msgid "Test DB"
 msgstr "测试数据库"
 
-#: templates/models/images/generic/show.html:369
+#: templates/models/images/generic/show.html:385
 msgid "Infer a list of images and show the network outputs."
 msgstr "推断图像列表并显示网络输出。"
 

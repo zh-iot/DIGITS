@@ -159,6 +159,7 @@ updateSnapshotList({% autoescape false %}{{task.snapshot_list()}}{% endautoescap
                         </button>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>{{_('Select Visualization Method')}}</h3>
@@ -171,6 +172,21 @@ updateSnapshotList({% autoescape false %}{{task.snapshot_list()}}{% endautoescap
                         </div>
                     </div>
                     <div class="col-sm-6">
+                        <h3>{{_('Inference Options')}}</h3>
+                        <div class="form-group">
+                            <label for="dont_resize">
+                                <input id="dont_resize" name="dont_resize" type="checkbox" value="y">
+                                {{_('Do not resize input image(s)')}}
+                            </label>
+                            <span name="dont_resize_explanation"
+                                class="explanation-tooltip glyphicon glyphicon-question-sign"
+                                data-container="body"
+                                title="_('By default input images are resized to the dimensions of the images in the dataset. Check this box
+                                to skip this stage. This may be useful for models that can take inputs of various dimensions.')"
+                                ></span>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-6">
                         <h3>{{_('Visualization Options')}}</h3>
                         <div id="view_extension-details">
                         </div>
@@ -193,10 +209,10 @@ updateSnapshotList({% autoescape false %}{{task.snapshot_list()}}{% endautoescap
                                 }
                             });
                         $("#view_extension_id").change();
-                    </script>
+                    </script> -->
                 </div>
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-sm-12">
                         <h3>{{_('Inference Options')}}</h3>
                     </div>
@@ -214,9 +230,9 @@ updateSnapshotList({% autoescape false %}{{task.snapshot_list()}}{% endautoescap
                                 ></span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="form-group">
                         <div class="col-sm-6">
                             <h3>{{_('Select Inference form')}}</h3>
@@ -229,14 +245,14 @@ updateSnapshotList({% autoescape false %}{{task.snapshot_list()}}{% endautoescap
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="row" id="custom-inference-form" >
+                <!-- <div class="row" id="custom-inference-form" >
                     <div id="custom-inference-form-html">
                     </div>
-                </div>
+                </div> -->
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="show_visualizations">
@@ -261,7 +277,7 @@ updateSnapshotList({% autoescape false %}{{task.snapshot_list()}}{% endautoescap
                             {{_('Test')}}
                         </button>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row" id="default-inference-form">
                     <div class="col-sm-6">
