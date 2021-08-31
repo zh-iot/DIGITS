@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-08-30 19:44-0700\n"
-"PO-Revision-Date: 2021-08-31 10:45+0800\n"
+"PO-Revision-Date: 2021-08-31 10:48+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
 "Language-Team: zh_Hans_CN <LL@li.org>\n"
@@ -691,7 +691,7 @@ msgstr "填充图像的高度"
 
 #: extensions/data/objectDetection/forms.py:116
 msgid "Minimum box size (in pixels) for validation set"
-msgstr "验证集的最小框大小(以像素为单位)"
+msgstr "验证集的最小边框大小(以像素为单位)"
 
 #: extensions/data/objectDetection/forms.py:122
 msgid ""
@@ -712,7 +712,7 @@ msgstr ""
 
 #: extensions/data/objectDetection/template.html:7
 msgid "Object Detection Dataset Options"
-msgstr "对象检测数据集选项"
+msgstr "目标检测数据集选项"
 
 #: extensions/data/objectDetection/template.html:10
 msgid "Images can be stored in any of the supported file formats ('.png','.jpg','.jpeg','.bmp','.ppm')."
